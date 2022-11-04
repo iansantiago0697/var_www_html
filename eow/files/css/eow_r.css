@@ -121,28 +121,38 @@ body {
 	margin-top:15px;
 }
 
-/* 本体上部（コンテンツ）：左：added 081126 */
+/* 本体上部（コンテンツ）：左：added 081126 ; modified 110422 */
 #AreaUpperLeft {
-	float: left;
+	/* float: left; */
 	font-family: "Arial", "Arial New", "ＭＳ Ｐゴシック", Sans-Serif;/* added 100405 */
 	z-index: 1;/* added 100405 */
 	/*	overflow: hidden;*/
 	width: 100%;
 	padding-top:10px;
-	margin-right: -300px;
+	/* margin-right: -300px; */
+
+	/* added 110422 */
+	max-width: 1098px;
+	margin: 0 auto;
+	padding: 12px 24px;
 }
 
-/* added 100405 */
+/* added 11-04-2022 */
+.wrap-inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* added 100405; modified 110422 */
 #AreaUpperLeftContainer {
-	max-width: 745px;
+	max-width: 728px; /* modified 110422 */
 	min-height: 500px;
-	margin-right: 300px;
-	margin-right: 320px;;
+	/* margin-right: 300px; */ /*modified 110422*/
 }
 
-*html #AreaUpperLeftContainer {
-	float: left;/* added 100416 */
-}
+/* *html #AreaUpperLeftContainer { */
+	/*float: left; *//* added 100416; removed 1104422 */
+/* } */
 
 *html #AreaUpperLeftInner {
 	overflow: hidden;
@@ -160,12 +170,12 @@ body {
 	margin-left:-850px;
 }
 
-/* 本体上部（広告）：右：added 081126 / modified 100405 */
+/* 本体上部（広告）：右：added 081126 / modified 110422 */
 #AreaUpperRight {
-	width: 300px;/* modify 100405 */
+	width: 336px ;/* modify 110422 */
 	font-family: "Verdana", "Arial", "Arial New", "ＭＳ Ｐゴシック", Sans-Serif;/* added 100405 */
 	z-index:2;
-	float: right;
+	/* float: right;  */
 	margin-top: 8px;
 	position: relative;
 }
