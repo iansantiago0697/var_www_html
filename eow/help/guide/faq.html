@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta charset="utf-8">
+<title>FAQ よくあるご質問：ご利用ガイド：英辞郎 on the WEB</title>
+
+<!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta http-equiv="Content-Language" content="ja">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache, must-revalidate">
+<meta name="format-detection" content="telephone=no">
+
+<!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="/help/guide/content/css/normalize.css">
+<link rel="stylesheet" href="/help/guide/content/css/guide_skeleton.css">
+<link rel="stylesheet" href="/help/guide/content/css/guide_custom.css">
+<link rel="stylesheet" href="/help/guide/content/css/lightbox.css">
+<link rel="stylesheet" href="/help/guide/content/css/faq_r.css">
+
+<script type="text/javascript" language="JavaScript" src="/help/guide/content/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" language="JavaScript" src="/help/guide/content/js/eow_top.js" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript" src="/help/guide/content/js/touchdevice.js" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript" src="/content/js/eow_footer_new.js" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript" src="/help/guide/content/js/jquery.mark.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1590792-9', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!--<style>
+  .center table th{background-color:#edf2f7;}
+</style>-->
+
+<!-- 開始パーレンのアキを詰める
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script>
+$(function(){
+	var tgElm = $('.kakko h1,h2,h3'), //対象となる要素をここで指定
+		tagType = "span"; //括弧を囲うタグ名をここで指定
+	tgElm.each(function(){
+		var tgText = $(this).html();
+		tgText = tgText.replace(/[「『（【｛［〔〈《]/g, '<' + tagType + ' style="margin-left: -0.6rem;">$&</' + tagType + '>');
+		tgText = tgText.replace(/[」』）】｝］〕〉》]/g, '<' + tagType + ' style="margin-right: -0.6rem;">$&</' + tagType + '>');
+		$(this).html(tgText);
+	});
+});
+</script>
+
+<SCRIPT language=JavaScript>
+<!--
+function getCookie( key, tmp1, tmp2, xx1, xx2, xx3 )
+{
+    tmp1 = " " + document.cookie + ";";
+    xx1 = xx2 = 0;
+    len = tmp1.length;
+    while (xx1 < len) 
+    {
+        xx2 = tmp1.indexOf(";", xx1);
+        tmp2 = tmp1.substring(xx1 + 1, xx2);
+        xx3 = tmp2.indexOf("=");
+        if (tmp2.substring(0, xx3) == key) 
+        {
+            return(unescape(tmp2.substring(xx3 + 1, xx2 - xx1 - 1)));
+        }
+        xx1 = xx2 + 1;
+    }
+    return("");
+}
+// -->
+</SCRIPT>
+	
+<!-- enter key ––––––––––––––––––––––––––-->	
+	<script>
+$(function() {
+    //最初のinputにfocusする
+    $('input[type=text]:first').focus();
+    $('input').bind("keydown", function(e) {
+        var n = $("input").length;
+        //13=エンターkey
+        if (e.which == 13)
+        {
+            e.preventDefault();
+            var nextIndex = $('button').index(this) + 1;
+            if(nextIndex < n) {
+                //次にfocus        
+                $('button')[nextIndex].focus();
+            } else {
+                //クラスを特定        
+                $('button')[nextIndex-1].blur();
+                $('#result').click();
+            }
+        }
+    });
+});
+
+</script>
+	
+	
+<!-- iPhone タップでの拡大防止
+–––––––––––––––––––––––––––––––––––––––––––––––-->	
+
+<script>
+var t = 0;
+  document.documentElement.addEventListener('touchend', function (e) {
+  var now = new Date().getTime();
+  if ((now - t) < 500){
+    e.preventDefault();
+  }
+  t = now;
+  }, false);
+</script>
+	
+	
+<!--分岐点でリロード--------------->
+	
+<script>	
+	 $(window).on('load resize', function() {
+      var windowWidth = window.innerWidth;
+      if (windowWidth > 887) {
+        // リロードでクリア //
+        if (window.name != "pc"){
+          location.reload();
+          window.name = "pc";
+        }
+      // PCの記述 //
+	} else if (windowWidth > 769) {
+        // リロードでクリア //
+        if (window.name != "pc2"){
+          location.reload();
+          window.name = "pc2";
+        }
+      // PCの記述 //
+
+      } else if (windowWidth > 551) {
+        // リロードでクリア //
+        if (window.name != "tablet"){
+          location.reload();
+          window.name = "tablet";
+        }
+      // tabletの記述 //
+
+      } else {
+        if (window.name != "sp"){
+          location.reload();
+          window.name = "sp";
+        }
+        //  SPの記述 //
+      }
+    });
+
+</script>
+<script type="text/javascript" language="JavaScript" src="/content/js/custom_scroll.js" charset="UTF-8"></script>
+</head>
+
+<body>
+
+<!-- svg読み込み
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="svgArea"></div>
+  <script>
+$(function(){
+	$("#svgArea").load("/help/guide/content/img/symbol-defs.svg", function(){
+
+		//SVGの処理
+
+	});
+});
+</script>
+
+
+
+<!-- ヘッダー・タイトル ・インデックス-->
+<div class="header_wrap">
+<div class="header_title">
+   <div class="container">
+    <div class="headerlogo">
+       <img src="/help/guide/content/img/lo_eow.svg" alt="英辞郎 on the WEB" title=""  />
+      <div class="headerlogo_title">ヘルプ&nbsp;ご利用ガイド
+    </div>
+	<div class="header_info_button">
+		<a href="/help/guide/" target="_blank"><img src="/help/guide/content/img/to_eow_top.svg"></a><a href="//eowp.alc.co.jp/guide/" target="_blank"><img src="/help/guide/content/img/to_eowp_top.svg" class="right"></a>
+	</div>	
+    </div>
+</div>
+</div>
+
+
+  <div class="container">  
+
+    <!--<div class="header_info">
+		<img src="/help/guide/content/img/to_eow_top.svg"><img src="/help/guide/content/img/to_eowp_top.svg">
+    <!--<a href="/help/">ヘルプ TOP へ</a>&nbsp;>>&nbsp;<a href="/help/guide/">ご利用ガイド TOP へ</a>&nbsp;>>&nbsp;FAQ　よくある質問</div>-->
+  
+  	<div class="index_wrap_h"> 
+		
+<div class="index_inner_h search_h">
+<a class="tip" href="#"><input type="search" class="mark_window_h" placeholder="FAQ内の検索" autocomplete="off"><span>検索語を入力してエンターキーを押下すると検索結果にジャンプします。さらにエンターキーを押下すると次候補がハイライトされます。</span></a><button data-search="next" id="result" class="mark_button_h"><img src="/help/guide/content/img/search_button01.svg"></button><button data-search="clear" class="mark_button_h clear"><img src="/help/guide/content/img/search_clear.svg"></button>		   
+      </div>
+		
+<div class="page_title">	
+	<div class="index_inner_h">   
+       <img src="/help/guide/content/img/book.svg" alt="「英辞郎」について" title=""  />
+   <h1>FAQ　よくある質問</h1></div></div></div></div></div>
+
+<div class="container kakko">
+  <div class="row">
+    <div class="twelve columns">
+	
+<div class="content"> 
+  
+   <div class="page_title"><br>
+   <p>「英辞郎 on the WEB」「英辞郎 on the WEB Pro」に関して、お客様からよくいただく質問への回答をまとめました。お問い合わせをお送りいただく前に、ぜひ一度こちらをご確認ください。<br><a href="https://eowp.alc.co.jp/"><div class="logo_pro"></div></a><a href="https://eowf.alc.co.jp/"><div class="logo_prolite"></div></a>の表示がある項目は当該サービスについてのみ当てはまる内容です。</p> 
+  </div>
+   <ul class="guide_index">
+   <li><a href="#1">1.&nbsp;検索方法について </a></li>
+   <li><a href="#2">2.&nbsp;ご利用環境について<!--span class="small">（検索オプション）</span--></a></li>
+   <li><a href="#3">3.&nbsp;収録内容、サービスについて </a></li>
+   <li><a href="#4">4.&nbsp;ログインについて  </a><div class="logo_pro"></div><div class="logo_prolite"></div></li>
+   <li><a href="#5">5.&nbsp;お支払い、登録情報変更、ご利用の停止などについて </a><div class="logo_pro"></div><!--a href="https://eowf.alc.co.jp/"><div class="logo_prolite"></div></a--></li>
+   <li><a href="#6">6.&nbsp;その他 </a><div class="logo_pro"></div><div class="logo_prolite"></div></li>
+   </ul>
+   <!-- ヘッダー・タイトル ・インデックス　終わり-->
+   
+   <div class="guide_text faq"> <!-- guide_text 本文開始 -->
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns border_none">  
+   <div id="1"><!-- indexからのリンク -->
+   <h2>1.&nbsp;検索方法について</h2>
+   </div>
+   <div id="1-1"></div>
+   <p>Q. <b>They get in my hair. という文章に出合ったので、get in one's hair と入力して検索してみたのですが、見つかりませんでした。</b></p>
+   <p>A. <strong>get in hair で検索してください。</strong><br /><br />
+     「英辞郎」の辞書データでは、 get in my hair のような表現は、原則として「誰々の」に相当する部分が主語と同一人物ではない第三者になる場合、someone's と入力されています。これに準じれば、get in someone's hair となりますが、「英辞郎 on the WEB」では、検索キーワードをスペースで区切る AND 検索が利用できますので、one's、someone's の使い分けがよく分からないときは、その前後のキーワード「 get in hair 」だけで検索してみてください。 </p>
+   </div>
+   </div><!-- end 12 columns-->
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="1-2"></div>
+   <p>Q. <b>Mr. Brown got his promotion last month. という文章に出合ったので、get someone's promotion と入力して検索してみたのですが、見つかりませんでした。</b></p>
+   <p>A. <b>get promotion で検索してください。</b><br /><br />
+   「英辞郎」の辞書データでは、 get his promotion のような表現は、原則として「誰々の」に相当する部分が主語と同一人物になる場合、one's で入力されています。これに準じれば、get one's promotion となりますが、「英辞郎 on the WEB」では、検索キーワードをスペースで区切る AND 検索が利用できますので、one's、someone's の使い分けがよく分からないときは、その前後のキーワード「 get promotion 」だけで検索してみてください。 
+   </p>
+   </div>
+   </div><!-- end 12 columns-->
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">
+   <div id="1-3"></div>  
+   <p>Q. <b>I hope things go smoothly for you getting your place back into shape. という文章に出合って、get your place back into shape と入力したのですが、見つかりませんでした。</b></p>
+   <p>A. <b>get into shape で検索してください。</b><br /><br />
+   「英辞郎」の辞書データでは、 get（目的語）into shape のような表現は、原則として目的語が物の場合、ウェーブダッシュ（~）で入力されています。これに準じれば、get ~ into shape となりますが、「英辞郎 on the WEB」では、検索キーワードをスペースで区切る AND 検索が利用できますので、よく分からないときは、~ を検索語に加えずに、その目的語の前後のキーワード「 get into shape 」だけで検索してみてください。 </p>
+   </div>
+   </div><!-- end 12 columns-->
+   
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="1-4"></div>
+   <p>Q. <b>例えば「ポゼッション」というカタカナ表記の英単語の意味を知りたいとき、「英辞郎 on the WEB」で調べるにはどうすればいいでしょうか。</b></p>
+   <p>A. <b>カタカナ表記のまま検索してみましょう。</b><br /><br />
+   和英検索で英語のつづりが分かりますので、今度はその英単語を検索キーワード入力欄にコピーして、検索してください（ダブルクリック検索機能が ON の場合は、その英単語をダブルクリックするだけで再検索ができます）。カタカナ表記が複数ありそうな語は、思いつくものをいろいろ試してみましょう。（例： entertainment の場合は、エンターテイメント、エンターテインメントのいずれでもつづりが検索できます。）<br>
+※ すべての単語にカタカナ表記が用意されているわけではありません。 
+</p>
+   </div>
+   </div><!-- end 12 columns-->
+   
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="1-5"></div>
+   <p>Q. <b>イディオムなどの決まり文句の一部があやふやなときは検索できないのでしょうか。</b></p>
+   <p>A. <b>完全な形で入力しなくても、キーワードの一部で検索してみると、お探しの見出し語が見つかる場合があります。</b><br /><br />
+   例えば get down to business の意味を知りたいときは、以下のどのパターンでも検索できます。<br> 
+   <ul>
+	<li><a href="/search?q=get+down" target="_blank">get down</a></li>
+	<li><a href="/search?q=get+down+to" target="_blank">get down to</a></li> 
+	<li><a href="/search?q=down+to+business" target="_blank">down to business</a></li>
+	<li><a href="/search?q=to+business" target="_blank">to business</a></li>
+  </ul>
+  つまり、２語以上で構成される見出し語（イディオムや連語など）を検索したいときは、完全な形で入力しなくても、そのキーワードの一部だけでも検索できるのです。<br>
+また、「英辞郎 on the WEB」では、「*」（ワイルドカード）の利用も可能です。「*」を使うことによって、任意の文字列での検索ができるようになります（「*」を使用する場合は、「""」でくくる必要があります）。</p> 
+<ul> 
+<li><a href="/search?q=%22down%20*%20business%22" target="_blank">"down * business"</a></li>
+</ul>
+  </div>
+   </div><!-- end 12 columns-->
+   
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">
+   <div id="1-6"></div>
+   <p>Q. <b>検索キーワードの先頭に限らず、途中に存在する文字で検索することはできないでしょうか。<br>
+例えば、shape という単語が含まれるすべてのデータを検索したい場合は、どうすればいいでしょうか。</b></p>
+   <p>A. <b>単に、shape で検索してください。</b><br /><br />
+   「英辞郎 on the WEB」サービスでは、検索キーワードの完全一致、前方一致、部分一致のすべてをサポートしています。完全一致、前方一致、部分一致の順で検索結果が表示されます。以下のような、見出し語が検索できます。</p>
+   <div class="box_faq">
+ <ul class="left_0 bottom_0"> 
+<li>完全一致：shape、Shape、SHAPE</li>
+<li>前方一致：shape a $__ industry、shape a balance of power that favors freedom …など </li>
+<li>部分一致：bell-shape distribution …, cross-sectional shape design …, ball-shaped …など</li>
+</ul>
+  </div>
+   </div>
+   </div><!-- end 12 columns-->
+   
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">
+   <div id="1-7"></div>
+   <p>Q. <b>AND 検索や OR 検索はできませんか。例えば “get” と “shape” の両方が含まれているデータだけを検索するとか、検索キーワードの先頭に限らず、途中に存在する文字で検索するなどはできないでしょうか。</b></p>
+   <p>A. <b>AND 検索は、複数のキーワードをスペースで区切ってご利用ください。</b><br /><br />
+   OR 検索は、複数のキーワードを「|」で区切ることで、ご利用いただけます。<br>
+「英辞郎 on the WEB」サービスでは、AND 検索や OR 検索などの強力な検索方法もサポートしています。これら以外にも、検索演算子などを用いた高度な検索方法を「<a href="/help/howto3.html" target="_blank">高度な検索</a>」でご紹介していますので、ご参照ください。さらに、「英辞郎 on the WEB Pro」「英辞郎 on the WEB Pro Lite」であれば、「<a href="https://eowp.alc.co.jp/guide/basic.html#2" target="_blank">条件を詳細に指定して検索</a>」（検索オプション）を利用した検索も可能です。</p>
+   <div class="box_faq">
+ <ul class="left_0 bottom_0"> 
+<li>AND 検索：<a href="/search?q=dog+cat" target="_blank">dog cat</a>（dog と cat の AND 検索）</li>
+<li>OR 検索：<a href="/search?q=dog|cat" target="_blank">dog | cat</a>（dog と cat の OR 検索）</li>
+</ul>
+  </div>
+   </div>
+   </div><!-- end 12 columns-->
+   
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">
+   <div id="1-8"></div>
+   <p>Q. <b>和英検索の検索結果は何順に並んでいるのでしょうか。</b></p>
+   <p>A. <b>文字コード順（UTF-8）に並んでいます。</b><br /><br />
+   和英検索の検索結果の見出し語は、UTF-8（Unicode）の文字コード順に並んでいます。読みがなでの並べ替えなどは行っていませんので、ご注意ください。<br>
+   また、見出し項目中の英語訳の候補は、複数存在する場合、それらも UTF-8 のコード順（実質的に ABC 順）に並んでいます。使用頻度や重要度順ではありません。</p>
+   </div>
+   </div><!-- end 12 columns-->
+   
+   <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns border_none">  
+   <div id="2"><!-- indexからのリンク -->
+   <h2>2.&nbsp;ご利用環境について</h2>
+   </div>
+   <div id="2-1"></div>
+   <p>Q. <b>「英辞郎 on the WEB」「英辞郎 on the WEB Pro」の推奨環境は、どうなっていますか。</b> </p>
+   <p>A. <b>Windowsでは Google Chrome／Microsoft Edge／Mozilla Firefox の各最新版、macOSは Google Chrome／Apple Safari／Mozilla Firefox の各最新版のご利用を推奨します。</b><br><br>
+   また、「英辞郎 on the WEB」サービスのご利用には、JavaScript を有効に設定する必要があります（<script language="JavaScript">document.write('<span class="greentext"> ［このメッセージが表示されている場合は、JavaScript が有効です］</span>');</script><noscript><span class="redtext"> ［このメッセージが表示されている場合は、JavaScript が無効に設定されています。JavaScript の設定を変更してください］</span></noscript>）。環境設定の変更をされる場合は、Cookie（クッキー）も有効にしてください。<br><br>
+   以下、推奨環境の一覧です（ブラウザーやOSのバージョンは変更される可能性があります）。</p>
+  <b>【ブラウザー版】</b><br>
+   <ul>
+   <li>Windows：Chrome、Firefox、Edge の各最新版</li>
+   <li>macOS：Safari、Chrome、Firefox の各最新版</li>
+   <li>iOS：Safari の最新版</li>
+   <li>Android：Chrome の最新版</li>
+  </ul>
+<b>【アプリ】</b><br>
+<ul>
+<li>iOS版：iOS 10.0以降</li>
+<li>Android版：Android 4.4以降</li>
+</ul><br>
+なお、フィーチャーフォンには対応しておりません。ご了承ください。<br><br>
+</p>
+   </div>
+   </div><!-- end 12 columns-->
+  
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="2-2"></div>
+   <p>Q. <b>エラーが出て「英辞郎 on the WEB」サービスを利用できません。</b></p>
+   <p>A. <b><a href="#2-1">上記の推奨環境</a>をご利用で、JavaScript 機能が有効になっていてもエラーなどが発生して「英辞郎 on the WEB Pro」サービスがご利用いただけない場合は、キャッシュ（一時ファイル）のクリア、およびブラウザーの再起動をお試しください。</b><br><br>
+   キャッシュのクリアを行っても効果がない場合、Cookieの削除を行っていただくことで改善する場合がございます。</p><br>
+   <b>ブラウザーごとのキャッシュ（一時ファイル）のクリア方法</b><br>
+    <b>Edge：</b><br>
+      <ul><li><a href="https://support.microsoft.com/ja-jp/help/10607/microsoft-edge-view-delete-browser-history" target="_blank">Microsoft Edge の閲覧履歴を表示または削除する</a></li>
+      </ul>
+    <b>Chrome（PC版）：</b><br>
+      <ul><li><a href="//support.google.com/chrome/answer/95582?hl=ja" target="_blank">閲覧データを削除する</a></li>
+      </ul>
+    <b>Firefox（PC版）：</b><br>
+      <ul><li><a href="https://support.mozilla.org/ja/kb/how-clear-firefox-cache" target="_blank">Firefox のキャッシュを消去するには</a></li>
+      </ul>
+    <b>Safari（6以降。macOS版）：</b><br>
+     <ol class="style_none">
+        <li>1. ブラウザーのメニューの［Safari］を選択</li>
+        <li>2. ［環境設定…］を選択</li>
+        <li>3. ［プライバシー］タブを選択</li>
+        <li>4. ［すべてのWebサイトデータを削除…］ボタンをクリック<br><b>注意：</b>この操作を行うと履歴やCookieなどもすべて削除されます。</li>
+      </ol>
+    <b>Safari（iOS版）：</b><br>
+      <ul><li><a href="https://support.apple.com/ja-jp/HT201265" target="_blank">iPhone、iPad、iPod touch で Safari から閲覧履歴と Cookie を消去する</a></li>
+      </ul>
+    <b>Chrome（Android版、iOS版）：</b><br>
+      <ul><li><a href="https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DAndroid&hl=ja" target="_blank">キャッシュと Cookie の消去</a></li>
+      </ul>
+  <br><b>ブラウザーごとのCookieの削除方法</b><br>
+    <b>Edge：</b><br>
+    <ul>
+      <li><a href="https://support.microsoft.com/ja-jp/help/10607/microsoft-edge-view-delete-browser-history" target="_blank">Microsoft Edge の閲覧履歴を表示または削除する</a></li>
+    </ul>
+    <b>Chrome（PC版）：</b><br>
+    <ul>
+      <li><a href="https://support.google.com/chrome/answer/95647?hl=ja" target="_blank">Chrome で Cookie の削除、有効化、管理を行う</a></li>
+    </ul>
+    <b>Firefox（PC版）：</b><br>
+    <ul>
+      <li><a href="https://support.mozilla.org/ja/kb/delete-cookies-remove-info-websites-stored" target="_blank">Cookie を削除してコンピューターに保存されたウェブサイトの情報を削除する</a></li>
+    </ul>
+    <b>Safari（6以降。macOS版）：</b><br>
+    <ol class="style_none">
+      <li>1. ブラウザーのメニューの［Safari］を選択</li>
+      <li>2. ［環境設定…］を選択</li>
+      <li>3. ［プライバシー］タブを選択</li>
+      <li>4. ［すべてのWebサイトデータを削除…］ボタンをクリック<br><b>注意：</b>この操作を行うと履歴やCookieなどもすべて削除されます。</li>
+    </ol>
+
+    <b>Safari（iOS版）：</b><br>
+    <ul>
+      <li><a href="https://support.apple.com/ja-jp/HT201265" target="_blank">iPhone、iPad、iPod touch で Safari から閲覧履歴と Cookie を消去する</a></li>
+    </ul>
+
+    <b>Chrome（Android版、iOS版）：</b><br>
+    <ul>
+      <li><a href="https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DAndroid&hl=ja" target="_blank">キャッシュと Cookie の消去</a></li>
+    </ul>
+<span class="app"><b>【アプリ】</b><br>
+iOS版、Android版とも、以下をお試しください。
+<ul>
+<li>「英辞郎 on the WEB Pro」「英辞郎 on the WEB Pro Lite」をご利用の場合は、ログアウト→再ログイン</li>
+<li>端末の再起動</li>
+<li>アプリの消去→再インストール（単語帳データなどが消えることはありません）</li>
+</ul></span>
+   </div>
+   </div><!-- end 12 columns-->
+  
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop"> 
+   <div id="2-3"></div> 
+   <p>Q. <b>スマートフォンのウェブブラウザーから利用したら、いつもPCで利用しているときと違う検索結果ページが表示されました。</b></p>
+   <p>A. <b><span style="font-weight:normal;">iPhoneやAndroid携帯などのスマートフォンから「英辞郎 on the WEB」サービスをご利用の場合には、表示形式などをスマートフォンの画面に最適化したスマートフォン版が表示されます。PC版にアクセスされた場合でも、自動的にスマートフォン版に転送されます。</span></b><br><br>
+    なお、スマートフォン版の推奨環境は以下のとおりです。<br>
+  <div class="sp">
+	  <table>
+    <tr>
+      <th class="first">OS</th>
+	<th class="second">iOS</th>
+		<th class="third">Android</th>
+		</tr>
+    <tr>
+      <th class="first">OSのバージョン</th>
+      <td class="second">9 以上</td>
+		<td class="third">6 以上</td>
+    </tr>
+    <tr>
+	<th class="first">ブラウザー</th>
+      <td class="second">Safari</td>
+      <td class="third">Chrome</td>
+        </tr>
+   </table>
+  <!-- <table>
+    <tr>
+      <th>OS</th>
+      <th>OSのバージョン</th>
+      <th>ブラウザー</th>
+    </tr>
+    <tr>
+      <th>iOS</th>
+      <td>8 以上</td>
+      <td>Safari</td>
+    </tr>
+    <tr>
+      <th>Android</th>
+      <td>4.x</td>
+      <td>Chrome</td>
+    </tr>
+   </table>--></div>
+   </div>
+   </div><!-- end 12 columns-->
+   <br>
+       <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns border_none">  
+   <div id="3"><!-- indexからのリンク -->
+   <h2>3.&nbsp;収録内容、サービスについて</h2>
+   </div>
+   <div id="3-1"></div>
+   <p>Q. <b>本屋さんで売っている『英辞郎』とは、どんな違いがありますか？</b></p>
+   <p>A. <b><span style="font-weight:normal;">アルクが提供する「英辞郎」関連商品およびサービスには、オンラインサービスの「英辞郎 on the WEB Pro」（有料版）「英辞郎 on the WEB Pro Lite」「英辞郎 on the WEB」、に加え、ROM付き書籍版の『英辞郎 第11版（辞書データVer.159／2020年1月8日版）』があります。それぞれの特徴は以下のリンク先にあるPDFをご覧ください。</span></b><br>
+   <a href="/help/guide/images/EOW_services.pdf" target="_blank">≫比較表PDFはこちら</a><br><br>
+   ※ ROMディスク付き書籍版『英辞郎 第11版（辞書データVer.159／2020年1月8日版）』の詳細は、<a href="https://ec.alc.co.jp/lp/product/eijiro/ver_11.html" target="_blank">こちら</a>をご参照ください。</p>
+   </div>
+   </div><!-- end 12 columns-->
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="3-2"></div>
+   <p>Q. <b>「急に去る」を検索してみたところ、shag ass という表現が見つかりましたが、これは下品な表現ではないでしょうか。</b></p>
+   <p>A. <b>英辞郎データにはスラングなどの表現も含まれています。</b><br><br>
+   「尻」を意味する ass が含まれている表現は、使わない方がよい、あるいは使うべきではない表現です。それを喚起するために卑俗な表現には、〈卑〉や〈俗〉といったラベルを付記している場合があります。それらの表現を利用する場合には、十分な注意が必要です。ただ、辞書としては、いわゆる下品な言葉も収録すべきものと考えますので、英辞郎には収録されています。<br><br>
+   なお、「急に去る」を検索したい場合、単に「急に去る」というフレーズだけで検索するのではなく、例えば「急いで去る」などの類似表現も検索してみるとよいでしょう。</p>
+   </div>
+   </div><!-- end 12 columns-->
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="3-3"></div>
+   <p>Q. <b>「英辞郎 on the WEB」サービスはどういった頻度で更新されているのですか。</b></p>
+   <p>A. <b>原則的には、２カ月に１回程度のバージョンアップを実施しています。</b><br><br>
+   更新日は特に定められてはいません。予告なく更新されることや緊急メンテナンスなどもありますので、あらかじめご了承ください。また、バージョンアップごとの収録語の増加数などは、保証いたしかねますので、ご容赦ください。<br><br>
+   データの更新情報を含めた最新の収録語数は、下記のブログでご確認いただけます。<br>
+<a href="https://eowp.blogspot.com/" target="_blank">≫「英辞郎 on the WEB Team Blog」</a>
+</p>
+   </div>
+   </div><!-- end 12 columns-->
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="3-4"></div>
+   <p>Q. <b>「英辞郎 on the WEB」サービスに発音記号は掲載されていますか。</b></p>
+   <p>A. <b>「英辞郎 on the WEB」の単語の見出し語に「発音」という項目にて表記されているものもあります。</b><br><br>
+   「英辞郎 on the WEB」の単語の見出し語に「発音」という項目にて表記されているものもあります。発音記号については、 「<a href="/help/guide/notes.html#9" target="_blank">凡例</a>」もご参照ください。</p>
+   </div>
+   </div><!-- end 12 columns-->
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="3-5"></div>
+   <p>Q. <b>「英辞郎 on the WEB」アプリの音声再生で音が出ないのですが。</b></p>
+   <p>A. <b>端末の設定をご確認ください。</b><br><br>
+   マナーモード（ミュート）、またはサイレントスイッチがON（音量ゼロ）になっていないか（iPhoneの場合。本体左上にあります）、端末自体の音量設定が最小になっていないかなどをご確認ください。<br><br>
+   また、Android端末ご利用の場合は、音声合成の英語言語データを選択する、または、音声データをインストールすることで不具合が解消する可能性があります。<br><br>
+   音声データのインストール方法：<br>
+端末の「設定」メニュー＞「言語と入力」＞「テキスト読み上げ」＞音声出力エンジンの設定（優先エンジン）にある「言語」<br>
+1）英語の言語データの有無をご確認いただき、あれば選択してください。<br>
+2）該当するデータがない場合、「音声データをインストール」より英語音声をインストールします。<br>
+操作メニューは機種・OS・バージョンにより異なる場合があります。詳しくは製造元にご確認ください。<br><br>
+※<a href="https://eowp.blogspot.com/2018/05/blog-post.html" target="_blank">ブログの記事</a>では、図解付きの対処方法を掲載しています。あわせてご覧ください。
+</p>
+   </div>
+   </div><!-- end 12 columns-->
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">
+   <div id="3-6"></div>  
+   <p>Q. <b>「英辞郎 on the WEB」アプリの音声が間違っているようです。</b></p>
+   <p>A. <b>iOS、Androidの機能による合成音声のため、アプリ側では修正できません。</b><br><br>
+   弊社よりOS開発元に連絡いたしますが、修正のお約束はできません。ご了承ください。</p>
+   </div>
+   </div><!-- end 12 columns-->
+
+       <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns border_none">  
+   <div id="4"><!-- indexからのリンク -->
+   <h2>4.&nbsp;ログインについて</h2>
+   <a href="https://eowp.alc.co.jp/"><div class="logo_pro"></div></a><a href="https://eowf.alc.co.jp/"><div class="logo_prolite"></div></a>
+   </div>
+   <div id="4-1"></div>
+   <p>Q. <b>パスワードを忘れてしまい、「英辞郎 on the WEB Pro」「英辞郎 on the WEB Pro Lite」にログインできません。</b></p>
+   <p>A. <b>「英辞郎 on the WEB」の登録センターでパスワードの再設定をしてください。</b><br><br>
+   「英辞郎 on the WEB Pro」「英辞郎 on the WEB Pro Lite」は、メールアドレスIDとパスワードでログインしています。パスワードを忘れてしまった場合は、<a href="//eowp-user.alc.co.jp/forgot-password" target="_blank">パスワード再設定ページ</a>にて、パスワードの再設定を行ってください（ログインフォームの下にも「パスワードを忘れた方はこちら」というリンクを表示しています）。メールアドレスIDを忘れてしまった方、またはパスワード再設定がうまくいかない方は、<a href="//www.alc.co.jp/inquiry/" target="_blank">お問い合わせフォーム</a>からお問い合わせをお送りください。</p>
+   </div>
+   </div><!-- end 12 columns-->
+  
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="4-2"></div>
+   <p>Q. <b>ログインフォームの下にある「次回から自動的にログインする」というチェックボックスは何ですか。</b></p>
+   <p>A. <b>オートログインが有効になり、以降３カ月間、ログインページが表示されません。</b><br><br>
+   「次回から自動的にログインする」にチェックを入れてログインすると、同じパソコンから「英辞郎 on the WEB Pro」「英辞郎 on the WEB Pro Lite」にアクセスする場合にはログインページが表示されず、自動的にログイン状態になります。アクセスするたびにログインする手間が省けて便利です。有効期限は３カ月となっており、３カ月を過ぎるとセッションが切れ、再度ログインをしていただく必要があります。また、画面右上の「ログアウト」をクリックしてログアウトされた場合は、このオートログインは無効になり、再度ログインが必要となります。<br><br>
+※ パソコンを自分以外の方と共有されている場合や、図書館・インターネットカフェなどからご利用される場合は、セキュリティー上このチェックを外してご利用ください。<br>
+※ お客様がご利用のブラウザーでCookie（クッキー）が無効になっていると、オートログインが機能しません。Cookie（クッキー）を有効にした上でログインを行ってください。
+</p>
+   </div>
+   </div><!-- end 12 columns-->
+  
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="4-3"></div>
+   <p>Q. <b>｢次回から自動的にログインする｣にチェックを入れても、自動でログインできません。</b></p>
+   <p>A. <b>この機能は、ご利用のブラウザーでCookie（クッキー）が有効な状態（を受け入れる設定）で動作します。Cookieを有効にしてご利用ください。</b><br><br>
+   ※Cookieが有効かどうかは、リンク先の<a href="https://eowp.alc.co.jp/guide/about.html#5" target="_blank">ページ</a>でご確認いただけます。<br>
+<br>
+Cookieが有効であるにも関わらず、自動でログインできない場合は、以下の原因が考えられます。
+<ul>
+<li>ブラウザーから「Cookie」が削除された<br>
+ブラウザーの設定や、最適化アプリ等で、Cookieが削除される場合があります。</li>
+<li>お客様ご自身で「ログアウト」した<br>
+「ログアウト」ボタンを押すと、ログイン情報が削除されます。ブラウザーの「×」ボタンを押して終了してください。</li>
+<li>「プライベートブラウズ」機能を使用している<br>
+　Cookieが保存されないモード（ブラウザーによって、「プライベートブラウズ」「InPrivateブラウズ」「シークレットウィンドウ」等の名称）をご利用中は、自動的にログインできません。Cookieの保存できるモードをご利用ください。</li>
+</ul>
+
+※上記原因に当てはまらない場合は、一度「ログアウト」ボタンを押してログアウトした後、改めてログインをお試しください。<br>
+※iPhone・iPadでSafariをご利用の方は、<a href="https://eowp.alc.co.jp/guide/images/safari-private-browse.pdf" Target="_blank">こちら</a>をご参照ください。
+</p>
+   </div>
+   </div><!-- end 12 columns-->
+<!--
+   <div class="twelve columns">
+   <div class="ten columns bordertop">  
+   <div id="4-4"></div>
+   <p>Q. <b>ログインフォームで「次回から自動的にログインする」にチェックを入れてログインしても、頻繁にログインを要求されます。</b></p>
+   <p>A. <b>「英辞郎 on the WEB Pro」「英辞郎 on the WEB Pro Lite」は、PC（※1）とスマートフォン（※2）で、以下のような条件の場合、あらためてログインすることなく、同時に使用することが可能です。</b><br><br>
+※1 PCでウェブブラウザーを利用<br>
+※2 スマートフォンでウェブブラウザーまたは専用アプリを利用。タブレット端末も含む<br><br>
+<b>同時使用可能な例：</b><br>
+１台のPCの１ブラウザーとスマートフォンブラウザーで利用<br>
+１台のPCの１ブラウザーとスマートフォンアプリ<br>
+<br>
+ただし、PCで２つ以上、スマートフォンで２つ以上のログイン状態を保持することはできません。<br>
+<br>
+<b>同時使用ができない例：</b><br>
+PCでInternet Explorer（IE）とChromeで利用<br>
+スマートフォンアプリとタブレットのブラウザーで利用<br>
+<br>
+PC・スマートフォンを切り替える度にログインが必要です。</p>
+   </div>
+   </div>
+-->
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="4-4"></div>
+   <p>Q. <b>利用しようとする度にログインを求められて面倒です。</b></p>
+   <p>A. <b><a href="https://eowpf.alc.co.jp/login" target="_blank">ログインページ</a>にあるチェックボックス「次回から自動的にログインする」にチェックを入れてログインすると、オートログインが有効になり、約３カ月間、ログインページが表示されなくなります。</b><br><br>
+有効期限の３カ月を過ぎるとセッションが切れ、再度ログインをしていただく必要がございます。また、ログアウトされた場合は、オートログインは無効になり、再度ログインが必要となります。<br>
+※ PCを自分以外の方と共有されている場合や、図書館・インターネットカフェなどのPCで使用する場合は、自動ログインのチェックを外してご利用ください。<br>
+※ ご利用のブラウザーでCookie（クッキー）が有効になっていないと、オートログインが機能しません。→詳しくは<a href="#4-3">こちら</a><br>
+<br>
+なお、複数のPCやウェブブラウザー、複数のスマートフォンで「英辞郎 on the WEB Pro / Pro Lite」を使用する際は、以下の範囲内でログイン状態を保持できます。<br>
+<br>
+<b>PC：</b>２台（１台のPCで異なるウェブブラウザーを使用する場合は２台扱い）<br>
+<b>スマートフォン・タブレット：</b>計３台（アプリ版とウェブブラウザー版を１台のスマートフォンで使用する場合は２台扱い）
+</p>
+   </div>
+   </div>
+
+
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="4-5"></div>
+   <p>Q. <b>共有のパソコンで使用した際、ログイン時に、メールアドレスIDとパスワードをブラウザーに保存してしまいました。</b></p>
+   <p>A. <b>以下の方法で保存したIDとパスワードを削除してください。</b><br><br>
+   パスワードの保存は、各自の責任の下、保存するか否かをご判断ください。誤って保存してしまった場合は、以下のリンク先にある、保存したID・パスワードの削除方法の案内に従い、削除を行ってください。<br><br>
+   <b>保存したID・パスワードの削除方法 </b><br>
+   <b>Edge：</b><br>
+   <a href="https://support.microsoft.com/ja-jp/help/4028534/microsoft-edge-save-or-forget-passwords" target="_blank">Microsoft Edge でパスワードを保存または削除する</a><br><br>
+
+   <b>Chrome（Windows版、macOS版）：</b><br>
+   <a href="https://support.google.com/chrome/answer/95606?co=GENIE.Platform%3DDesktop&hl=ja" target="_blank">保存したパスワードを管理する</a><br><br>
+   <!--ol class="style_none">
+     <li>1. ブラウザーのツールバーにある Chrome メニューをクリックし、［ツール］から［閲覧履歴を消去］を選択</li>
+     <li>2.［保存したパスワード］にチェックを入れる（その他の項目は必要がなければチェックをはずす）</li>
+     <li>3.［閲覧履歴データを消去する］ボタンをクリック<br>
+「英辞郎 on the WEB Pro」「英辞郎 on the WEB Pro Lite」以外のサービスで保存されているID、パスワードも削除されます。
+必要に応じて、プルダウンメニューで対象期間を変更してください。
+</li>
+   </ol-->
+   <b>Firefox（Windows版、macOS版）：</b><br>
+   <a href="https://support.mozilla.org/ja/kb/password-manager-remember-delete-change-and-import" target="_blank">Firefox のパスワードマネージャー</a><br><br>
+   <!--ol class="style_none">
+     <li>1. ブラウザーの画面上部のメニューの［ツール］を選択</li>
+     <li>2.［オプション］を選択</li>
+     <li>3.［セキュリティ］タブを選択</li>
+     <li>4.［パスワード］欄の［保存されているパスワード］ボタンをクリック</li>
+     <li>5.［サイト］が <b>https://eowp.alc.co.jp</b> と表示されている項目を選択</li>
+     <li>6.［削除］ボタンをクリック</li>
+   </ol>
+   <b>Firefox（macOS版）：</b>
+   <ol class="style_none">
+     <li>1. ブラウザーの画面上部のメニューの[Firefox]を選択</li>
+     <li>2.［環境設定］を選択</li>
+     <li>3.［セキュリティ］タブを選択</li>
+     <li>4.［パスワード］欄の［保存されているパスワード］ボタンをクリック</li>
+     <li>5.［サイト］が <b>https://eowp.alc.co.jp</b> と表示されている項目を選択</li>
+     <li>6.［削除］ボタンをクリック</li>
+   </ol-->
+   <b>Safari（macOS版）：</b><br>
+   <a href="https://support.apple.com/ja-jp/guide/safari/sfri40599/mac" target="_blank">Mac の Safari で「パスワード」環境設定を変更する</a>
+   <!--ol class="style_none">
+     <li>1. ブラウザーの画面上部のメニューの[Safari]を選択</li>
+     <li>2.［環境設定］を選択</li>
+     <li>3.［自動入力］タブを選択</li>
+     <li>4.［ユーザ名とパスワード］の項目の［編集］ボタンをクリック</li>
+     <li>5.［サイト］が <b>https://eowp.alc.co.jp</b> と表示されている項目を選択</li>
+     <li>6.［取り除く］ボタンをクリックして［完了］をクリック</li>
+   </ol-->
+
+   </div>
+   </div><!-- end 12 columns-->
+  
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="4-6"></div>
+   <p>Q. <b>自宅のPCから申し込んでも、職場のPCからも同じアカウントで利用できますか。</b></p>
+   <p>A. <b>自宅のPC、お勤め先のPC、スマートフォン、アプリのすべての環境から同じアカウントで利用いただけます。</b><br><br>   
+   WEB上にデータを保持するサービスとなっておりますので、一度お申し込みいただきますと、自宅、お勤め先を問わず、どのPCからでも、ブラウザーで下記URLにアクセスし、ご登録いただいたID（メールアドレス）とパスワードでログインしてご利用いただけます。<br>
+<ul>
+              <li>「英辞郎 on the WEB Pro」　<a href="https://eowp.alc.co.jp">https://eowp.alc.co.jp</a></li>
+              <li>「英辞郎 on the WEB Pro Lite」　<a href="https://eowf.alc.co.jp">https://eowf.alc.co.jp</a></li>
+            </ul>
+   <span style="color: #DC143C">※ お勤め先にて外部サイトへの接続を禁止されている場合や、PCの環境などが「英辞郎 on the WEB Pro」「英辞郎 on the WEB Pro Lite」の推奨環境ではない場合などは、ご利用（ご接続）いただけない可能性もございますので、事前にシステム管理者の方にご確認ください。</span></p>
+   </div>
+   </div><!-- end 12 columns-->
+  
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="4-7"></div>
+   <p>Q. <b>ログインしようとすると「IDかパスワードに誤りがあります。」と表示されてログインできません。</b></p>
+   <p>A. <b>メールアドレスIDとパスワードに誤りがないか確認ください。正しいパスワードが分からなくなってしまった場合は、パスワードの再設定を行ってください。</b><br><br>
+   「IDかパスワードに誤りがあります。」と表示される場合は、まず、誤りがないかをご確認ください）。
+
+          <ul>
+            <li>前後に不要なスペースや記号が入っていないか<br />
+              例）正：[test@alc.co.jp]　　誤：[test@alc.co.jp ]</li>
+            <li>全角・半角の違いはないか<br />
+              例）正：[test@alc.co.jp]　誤：[test＠alc.co.jp]</li>
+            <li>大文字・小文字の違いはないか（パスワードのみ区別されます）<br />
+              例）正：[Password]　誤：[password]<br />
+          </ul>
+          特に、パスワードは入力時に文字が隠れてしまうため、全角・半角の違い等が判別しづらくなっております。メールソフト等に試しに入力してみることを、お勧めいたします。<br />
+          ID・パスワードの入力に誤りの無い場合は、こちらの項目もお試しください。
+          <ul>
+            <li><a href="#4-1">→[Q]パスワードを忘れてしまい、「英辞郎 on the WEB Pro」にログインできません</a></li>
+            <li><a href="#2-2">→[Q] エラーが出て「英辞郎 on the WEB Pro」を利用できません。</a></li>
+</ul>
+<!--お申し込み（アルク・オンラインショップへのご登録）直後の場合は、ご登録の際の入力に誤りがあったため、記憶しているパスワードと異なってしまっているという可能性もございます。-->どうしてもログインできない場合は、ログインフォームにある「パスワードをお忘れの方はこちら」（アプリの場合は、「パスワードを忘れましたか」）というリンクから、パスワード再設定フォームへお進みいただき、パスワードの再設定を行ってください。</p>
+   </div>
+   </div><!-- end 12 columns-->
+  
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="4-8"></div>
+   <p>Q. <b>PCではログインできるのにスマートフォンでログインできません。</b></p>
+   <p>A. <b>メールアドレスやパスワードは半角になっていますか？ Cookie は有効になっていますか？</b><br><br>
+   「メールアドレスを正しく入力してください。」と表示される場合は、メールアドレスが正しい形式で入力されていません。スマートフォンでは全角／半角の入力が分かりづらい場合も多く、文字が全角になってしまっている、＠マークが全角になってしまっている、といった誤りが発生している可能性がありますので、半角入力モードで再度お試しください。<br><br>
+また、「英辞郎 on the WEB Pro」「英辞郎 on the WEB Pro Lite」のログインには Cookie を使用しているため、Cookie が無効になっているとログイン機能が動作しません。特に iPhone では、iOS 5.x 以降、初期設定で Cookie を受け入れない設定になっていますので、設定 → Safari とお進みいただき「Cookie を受け入れる」のメニューで「常に」を選択して、再度お試しください。
+</p>
+   </div>
+   </div><!-- end 12 columns-->
+  
+      <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+    
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns border_none">  
+   <div id="5"><!-- indexからのリンク -->
+   <h2>5.&nbsp;お支払い、登録情報変更、ご利用の停止などについて</h2>
+   <a href="https://eowp.alc.co.jp/"><div class="logo_pro"></div></a><!--a href="https://eowf.alc.co.jp/"><div class="logo_prolite"></div></a-->
+   </div>
+   <div id="5-1"></div>
+   <p>Q. <b>メールアドレスやパスワードを変更したいのですが。</b></p>
+   <p>A. <b>「英辞郎 on the WEB」の登録センターで変更してください。</b><br><br></p>
+   下記のページ（要ログイン）にて新しいメールアドレスやパスワードに更新していただけます。
+   <div class="faq_link"><a href="//eowp-user.alc.co.jp/change-email/" target="_blank">≫ メールアドレスの変更はこちら</a></div>
+   <div class="faq_link"><a href="//eowp-user.alc.co.jp/change-password/" target="_blank">≫ パスワードの変更はこちら</a></div><br>
+    現在のパスワードが分からない場合は、こちらの項目をご覧ください。<br />
+          <ul>
+            <li><a href="#4-1">→[Q]パスワードを忘れてしまい、「英辞郎 on the WEB Pro」にログインできません</a></li></ul></div>
+    <br /><br />
+    </div><!-- end 12 columns-->
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="5-2"></div>
+   <p>Q. <b>「英辞郎 on the WEB Pro」の利用を止めたいのですが、どうすればいいですか？</b></p>
+   <p>A. <b>オンラインショップ「<a href="//eowp-shop.alc.co.jp/account" target="_blank">アカウントページ</a>」にて利用停止の手続きをしてください。</b><br><br>
+   オンラインショップ「<a href="//eowp-shop.alc.co.jp/account" target="_blank">アカウントページ</a>」の「サービス情報詳細」欄にて「停止する」ボタンをクリックしていただくと、サービスの自動継続が停止され、ご利用状況が「ご利用停止予定」に変化します。<br>
+また、ご利用ガイド内の「<a href="/help/guide/stop.html" target="_blank">ご利用の停止について</a>」に書かれている注意事項もご確認ください。
+</p>
+   <div class="faq_link"><a href="//eowp-shop.alc.co.jp/account" target="_blank">≫ オンラインショップ「アカウントページ」はこちら</a></div><br>
+<span class="app"><b>【アプリ】</b><br>
+<a href="#5-13">≫こちらをご覧ください。</a></span><br><br>
+   </div>
+   </div><!-- end 12 columns-->
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="5-3"></div>
+   <p>Q. <b>月額コースの場合、月の途中で利用停止の手続きをすると、いつまで「英辞郎 on the WEB Pro」を使えますか？ </b></p>
+   <p>A. <b>利用停止手続きをした月の末日までご利用いただけます。</b><br><br>
+   月の途中で退会手続きを完了された場合も、手続きをした月の末日までご利用いただけます。翌月から課金がストップし、ご利用いただけなくなります。</p>
+<span class="app"><b>【アプリ】</b><br>
+月額コースは、ご利用中に利用停止手続きを行っても、アプリ内課金の申込日から１カ月間の使用が可能です。</span><br><br>
+   </div>
+   </div><!-- end 12 columns-->
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="5-4"></div>
+   <p>Q. <b>年額コースの場合、契約期間の途中で利用停止の手続きをすると、いつまで「英辞郎 on the WEB Pro」を使えますか？</b></p>
+   <p>A. <b>オンラインショップ「<a href="//eowp-shop.alc.co.jp/account" target="_blank">アカウントページ</a>」 の「サービス情報詳細」欄に記載されているご利用期日までご利用いただけます。</b><br><br>
+   契約期間の途中で退会手続きを完了された場合も、「サービス情報詳細」欄記載のご利用期日までご利用いただけます。その翌年から課金がストップし、ご利用いただけなくなります。途中解約はできませんのでご了承ください。</p>
+<span class="app"><b>【アプリ】</b><br>
+年額コースは、ご利用中に利用停止手続きを行っても、アプリ内課金の申込日から１年間の使用が可能です。</span><br><br>
+   </div>
+   </div><!-- end 12 columns-->
+
+   <div class="twelve columns" id="a5-4"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="5-5"></div>
+   <p>Q. <b>一度、利用停止手続きをしましたが、利用を再開したい場合はどのようにすればいいですか？</b></p>
+   <p>A. <b>オンラインショップ「<a href="//eowp-shop.alc.co.jp/account" target="_blank">アカウントページ</a>」で簡単に利用の再開ができます。</b><br><br>
+   ご利用期日内にオンラインショップ「<a href="//eowp-shop.alc.co.jp/account" target="_blank">アカウントページ</a>」の「サービス情報詳細」欄にて「再開する」ボタンをクリックしていただくと、ご利用状況が「ご利用中」に変化し、次月以降も引き続きサービスをご利用いただけるようになります。<br>
+<span style="color: #DC143C">※ ご利用期日内にご利用再開をされた際には、ご利用料金の重複請求はございません。</span>
+</p>
+   <div class="faq_link"><a href="//eowp-shop.alc.co.jp/account" target="_blank">≫ オンラインショップ「アカウントページ」はこちら</a></div><br>
+<span class="app"><b>【アプリ】</b><br>
+アプリの場合、再開されたい場合は再申し込みとなります。各ストアでの手続きは以下をご覧ください。<br>
+<b>iOS版：</b><br>
+<a href="https://support.apple.com/ja-jp/HT202039" target="_blank">サブスクリプションを確認・解約する</a>（外部サイトに移動します）<br><br>
+<b>Android版：</b><br>
+<a href="https://support.google.com/googleplay/answer/7018481?co=GENIE.Platform%3DAndroid&hl=ja" target="_blank">Google Play での定期購入の解約、一時停止、変更</a>（外部サイトに移動します）<br><br>
+   </div>
+   </div><!-- end 12 columns-->
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="5-6"></div>
+   <p>Q. <b>利用期間内（月額コース：月の途中／年額コース： <a href="//eowp-shop.alc.co.jp/account" target="_blank">アカウントページ</a> の「サービス情報詳細」欄記載のご利用期日以前）に利用停止の手続きをし、期日内でまた利用を再開をした場合は２重に課金されてしまいますか？</b></p>
+   <p>A. <b>利用期間中に利用再開手続きを完了すれば、２重に課金されることはありません。</b><br><br>
+   「アカウントページ」にてご利用の再開の手続きをしてください（ご利用再開の方法については<a href="#a5-4">１つ上のQ&amp;A</a>をご参照ください）。</p>
+      <div class="faq_link"><a href="//eowp-shop.alc.co.jp/account" target="_blank">≫ オンラインショップ「アカウントページ」はこちら</a></div><br>
+<span class="app"><b>【アプリ】</b><br>
+アプリの場合も２重に課金されることはありません。各ストアでの手続きは以下をご覧ください。<br>
+<b>iOS版：</b><br>
+<a href="https://support.apple.com/ja-jp/HT202039" target="_blank">サブスクリプションを確認・解約する</a>（外部サイトに移動します）<br><br>
+<b>Android版：</b><br>
+<a href="https://support.google.com/googleplay/answer/7018481?co=GENIE.Platform%3DAndroid&hl=ja" target="_blank">Google Play での定期購入の解約、一時停止、変更</a>（外部サイトに移動します）<br><br>
+   </div>
+   </div><!-- end 12 columns-->
+ 
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="5-7"></div>
+   <p>Q. <b>申し込み月の間に利用停止手続をしました。初月は無料なので利用料の課金は発生しませんか。</b><br>例）2018年２月１日に利用登録をし、その月の2018年２月20日に利用停止手続きを完了した場合。</p>
+   <p>A. <b>オンラインショップで初めてのお申し込みの場合は、お申し込み月は利用料が発生いたしません。</b><br><br>
+   月額コース、年額コースともに、オンラインショップで初めてのお申し込みの場合は、初月（お申し込み月）無料が適用されるため、利用料は発生しません。お申し込みいただいた月内は無料でお試しいただけます。<br>
+   <span style="color: #DC143C">※ お申し込み月の間に利用停止手続をされなかった場合は、翌月より自動的にご利用料金が課金されますのでご注意ください。</span><br><br>
+<span class="app"><b>【アプリ】</b><br>
+アプリ内購入の場合は初月無料とはなりませんので、ご注意ください。</span><br><br>
+</p>
+   </div><!-- end 12 columns-->
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="5-8"></div>
+   <p>Q. <b>月額コースから年額コースへの切り替えは可能ですか。</b></p>
+   <p>A. <b>可能です。</b><br><br>
+   既に月額コースをご利用の方が年額コースをお申し込みいただくと、月額コースから年額コースに移行されます。</p>
+        <div class="faq_link"><a href="https://eowp.alc.co.jp/info/" target="_blank">≫ 年額コースのお申し込みページはこちら </a></div><br>
+<span class="app"><b>【アプリ】</b><br>
+アプリの場合、月額コース利用期間中に年額コースを申し込むことで、自動的に移行します。各ストアでの手続きは以下をご覧ください。<br>
+<b>iOS版：</b><br>
+<a href="https://support.apple.com/ja-jp/HT202039" target="_blank">サブスクリプションを確認・解約する</a>（外部サイトに移動します）<br><br>
+<b>Android版：</b><br>
+<a href="https://support.google.com/googleplay/answer/7018481?co=GENIE.Platform%3DAndroid&hl=ja" target="_blank">Google Play での定期購入の解約、一時停止、変更</a>（外部サイトに移動します）<br><br>
+   </div>
+   </div><!-- end 12 columns-->
+ 
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="5-9"></div>
+   <p>Q. <b>月額コースから年額コースへ切り替えたいのですが、切替月に２重に課金されてしまうことはありませんか。</b></p>
+   <p>A. <b>切替月の翌月から年額コースがスタートするため、２重に課金されることはありません。</b><br><br>
+   年額コースは、切り替え手続きが完了した月の翌月からスタートします。切替月は、月額コースの料金で課金され、２重に課金されることはございませんので、ご安心ください。</p>
+   <div class="faq_link"><a href="https://eowp.alc.co.jp/info/" target="_blank">≫ 年額コースのお申し込みページはこちら </a></div><br>
+<span class="app"><b>【アプリ】</b><br>
+アプリの場合、月額コース利用期間中に年額コースを申し込むことで、自動的に移行します。各ストアでの手続きは以下をご覧ください。<br>
+<b>iOS版：</b><br>
+<a href="https://support.apple.com/ja-jp/HT202039" target="_blank">サブスクリプションを確認・解約する</a>（外部サイトに移動します）<br><br>
+<b>Android版：</b><br>
+<a href="https://support.google.com/googleplay/answer/7018481?co=GENIE.Platform%3DAndroid&hl=ja" target="_blank">Google Play での定期購入の解約、一時停止、変更</a>（外部サイトに移動します）<br><br>
+   </div>
+    </div>
+    </div><!-- end 12 columns-->
+ 
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="5-10"></div>
+   <p>Q. <b>クレジットカード情報を変更したいのですが。</b></p>
+   <p>A. <b>オンラインショップ「<a href="//eowp-shop.alc.co.jp/account" target="_blank">アカウントページ</a>」から変更してください。</b><br><br>
+   アルク「<a href="//eowp-shop.alc.co.jp/account" target="_blank">アカウントページ</a>」の「サービス情報詳細」欄の「カード情報変更」ボタンから、クレジットカード情報変更ページへお進みください。<br><br>
+「『英辞郎 on the WEB Pro』でのお支払いにご利用いただいているクレジットカードにて、ご利用料の今月の決済が完了しませんでした。」というエラーが表示された場合も、こちらで変更してください。
+</p>
+    <div class="faq_link"><a href="//eowp-shop.alc.co.jp/account" target="_blank">≫ オンラインショップ「アカウントページ」はこちら</a></div><br>
+<span class="app"><b>【アプリ】</b><br>
+以下のリンク先をご覧いただき、各ストアでお手続きください。<br>
+<b>iOS版：</b><br>
+<a href="https://support.apple.com/ja-jp/HT201266" target="_blank">Apple ID のお支払い方法を変更・追加・削除する</a>（外部サイトに移動します）<br><br>
+<b>Android版：</b><br>
+<a href="https://support.google.com/googleplay/answer/4646404?co=GENIE.Platform%3DAndroid&hl=ja" target="_blank">お支払い方法の追加、削除、編集</a>（外部サイトに移動します）<br><br>
+   </div>
+   </div><!-- end 12 columns-->
+ 
+    <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="5-11"></div>
+   <p>Q. <b>クレジットカード以外の支払い方法はありますか。</b></p>
+   <p>A. <b>アルクのオンラインショップでご購入の場合、お支払いはクレジットカードのみでお受けしています。アプリ内購入の場合は、アプリストア（App Store、Google Play ストア）に設定したお支払い方法がご利用いただけます。</b><br><br>
+<span class="app"><b>【アプリ】</b><br>
+アプリ内購入の場合のお支払い方法は、各ストアでご確認ください。</span></p>
+   </div>
+   </div><!-- end 12 columns-->
+ 
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="5-12"></div>
+   <p>Q. <b>領収書を発行してもらえますか。</b></p>
+   <p>A. <b>領収書の発行が可能です。</b><br><br>
+   月額コース、年額コースにかかわらず、オンラインショップ「<a href="//eowp-shop.alc.co.jp/account" target="_blank">アカウントページ</a>」の「お支払い履歴・明細」欄から、１度のお支払いにつき１回限り発行が可能です。再発行はできませんのでご注意ください。</p>
+   <div class="faq_link"><a href="//eowp-shop.alc.co.jp/account" target="_blank">≫ オンラインショップ「アカウントページ」はこちら</a></div><br>
+<span class="app"><b>【アプリ】</b><br>
+アプリ内購入の場合の領収書は、各ストアでご確認ください。</span><br><br>
+   </div>
+   </div><!-- end 12 columns-->
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="5-13"></div>
+   <p>Q. <b>アプリ内購入の定期購読を解除したいのですが。</b></p>
+   <p>A. <b>iOS版、Android版とも端末で解除可能です。</b><br><br>
+   iOS版のアプリ内で購入した「英辞郎 on the WEB Pro」（有料版）の自動更新を解除したい場合は、App Store でサブスクリプションの解除を行ってください。<br>
+    <a href="https://support.apple.com/ja-jp/HT202039" target="_blank">≫ Appleのサポートページ</a>（外部サイトに移動します）<br><br>
+Android版の「英辞郎 on the WEB Pro」（有料版）の自動継続を停止したい場合は、Google Playで定期購入の解除を行ってください。<br>
+<a href="https://support.google.com/googleplay/answer/7018481?co=GENIE.Platform%3DAndroid&hl=ja" target="_blank">≫ Google Playのサポートページ</a>（外部サイトに移動します）
+</p>
+   </div>
+   </div><!-- end 12 columns-->
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns bordertop">  
+   <div id="5-14"></div>
+   <p>Q. <b>有料版を契約しているのに、ログインすると無料登録版「英辞郎 on the WEB Pro Lite」のページが表示されます。</b></p>
+   <p>A. <b>購入された場所をご確認の上、以下をお試しください。</b><br><br>
+   1. 【<b>アルクの直営オンラインショップ</b>で購入された場合】<br />
+   ご登録のクレジットカードで決済が完了していない可能性がございます。<a href="https://eowp-shop.alc.co.jp/account" target="_blank">アカウントページ</a>をご確認いただき、該当する場合はクレジットカード情報を変更してください。<br />
+  <a href="https://eow.alc.co.jp/help/guide/registration.html" title="クレジットカード情報の変更方法" target="_blank">≫ クレジットカード情報の変更方法</a><br><br>
+  2. 【<b>アプリ内課金</b>（App Store、Google Play ストア）で購入されて、ブラウザー版でログインできない場合】<br />
+  課金情報が更新されていないことが考えられます。以下の対処法を<b>順に</b>お試しください。<br />
+（1）アプリで、ログアウトしてから再ログイン<br />
+⇒「Pro」にログインできた場合：同じIDとパスワードでブラウザー版にログイン。<br />
+⇒「Pro」にログインできなかった場合：（2）に進む。<br />
+（2）アプリをアンインストール（削除）→再インストール（詳しい手順は<a href="https://eowp.blogspot.com/2018/05/blog-post_8.html" title="アプリの再インストール方法" target="_blank">こちら</a>）→再ログイン<br />
+⇒ログインできたら、同じIDとパスワードでブラウザー版にログインする。<br /><br />
+  3. 【<b>法人契約</b>でお申し込みの場合】<br />
+  契約期間が終了している可能性がございます。所属されている組織のご担当者様にお問い合わせください。</p>
+   </div>
+   </div><!-- end 12 columns-->
+
+
+    <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+ 
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns border_none">  
+   <div id="6"><!-- indexからのリンク -->
+   <h2>6.&nbsp;その他</h2>
+   <a href="https://eowp.alc.co.jp/"><div class="logo_pro"></div></a><a href="https://eowf.alc.co.jp/"><div class="logo_prolite"></div></a>
+   </div>
+   <div id="6-1"></div>
+   <p>Q. <b>「有料版の「英辞郎 on the WEB Pro」から「英辞郎 on the WEB Pro Lite」へ単語帳データを引き継ぐことはできますか。</b></p>
+   <p>A. <b>「英辞郎 on the WEB Pro」のご利用停止の直近に登録・編集された100件のデータは、自動的に引き継がれます。</b><br><br>
+    100件を上回るデータは、単語帳の「エクスポート（書き出し）」機能を使うと、見出し語とメモとタグを保存することができます.。エクスポートしたデータは、「インポート（読み込み）」機能を使って有料版「英辞郎 on the WEB Pro」に読み込ませることが可能です。「エクスポート」「インポート」機能の詳細については<a href="https://eowp.alc.co.jp/guide/vocab.html#6">こちら</a>をご覧ください。<br><br>
+   ※「エクスポート」「インポート」機能に対応しているブラウザーは次の通りです：Edge（最新版）、Chrome（最新版）、Firefox（最新版）</p>
+   </div>
+   </div><!-- end 12 columns-->
+ 
+   <!--div class="twelve columns"--> <!-- 12 columns -->
+   <!--div class="ten columns bordertop">  
+   <p>Q. <b>iPhone / iPod 用アプリ「英辞郎 on the WEB for iPhone」（提供終了）の単語帳データと同期させることはできますか。</b></p>
+   <p>A. <b>同期させることはできません。</b><br><br>
+   iPhone の Safari（もしくは Android スマートフォンの標準ブラウザー）で「英辞郎 on the WEB Pro」にアクセスしていただくと、スマートフォンに最適化された形で表示されますので、そちらをご利用ください。また、iOS版、Android版のアプリ「英辞郎 on the WEB」では、アプリとPC、スマートフォンのウェブブラウザー版と単語帳データの同期が可能です。<br><br>
+   iOS版は<a href="//bit.ly/eowtop_iosicon1" target="_blank">App Store</a>、Android版は<a href="//bit.ly/2dLWbK1" target="_blank">Google Play Store</a>で無料ダウンロード・インストールできます。</p>
+   </div>
+   </div--><!-- end 12 columns-->
+  
+</div><!-- end guide_text -->
+</div><!-- end content --> 
+</div><!-- end 12 columns -->
+</div><!-- end row-->
+</div><!-- end  container -->
+
+<!--パンくず
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<div class="container footer_wrap">
+		<div class="footer_guidetop"><a href="index.html">「英辞郎 on the WEB」ご利用ガイドTOP</a><br>
+		<a href="//eowp.alc.co.jp/guide/">	「英辞郎 on the WEB Pro」ご利用ガイドTOP</a>
+         </div>	
+           <div class="pagetop_right_bottom"><a href="#top">▲ページトップへ</a></div>
+            </div>
+
+<!-- text mark
+  ––––––––––––––––––––––––––––––––––––––––––––––––––--> 
+<script>
+$(function() {
+	
+  // the input field
+  var $input = $("input[type='search']"),
+    // clear button
+    $clearBtn = $("button[data-search='clear']"),
+    // prev button
+    $prevBtn = $("button[data-search='prev']"),
+    // next button
+    $nextBtn = $("button[data-search='next']"),
+    // the context where to search
+    $content = $(".content"),
+    // jQuery object to save <mark> elements
+    $results,
+    // the class that will be appended to the current
+    // focused element
+    currentClass = "current",
+    // top offset for the jump (the search bar)
+    offsetTop = $(".header_wrap").outerHeight(),
+    // the current index of the focused element
+    currentIndex = 0;
+
+	 
+  /**
+   * Jumps to the element matching the currentIndex
+   */
+  function jumpTo() {
+    if ($results.length) {
+      var position,
+        $current = $results.eq(currentIndex);
+      $results.removeClass(currentClass);
+   if ($current.length) {
+        $current.addClass(currentClass);
+        position = $current.offset().top - offsetTop;
+      window.scrollTo(0, position);
+      }
+    }
+  }
+		
+	var searchTimer = null,
+ // minLength = 1,
+  searchDelay = 2000;
+
+$input.on("input", function() {
+  // clear previous timer
+  clearTimeout(searchTimer);
+
+  var searchVal = this.value;
+
+  // don't do anything if not enough characters
+ //  if (searchVal.length < minLength) {
+ //    return;
+ //  }  
+
+  // start new timer
+  searchTimer = setTimeout(function() {
+    $content.unmark({
+      done: function() {
+        $content.mark(searchVal, {
+        //  accuracy: "exactly",
+          separateWordSearch: true,
+          done: function() {
+            //Filter Results//$context.not(":has(mark)").hide();
+            $results = $content.find("mark");
+            currentIndex = 0;
+            jumpTo();
+          }
+        });
+      }
+    });
+  }, searchDelay);
+});
+
+  /**
+   * Clears the search
+   */
+  $clearBtn.on("click", function() {
+    $content.unmark();
+    $input.val("").focus();
+  });
+
+  /**
+   * Next and previous search jump to
+   */
+  $nextBtn.add($prevBtn).on("click", function() {
+    if ($results.length) {
+      currentIndex += $(this).is($prevBtn) ? -1 : 1;
+      if (currentIndex < 0) {
+        currentIndex = $results.length - 1;
+      }
+      if (currentIndex > $results.length - 1) {
+        currentIndex = 0;
+      }
+      jumpTo();
+    }
+  });
+});
+
+</script>
+
+<!-- footer
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="band_footer">
+
+<!-- ▼フッタ書き出し▼ -->
+<script type="text/javascript">
+<!--
+document.write(footer);
+// -->
+</script>
+<!-- ▲end: フッタ書き出し▲ -->
+
+
+  <!-- Google Tag Manager_NEW -->
+  <noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-TKK8PX"height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TKK8PX');</script><!-- End Google Tag Manager_NEW -->
+
+</div>
+  
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <!-- ページ内リンクスムーズスクロール
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script>
+$(function(){
+var headerHight = $(".header_wrap").outerHeight();
+$('a[href^="#"]').click(function() {
+    var href = $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top - headerHight;
+    $("html, body").animate({ scrollTop: position }, 500, "swing");
+    return false;
+});
+});
+</script>
+
+<!-- lightbox --> 
+<script src="/help/guide/content/js/lightbox.js"></script>
+  
+
+  <!-- Google Tag Manager_NEW -->
+  <noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-TKK8PX"height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TKK8PX');</script><!-- End Google Tag Manager_NEW -->
+
+</div>
+
+
+ 
+
+ 
+</body>
+</html>

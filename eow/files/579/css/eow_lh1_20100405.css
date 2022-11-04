@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* 検索結果
+---------------------------------------------------- */
+#resultsList ul div {
+	line-height: 220%;
+	margin:5px 0;
+}

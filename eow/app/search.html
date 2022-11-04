@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=320, initial-scale=1.0" />
+        <meta name="robots" content="noindex,nofollow" />
+        <link rel="stylesheet" href="help.css" type="text/css" />
+		<title>検索テクニック早見表</title>
+		<style type="text/css">
+		.QRY {
+			color: #DC143C;
+		}
+		li {margin: 4px; padding-bottom: 10px;}
+		</style>
+	</head>
+	<body>
+		<h1>検索テクニック早見表</h1>
+		<ul>
+			<li>
+				<span style="font-weight:bold">AND 検索</span>：<span class="QRY">◯◯◯ △△△</span><br />
+				見出し項目に <span class="QRY">◯◯◯</span> および <span class="QRY">△△△</span> のどちらも含むものを検索する（例：<a href="EOW:search:sesame oil">sesame oil</a> / <a href="EOW:search:%e5%b7%a5%e5%a0%b4 %e8%a6%8b%e5%ad%a6">工場 見学</a>）
+			</li>
+			<li>
+				<span style="font-weight:bold">OR 検索</span>：<span class="QRY">◯◯◯ | △△△</span><br />
+				見出し項目に <span class="QRY">◯◯◯</span> か <span class="QRY">△△△</span> のどちらかを含むものを検索する（例：<a href="EOW:search:sesame %7c oil">sesame | oil</a> / <a href="EOW:search:%e5%b7%a5%e5%a0%b4 %7c %e8%a6%8b%e5%ad%a6">工場 | 見学</a>）
+			</li>
+			<li>
+				<span style="font-weight:bold">NOT 検索</span>：<span class="QRY">◯◯◯ -△△△</span><br />
+				見出し項目に <span class="QRY">◯◯◯</span> は含むが <span class="QRY">△△△</span> 含むものは除外して検索する（例：<a href="EOW:search:sesame -oil">sesame -oil</a> / <a href="EOW:search:%e5%b7%a5%e5%a0%b4 -%e8%a6%8b%e5%ad%a6">工場 -見学</a>）
+			</li>
+			<li>
+				<span style="font-weight:bold">フレーズ検索</span>：<span class="QRY">"◯◯◯ △△△"</span><br />
+				見出し項目に <span class="QRY">◯◯◯</span> と <span class="QRY">△△△</span> がその語順どおりで含まれるものを検索する（例：<a href="EOW:search:%22sesame oil%22">"sesame oil"</a> / <a href="EOW:search:%22%e5%b7%a5%e5%a0%b4 %e8%a6%8b%e5%ad%a6%22">"工場 見学"</a>）
+			</li>
+			<li>
+				<span style="font-weight:bold">ワイルドカード</span>：<span class="QRY">*◯◯◯</span> や <span class="QRY">"◯◯◯ * △△△"</span><br />
+				見出し項目に検索キーワードに加え、* の位置に 0 文字以上の任意の文字が含まれるものを検索する（例：<a href="EOW:search:*-oil">*-oil</a> / <a href="EOW:search:%22regard * as%22">"regard * as"</a>）
+			</li>
+			<li>
+				<span style="font-weight:bold">変化形検索</span>：<span class="QRY">[◯◯◯]</span><br />
+				見出し項目に <span class="QRY">◯◯◯</span> の原形・原級を含む変化形（動詞：原形・三人称単数現在形・現在進行形・過去形・過去分詞系、形容詞・副詞：原級・比較級・最上級、名詞：複数形）を含むものを検索する （例：<a href="EOW:search:[stomp]">[stomp]</a> / <a href='EOW:search:"[run] out of"'>"[run] out of"</a>）
+			</li>
+			<li>
+				<span style="font-weight:bold">単語間数指定検索</span>：<span class="QRY">◯◯◯ {n} △△△</span> または <span class="QRY">◯◯◯ {n,} △△△</span> または <span class="QRY">◯◯◯ {m,n} △△△</span><br />
+				見出し項目に <span class="QRY">◯◯◯</span> と <span class="QRY">△△△</span> を含み、その間に <span class="QRY">n</span> 語（<span class="QRY">{n}</span>）、<span class="QRY">n</span> 語以上（<span class="QRY">{n,}</span>）、 <span class="QRY">m</span> 語以上 <span class="QRY">n</span> 語以下（<span class="QRY">{m,n}</span>）の単語を挟んだものを検索する（例：<a href="EOW:search:regard %7b2%2c3%7d as">regard {1} as</a> または <a href="EOW:search:regard %7B1%2c%7D as">regard {1,} as</a> または <a href="EOW:search:regard %7b2%2c3%7d as">regard {2,3} as</a>）
+			<li>
+				<span style="font-weight:bold">特殊検索・英和混合キーワードでの検索</span>：<span class="QRY">aaa あああ</span><br />
+				英和見出し項目に <span class="QRY">aaa</span> を含み、語義（訳語）部分に <span class="QRY">あああ</span> を含むものを検索する（例：<a href="EOW:search:sesame %e6%a0%84%e9%a4%8a">sesame 栄養</a> / <a href="EOW:search:patent %e7%94%b3%e8%ab%8b">patent 申請</a>）</li>
+			<li>
+				<span style="font-weight:bold">特殊検索・和英混合キーワードでの検索</span>：<span class="QRY">あああ aaa</span><br />
+				和英見出し項目に <span class="QRY">あああ</span> を含み、語義（訳語）部分に <span class="QRY">aaa</span> を含むものを検索する（例：<a href="EOW:search:%e5%b7%a5%e5%a0%b4%e8%a6%8b%e5%ad%a6 factory">工場見学 factory</a> / <a href="EOW:search:%e3%81%8b%e3%82%82%e3%81%97%e3%82%8c%e3%81%aa%e3%81%84 may">かもしれない may</a>）</li>
+			
+		</ul>
+	</body>
+</html>

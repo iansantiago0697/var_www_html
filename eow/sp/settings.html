@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>英辞郎設定など</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div id="settings_content">
+
+      <h3 id="settings_help"><a href="/help/guide/">ヘルプ</a></h3>
+
+      <h1>検索設定</h1>
+
+      <p><label><input type="checkbox" name="suggest" />キーワード入力補助</label></p>
+      <p><label><input type="checkbox" name="pronunciation" />読みがなの表示</label></p>
+
+      <h2>文字サイズ</h2>
+
+      <div>
+        <label><input type="radio" name="font_size" value="15" />標準</label>
+        <label><input type="radio" name="font_size" value="17" />大</label>
+        <label><input type="radio" name="font_size" value="20" />最大</label>
+      </div>
+
+      <div class="buttons">
+        <button id="save_settings" onclick="return eowApp.saveSettings();">変更を保存する</button>
+        <button id="calcel_settings" onclick="return eowApp.cancelSettings();">キャンセル</button>
+      </div>
+
+      <h3 id="settings_about"><a href="/help/guide/about.html">「英辞郎 on the WEB」について</a></h3>
+
+    </div>
+  </body>
+</html>

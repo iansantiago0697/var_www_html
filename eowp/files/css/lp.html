@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>無題ドキュメント</title>
+<link href="css/eowp_lp.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="login">
+    <div class="text">
+      <span class="login_md">すでに「英辞郎 on the WEB Pro」をご利用の方は、こちらからログインしてください。</span>
+      
+      <form id="fmLogin" name="fmLogin" method="post" onsubmit="javascript:return valCheck()" action="/loginAuth">
+        <label for="MAIL_ADDRESS" class="block">メールアドレスID</label>
+        <input id="MAIL_ADDRESS" name="MAIL_ADDRESS" size="30" class="textfield block" type="text">
+        <label for="PASSWORD" class="block">パスワード</label>
+        <input id="PASSWORD" name="PASSWORD" class="textfield block" type="password">
+        <input id="id_auto" name="auto" value="1" class="chkbox" type="checkbox">
+        <label for="id_auto">次回から自動的にログインする</label><br />
+        <span class="memo">※ 共用のパソコンではチェックを外してください</span>
+        <div class="submit"><input name="login2" class="submitbutt" type="image" height=73 width=212 src="images/login_but.gif"></div>
+        <div class="remark">
+          
+          <a href="https://shop.alc.co.jp/spg/cart/renewpass/form/-/" target="_blank">パスワードをお忘れの方はこちら</a>
+          </div>
+        </form>
+      </div>
+  </div>        
+</body>
+</html>

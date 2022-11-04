@@ -1,0 +1,308 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+	トップページ
+------------------------------------------------------------*/
+#main .infoBox {
+	padding-left: 40px;
+	padding-right: 28px;
+}
+
+#main .infoBox .lBox {
+	padding-bottom: 40px;
+	}
+#main .infoBox .lBox .sub {
+	font-size: 16px;
+}
+
+#main .infoBox_2 .rBox {
+	margin: 0px;
+	background-color: #ffffc8;
+	padding-bottom: 2px;
+}
+#main .infoBox_2 .rBox .chart {
+	text-align: center;
+}
+
+
+
+#main .infoBox .colorBox {
+	margin: 0 1px 0 3px;
+	padding: 22px 34px 34px 46px;
+	background-color: #F6F1D6;
+}
+
+#main .infoBox .colorBox p {
+	margin-bottom: 23px;
+	line-height: 1.4;
+}
+
+#main .infoBox .colorBox p a {
+	text-decoration: underline;
+}
+
+#main .infoBox .colorBox p a:hover {
+	text-decoration: none;
+}
+
+#main .infoBox .colorBox .text02 {
+	margin-bottom: 4px;
+}
+
+#main .infoBox {
+	margin: 0 0 14px -10px;
+	line-height: 1.6;
+}
+
+#main .infoBox  {
+	margin-bottom: 18px;
+}
+
+.linkList {
+	margin: -20px 0 10px 33px;
+}
+
+.linkList li {
+	margin-right: 24px;
+	float: left;
+}
+
+.linkList li a {
+	display: block;
+}
+
+.linkList li a:hover img {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+.rogin_btn {text-align: center;
+	padding-bottom: 100px;
+}
+.rogin_btn a:hover img {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+.textLink {
+text-align: right;
+font-weight: 700;
+}
+.cp_box {
+	padding: 20px;
+}
+.chart_box {
+margin: 20px;
+padding: 10px 10px 5px 10px;	
+background-color:#fff;
+border: solid 5px #961e23;
+}
+.rogin_box {
+margin-left: 20px;
+margin-right: 20px;
+margin-bottom: 15px;
+padding: 20px 20px 5px 25px;
+background-color:#eae4d1;
+}
+.title_1{
+	font-size: 20px;
+	font-weight:800;
+	color: #961e23;
+}
+.title_2{
+	font-size: 19px;
+	font-weight:800;
+	color: #681a99;
+}
+.info dd {
+	font-weight: 600;
+	margin-left: 40px;
+}
+.tyuijikou{
+	font-size: 17px;
+	margin-top: 20px;
+}
+.title_3{
+	font-size: 20px;
+	font-weight:800;
+	color: #961e23;
+	margin-bottom: 15px;
+}
+.rogin_1{
+	font-size: 24px;
+	font-weight:700;
+}
+.rogin_2{
+	margin-bottom: 10px;
+}
+.rogin_3{
+	font-size: 17px;
+	margin-bottom: 20px;
+}
+.pc_gazou{
+	float: left;
+	padding-left: 20px;
+}
+.sp_gazou{
+	float: right;
+	padding-right: 23px;
+	
+}
+.clear {
+    clear:both;
+}
+
+.title_4{
+	font-size: 24px;
+	font-weight:700;
+	 padding-top: 20px;
+}
+.title_5{
+	font-size: 24px;
+	font-weight:700;
+	margin-left: 40px;
+}
+.rogin_4{
+	font-size: 17px;
+	margin-top: 10px;
+}
+.rogin_5{
+	font-size: 17px;
+	margin-left: 20px;
+}
+.rogin_6{
+	font-size: 17px;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+#main .infoBox {
+	padding-left: 20px;
+	padding-right: 10px;
+}
+#main .infoBox .lBox .sub {
+	font-size: 10px;
+}
+	#main .linkList {
+		margin: 0 auto 16px;
+		width: 79.5%;
+	}
+	
+	#main .linkList li a:hover img {
+		opacity: 1;
+		filter: alpha(opacity=100);
+	}
+	
+	#main .infoBox_2 .rBox .chart {
+		max-width: 766px;
+		max-height: auto;
+}
+	
+	
+	#main .btmText {
+		margin: 0 10px 16px;
+		padding-left: 1em;
+		text-indent: -1em;
+		font-size: 11px;
+	}
+	.title_1 {
+		font-size: 14px;
+	}
+	.title_2 {
+		font-size: 13px;
+	}
+	.title_3 {
+		font-size: 13px;
+	}
+	.tyuijikou {
+		font-size: 10px;
+	}
+	.cp_box {
+	padding: 10px;
+}
+.chart_box {
+margin: 10px;
+padding: 5px 5px 2px 5px;	
+background-color:#fff;
+border: solid 3px #961e23;
+}
+.chart img{
+		max-width: 100%;
+	　　max-height: auto;
+		text-align: center;
+	}
+	#midashi img {
+		width:100%;
+		height: auto;
+	}
+.rogin_box {
+margin-left: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+padding: 5px 5px 5px 5px;
+background-color:#eae4d1;
+}
+.rogin_1{
+	font-size: 12px;
+	font-weight:800;
+}
+.rogin_2{
+	font-size: 12px;
+}
+.rogin_3{
+	font-size: 11px;
+}
+.pc_gazou img {
+		max-width:100%;
+		max-height: auto;
+	display: block;
+	margin-left: -10px;
+	margin-bottom: 20px;
+	
+	}
+	.sp_gazou img {
+		max-width: 50%;
+		max-height: auto;
+		margin-left: 60px;
+	}
+.title_4{
+	font-size: 13px;
+	font-weight:700;
+	 padding-top: 20px;
+}
+.title_5{
+	font-size: 13px;
+	font-weight:700;
+	margin-left: 10px;
+}
+.rogin_4{
+	font-size: 11px;
+	margin-top: 10px;
+}
+.rogin_5{
+	font-size: 11px;
+	margin-left: 20px;
+}
+.rogin_6{
+	font-size: 11px;
+	}
+.rogin_7{
+	font-size: 10px;
+	padding-left: 5px;
+	}
+	
+	.linkList img {
+		max-width: 100%;
+		margin-top: 15px;
+	}
+	.rogin_btn img {
+		max-width: 95%;
+		max-height: auto;
+		margin-top: 10px;
+		margin-bottom: -50px;
+	}
+	#footer ul li {
+		margin-left: -25px;
+	}
+	hr {
+		max-width: 100%;
+	}
+}
+

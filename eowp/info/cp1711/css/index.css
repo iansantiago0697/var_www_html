@@ -1,0 +1,261 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+	トープページ
+------------------------------------------------------------*/
+#main .inner {
+	margin: 0 45px 64px;
+}
+
+#main .inner p {
+	margin-bottom: 35px;
+	font-size: 25px;
+	line-height: 1.4;
+}
+
+#main .blue {
+	color: #21a6e8;
+}
+
+#main .link {
+	margin: 0 0 65px 28px;
+}
+
+#main .link a:hover img {
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+}
+#main .link p {
+	text-align: center;
+	font-size: 15px;
+}
+
+
+#main .area {
+	margin: 0 0px 10px;
+	padding: 25px 35px 40px 35px;
+	background-color: #fdf5d0;
+}
+
+#main .area .title {
+	margin: 0 0 10px -15px;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+#main .area .infoDl {
+	margin-bottom: 33px;
+}
+
+#main .area .infoDl dt {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#main .area .infoDl dd {
+	margin-bottom: 20px;
+	font-size: 22px;
+	line-height: 1.4;
+}
+
+
+#main .area .infoDl dd ul {
+	padding: 3px 0 3px;
+}
+
+#main .area .infoDl dd li {
+	padding: 2px 0 0;
+	font-size: 18px;
+	letter-spacing: -1px;
+	text-indent: -1em;
+	padding-left: 1em;
+}
+#main .area .tokuten {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+#main .area .red {
+	margin-bottom: 20px;
+	font-size: 19px;
+	line-height: 1.4;
+	color: #ff0000;
+}
+
+#main .linkUl li {
+	margin-bottom: 3px;
+	padding-bottom: 43px;
+	text-align: center;
+	background: url(../img/index/arrow.gif) no-repeat center bottom;
+}
+
+#main .linkUl li.none {
+	margin-bottom: 0;
+	padding-bottom: 15px;
+	background-image: inherit;
+}
+
+#main .area .noteDl {
+	margin: 10px 0px 30px 0px;
+	font-size: 18px;
+}
+
+#main .area .noteDl dd {
+	margin: 0 0 0 50px;
+}
+#main .area .notes {
+	font-size: 16px;
+	text-indent: -1em;
+	padding-left: 1em;
+}
+#main .area .notes_2 {
+	font-size: 16px;
+	padding-bottom: 10px;
+}
+#main .area .noteDl_2 {
+	margin: 0px 0px 30px 0px;
+	font-size: 18px;
+}
+#main .area .noteDl_2 dd {
+	margin: 0 0 0 50px;
+	text-indent: -1em;
+	padding-left: 1em;
+}
+
+#main .area a {
+	color: #21a6e8;
+}
+
+#main .area .notes a:hover {
+	text-decoration: underline;
+}
+#main .area .tokuten_box {
+	margin-left:auto;
+	margin-right:auto;
+	padding: 15px;
+	border-style: solid; 
+	border-width: 2px;
+	border-color: #b30606;
+}
+
+
+
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+}
+
+
+
+@media all and (min-width: 0) and (max-width: 767px) {
+		
+	#main .inner {
+		margin: 0 10px 21px;
+	}
+	
+	#main .inner p {
+		margin-bottom: 18px;
+		font-size: 12px;
+		letter-spacing: -0.2px;
+		word-break: break-all;
+	}
+	
+	#main .link {
+		margin: 0 8px 20px;
+	}
+		
+	#main .link img {
+		width: 100%;
+		height: auto;
+	}
+	#main .link p {
+		font-size:8px;
+	}
+		
+	#main .area {
+		margin: 0 0px 5px;
+		padding: 12px 10px 15px;
+	}
+
+	#main .area .title {
+		font-size: 14px;
+		margin: 0 0 5px -5px;
+	}
+		
+	#main .area .infoDl {
+		margin-bottom: 23px;
+	}
+	
+	#main .area .infoDl dt {
+		font-size: 13px;
+	}
+	
+	#main .area .infoDl dd {
+		margin-bottom: 10px;
+		font-size: 11px;
+	}
+
+	#main .area .infoDl dd ul {
+		padding: 1px 10px 2px 8px;
+	}
+	
+	#main .area .infoDl dd li {
+		padding: 1px 0 0;
+		font-size: 9px;
+		letter-spacing: -1px;
+	}
+	
+	#main .linkUl {
+		margin: 0 7px;
+	}
+	
+	#main .linkUl li {
+		margin: 0 0 1px;
+		padding-bottom: 18px;
+		background: url(../img/index/arrow.gif) no-repeat center bottom;
+		background-size: 35px auto;
+	}
+	
+	#main .linkUl li.none {
+		padding-bottom: 7px;
+	}
+	
+	#main .linkUl li img {
+		width: 100%;
+		height: auto;
+	}
+		
+	#main .area .noteDl {
+		margin: 5px 5px 10px 5px;
+		font-size: 11px;
+	}
+	#main .area .noteDl dd {
+	margin: 0 0 0 30px;
+}
+	
+	#main .area .notes {
+		font-size: 10px;
+	}
+	#main .area .notes_2 {
+		font-size: 10px;
+	}
+	
+	#main .area .noteDl_2 {
+		margin: 0 5px 10px 5px;
+		font-size: 11px;
+	}
+	#main .area .noteDl_2 dd {
+	margin: 0 0 0 30px;
+}
+	
+	#main .area .tokuten {
+	    font-size: 12px;
+		font-weight: bold;
+	}
+	
+	#main .area .red {
+	font-size: 11px;
+	line-height: 1.4;
+	color: #ff0000;
+}
+}
+	
+	

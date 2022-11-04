@@ -1,0 +1,169 @@
+
+/*button*/
+
+.cvArea_mo {
+	text-align: center;
+	margin-bottom: 95px;
+	font-size: 22px;
+}
+
+.cvArea_mo .text1 {
+	margin-bottom: 20px;
+}
+
+.cvArea_mo .text3 {
+	color: #0B0B0B;
+	background: #FFEF15;
+	padding: 5px 0;
+}
+
+
+.cvArea_mo .button {
+	padding: 50px 0;
+	background: url(../img/dotte.png) repeat center 50%;
+	background-size: 12px auto;
+}
+
+.cvArea_mo .button a {
+	width: 614px;
+	display: block;
+	margin: 0 auto;
+	padding: 14px 0;
+	font-weight: bold;
+	color: #0B0B0B;
+	background: #FFEF15;
+	border-radius: 50px;
+	transition: all .2s linear;
+	position: relative;
+}
+
+.cvArea_mo .button a img {
+	vertical-align: middle;
+	padding-right: 15px;
+}
+
+.cvArea_mo .button a:after {
+	content: "";
+	display: inline-block;
+	margin-left: 30px;
+	width: 11px;
+	height: 19px;
+	background: url(../img/arrow_cv_bk.png) no-repeat 0 0 ;
+	background-size: 100% auto;
+	vertical-align: middle;
+}
+
+.cvArea.slide-scroll {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.cvArea .flexContainer {
+	width: 50%;
+	min-width: 375px;
+	margin-bottom: 20px;
+
+}
+
+.planAreaInner {
+ padding-bottom: 80px;
+}
+
+.planAreaInner .title .month {
+    text-align: center;
+    color: #FFEF15;
+    line-height: 1.3;
+}
+
+.inner2 .month {
+	color: #FFEF15;
+}
+
+.planAreaInner .title .inner22 {
+    font-size: 47px;
+    color: #FFEF15;
+    font-family: HonMincho-Book,HonMincho-B,Kakumin Bold , "Yu Gothic", YuGothic,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',メイリオ;
+}
+
+.planAreaInner .title .inner2 span {
+    display: inline;
+    font-size: 34px;
+}
+.planAreaInner .button .lite {
+	width: 80%;
+	display: block;
+	margin: 50px auto 0;
+	padding: 14px;
+	font-weight: bold;
+	color: #fff;
+	background: #5A355F;
+	border-radius: 28px;
+	position:fixed;
+	left: 10%;
+	bottom: 20px; 
+	transition: all .2s linear;
+	text-align: center;
+}
+
+.planAreaInner .button .lite:hover {
+	background: #93579b;
+}
+
+.planAreaInner .button .shoplink {
+	width: 80%;
+	display: block;
+	margin: 50px auto 0;
+	padding: 14px;
+	font-weight: bold;
+	color: #fff;
+	background: #911E23;
+	border-radius: 28px;
+	position:fixed;
+	left: 10%;
+	bottom: 20px; 
+	transition: all .2s linear;
+	text-align: center;
+}
+
+.planAreaInner .button .shoplink:hover {
+	background: #ad464c;
+}
+
+.planAreaInner.button a {
+}
+
+@media screen and (min-width: 769px){
+	.cvArea_mo .button a.sp {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px){
+
+	.cvArea_mo .button a {
+		width: auto;
+	}
+
+	.cvArea_mo .button {
+		font-size: 13px;
+		padding: 30px;
+	}
+
+	.cvArea_mo .text1 {
+		font-size: 15px;
+	}
+
+/*	.cvArea_mo .text3 {
+		padding: 0 20px;
+	}*/
+
+	.cvArea_mo .button a img {
+		width: 47px;
+		height: auto;
+	}
+
+	.cvArea_mo .text3 {
+		font-size: 15px;
+	}
+

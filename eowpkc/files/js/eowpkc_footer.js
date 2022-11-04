@@ -1,0 +1,11 @@
+var year = (new Date()).getYear();
+year = (year < 2000) ? year+1900 : year;
+kc_footer = '<table width="952" border="0" cellspacing="0" cellpadding="0">';
+kc_footer += '<tr><td bgcolor="#CCCCCC"><img src="'+IMG_URI+'spacer.gif" alt="" width="1" height="1" border="0" /></td></tr>';
+kc_footer += '<tr><td><img src="'+IMG_URI+'spacer.gif" alt="" width="1" height="12" border="0" /></td></tr>';
+kc_footer += '<tr><td align="center" >';
+kc_footer += '<a href="https://www.alc.co.jp/" target="_blank">アルクのウェブサイト</a> ｜ ';
+kc_footer += '<a href="https://www.alc.co.jp/policy/privacy/" target="_blank">プライバシーポリシー</a> ｜ ';
+kc_footer += '<a href="https://www.alc.co.jp/policy/other/#eowp" target="_blank">利用規約</a> ｜ ';
+kc_footer += '<a href="https://www.alc.co.jp/alc/index.html" target="_blank">会社概要</a>';
+kc_footer += '</td& gt;</tr><tr><td align="center" class="e10" height="20">Copyright &copy; 2000-'+year+' ALC PRESS INC. All Rights Reserved.</td></tr></table>';

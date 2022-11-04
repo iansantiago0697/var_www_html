@@ -1,0 +1,1786 @@
+@charset "UTF-8";
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Meiryo, "メイリオ", Osaka, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+  min-width: 1100px;
+  text-align: center;
+}
+body img {
+  vertical-align: bottom;
+      max-width: 1100px;
+}
+body a:hover img {
+  opacity: 0.85;
+}
+body .sp {
+  display: none !important;
+}
+body .pc_only_inline {
+  display: inline;
+}
+body .sp_only_inline {
+  display: none;
+}
+body .video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+body a{
+
+color:#000;
+}
+body a:hover{
+text-decoration;underline;
+}
+body .video-container iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+header {
+  background:#DCDCDC;
+}
+header .header-inner {
+width:1100px;
+  overflow: hidden;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+header .header-inner .logo {
+  float: left;
+  width: 232px;
+  margin-bottom: 20px;
+}
+header .header-inner .menu-btn {
+  float: right;
+  width: 40px;
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+.login{
+
+    width: 120px;
+    height: 34px;
+    float: right;
+    /* padding-right: 4.6875%; */
+    margin-bottom: 20px;
+    /* border-style: none; */
+}
+.login a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+.login img{
+  border: none;
+}
+.login a:hover{
+  background: none;
+  text-decoration:underline;
+}
+.login a:hover img{
+  visibility: hidden;
+}
+header nav {
+  background: #fff;
+  position: absolute;
+  z-index: 100;
+  width: 1100px;
+  left: 50%;
+  margin-left: -550px;
+}
+header nav ul {
+  border-top: 3px solid #969696;
+}
+header nav ul li {
+  border-bottom: 2px solid #fff;
+  background-color: #1E81C7;
+}
+header nav ul li a {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+header nav ul li a::before {
+  content: "●";
+  font-size: 18px;
+  color: #505050;
+}
+header nav ul li a span {
+  color: #505050;
+}
+header nav ul li:hover {
+  background-color: rgba(30, 129, 199, 0.85);
+}
+
+footer {
+  text-align: center;
+  background-color: #f0f0f0;
+  border-top: 10px solid #F6ED36;
+  padding-top: 15px;
+  font-size:12px;
+}
+footer .copy {
+  font-size: 12px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+footer .caution a {
+  margin-top: 0px;
+  color: #c50b22;
+}
+
+#returnTop {
+  width: 10.9375%;
+  margin-bottom: -43px;
+  position: fixed;
+  right: 10px;
+  z-index: 100;
+}
+
+.clearfix:after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+main {
+  display: block;
+  width: 100%;
+}
+main .article_03 .section_01 .column {
+  border-top: 10px solid #f6ed36;
+  background: url("../../../lib/img/common/column_bg.png");
+  padding-bottom: 30px;
+  line-height: 1.5;
+}
+main .article_03 .section_01 .column > div {
+  width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+main .article_03 .section_01 .column .txt {
+  padding-left: 4.6875%;
+  padding-right: 4.6875%;
+  box-sizing: border-box;
+  margin-top: 30px;
+  font-size: 18px;
+}
+main .article_03 .section_01 .column .txt div {
+  text-align: center;
+  color: #c50018;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+main .article_03 .section_01 .column .txt dl {
+  color: #050505;
+  margin-bottom: 20px;
+}
+main .article_03 .section_01 .column .txt dl dt {
+  float: left;
+  font-weight: bold;
+}
+main .article_03 .section_01 .column .txt p {
+  color: #050505;
+  text-align: left;
+  font-size: 22px;
+}
+main .article_03 .section_01 .column .txt p span {
+  font-weight: bold;
+}
+main .article_03 .section_01 .column + div {
+  background: url("../img/img_03_02_bg.png");
+  text-align: center;
+}
+main .article_03 .section_01 .column + div + div {
+  text-align: center;
+}
+
+/* ------------------------------------------------- *
+ *        main_visual
+ * ------------------------------------------------- */
+.main_visual {
+  background:#DCDCDC;
+  margin: 0 auto;
+  text-align: center;
+}
+.main_visual h1 {
+  text-align: center;
+      margin: 0;
+}
+.main_visual div{
+    background: #FAEE00;
+    padding-bottom: 250px;
+    margin-top: -250px;
+}
+.text_01{
+  font-size: 30px;
+  padding: 20px;
+  color: #fff;
+}
+
+/* ------------------------------------------------- *
+ *        recommended
+ * ------------------------------------------------- */
+
+.recommended{
+    text-align: center;
+    /* display: table-cell; */
+    width: 1100px;
+    padding: 20px 0px;
+    /* margin: auto 0; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.recommended a{
+text-decoration:none;
+}
+
+.recommended h2{
+  color: #fff;
+  font-size: 45px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  background-position-x: 50%;
+  background-position-y: 27px;
+}
+
+.recommended img{
+    margin: 15px 16px;
+}
+.recommended ul{
+list-style-type: none;
+padding: 0;
+
+}
+/* ------------------------------------------------- *
+ *        cv area_red
+ * ------------------------------------------------- */
+
+.cv_area_01, .cv_area_02, .cv_area_03 {
+  text-align: center;
+  background:#f6ed36;
+
+}
+
+.cv_area_01, .cv_area_02, .cv_area_03 p {
+  font-weight: bold;
+    padding: 30px 0;
+margin-top: 33px;
+}
+
+.cv_title {
+  position: relative;
+  padding: 0px;
+
+}
+
+.cv_annual{
+  color: #c50b22;
+  margin: 0px;
+  position: relative;
+  font-size: 40px;
+}
+
+.cv_text {
+  position: relative;
+    margin: 10px 0;
+  font-size: 25px;
+}
+
+.cv_cost{
+  margin: 5px 0px 20px 0px;
+}
+.cv_cost span{
+  font-size:40px;
+}
+.cv_cost img{
+vertical-align: text-bottom;
+position: relative;;
+}
+.cv_cost p{
+    margin-left: 388px;
+    margin-top: -8px;
+}
+.cv_logo{
+    padding: 25px 0;
+}
+
+.cv_button{
+  margin-bottom: 55px;
+}
+
+.cv_deep{
+
+  color: #c50b22;
+  font-size: 33px;
+}
+p.cv_course{
+font-weight:normal;
+}
+p.cv_course a:hover{
+text-decoration:underline;
+}
+p.cv_course a{
+color: #000;
+}
+.arrow{
+background:#fff;
+margin-top: -2px;
+}
+.arrow2{
+background: #ecf0f1;
+
+}
+.cv_text_deep {
+  margin: 0px;
+  font-size: 25px;
+}
+.color{
+background: #ecf0f1;
+    padding-bottom: 45px;
+}
+
+/* ------------------------------------------------- *
+ *        cv area_blue
+ * ------------------------------------------------- */
+
+.cv_area_04 {
+    text-align: center;
+    background: #ced2d3;
+    padding: 15px 0;
+}
+.cv_area_04 .cv_cost2{
+    margin: 20px 0;
+    }
+
+.cv_area_04 p {
+color: #000;
+  font-size: 30px;
+  font-weight: bold;
+
+}
+.cv_area_04 p.cv_course {
+    font-weight: normal;
+    font-size:18px;
+        margin-bottom: -30px;
+}
+.cv_title_blue {
+  position: relative;
+  padding: 0px;
+  top: -44px;
+}
+
+.cv_annual_blue{
+  color: #1a2988;
+  margin: 0px;
+  font-size: 40px;
+  background: linear-gradient(transparent 90%, #1a2988 0%);
+}
+
+.cv_text_blue{
+  margin: 20px 0px 5px 0px;
+  font-size: 25px;
+}
+/* ------------------------------------------------- *
+ *        function
+ * ------------------------------------------------- */
+
+.function{
+  text-align: center;
+  margin: 20px auto;
+}
+
+.function h2{
+  font-size: 45px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  background-position-x: 50%;
+  background-position-y: 27px;
+}
+
+.function p{
+  font-weight: bold;
+  color: #c50b22;
+  font-size: 30px;
+}
+
+.function_logo{
+  width: 322px;
+}
+
+.function_table{
+  padding: 30px 0px;
+  margin: 0 auto;
+  width: 1100px;
+  height: 880px;
+  background-image: url(../img/table_01.png) ;
+  background-repeat:no-repeat;
+	background-position: 50% 50%;
+}
+
+.burron_02{
+  position: relative;
+  top: 18%;
+  left: 55%;
+}
+
+.burron_03{
+  position: relative;
+  top: 42%;
+  left: 25%;
+}
+
+.burron_04{
+  position: relative;
+  top: 42%;
+  left: 28%;
+}
+
+.burron_05{
+  position: relative;
+  top: 67%;
+  left: -11%;
+}
+
+.burron_06{
+  position: relative;
+  top: 67%;
+  left: -7%;
+}
+
+.burron_07{
+  position: relative;
+  top: 88%;
+  left: 19%;
+}
+
+.other_functions{
+  text-align: center;
+  padding-bottom: 109px;
+}
+
+.other_functions h3{
+  font-size: 32px;
+}
+
+.other_img{
+margin: 20px 0px;
+}
+
+.other_img img{
+  margin: 0px 10px;
+}
+.more{
+background: #f6ed36;
+    padding: 20px 0;
+    margin-top: 44px;
+}
+
+/* ------------------------------------------------- *
+ *        support
+ * ------------------------------------------------- */
+
+.support{
+margin: 105px 0px;
+  background:#00b5e9;
+  padding-bottom: 50px;
+}
+.support ul{
+    margin: 20px 0px;
+    /* background: #00b5e9; */
+    padding-bottom: 50px;
+    display: -webkit-inline-box;
+    list-style: none;
+    margin-left: -20px;
+    display:-ms-inline-flexbox
+}
+.support img.question{
+margin-top: -70px;
+    margin-bottom: 40px;
+}
+
+.support h2{
+  font-size: 45px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.support p{
+  text-align: left;
+}
+
+.size_s{
+  font-size: 13px;
+}
+
+ul.support li {
+  display: inline;
+  padding: 0px 20px;
+}
+
+.support li {
+margin: 0 11px;
+}
+
+/* ------------------------------------------------- *
+ *        trust
+ * ------------------------------------------------- */
+.trust{
+  background: url("../img/bg_03.jpg")center;
+  padding: 24px 0px;
+}
+
+.trust h2{
+  font-size: 45px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.trust p{
+  color: #006faf;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* ------------------------------------------------- *
+ *        voice
+ * ------------------------------------------------- */
+.voice{
+  background-color: #FFF;
+  padding: 0px;
+}
+.voice a{
+text-decoration: none;
+}
+
+.voice h2{
+  color: #009ff0;
+  font-size: 45px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+ }
+
+.voice h3{
+  color: #AF0019;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: left;
+  margin: 20px 0px;
+ }
+ .voice h3 span{
+ font-size:16px;
+ }
+
+.voice p{
+text-align: left;
+    font-weight: bold;
+}
+.voice p.last{
+font-size:15px;
+}
+.voice p span{
+
+    font-weight: normal;
+}
+p span.yellow{
+background: linear-gradient(transparent 50%, #ffff66 0%);
+    font-weight: bold;
+    line-height: 1.3em;
+    }
+
+.impressions{
+    margin: 0 auto;
+
+    /* margin-left: auto; */
+    width: 1100px;
+ }
+
+.impressions_img{
+    margin-top: 25px;
+    margin-left: 10px;
+
+ }
+
+ .impressions_text img{
+
+ }
+
+.impressions_text{
+display: table-cell;
+    padding-left: 38px;
+    text-align: left;
+}
+
+ ul.voice li {
+   padding: 0px 20px;
+ }
+
+ .voice li {
+
+ }
+ img.right{
+ margin-right:10px;
+ }
+.apply img{
+    vertical-align: -webkit-baseline-middle;
+    margin-right:10px;
+}
+
+ /* ------------------------------------------------- *
+  *        service
+  * ------------------------------------------------- */
+.service{
+
+    width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.service a:hover{
+	text-decoration:underline;
+	
+}
+
+.service p{
+font-size: 25px;
+    margin: 20px 0px;
+    font-weight: bold;
+}
+
+.service h2{
+  font-size: 45px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.service_table{
+    margin: 0 auto;
+    width: 1100px;
+    height: 685px;
+    background-image: url(../img/22_table_pc-a.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+        background-size: 1000px;
+     margin-top: 20px;
+
+}
+
+.service_app{
+  position: relative;
+  top: 24.2%;
+
+}
+
+.service_proiite{
+  position: relative;
+    top: 8.9%;
+    left: 14%;
+}
+
+.service_web{
+  position: relative;
+    top: 8.9%;
+   left: 23.5%;
+}
+.answer{
+display: table-cell;
+    padding-top: 40px;
+    padding-right: 44px;
+    padding-left: 56px;
+    vertical-align: -webkit-baseline-middle;
+    
+
+    }
+.text p span{
+    font-weight:normal;
+
+    }
+    p.small{
+font-size: 14px;
+    font-weight: normal;
+    text-align: right;
+    margin-top: -6px;
+   
+    }
+    
+.text{
+display: table-cell;
+    text-align: left;
+    /* vertical-align: initial; */
+    padding-top: 20px;
+    line-height: 32px;
+    
+}.text2{
+margin:10px 0;
+}
+.text2 p{
+font-weight:normal;
+font-size:16px;
+text-align:left;
+}
+.service h1{
+color:#5ab4e6;
+}
+.text p{
+font-size:19px;
+margin-bottom:20px;
+    margin: 0 17px;
+    font-weight: normal;
+    }
+.trial{
+border: solid 3px;
+    border-color: #5AB4E6;
+    border-radius: 10px;border: solid 3px;
+    border-color: #5AB4E6;
+    border-radius: 10px;
+
+    }
+.trial h2{
+    background: #5AB4E6;
+    color: #F6ED36;
+    font-size: 22px;
+    margin: 15px 17px;
+    border-radius: 5px;
+    padding: 10px;
+    }
+/* ------------------------------------------------- *
+ *        offer
+ * ------------------------------------------------- */
+
+.offer{
+  padding: 20px 0px 50px 0px;
+  color: #fff;
+  background-color: #009fe6;
+}
+
+.offer a{
+  font-size: 20px;
+  color: #fff;
+  background-color: #009fe6;
+  text-decoration: none;
+}
+
+.offer h2{
+  font-size: 42px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+.offer h3{
+  font-size: 30px;
+  color: #FFF000;
+}
+
+/* ------------------------------------------------- *
+ *        annual_course, monthly_course
+ * ------------------------------------------------- */
+.annual_course, .monthly_course{
+    text-align: center;
+    padding: 20px 0 35px 0;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.annual_course h3{
+  margin: 0px;
+  font-size: 20px;
+  color: #000;
+  margin-left: 220px;
+}
+
+.monthly_course h3{
+  text-align: center;
+  margin: 0px;
+  font-size: 20px;
+  color: #000;
+  margin-left: 220px;
+}
+
+.annual_text, .monthly_course{
+  text-align: left;
+}
+
+.course_red{
+  color: #c50b22;
+}
+.blue,.blue a{
+color:#5ab4e6;
+}
+
+.course_under{
+  background: linear-gradient(transparent 95%, #000 0%);
+}
+.annual_course a:hover, .monthly_course a:hover{
+text-decoration:underline;
+}
+
+/* ------------------------------------------------- *
+ *        message
+ * ------------------------------------------------- */
+.message{
+
+    text-align: center;
+    color: #fff;
+    padding: 80px 0;
+
+
+}
+
+.message h3{
+  margin: 0px;
+  font-size: 27px;
+}
+
+.message img{
+
+}
+monthly_text{
+padding:20px;
+}
+
+/* ------------------------------------------------- *
+ *        under bar
+ * ------------------------------------------------- */
+
+.under_01{
+  background-image: url(../img/line_01.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 56px;
+}
+
+.under_02{
+  background-image: url(../img/line_02.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 56px;
+}
+
+.under_03{
+  background-image: url(../img/line_03.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 40px;
+}
+
+.under_04{
+  background-image: url(../img/line_03.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 57px;
+}
+
+.under_05{
+  background-image: url(../img/line_04.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 57px;
+}
+
+.under_06{
+  background-image: url(../img/line_06.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 57px;
+}
+.under_red{
+  background: linear-gradient(transparent 90%, #c50b22 0%);
+  color:#c50b22;
+  font-size:30px;
+  margin-right:10px;
+}
+
+.under_yellow{
+  background: linear-gradient(transparent 90%, #ffef00 0%);
+}
+
+.under_blue{
+  background: linear-gradient(transparent 90%, #1a2988 0%);
+      font-size: 27px;
+    color: #1a2988;
+      margin-right:10px;
+}
+
+.clear { clear:both; }
+.clear hr { display:none; }
+.service .right{
+    margin: 15px 0;
+    }
+    .text p.free{
+    margin-top:30px;
+    }
+/* ------------------------------------------------- *
+ *        1100px以下
+ * ------------------------------------------------- */
+@media only screen and (max-width: 1100px) {
+
+.impressions {
+    width: 100%;
+}
+.impressions a{
+text-decoration:none;
+}
+.recommended{
+width:100%;
+}
+.main_visual h1 img{
+    min-width:100%;
+}
+.service_table {
+	width:100%;
+}
+body{
+width:100%;
+}
+.annual_course, .monthly_course{
+width:100%;
+padding:0;
+}
+header .header-inner,header nav,main .article_03 .section_01 .column > div,.recommended,.function_table,.service,.service_table{
+width:100%;
+}
+
+.right img{
+    margin: 15px 0;
+    }}
+
+/* ------------------------------------------------- *
+ *        SP
+ * ------------------------------------------------- */
+@media only screen and (max-width: 640px) {
+  body {
+    -webkit-text-size-adjust: 100%;
+    min-width: inherit;
+  }
+  body img {
+    max-width: 100%;
+  }
+  body .pc {
+    display: none !important;
+  }
+  body .sp {
+    display: block !important;
+  }
+  body .pc_only_inline {
+    display: none;
+  }
+  body .sp_only_inline {
+    display: inline;
+  }
+
+  header {
+    background: #DCDCDC;
+  }
+  header .header-inner {
+    overflow: hidden;
+    padding-top: 20px;
+    width: auto;
+  }
+  header .header-inner .logo {
+    float: left;
+    width: 60%;
+    padding-left: 0.5%;
+    margin-bottom: 20px;
+  }
+  header .header-inner .menu-btn {
+    float: right;
+    width: 6.25%;
+    padding-right: 4.6875%;
+  }
+
+  header nav {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
+  header nav ul {
+    border-top: 3px solid #969696;
+  }
+  header nav ul li {
+    border-bottom: 2px solid #fff;
+  }
+  header nav ul li a {
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  header nav ul li a::before {
+    content: "●";
+    font-size: 18px;
+    color: #505050;
+  }
+  header nav ul li a span {
+    color: #505050;
+  }
+
+  .login{
+
+    width: 120px;
+    height: 34px;
+    float: right;
+    padding-right: 4.6875%;
+    margin-bottom: 20px;
+  }
+  .login a{
+    display: block;
+  }
+  .login img{
+    border: none;
+  }
+  .login a:hover{
+    background: none;
+  }
+  .login a:hover img{
+    visibility: hidden;
+  }
+
+  footer {
+    text-align: center;
+
+    padding: 15px 20px 0px 20px;
+  }
+  footer .copy {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  footer .caution {
+    color: #c50b22;
+  }
+
+  #returnTop {
+width: 20.9375%;
+    position: fixed;
+    right: 10px;
+    margin: 0;
+  }
+
+  .clearfix:after{
+  	content: "";
+  	clear: both;
+  	display: block;
+  }
+
+  main .article_03 .section_01 .column {
+    border-top: 5px solid #f6ed36;
+    background: url("../../../lib/img/common/column_bg.png");
+    padding-bottom: 15px;
+  }
+  main .article_03 .section_01 .column > div {
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+  }
+  main .article_03 .section_01 .column .txt {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  main .article_03 .section_01 .column .txt p {
+    font-size: 14px;
+  }
+
+  .main_visual  > div,
+  .main_visual  figure {
+    width: auto;
+    float: none;
+  }
+  .main_visual  figure {
+    float: none;
+  }
+  .main_visual  figure span:first-child {
+    display: block;
+    background: #4f4f4f;
+    text-align: center;
+  }
+  .main_visual  figure span:last-child {
+    margin: 5px 0 0 0;
+  }
+  .main_visual  figure span a {
+    font-size: 12px;
+  }
+  .login a {
+    display: block;
+    text-decoration: underline;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+  /* ------------------------------------------------- *
+   *        main_visual
+   * ------------------------------------------------- */
+.main_visual {
+  background: #DCDCDC;;
+
+}
+.main_visual div{
+    /* background: #DCDCDC; */
+    /* padding-bottom: 235px; */
+    /* margin-top: -250px; */
+    margin: 0;
+    padding: 0;
+}
+.main_visual h1 {
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.text_01{
+  font-size: 30px;
+  padding: 20px;
+  color: #fff;
+}
+
+  /* ------------------------------------------------- *
+   *        recommended
+   * ------------------------------------------------- */
+
+  .recommended{
+    text-align: center;
+
+  }
+
+  .recommended h2{
+    color: #fff;
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    background-position-x: 50%;
+    background-position-y: 27px;
+  }
+
+  .recommended img{
+width:45%;
+margin: 15px 3px;
+  }
+
+  /* ------------------------------------------------- *
+   *        cv area_red
+   * ------------------------------------------------- */
+
+  .cv_area_01, .cv_area_02, .cv_area_03 {
+
+    text-align: center;
+   
+
+  }
+
+  .cv_area_01, .cv_area_02, .cv_area_03 p {
+    font-weight: bold;
+    top: -7px;
+    margin: 0px;
+  }
+
+  .cv_title {
+    position: relative;
+    padding: 0px;
+    top: -23px;
+  }
+
+  .cv_annual{
+    color: #c50b22;
+    margin: 0px;
+    position: relative;
+    top: -15px;
+    font-size: 30px;
+  }
+
+  .cv_text {
+    position: relative;
+    top:7px;
+    margin: 13px 0px;
+    font-size: 19px;
+  }
+
+  .cv_cost{
+    margin: 5px 0px 20px 0px;
+  }
+
+  .cv_button{
+    margin-bottom: 55px;
+  }
+
+  .cv_deep{
+    line-height: 28px;
+    position: relative;
+    color: #c50b22;
+    font-size: 30px;
+  }
+
+  .cv_text_deep {
+    margin-top: 15px;
+    font-size: 19px;
+  }
+
+  /* ------------------------------------------------- *
+   *        cv area_blue
+   * ------------------------------------------------- */
+
+  .cv_area_04 {
+padding: 23px 20px;
+    text-align: center;
+
+  }
+
+  .cv_area_04 p {
+    font-weight: bold;
+    top: -7px;
+    margin: 0px;
+    font-size: 19px;
+    color: #000000;
+  }
+
+  .cv_title_blue {
+    position: relative;
+    padding: 0px;
+    top: -23px;
+  }
+
+  .cv_annual_blue{
+    color: #1a2988;
+    margin: 0px;
+    font-size: 40px;
+    background: linear-gradient(transparent 90%, #1a2988 0%);
+  }
+
+  .cv_text_blue{
+    margin: 20px 0px 5px 0px;
+    font-size: 25px;
+  }
+  /* ------------------------------------------------- *
+   *        function
+   * ------------------------------------------------- */
+
+  .function{
+    text-align: center;
+    margin: 0 auto;
+        margin-top: 25px;
+  }
+
+  .function h2{
+    font-size: 35px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    background-position-x: 50%;
+    background-position-y: 27px;
+  }
+
+  .function p{
+    font-weight: bold;
+    color: #c50b22;
+    font-size: 30px;
+  }
+
+  .function_logo{
+    width: 322px;
+  }
+
+  .function_table{
+    background: none;
+    padding: 30px 20px;
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+  }
+
+  .sp_burron img{
+    padding: 10px 0px;
+  }
+
+  .other_functions{
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .other_functions h3{
+    font-size: 27px;
+  }
+
+  .other_img{
+    margin: 0px 10px;
+    width:80%;
+    display: table-cell;
+  }
+
+  .other_img img{
+    margin: 10px 10px;
+        width: 40%;
+  }
+
+  /* ------------------------------------------------- *
+   *        support
+   * ------------------------------------------------- */
+
+  .support{
+ margin: 85px 0px 50px 0px;
+  }
+
+  .support h2{
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  .support p{
+    text-align: left;
+  }
+
+  .size_s{
+    font-size: 13px;
+  }
+
+  ul.support li {
+    display: inline;
+    padding: 0px 20px;
+    margin-left: -2em;
+  }
+
+
+
+  /* ------------------------------------------------- *
+   *        trust
+   * ------------------------------------------------- */
+  .trust{
+    background: url("../img/bg_03.jpg")center;
+    padding: 24px 20px;
+  }
+
+  .trust h2{
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+
+  .trust p{
+    color: #006faf;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  /* ------------------------------------------------- *
+   *        voice
+   * ------------------------------------------------- */
+  .voice{
+    background-color: #FFF;
+padding: 0;
+  }
+
+  .voice h2{
+    color: #009ff0;
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+   }
+
+  .voice h3{
+color: #AF0019;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin: 20px 0px;
+    line-height: 1.2em;
+   }
+
+  .voice p{
+    text-align: left;
+    line-height: 1.5em;
+  }
+.voice p.last{
+font-size:14px;
+}
+  .impressions{
+    padding: 10px 0px;
+   }
+
+  .impressions_img{
+    padding: 10px;
+        margin-top: -11px;
+   }
+
+  .impressions_text{
+padding: 0px 16px;
+    width: 100%;
+  }
+
+
+
+   /* ------------------------------------------------- *
+    *        service
+    * ------------------------------------------------- */
+  .service{
+    padding:  0px;
+  }
+
+  .service p{
+font-size: 19px;
+    margin: 0px;
+    font-weight: bold;
+    padding: 0px 10px;
+  }
+
+  .service h2{
+    font-size: 16px;
+    /* margin-top: 0px; */
+    /* margin-bottom: 30px; */
+    margin: 15px 17px;
+  }
+
+.service_table {
+    position: relative;
+
+    width: 280px;
+    height: 1160px;
+    margin: 0 auto;
+    padding: 0px;
+
+    background-image: none;
+}
+
+  .service_app{
+    position: relative;
+    top: 10.7%;
+    left: 46%;
+    font-size: 12px;
+  }
+
+  .service_proiite{
+
+position: absolute;
+    top: 33.4%;
+    left: 43%;
+  }
+
+  .service_proiite img{
+    width: 150px;
+  }
+
+  .service_web{
+    position: absolute;
+    top: 66.4%;
+    left: 53%;
+  }
+
+  /* ------------------------------------------------- *
+   *        offer
+   * ------------------------------------------------- */
+
+  .offer{
+    padding: 20px 20px 50px 20px;
+    color: #fff;
+    background-color: #009fe6;
+  }
+
+  .offer a{
+    font-size: 18px;
+    color: #fff;
+    background-color: #009fe6;
+    text-decoration: none;
+  }
+
+  .offer h2{
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  .offer h3{
+    font-size: 27px;
+    color: #FFF000;
+  }
+
+  /* ------------------------------------------------- *
+   *        annual_course, monthly_course
+   * ------------------------------------------------- */
+  .annual_course, .monthly_course{
+    text-align: center;
+padding 0;
+  }
+
+  .annual_course h3{
+      display: inline-grid;
+    margin: 0px;
+    font-size: 23px;
+    color: #000;
+  }
+
+  .monthly_course h3{
+text-align: center;
+    margin: 0px;
+    display: grid;
+    font-size: 22px;
+    color: #000;
+  }
+
+  .annual_text, .monthly_course{
+    text-align: left;
+    padding:0;
+  }
+
+  /* ------------------------------------------------- *
+   *        message
+   * ------------------------------------------------- */
+
+
+  .message h3{
+    position: relative;
+
+    margin: 0px;
+    font-size: 27px;
+  }
+
+  .message img{
+  max-width: 90%;
+
+
+  }
+
+  /* ------------------------------------------------- *
+   *        under bar
+   * ------------------------------------------------- */
+
+  .under_01{
+    background-image: url(../img/line_01.png);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 44px;
+  }
+
+  .under_02{
+    background-image: url(../img/line_02.png);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 44px;
+  }
+
+  .under_03{
+    background-image: url(../img/line_03.png);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 33px;
+  }
+
+  .under_04{
+    background-image: url(../img/line_03.png);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 44px;
+  }
+
+  .under_05{
+    background-image: url(../img/line_04.png);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 44px;
+  }
+
+  .under_06{
+    background-image: url(../img/line_06.png);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 44px;
+  }
+  .under_red{
+    background: linear-gradient(transparent 90%, #c50b22 0%);
+  }
+
+  .under_yellow{
+    background: linear-gradient(transparent 90%, #ffef00 0%);
+  }
+
+  .under_blue{
+    background: linear-gradient(transparent 90%, #1a2988 0%);
+  }
+
+  .clear { clear:both; }
+  .clear hr { display:none; 
+  }
+  .arrow {
+background: #fff;
+    margin-top: -3px;
+}
+.text {
+
+}
+  
+  .answer {
+display: table-cell;
+    width: 17%;
+    padding: 0;
+
+
+}
+.right img{
+    margin-left: auto;
+    margin-right: auto;
+        margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p.small {
+font-size: 14px;
+    font-weight: normal;
+    text-align: right;
+margin-top: -15px;
+}
+.more {
+    background: #f6ed36;
+padding: 25px 22px;
+margin-top: 56px;
+}
+.arrow2 img{
+margin-top:-1px;
+}
+.text p {
+font-size: 19px;
+    margin-bottom: 20px;
+    margin-right: 17px;
+    font-weight: normal;
+}
+.support img.question {
+    margin-top: -76px;
+    margin-bottom: 40px;
+}
+.text2 p {
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+}
+.support ul {
+    display: block;
+    width: auto;
+    display: block;
+    margin: 0 10px;
+    padding: 0;
+
+    display: block;
+}
+.text2{
+margin:20px 0px;
+}
+
+.annual_text{
+font-size: 14px;
+padding:0 20px;
+}
+.impressions_img img{
+width: 13%;
+margin-top: 29px;
+margin-left: -10px;
+}
+.answer img{
+width: 52%;
+    margin-top: 41px;
+}
+.service h1 {
+    color: #5ab4e6;
+    font-size: 18px;
+    line-height: 1.2em;
+
+}
+.gap{
+    padding: 0 20px;
+}
+.monthlytext{
+ padding:0 20px;
+ }
+
+ .cv_area_01, .cv_area_02, .cv_area_03 p {
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0px;
+}
+
+.cv_logo {
+    padding: 15px 0 25px 0;
+}
+img.banner{
+width: 73%;
+}
+.support img{
+margin-right:auto;
+margin-left:auto;
+}
+.trial {
+    font-size: 16px;
+    line-height: normal;
+    margin-bottom: 20px;
+        margin-right:10px;
+}
+.text p{
+    font-size: 16px;
+    line-height: normal;
+    }
+
+.cv_area_04 p.cv_course {
+font-size:16px;
+margin-top:10px;
+}
+.support li {
+    margin: 0;
+}
+.impressions_text img {
+    width: 130px;
+}
+.trial p{
+    font-size: 14px;
+    margin: 0px 17px 20px 17px;
+    font-weight: normal;
+}
+.monthly_text{
+  font-size: 14px;
+}
+.apply img{
+margin-bottom: 10px;
+    width: inherit;
+}
+p.app{
+font-size: 14px;
+line-height: 1.2em;
+}
+.text img{
+    margin-right: 10px;
+    position: relative;
+width: 95%;
+    right: -1%;
+}
+}
+
+@media only screen and (max-width: 345px) {
+.login a{
+    margin-top: -42px;
+}
+header .header-inner{
+margin-bottom: -45px;
+}
+
+p.small{
+    text-align: right;
+    font-size: 15px;
+    font-weight: normal;
+margin-right: 0;
+
+    }}
+
+@media only screen and (max-width: 360px) {
+img.right{
+margin-bottom:10px;
+}
+}

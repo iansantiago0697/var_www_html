@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+/*-------------------------------------------------
+ EOWP
+
+ * Style URL: css/faq.css
+ * Last Up Date: 2018/11/07
+-------------------------------------------------*/
+
+#wrapper.p_help{
+	width: 100%;
+	margin: 0px auto;
+	min-height:100%;
+}
+
+div.help div#wrapper div#header.p_help {
+	position: relative;
+	width: 1055px;
+    margin: 0 auto;
+	height:90px;
+}
+
+div.help div#wrapper div#header div#logo.p_help {
+	top:21px;
+}
+
+div.help div#wrapper div#content p.lead.p_help{
+	margin:15px 15px 10px;
+} 
+#content.p_help {
+	display:inline-block;
+	text-align: left;
+	margin-top: 130px;
+	padding-bottom: 5px;
+	width: 1055px;
+}
+.index_wrap_p{
+	letter-spacing: -1em;
+	display:inline-block;
+	width:850px;
+}
+.index_inner_p{
+	display: block;
+	box-sizing: border-box;
+	float:left;
+	width:500px;
+	letter-spacing:0;
+	align:top;
+}
+.index_inner_p.search_p{
+	text-align:right;
+	width:350px;
+	margin-top:10px;
+	padding-right:5px;
+}
+mark {
+    background: yellow;
+}
+mark.current {
+    background: orange;
+}
+.mark_window{
+	width: 220px;
+	height: 24px;
+	font-size:12px;
+	font-weight: 400;
+	background-color: #fff;
+	border: 1px solid #C3C3C3;
+	vertical-align:top;
+	padding-left:3px;
+	box-sizing: border-box;
+	color:#000;
+}
+.mark_button{
+	padding:0;
+	margin:0;
+	background:none;
+	border:0;
+	font-size:0;
+	line-height:0;
+ 	overflow:visible;
+	cursor:pointer;
+	outline:none;
+	vertical-align:top;
+}
+.mark_button.clear{
+    margin-left:5px;
+}
+.mark_button img[src$=".svg"]{
+	display:inline-block;
+	height:24px;
+    width:auto;
+	vertical-align:top;
+	margin-right:0;
+}
+
+.headerp_wrap {
+	background: url(../images/bg_header.gif) repeat-x;
+	position: fixed;
+	display:inline-block;
+	height:136px;
+	width:100%;
+	z-index:2;
+	top:0;
+	left:0;
+	right:0;
+	background-color: #fff;
+}
+
+/* tipを表示する */
+a.tip:hover {
+     text-decoration: none;
+}
+a.tip span {
+    display: none;
+    padding: 6px;
+    font-size: 11px;
+    line-height: 1.4;
+	text-align: justify;
+}
+a.tip:hover span{
+    display: block;
+    position: absolute;
+    background-color: rgba(51,51,51, 0.6);
+    border: 1px solid #cccccc;
+    color: #ffffff;
+    width: 175px; 
+	float:left;
+	margin:12px 0 0 50px;
+	border-radius: 6px;
+}
+a.tip:hover span::after{
+    content: " ";
+    position: absolute;
+    bottom: 100%; 
+    left: 50%;
+    margin-left: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent rgba(51,51,51, 0.6) transparent;
+}
+
+:target:before {
+   content:"";
+   display:block;
+   height:136px;/* ヘッダの高さ*/ 
+   margin:-136px 0 0;/* ヘッダの高さ*/ 
+}
+
+

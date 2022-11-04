@@ -1,0 +1,365 @@
+@charset "utf-8";
+
+.header {
+	width: 100%;
+	background: url(../img/head_bg.png) repeat 0 0;
+}
+
+.fixed {
+	position: fixed;
+	z-index: 100;
+}
+
+.hwrap {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	height: 71px;
+	z-index: 100;
+	position: relative;
+}
+
+.hwrap .logo {
+	position: absolute;
+	top: 19px;
+	left: 1%;
+}
+
+.hwrap .gmenu {
+	position: absolute;
+	top: 19px;
+	right: 1%;
+	width: 800px;
+	text-align: right;
+}
+
+.hwrap .gmenu li {
+	display: inline;
+	margin-left: 20px;
+}
+
+.hwrap .gmenu li a:link {
+	text-decoration: none;
+	font-weight: normal;
+	font-style: normal;
+	color: #333;
+	font-size: 0.8em;
+	line-height: 34px;
+}
+
+.hwrap .gmenu li a:hover {
+	text-decoration: underline;
+}
+
+.mainimg {
+	padding-top: 71px;
+	background: url(../img/mainimg.png) no-repeat center top;
+	-moz-background-size:cover;
+background-size:cover;
+	height: 400px;
+	margin-bottom: 30px;
+}
+
+.mwrap {
+	width: 100%;
+	height: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	z-index: 1;
+}
+
+.mwrap .btn_year {
+	position: absolute;
+	top: 50px;
+	right: 1%;
+}
+
+.mwrap .otameshi {
+	position: absolute;
+	right: 1%;
+	bottom: 40px;
+}
+
+.mwrap .description {
+	color: #333;
+	text-shadow: 0 1px 1px #ffffff;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 1.4em;
+	line-height: 1.4;
+	position: absolute;
+	left: 1%;
+	top: 96px;
+}
+
+.contents {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.contents .column {
+	margin-bottom: 130px;
+}
+
+.contents_head {
+	text-align: center;
+}
+
+.contents_head h2 {
+	margin-bottom: 5px;
+}
+
+.contents_head .chui {
+	font-size: 0.7em;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+.contents_head p {
+	font-size: 1.45em;
+	margin-bottom: 45px;
+}
+
+.contents h2.tit {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.chigai {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.chigai_last {
+	margin-bottom: 120px;
+}
+
+.chigai .tit {
+	margin-bottom: 25px;
+}
+
+.chigai .salespoint {
+	font-size: 1.45em;
+}
+
+.chigai .salespoint span {
+	color: #b20c11;
+}
+
+.btn_otameshi {
+	text-align: center;
+}
+
+/* ***voice*** */
+
+.voice {
+	width: 31.3%;
+	float: left;
+	margin-right: 1%;
+	margin-left: 1%;
+	margin-bottom: 50px;
+}
+
+.voice .ph {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.voice p {
+	font-size: 1.05em;
+}
+
+.voice p strong {
+	color: #b20e13;
+}
+
+.voice .name {
+	font-size: 1.3em;
+	line-height: 1.2;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.f01 {
+	width: 100%;
+	background: url(../img/f_body.png) repeat-y 0 0/contain;
+}
+
+.f01 .f02 {
+	background: url(../img/f_head.png) no-repeat 0 0/contain;
+	width: 100%;
+}
+
+.f01 .f03 {
+	width: 100%;
+	background: url(../img/f_foot.png) no-repeat 0 100%/contain;
+}
+
+.f01 .finner {
+	padding: 5% 2% 2%;
+	width: 95%;
+}
+
+/* ***movie*** */
+
+p.mov_text {
+	text-align: center;
+	font-size: 0.8em;
+	line-height: 1.2;
+	color: #666;
+	font-weight: bold;
+	margin-bottom: 70px;
+}
+
+.movie,.btn_movie {
+	text-align: center;
+	width: 480px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* ***riyu*** */
+
+.riyu_area {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow-y: scroll;
+	padding-right: 15px;
+	height: 240px;
+}
+
+.riyu {
+	margin-bottom: 50px;
+}
+
+.riyu dt {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.riyu dd {
+	font-weight: bold;
+	font-size: 1.3em;
+	color: #444;
+}
+
+/* ***refist*** */
+
+.regist {
+	background-color: #8e1818;
+}
+
+.rwrap {
+	width: 96%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 45px;
+	padding-bottom: 25px;
+	text-align: center;
+}
+
+.rwrap p {
+	margin-bottom: 20px;
+}
+
+#pc_moushikomi {
+	display: none;
+}
+
+#sp_moushikomi {
+	display: block;
+}
+
+.btn_moushikomi {
+	margin-bottom: 45px;
+}
+
+.btn_moushikomi dt {
+	margin-bottom: 15px;
+}
+
+.btn_moushikomi dd {
+	color: #fff;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+
+.jyuyo {
+	margin-bottom: 40px;
+	text-align: left;
+}
+
+.jyuyo dt {
+	margin-bottom: 10px;
+}
+
+.jyuyo li {
+	list-style-type: disc;
+	color: #fff;
+	font-size: 0.8em;
+	margin-left: 1.7em;
+}
+
+.spec {
+	color: #fff;
+	font-size: 0.8em;
+}
+
+.regist a:hover {
+	text-decoration: underline;
+}
+
+/* ***footer*** */
+
+.fwrap {
+	width: 96%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	padding-top: 85px;
+	padding-bottom: 60px;
+	color: #444;
+}
+
+.fwrap a {
+	color: #3074b1;
+	text-decoration: none;
+}
+
+.fwrap a:hover {
+	text-decoration: underline;
+}
+
+.fwrap p {
+	margin-bottom: 40px;
+}
+
+.caution {
+	margin-bottom: 40px;
+}
+
+.fnavi {
+	margin-bottom: 5px;
+}
+
+.fnavi li {
+	display: inline;
+	margin-right: 10px;
+	padding-right: 10px;
+	border-right: 1px solid #444;
+}
+
+.fnavi li.last {
+	border-right-style: none;
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.spec a {
+	color: #fff;
+	text-decoration: none;
+}

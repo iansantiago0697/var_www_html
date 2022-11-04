@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta charset="utf-8">
+<title>基本的な使い方：ご利用ガイド：英辞郎 on the WEB Pro</title>
+
+<!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta http-equiv="Content-Language" content="ja">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache, must-revalidate">
+<meta name="format-detection" content="telephone=no">
+
+<!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="/help/guide/content/css/normalize.css">
+<link rel="stylesheet" href="/help/guide/content/css/guide_skeleton.css">
+<link rel="stylesheet" href="/help/guide/content/css/guide_custom.css">
+<link rel="stylesheet" href="/help/guide/content/css/lightbox.css">
+
+<script type="text/javascript" language="JavaScript" src="/help/guide/content/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" language="JavaScript" src="/help/guide/content/js/eow_top.js" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript" src="/help/guide/content/js/touchdevice.js" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript" src="/content/js/eow_footer_new.js" charset="UTF-8"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1590792-9', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- 開始パーレンのアキを詰める
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script>
+$(function(){
+	var tgElm = $('.kakko h1,h2,h3'), //対象となる要素をここで指定
+		tagType = "span"; //括弧を囲うタグ名をここで指定
+	tgElm.each(function(){
+		var tgText = $(this).html();
+		tgText = tgText.replace(/[「『（【｛［〔〈《]/g, '<' + tagType + ' style="display: inline-block; margin-left: -0.6rem;">$&</' + tagType + '>');
+		tgText = tgText.replace(/[」』）】｝］〕〉》]/g, '<' + tagType + ' style="display: inline-block; margin-right: -0.6rem;">$&</' + tagType + '>');
+		$(this).html(tgText);
+	});
+});
+</script>
+
+</head>
+
+<body>
+
+<!-- svg読み込み
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="svgArea"></div>
+  <script>
+$(function(){
+	$("#svgArea").load("/help/guide/content/img/symbol-defs.svg", function(){
+
+		//SVGの処理
+
+	});
+});
+</script>
+
+
+
+<!-- ヘッダー・タイトル ・インデックス-->
+<div class="header_title">
+   <div class="container">
+    <div class="headerlogo">
+       <img src="/help/guide/content/img/lo_eow.svg" alt="英辞郎 on the WEB" title=""  />
+      <div class="headerlogo_title">ヘルプ&nbsp;ご利用ガイド
+    </div>
+    </div>
+</div>
+</div>
+
+<div class="container kakko">
+  <div class="row">
+    <div class="twelve columns">
+    
+    <div class="header_info">
+    <!--a href="/">ヘルプ TOP へ</a>&nbsp;>>&nbsp;--><a href="/">ご利用ガイド TOP へ</a>&nbsp;>> &nbsp;<a href="/">基本的な使い方</a></div>
+  
+   <div class="page_title">
+       <img src="/help/guide/content/img/book.svg" alt="基本的な使い方" title=""  />
+   <h1>基本的な使い方</h1>
+   <p>「英辞郎 on the WEB Pro」の基本的な機能の使い方について紹介します。</p> 
+  </div>
+   <ul class="guide_index">
+   <li><a href="#1">1.&nbsp;基本的な検索</a></li>
+	   <li><a href="#2">2.&nbsp;条件を詳細にして検索<span class="small">（検索オプション）</span></a></li>
+   <li><a href="#3">3.&nbsp;検索結果からの拡張検索</a></li>
+   <li><a href="#4">4.&nbsp;単語帳 NEW!</a></li>
+   <li><a href="#5">5.&nbsp;検索履歴</a></li>
+   <li><a href="#6">6.&nbsp;小窓モード</a></li>
+   <li><a href="#7">7.&nbsp;検索結果を共有する</a></li>
+   </ul>
+   <!-- ヘッダー・タイトル ・インデックス　終わり-->
+   
+   <div class="guide_text"> <!-- guide_text 本文開始 -->
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns">  
+   <div id="1"><!-- indexからのリンク -->
+   <h2>1.&nbsp;基本的な検索</h2>
+   </div>
+    <p>「英辞郎 on the WEB Pro」では、検索条件に一致した見出し語の項目を EDP（Electronic Dictionary Project）制作の英和辞書データ『英辞郎』と略語辞書データ『略語郎』、例文データ『例辞郎』、和英辞書データ『和英辞郎』から検索できます。</p>
+    </div>
+    </div><!-- end 12 columns-->
+    
+  <div class="twelve columns"> <!-- 12 columns -->
+  <div class="one-half column">
+	 <h3>（1）「英辞郎 on the WEB Pro」のトップページ（または、検索結果ページ）に設置されたキーワード入力欄（右図１）に、検索したいキーワードを入力する</h3>
+	 <ul>
+	 <li>キーワードは、英語でも日本語でも構いません。</li> </ul>
+     <h3>（2）「検索」ボタン（右上図２）をクリックする</h3>
+     <ul>
+     <li>英和辞書と和英辞書のどちらを検索するかは、プログラムが自動判定します。</li>
+     <li>「検索」ボタンを押す代わりに、Enterキーを押すだけでもOKです。</li> </ul>
+     <h3>（3）検索結果が表示される</h3>
+     <ul>
+     <li>検索条件に該当した見出し項目およびその訳語が右図のように表示されます。</li>
+     <li>該当項目が50件を越えた場合、１ページに50件ずつ（※）表示します。</li>
+     <li class="asterisk">１ページごとの検索結果表示件数は環境設定にて変更が可能です。ああああああああああああああああああああ</li> </ul>
+     <h3>（4）続けて検索する</h3>
+     <ul>
+     <li>検索結果ページ上部にある検索キーワード入力欄に別のキーワードを入力し、「検索」ボタンをクリック（もしくはEnterキーを押下）し、続けて検索できます。</li></ul>
+  </div>
+  
+  <div class="one-half column">
+  <div class="img_wrap">
+	 <p class="img_title">（1）ああああああああああ</p>
+  <a href="/help/guide/content/lightbox_img/img_basic01_2.jpg" data-lightbox="lightbox_img" data-title="" />
+  <img src="/help/guide/content/img/img_basic01_2-thumbnail.jpg" alt="" title="" width="100%" height="auto" /></a>
+  <p class="cap">ああああああああああああああああああ</p>
+ </div>
+  
+   <div class="img_wrap">
+     <p class="img_title">（3）ああああああああああ</p>
+  <a href="/help/guide/content/lightbox_img/img_basic02_2.jpg" data-lightbox="lightbox_img" data-title="" />
+  <img src="/help/guide/content/img/img_basic02_2-thumbnail.jpg" alt="" title="" width="100%" height="auto" /></a>
+  <p class="cap">ああああああああああああああああああ</p>
+ </div>
+  </div>
+  </div><!-- end 12 columns-->
+  
+  <div class="twelve columns"><!-- 12 columns -->
+  <div class="one-half column">
+  <div class="img_wrap_ver">
+	 <p class="img_title">（5）ああああああああああ</p>
+  <a href="/help/guide/content/lightbox_img/img_basic07_2.jpg" data-lightbox="lightbox_img" data-title="" />
+  <img src="/help/guide/content/img/img_basic07_2-thumbnail.jpg" alt="" title="" width="100%" height="auto" /></a>
+   <p class="cap">ああああああああああああああああああ</p>
+   </div>
+  </div>
+  <div class="one-half column">
+	 <h3>（5）あああああああ</h3>
+	 <ul>
+	 <li>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</li>
+	 <li class="asterisk">あああああああああああああああああああああああああああああああああああああああああああああああああ</li></ul>
+  
+  <div class="memo">
+  <img src="/help/guide/content/img/memo.svg" alt="メモ" title=""  />
+  <p>単純な OR 検索の場合は、( ) を付けても、付けなくても検索結果は同じになります。
+以下の検索では、すべて同じ結果が表示されます。
+   <ul class="memo">
+     <li>(dog | cat) -rain と検索</li>
+     <li> dog | cat -rain と検索</li></ul></p>
+ </div>
+<div class="guide_link">
+<a href="">検索についての詳しい説明はこちら
+<div class="arrow_r"></div></a>
+</div>
+ </div>
+ </div><!-- end 12 columns-->
+ 
+ <div class="twelve columns"><!-- 12 columns -->
+ <div class="ten columns">
+<ul>
+<li class="b_mark">トップページか検索結果ページにて検索キーワード入力欄にキーワードを入力し、「頻度集計」ボタンをクリックしてキーワードの検索をおこなうと、検索キーワードを中心にその前後に出現する単語の出現回数を集計し、出現回数が多いものから順にページ上部より表示します</li>
+ <li>検索キーワードとどのような単語がつながりやすい（共起しやすい）のかを数値で表すためわかりやすくなり、熟語や定番のフレーズ、その検索キーワードとりやすい前置詞などが見つけやすくなります</li>
+<li class="b_mark">集計対象は、検索キーワードの前後３語目までとなります</li>
+<li>この集計表に表示された単語をクリックすると検索キーワードとその単語の語順を保ったままで「英辞郎 on the WEB Pro」を検索し、その検索結果を閲覧できます</li>
+ <li>上図の場合、右１語目の "with"（１行目）をクリックした場合、「英辞郎 on the WEB Pro」から見出し項目に "relationship with" が含まれるものを検索します</li></ul>
+ <ol class="lower-alpha">
+<li>トップページか検索結果ページにて検索キーワード入力欄にキーワードを入力し</li>
+<li>検索キーワードとどのような単語がつながりやすい（共起しやすい）のかを数値で表すためわかりやすくなり、熟語や定番のフレーズ、その検索キーワードとりやすい前置詞などが見つけやすくなります</li>
+<li>上図の relationship の場合、good（良い）close（密接な）、personal（個人的な）、working（仕事上、職場での）</li></ol>
+<ol class="decimal">
+<li>上図の場合、右１語目の "with"（１行目）をクリックした場合、「英辞郎 on the WEB Pro」から見出し項目に "relationship with" が含まれるものを検索します</li>
+<li>上図の場合、左 ２語目の "mutually"（３行目）をクリックした場合</li>
+<li>上図の場合、左 ２語目の "mutually"（３行目）をクリックした場合、「英辞郎 on the WEB Pro」</li></ol>
+<ul>
+<li class="asterisk">１ページごとの検索結果表示件数は環境設定にて変更が可能です。</li>
+<li class="asterisk">検索キーワードとどのような単語がつながりやすい（共起しやすい）のかを数値で表すためわかりやすくなり、熟語や定番のフレーズ、その検索キーワードとりやすい前置詞などが見つけやすくなります</li></ul>
+ <h3>（6）小見出しああああああああああああああ
+  <a href=""><div class="logo_pro"></div></a><a href=""><div class="logo_prolite"></div></a></h3>
+  <p>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+  </div>
+  </div><!-- end 12 columns-->
+  
+   <div class="twelve columns"><!-- 12 columns-->
+  <div id="2"><!-- indexからのリンク -->
+   <h2>2.&nbsp;条件を詳細にして検索<span class="small">（検索オプション）</span></h2>
+   </div>
+    <div class="img_wrap_center">
+     <p class="img_title">（6）ああああああああああ</p>
+     <a href="/help/guide/content/lightbox_img/img_basic03_2.jpg" data-lightbox="lightbox_img" data-title="" />
+  <img src="/help/guide/content/img/img_basic03_2-thumbnail.jpg" alt="" title="" width="100%" height="auto" /></a>
+     <p class="cap">ああああああああああああああああああ</p>
+  </div>
+ 
+  <div class="ten columns img_center">
+  <h3>（7）あああああああ</h3>
+	 <ul>
+	 <li>あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</li>
+	 <li class="asterisk">ああああああああああああああああああああああああああああああああああああああああああああああ</li></ul>
+	</div>
+	
+	 <div class="guide_link">
+ <a href="#1">検索についての詳しい説明はこちら
+<div class="arrow_u"></div></a>
+</div>
+  </div><!-- end 12 columns-->
+  
+  <div class="twelve columns"><!-- 12 columns-->
+  <div class="one-half column">
+  <div class="img_wrap">
+	<p class="img_title">（8）ああああああああああ</p>
+  <a href="/help/guide/content/lightbox_img/img_basic03_2.jpg" data-lightbox="lightbox_img" data-title="" />
+  <img src="/help/guide/content/img/img_basic03_2-thumbnail.jpg" alt="" title="" width="100%" height="auto" /></a>
+   <p class="cap">あああああああああああああああああ</p>
+   </div>
+  </div>
+
+  <div class="one-half column">
+	 <h3>（8）あああああああ</h3>
+	 <ul>
+	 <li>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</li>
+	 <li class="asterisk">あああああああああああああああああああああああああああああああああああああああああああああああああ</li></ul>
+	</div> 
+	
+	 <div class="guide_link">
+ <a href="#3">検索についての詳しい説明はこちら
+<div class="arrow_d"></div></a>
+</div>
+</div><!-- end 12 columns-->
+  
+  <div class="twelve columns"><!-- 12 columns-->
+  <div class="one-half column">
+	 <h3>（9）あああああああ</h3>
+	 <ul>
+	 <li>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</li>
+	 <li class="asterisk">あああああああああああああああああああああああああああああああああああああああああああああああああ</li></ul>
+  </div>
+  <div class="one-half column">
+  <div class="img_wrap">
+	<p class="img_title">（9）ああああああああああ</p>
+  <a href="/help/guide/content/lightbox_img/img_basic03_2.jpg" data-lightbox="lightbox_img" data-title="" />
+  <img src="/help/guide/content/img/img_basic03_2-thumbnail.jpg" alt="" title="" width="100%" height="auto" /></a>   <p class="cap">ああああああああああああああああああ</p>
+   </div>
+  </div>
+  </div><!-- end 12 columns-->
+   
+    <div class="twelve columns"><!-- 12 columns-->
+    <div class="ten columns box">
+   トップページか検索結果ページにて検索キーワード入力欄にキーワードを入力し、「頻度集計」ボタンをクリックしてキーワードの検索をおこなうと、検索キーワードを中心にその前後に出現する単語の出現回数を集計し、出現回数が多いものから順にページ上部より表示します</li>
+    </div>
+   </div><!-- end 12 columns-->
+  
+  
+   <div class="twelve columns"><!-- 12 columns-->
+   <div class="ten columns">  
+  <div id="3"><!-- indexからのリンク -->
+   <h2>3.&nbsp;検索結果からの拡張検索</h2>
+   </div>
+    <p>「英辞郎 on the WEB Pro」では、検索条件に一致した見出し語の項目を EDP（Electronic Dictionary Project）制作の英和辞書データ『英辞郎』と略語辞書データ『略語郎』、例文データ『例辞郎』、和英辞書データ『和英辞郎』から検索できます。</p>
+    </div>
+    </div><!-- end 12 columns-->
+    
+  <div class="twelve columns"><!-- 12 columns-->
+   <div class="five columns">
+   <div class="img_wrap">
+     <p class="img_title">（3）ああああああああああ</p>
+  <a href="/help/guide/content/lightbox_img/img_basic02_2.jpg" data-lightbox="lightbox_img" data-title="" />
+  <img src="/help/guide/content/img/img_basic02_2-thumbnail.jpg" alt="" title="" width="100%" height="auto" /></a>
+  <p class="cap">ああああああああああああああああああ</p>
+ </div>
+  </div>
+   <div class="seven columns">
+	 <h3>（1）「英辞郎 on the WEB Pro」のトップページ（または、検索結果ページ）に設置されたキーワード入力欄（右図１）に、検索したいキーワードを入力する</h3>
+	 <ul>
+	 <li>キーワードは、英語でも日本語でも構いません。</li> </ul>
+     <h3>（2）「検索」ボタン（右上図２）をクリックする</h3>
+     <ul>
+     <li>英和辞書と和英辞書のどちらを検索するかは、プログラムが自動判定します。</li>
+     <li>「検索」ボタンを押す代わりに、Enterキーを押すだけでもOKです。</li> </ul>
+   </div>
+   </div><!-- end 12 columns-->
+  
+  <div class="twelve columns"><!-- 12 columns-->
+   <div class="eight columns">
+	 <h3>（1）「英辞郎 on the WEB Pro」のトップページ（または、検索結果ページ）に設置されたキーワード入力欄（右図１）に、検索したいキーワードを入力する</h3>
+	 <ul>
+	 <li>キーワードは、英語でも日本語でも構いません。</li> </ul>
+     <h3>（2）「検索」ボタン（右上図２）をクリックする</h3>
+     <ul>
+     <li>英和辞書と和英辞書のどちらを検索するかは、プログラムが自動判定します。</li>
+     <li>「検索」ボタンを押す代わりに、Enterキーを押すだけでもOKです。</li> </ul>
+  </div>
+  
+   <div class="four columns">
+   <div class="img_wrap">
+     <p class="img_title">（3）ああああああああああ</p>
+  <a href="/help/guide/content/lightbox_img/img_basic02_2.jpg" data-lightbox="lightbox_img" data-title="" />
+  <img src="/help/guide/content/img/img_basic02_2-thumbnail.jpg" alt="" title="" width="100%" height="auto" /></a>
+  <p class="cap">ああああああああああああああああああ</p>
+ </div>
+   </div>
+   </div><!-- end 12 columns-->
+  
+  <div class="twelve columns"> <!-- 12 columns-->
+  <div class="three columns">
+   <div class="img_wrap">
+     <p class="img_title">（3）ああああああああああ</p>
+  <a href="/help/guide/content/lightbox_img/img_basic02_2.jpg" data-lightbox="lightbox_img" data-title="" />
+  <img src="/help/guide/content/img/img_basic02_2-thumbnail.jpg" alt="" title="" width="100%" height="auto" /></a>
+  <p class="cap">ああああああああああああああああああ</p>
+ </div>
+  </div>
+  <div class="nine columns">
+	 <h3>（1）「英辞郎 on the WEB Pro」のトップページ（または、検索結果ページ）に設置されたキーワード入力欄（右図１）に、検索したいキーワードを入力する</h3>
+	 <ul>
+	 <li>キーワードは、英語でも日本語でも構いません。</li> </ul>
+     <h3>（2）「検索」ボタン（右上図２）をクリックする</h3>
+     <ul>
+     <li>英和辞書と和英辞書のどちらを検索するかは、プログラムが自動判定します。</li>
+     <li>「検索」ボタンを押す代わりに、Enterキーを押すだけでもOKです。</li> </ul>
+  </div>
+  </div><!-- end 12 columns-->
+  
+  <div class="twelve columns"> <!-- 12 columns -->
+  <div class="six columns">
+	 <h3>（1）「英辞郎 on the WEB Pro」のトップページ（または、検索結果ページ）に設置されたキーワード入力欄（右図１）に、検索したいキーワードを入力する</h3>
+	 <ul>
+	 <li>キーワードは、英語でも日本語でも構いません。</li> </ul>
+     <h3>（2）「検索」ボタン（右上図２）をクリックする</h3>
+     <ul>
+     <li>英和辞書と和英辞書のどちらを検索するかは、プログラムが自動判定します。</li> </ul>
+ </div>
+ <div class="three columns">
+     <div class="img_wrap">
+     <p class="img_title">（3）ああああああああああ</p>
+  <a href="/help/guide/content/lightbox_img/img_basic02_2.jpg" data-lightbox="lightbox_img" data-title="" />
+  <img src="/help/guide/content/img/img_basic02_2-thumbnail.jpg" alt="" title="" width="100%" height="auto" /></a>
+  <p class="cap">ああああああああああああああああああ</p>
+ </div>
+  </div>
+  <div class="three columns">
+     <div class="img_wrap">
+     <p class="img_title">（3）ああああああああああ</p>
+  <a href="/help/guide/content/lightbox_img/img_basic02_2.jpg" data-lightbox="lightbox_img" data-title="" />
+  <img src="/help/guide/content/img/img_basic02_2-thumbnail.jpg" alt="" title="" width="100%" height="auto" /></a>
+  <p class="cap">ああああああああああああああああああ</p>
+ </div>
+  </div>
+  </div><!-- end 12 columns -->
+  
+  </div><!-- end guide_text -->
+  
+</div><!-- end 12 columns -->
+</div><!-- end row-->
+</div><!-- end  container -->
+
+<!--パンくず
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<div class="container footer">
+        <div id="footer_info_left"><a href="/">「英辞郎&nbsp;on&nbsp;the&nbsp;WEB」TOP</a></div>
+           <div id="footer_info_right"><a href="#top">▲ページトップへ</a></div>
+            </div>
+
+
+<!-- footer
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="band_footer">
+
+  <!--div id="footer">
+    <div id="footermenu"> <a href="/" target="_blank">英辞郎&nbsp;on&nbsp;the&nbsp;WEB</a> ｜ <a href="http://www.alc.co.jp/index.html?utm_source=EOW&utm_medium=footer&utm_campaign=eow_wwwtop" target="_blank">アルクのウェブサイト</a> ｜ <a href="http://www.alc.co.jp/policy/privacy/" target="_top">プライバシーポリシー</a> ｜ <a href="http://www.alc.co.jp/policy/other/#eowp" target="_top">利用規約</a> ｜ <a href="http://www.alc.co.jp/company/" target="_top">会社案内</a> </div>
+    <div id="copyright">Copyright © 2000-2017 ALC PRESS INC. All Rights Reserved. </div>
+  </div-->
+<!-- ▼ フッタ ▼ -->
+<!--br class="cl_l">
+<div id="copyright"-->
+<!-- ▼フッタ書き出し▼ -->
+<script type="text/javascript">
+<!--
+document.write(footer);
+// -->
+</script>
+<!--/div-->
+<!-- ▲end: フッタ書き出し▲ -->
+
+
+  <!-- Google Tag Manager_NEW -->
+  <noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-TKK8PX"height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TKK8PX');</script><!-- End Google Tag Manager_NEW -->
+
+</div>
+  
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <!-- ページ内リンクスムーズスクロール
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script type="text/javascript">
+  $('a[href^="#"]').click(function(){
+    var speed = 800;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+</script>
+
+<!-- lightbox --> 
+<script src="/help/guide/content/js/lightbox.js"></script>
+  
+
+  <!-- Google Tag Manager_NEW -->
+  <noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-TKK8PX"height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TKK8PX');</script><!-- End Google Tag Manager_NEW -->
+
+</div>
+
+
+ 
+
+ 
+</body>
+</html>

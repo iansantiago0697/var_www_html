@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta charset="utf-8">
+<title>お問い合わせ・投稿フォーム：ご利用ガイド：英辞郎 on the WEB</title>
+
+<!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta http-equiv="Content-Language" content="ja">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache, must-revalidate">
+<meta name="format-detection" content="telephone=no">
+
+<!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="/help/guide/content/css/normalize.css">
+<link rel="stylesheet" href="/help/guide/content/css/guide_skeleton.css">
+<link rel="stylesheet" href="/help/guide/content/css/guide_custom.css">
+<link rel="stylesheet" href="/help/guide/content/css/lightbox.css">
+
+<script type="text/javascript" language="JavaScript" src="/help/guide/content/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" language="JavaScript" src="/help/guide/content/js/eow_top.js" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript" src="/help/guide/content/js/touchdevice.js" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript" src="/content/js/eow_footer_new.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/content/js/open.js" charset="UTF-8"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1590792-9', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- 開始パーレンのアキを詰める
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script>
+$(function(){
+	var tgElm = $('.kakko h1,h2,h3'), //対象となる要素をここで指定
+		tagType = "span"; //括弧を囲うタグ名をここで指定
+	tgElm.each(function(){
+		var tgText = $(this).html();
+		tgText = tgText.replace(/[「『（【｛［〔〈《]/g, '<' + tagType + ' style="display: inline-block; margin-left: -0.6rem;">$&</' + tagType + '>');
+		tgText = tgText.replace(/[」』）】｝］〕〉》]/g, '<' + tagType + ' style="display: inline-block; margin-right: -0.6rem;">$&</' + tagType + '>');
+		$(this).html(tgText);
+	});
+});
+</script>
+
+</head>
+
+<body>
+
+<!-- svg読み込み
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="svgArea"></div>
+  <script>
+$(function(){
+	$("#svgArea").load("/help/guide/content/img/symbol-defs.svg", function(){
+
+		//SVGの処理
+
+	});
+});
+</script>
+
+
+
+<!-- ヘッダー・タイトル ・インデックス-->
+<div class="header_title">
+   <div class="container">
+    <div class="headerlogo">
+       <img src="/help/guide/content/img/lo_eow.svg" alt="英辞郎 on the WEB" title=""  />
+      <div class="headerlogo_title">ヘルプ&nbsp;ご利用ガイド
+    </div>
+    </div>
+</div>
+</div>
+
+<div class="container kakko">
+  <div class="row">
+    <div class="twelve columns">
+    
+    <div class="header_info">
+    <!--a href="/help/">ヘルプ TOP へ</a>&nbsp;>>&nbsp;--><a href="/help/guide/">ご利用ガイド TOP</a>&nbsp;>>&nbsp;お問い合わせ・投稿フォーム</div>
+  
+   <div class="page_title">
+       <img src="/help/guide/content/img/book.svg" alt="お問い合わせ・誤植レポート" title=""  />
+   <h1>お問い合わせ・投稿フォーム</h1>
+   <p>「英辞郎 on the WEB Pro」「英辞郎 on the WEB Pro Lite」「英辞郎 on the WEB」に関するお問い合わせについてご案内します。</p> 
+   <div class="guide_text">
+<ul>
+<li class="asterisk"><strong><u>お問い合わせをお送りいただく前に、「<a href="/help/guide/faq.html" target="_blank">FAQ：よくある質問</a>」のページもご覧ください。</u></strong></li>
+</ul>
+</div>
+  </div>
+   <ul class="guide_index">
+   <li><a href="#1">1.&nbsp;収録データについて修正や追加を提案する</a></li>
+   <li><a href="#2">2.&nbsp;機能・サービスについて問い合わせる</a></li>
+   </ul>
+   <!-- ヘッダー・タイトル ・インデックス　終わり-->
+<br></br>   
+   <div class="guide_text"> <!-- guide_text 本文開始 -->
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns">  
+   <div id="1"><!-- indexからのリンク -->
+   <h2>1.&nbsp;収録データについて修正や追加を提案する</h2>
+   </div>
+    <p>「英辞郎 on the WEB」および 「Pro」「Pro Lite」が表示する検索結果に、修正が必要だと思われる記述や、追加項目のご提案がございましたら、専用の「投稿」フォーム（<a href="javascript:open_win(750,700,'https://docs.google.com/forms/d/e/1FAIpQLSe3uZ1zmWGk2o3T8VkpufoEylQ5U0TzNZGUnQHCqsAk2DGtTQ/viewform','user_report')">リンク</a>）からお送りいただけます。</p>
+<div class="guide_link">
+<a href="javascript:open_win(750,700,'https://docs.google.com/forms/d/e/1FAIpQLSe3uZ1zmWGk2o3T8VkpufoEylQ5U0TzNZGUnQHCqsAk2DGtTQ/viewform','user_report')" title="「英辞郎 on the WEB」誤植レポート">投稿フォームを開く&#x25B6;
+</a>
+</div>
+   <div class="guide_text">
+<ul>
+<li class="asterisk"><strong><u>サービスの使い方やログインについては、「投稿」フォームではなく、<a href="//www.alc.co.jp/inquiry/eow" target="_blank">「お問い合わせ」フォーム</a>からご連絡ください。</u></strong></li>
+</ul>
+</div>
+    </div>
+    </div><!-- end 12 columns-->
+    <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns">  
+   <div id="2"><!-- indexからのリンク -->
+   <h2>2.&nbsp;機能・サービスについて問い合わせる</h2>
+   </div>
+   <p>「<a href="//www.alc.co.jp/inquiry/eow" target="_blank">英辞郎 on the WEBお問い合わせフォーム</a>」は、<strong>サービスや機能についてのご要望</strong>や、「英辞郎 on the WEB Pro / Pro Lite」への<strong>ログインなどに関するご相談</strong>をお送りいただくためのものです。<br />
+    <blockquote class="blockquote">▼有料版「英辞郎 on the WEB Pro」の<strong>サブスクリプション（支払い）停止・解約</strong>については、<a href="//eow.alc.co.jp/help/guide/stop.html" target="_blank">こちら</a>「ご利用の停止について」へ<br /><br />
+    ▼<strong>アカウント（メールアドレスID）の削除をご希望</strong>の場合は、<a href="//www.alc.co.jp/inquiry/privacy" target="_blank">こちら</a>「個人情報削除依頼」へ</p>
+    お申し出にあたっては「<a href="//www.alc.co.jp/policy/personal/" target="_blank">個人情報の取り扱いについて</a>」の「5 個人情報の開示等について」を事前にご確認ください。</blockquote>
+   <div class="guide_text">
+<ul>
+<li class="asterisk"><strong><u>お問い合わせをお送りいただく前に、「<a href="/help/guide/faq.html" target="_blank">FAQ：よくある質問</a>」のページもご覧ください。</u></strong></li>
+</ul>
+<h3>(1)&nbsp;<u>お問い合わせフォームを開く</u> </h3>
+<p>アルクの<a href="//www.alc.co.jp/inquiry/eow" target="_blank">「英辞郎 on the WEB 用お問い合わせフォーム」</a>を開きます。 </p>
+<h3>(2)&nbsp;<u>ご利用のサービスを選ぶ</u></h3>
+<p>各サービスごとにお問い合わせ先が異なりますので、「ご利用のサービス」のプルダウンメニューから<strong>「英辞郎 on the WEB」「英辞郎 on the WEB Pro」「英辞郎 on the WEB Pro Lite」</strong>を選択してください。</p>
+</div>
+    <div class="img_wrap_center">
+     <a href="/help/guide/content/img/img_inquiry01-rev2.png" data-lightbox="lightbox_img" data-title="お問い合わせフォーム">
+  <img src="/help/guide/content/img/img_inquiry01-rev2.png" alt="お問い合わせフォーム" title="" width="600" height="auto" /></a>
+</div>
+<h3>(3)&nbsp;<u>その他の必要事項とお問い合わせ内容を入力し送信する</u></h3>
+<p>お名前、メールアドレス、URL、お問い合わせ内容をご記入いただき、「個人情報の取り扱いについて」をお読みの上、「個人情報の取り扱いに同意する」にチェックしてから、「確認」ボタンを押してください。表示されたページで、ご記入いただいた内容をご確認の上、ページ下にある「投稿」ボタンを押してください。</p>
+ <ul>
+	 <li>「英辞郎 on the WEB Pro」または「英辞郎 on the WEB Pro Lite」をご利用いただいているお客さまで、<strong>ログイン時に使用されているアドレス（ログインID）が回答メールの受信を希望されるアドレスと異なる場合は、ログインIDを「メールアドレスID」欄にご記入ください。</strong></li>
+	 <li>「お問い合わせ内容」欄には、ご質問やご要望の内容をできるだけ具体的にご記入ください。 </li>
+	 <li>収録データの修正・追加のリクエストについては、<a href="#1">「収録データについて修正や追加を提案する」</a>をご参照ください。</li>
+</ul>
+<div class="guide_link">
+<a href="//www.alc.co.jp/inquiry/eow" target="_blank">お問い合わせフォームを開く&#x25B6;
+</a>
+</div>
+    </div>
+    </div><!-- end 12 columns-->
+
+  
+  </div><!-- end guide_text -->
+  
+</div><!-- end 12 columns -->
+</div><!-- end row-->
+</div><!-- end  container -->
+
+<!--パンくず
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<div class="container footer_wrap">
+        <div class="footer_guidetop"><a href="/">「英辞郎&nbsp;on&nbsp;the&nbsp;WEB」TOP</a></div>
+           <div class="pagetop_right_bottom"><a href="#top">▲ページトップへ</a></div>
+            </div>
+
+
+<!-- footer
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="band_footer">
+
+<!-- ▼フッタ書き出し▼ -->
+<script type="text/javascript">
+<!--
+document.write(footer);
+// -->
+</script>
+<!-- ▲end: フッタ書き出し▲ -->
+
+
+  <!-- Google Tag Manager_NEW -->
+  <noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-TKK8PX"height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TKK8PX');</script><!-- End Google Tag Manager_NEW -->
+
+</div>
+  
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <!-- ページ内リンクスムーズスクロール
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script type="text/javascript">
+  $('a[href^="#"]').click(function(){
+    var speed = 800;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+</script>
+
+<!-- lightbox --> 
+<script src="/help/guide/content/js/lightbox.js"></script>
+  
+
+  <!-- Google Tag Manager_NEW -->
+  <noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-TKK8PX"height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TKK8PX');</script><!-- End Google Tag Manager_NEW -->
+
+</div>
+
+
+ 
+
+ 
+</body>
+</html>

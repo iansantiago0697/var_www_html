@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html ⚡ lang="ja">
+
+<head>
+  <title>英辞郎 on the WEB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta charset="utf-8" />
+  <!-- <link rel="stylesheet" href="./eow_r.css" /> -->
+  <style amp-custom>
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: local('Noto Sans Regular'), url(https://fonts.gstatic.com/s/notosans/v7/o-0IIpQlx3QUlC5A4PNr6zRAW_0.woff2) format('woff2');
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-display: fallback;
+      src: local('Noto Sans bold'), url(https://fonts.gstatic.com/s/notosans/v7/o-0IIpQlx3QUlC5A4PNr6zRAW_0.woff2) format('woff2');
+    }
+
+    @font-face {
+      font-family: 'Noto Serif';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Noto Serif Regular'), url(https://fonts.gstatic.com/s/notoserif/v7/ga6Iaw1J5X9T9RW6j9bNfFcWaA.woff2) format('woff2');
+      font-display: swap;
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'Noto Serif';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Noto Serif'), local('NotoSerif'), url(https://fonts.gstatic.com/s/notoserif/v7/ga6Iaw1J5X9T9RW6j9bNfFkWaCi_.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'Noto Serif';
+      font-style: italic;
+      font-weight: 400;
+      src: local('Noto Serif Italic'), url(https://fonts.gstatic.com/s/notoserif/v7/ga6Kaw1J5X9T9RW6j9bNfFImZDC7TMQ.woff2) format('woff2');
+    }
+
+    @font-face {
+      font-family: 'Noto Serif';
+      font-style: italic;
+      font-weight: 400;
+      src: local('Noto Serif Italic'), local('NotoSerif-Italic'), url(https://fonts.gstatic.com/s/notoserif/v7/ga6Kaw1J5X9T9RW6j9bNfFImajC7.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    body {
+      margin: 0 auto;
+      padding: 0;
+      color: #333;
+      font-family: "Hiragino Kaku Gothic", "Noto Sans", sans-serif;
+      overflow-x: hidden;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    div,
+    p,
+    ul,
+    li,
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: white;
+      padding-top: 5px;
+      margin: 0 auto;
+      z-index: 1;
+    }
+
+    footer {
+      text-align: center;
+      margin: 0 auto;
+      font-size: 12px;
+      -webkit-margin-before: 1em;
+      line-height: 2em;
+    }
+
+    footer p.copyright {
+      margin: 15px 0 25px 0;
+      color: #999;
+      padding-bottom: 400px;
+    }
+
+    form input[type=text] {
+      font-family: "Noto Sans", "Hiragino Kaku Gothic", sans-serif;
+    }
+
+    #content {
+      position: relative;
+    }
+
+    img.center {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .cf:before,
+    .cf:after {
+      content: "";
+      display: table;
+    }
+
+    .cf:after {
+      clear: both;
+    }
+
+    #shop {
+      position: absolute;
+      right: 220px;
+    }
+
+    .nav {
+      display: block;
+      margin-left: 0;
+      overflow: hidden;
+    }
+
+    .logo {
+      display: inline-block;
+      width: 98%;
+      height: 85%;
+      stroke-width: 0;
+      text-align: center;
+      margin-left: 2px;
+      padding-bottom: 8px;
+    }
+
+    .login img[src$=".svg"] {
+      width: auto;
+      height: 11px;
+      text-align: center;
+      padding-bottom: 5px;
+    }
+
+    .login {
+      display: inline-block;
+      width: 58px;
+      height: 20px;
+      padding: 0px 0 0px 0;
+      margin: 2px 0 8px 0;
+      background-color: #ffffff;
+      border-radius: 100px;
+      border: 2px solid #D1D1D1;
+      box-sizing: border-box;
+      text-align: center;
+      cursor: pointer;
+      vertical-top: middle;
+    }
+
+    .login:hover {
+      background-color: #dedede;
+    }
+
+    .nav ul {
+      display: inline-block;
+      float: right;
+      list-style: none;
+    }
+
+    .nav li {
+      display: inline-block;
+      float: left;
+      margin-right: 8px;
+      list-style: none;
+    }
+
+    .nav ul li:last-child {
+      margin-right: 0px;
+    }
+
+    body {
+      -webkit-tap-highlight-color: rgba(26, 26, 26, 0.300781)
+    }
+
+    #ads {
+      background: #DDD url(../images/ads_header.png) left top repeat-x;
+      height: 100px;
+      width: 100%;
+      text-align: center;
+      margin-top: 5px;
+    }
+
+    div.content {
+      width: 100%
+    }
+
+    div.count_info {
+      width: 100%;
+      background-color: #666;
+      text-align: center;
+      height: 30px;
+    }
+
+    div.count_info p {
+      line-height: 30px;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .landing_info {
+      margin: 10px;
+      border: 2px solid #ccc;
+      display: none;
+    }
+
+    .landing_info h2 {
+      height: 25px;
+      line-height: 25px;
+      background-color: #f90;
+      padding: 0 5px;
+      font-size: 15px;
+    }
+
+    .landing_info p {
+      padding: 10px 5px
+    }
+
+    .landing_info a {
+      font-size: 12px;
+      color: #09c;
+      text-decoration: underline;
+    }
+
+    #alc_ver a {
+      font-size: 12px;
+      color: #09c;
+      text-decoration: underline;
+    }
+
+    #alc_word_ranking {
+      font-size: 12px;
+      font-weight: bold;
+      padding-bottom: 0;
+    }
+
+    #alc_word_ranking_search {
+      padding: 2px 10px;
+      float: right;
+      border: 1px solid #630;
+      background-color: #f90;
+      font-size: 12px;
+    }
+
+    #alc_ver {
+      margin: 10px
+    }
+
+    #alc_ver p {
+      font-size: 12px;
+      color: #666;
+    }
+
+    #alc_ver p span {
+      font-size: 12px;
+      color: #666;
+    }
+
+    .slide {
+      width: 100%
+    }
+
+    #loading {
+      position: relative;
+      display: none;
+      margin: 52px auto;
+      z-index: 999;
+    }
+
+    #loading.show {
+      display: block
+    }
+
+    .activity_indicator {
+      background: transparent url(//cdn2.alc.co.jp/eow/sp/images/spinner_black_48.png) no-repeat center center;
+      background-size: 48px auto;
+      display: block;
+      width: 100%;
+      height: 48px;
+      -webkit-animation-duration: 1s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-name: animation-rotation;
+    }
+
+    @-webkit-keyframes animation-rotation {
+      from {
+        -webkit-transform: rotate(0deg)
+      }
+
+      8.32% {
+        -webkit-transform: rotate(0deg)
+      }
+
+      8.33% {
+        -webkit-transform: rotate(30deg)
+      }
+
+      16.65% {
+        -webkit-transform: rotate(30deg)
+      }
+
+      16.66% {
+        -webkit-transform: rotate(60deg)
+      }
+
+      24.99% {
+        -webkit-transform: rotate(60deg)
+      }
+
+      25% {
+        -webkit-transform: rotate(90deg)
+      }
+
+      33.32% {
+        -webkit-transform: rotate(90deg)
+      }
+
+      33.33% {
+        -webkit-transform: rotate(120deg)
+      }
+
+      41.65% {
+        -webkit-transform: rotate(120deg)
+      }
+
+      41.66% {
+        -webkit-transform: rotate(150deg)
+      }
+
+      49.99% {
+        -webkit-transform: rotate(150deg)
+      }
+
+      50% {
+        -webkit-transform: rotate(180deg)
+      }
+
+      58.32% {
+        -webkit-transform: rotate(180deg)
+      }
+
+      58.33% {
+        -webkit-transform: rotate(210deg)
+      }
+
+      66.65% {
+        -webkit-transform: rotate(210deg)
+      }
+
+      66.66% {
+        -webkit-transform: rotate(240deg)
+      }
+
+      74.99% {
+        -webkit-transform: rotate(240deg)
+      }
+
+      75% {
+        -webkit-transform: rotate(270deg)
+      }
+
+      83.32% {
+        -webkit-transform: rotate(270deg)
+      }
+
+      83.33% {
+        -webkit-transform: rotate(300deg)
+      }
+
+      91.65% {
+        -webkit-transform: rotate(300deg)
+      }
+
+      91.66% {
+        -webkit-transform: rotate(330deg)
+      }
+
+      99.99% {
+        -webkit-transform: rotate(330deg)
+      }
+
+      to {
+        -webkit-transform: rotate(360deg)
+      }
+    }
+
+    .slide>div>div.definition_block:last-child {
+      border-bottom: solid 1px red
+    }
+
+    .slide .definition_block {
+      padding: 0 12px 15px 12px;
+      line-height: 1.4em;
+      color: #333;
+      font-size: 15px;
+      border-top: solid 1px #b1b2b4;
+    }
+
+    .slide .definition_block:first-child {
+      border-top: 0
+    }
+
+    .slide .definition_block .midashi {
+      display: block;
+      margin: 10px 0 10px 0;
+      color: #00008b;
+      line-height: 1.4em;
+    }
+
+    .slide .definition_block .midashi .redtext {
+      color: #dc143c
+    }
+
+    .slide .definition_block .midashi {
+      font-weight: 700;
+      color: #00008b;
+    }
+
+    .slide .definition_block .midashi_je {
+      display: block;
+      margin: 10px 0 10px 0;
+      line-height: 1.4em;
+      font-weight: 700;
+      color: #00008b;
+    }
+
+    .slide .definition_block .midashi span.selected_word {
+      color: #fff
+    }
+    }
+
+    .slide .definition_block .midashi_je span.selected_word {
+      color: #fff
+    }
+
+    .slide .definition_block div .redtext {
+      color: #dc143c
+    }
+
+    .slide .definition_block .label,
+    .slide .definition_block .wordclass,
+    .slide .definition_block .ls_normal {
+      display: inline-block;
+      padding: 1px 4px 0;
+      margin-right: 5px;
+      color: #fff;
+      background-color: #b1b2b4;
+      border: solid 1px #b1b2b4;
+      -webkit-border-radius: 3px;
+    }
+
+    .slide .definition_block .ls_alert {
+      display: inline-block;
+      padding: 1px 4px 0;
+      margin-right: 5px;
+      color: #fff;
+      background-color: #FFCC66;
+      border: solid 1px #FFCC66;
+      -webkit-border-radius: 3px;
+    }
+
+    .slide .definition_block .kana {
+      color: #7f7f7f
+    }
+
+    .slide .definition_block .pron {
+      font-family: 'Noto Serif', 'Times New Roman', serif
+    }
+
+    .slide .definition_block .proni {
+      font-family: 'Noto Serif', 'Times New Roman', serif;
+      font-style: italic;
+    }
+
+    .slide .definition_block ol,
+    .slide .definition_block ul {
+      padding-left: 25px
+    }
+
+    .slide .definition_block a,
+    .slide .definition_block a:active,
+    .slide .definition_block a:hover,
+    .slide .definition_block a:visited {
+      color: #09c;
+      text-decoration: underline;
+    }
+
+    .slide .definition_block .action {
+      display: none;
+      height: 25px;
+      margin: 10px 0;
+    }
+
+    .slide .definition_block .action button {
+      float: right;
+      border: 0;
+      width: 30px;
+      height: 24px;
+    }
+
+    .slide .definition_block .action .mail {
+      background: transparent url(../images/word_mail@h.png) no-repeat center center;
+      background-size: 30px auto;
+    }
+
+    .slide .definition_block .action .fav {
+      background: transparent url(../images/word_fav@h.png) no-repeat center center;
+      background-size: 30px auto;
+    }
+
+    .slide .definition_block .henka {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .slide .definition_block .henka label {
+      display: inline-block;
+      padding: 0 4px;
+      margin-right: 5px;
+      color: #fff;
+      background-color: #06517e;
+      border: solid 1px #06517e;
+      -webkit-border-radius: 3px;
+    }
+
+    .slide .definition_block .henka hk {
+      display: inline;
+      color: #09c;
+      text-decoration: underline;
+    }
+
+    .slide .definition_block>div>li {
+      list-style-type: none;
+    }
+
+    .slide.b .definition_block {
+      font-size: 17px
+    }
+
+    .slide.b .definition_block .midashi {
+      font-size: 20px
+    }
+
+    .slide.bb .definition_block {
+      font-size: 20px
+    }
+
+    .slide.bb .definition_block .midashi {
+      font-size: 23px
+    }
+
+    .tip {
+      display: block;
+      position: absolute;
+      height: 45px;
+    }
+
+    .tip button {
+      display: inline-block;
+      height: 36px;
+      border: 0;
+    }
+
+    .tip .menu_copy {
+      width: 58px;
+      background: transparent url(../images/context_menu_copy_normal@h.png) no-repeat left top;
+      background-size: auto 36px;
+    }
+
+    .tip .menu_copy.hover {
+      background: transparent url(../images/context_menu_copy_pressed@h.png) no-repeat left top
+    }
+
+    .tip .menu_search {
+      width: 88px;
+      background: transparent url(../images/context_menu_search_normal@h.png) no-repeat left top;
+      background-size: auto 36px;
+    }
+
+    .tip .menu_search.hover {
+      background: transparent url(../images/context_menu_search_pressed@h.png) no-repeat left top
+    }
+
+    .tip .menu_mail {
+      width: 58px;
+      background: transparent url(../images/context_menu_mail_normal@h.png) no-repeat left top;
+      background-size: auto 36px;
+    }
+
+    .tip .menu_mail.hover {
+      background: transparent url(../images/context_menu_mail_pressed@h.png) no-repeat left top
+    }
+
+    .tip .menu_arrow {
+      position: relative;
+      top: -4px;
+      background: transparent url(../images/context_menu_arrow@h.png) no-repeat left top;
+      background-size: auto 10px;
+      width: 14px;
+      height: 10px;
+    }
+
+    .not_found {
+      margin: 12px;
+      line-height: 1.5em;
+      font-size: 15px;
+    }
+
+    .not_found h3 {
+      font-size: 18px;
+      color: red;
+      padding: 5px 0;
+    }
+
+    .not_found h4 {
+      font-size: 15px;
+      font-weight: normal;
+      color: red;
+    }
+
+    .not_found .spell {
+      margin-bottom: 10px
+    }
+
+    .not_found .spell sp {
+      display: inline;
+      color: #09c;
+      text-decoration: underline;
+    }
+
+    .not_found ul {
+      padding-left: 25px
+    }
+
+    .selected_word {
+      background-color: #09c;
+      color: #fff;
+    }
+
+    .next a {
+      display: block;
+      height: 40px;
+      line-height: 40px;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      color: #666;
+      font-size: 20px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .next a.hover {
+      color: #fff;
+      background: #09c;
+    }
+
+    #error_generic {
+      margin: 20px
+    }
+
+    #error_generic ul {
+      margin: 10px
+    }
+
+    #error_generic ul>li {
+      list-style-type: disc
+    }
+
+    .refvocab {
+      display: inline;
+      color: #09c;
+      text-decoration: underline;
+      word-wrap: break-word;
+    }
+
+    .float_footer {
+      height: 100px;
+      position: fixed;
+      z-index: 998;
+      bottom: 0;
+      width: 100%;
+      display: block;
+      text-align: center;
+      background-color: rgba(59, 88, 152, 0.5);
+    }
+
+    #infospace {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    #ad_rect {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    #ad_header {
+      text-align: center;
+    }
+
+    .kana {
+      display: none;
+    }
+
+    header {
+    -webkit-tap-highlight-color: rgba(26,26,26,0.300781)
+}
+
+header .nav {
+    text-align: right;
+    padding: 0 5px 10px 5px
+}
+
+#settings {
+    display: none
+}
+
+form#search_form {
+    text-align: center;
+    height: 57px;
+    position: relative
+}
+
+form#search_form #word_suggest {
+    position: absolute;
+    top: 37px;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    background: #fff;
+    z-index: 10000
+}
+
+span#input-with-clearbutton {
+    position: absolute;
+    left: 8px;
+    right: 52px;
+    display: block;
+    height: 35px;
+    min-height: 35px;
+    max-height: 35px;
+    padding: 0 35px 0 8px;
+    background-color: #FFF;
+    border: 1px solid #BBB;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 5px 0 rgba(0,0,0,0.3),0 1px 0 0 #fff
+}
+
+form#search_form input[type=text] {
+    position: relative;
+    left: 0;
+    background-color: transparent;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    height: 33px;
+    min-height: 33px;
+    max-height: 33px;
+    font-size: 18px;
+    -moz-appearance: none;
+    -webkit-appearance: none
+}
+
+span#clearbutton {
+    height: 35px;
+    width: 20px;
+    position: absolute;
+    right: 8px;
+    top: 1px;
+    background: transparent url(//cdn2.alc.co.jp/eow/sp/images/del.png) no-repeat scroll center center;
+    -webkit-background-size: 20px 20px;
+    cursor: pointer;
+    display: none
+}
+
+form#search_form input[type=submit] {
+    position: absolute;
+    right: 8px;
+    top: 0;
+    width: 36px;
+    height: 37px;
+    border: 0;
+    padding: 0;
+    margin-left: 3px;
+    background: url(//cdn2.alc.co.jp/eow/sp/images/search_button.png) no-repeat top left;
+    -webkit-background-size: 36px 37px;
+    text-indent: -5000px
+}
+
+form#search_form a#pro_login {
+    position: absolute;
+    left: 15px;
+    bottom: -1px;
+    height: 21px
+}
+
+#settings_content {
+    padding: 20px 20px 10px;
+    position: relative
+}
+
+#settings_content h1 {
+    font-size: 20px;
+    margin-bottom: 20px
+}
+
+#settings_content h2 {
+    font-size: 16px;
+    margin: 10px 0 5px 0
+}
+
+#settings_help,#settings_about {
+    text-align: right;
+    font-size: 15px;
+    margin: 5px
+}
+
+#settings_help a,#settings_about a {
+    text-decoration: none
+}
+
+#settings_content label {
+    margin-right: 10px
+}
+
+#settings_content .buttons {
+    margin: 15px 0 0
+}
+
+.word_list {
+    z-index: 1
+}
+
+.word_list button {
+    -webkit-appearance: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    width: 100%;
+    text-align: left;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 32px 0 12px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    background: transparent url(../images/word_arrow@h.png) no-repeat right center;
+    background-size: 24px auto;
+    font-size: 20px
+}
+
+.word_list button span.highlight {
+    color: #f60
+}
+
+  </style>
+  <link rel="apple-touch-icon" href="//cdn2.alc.co.jp/eow/sp/images/icon.png" />
+  <link rel="canonical" href="https://eow.alc.co.jp/search?q=test" />
+
+
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+  <!-- <script src="./confs.js"></script> -->
+  <!-- <script src="./dict_r.js"></script>
+  <script src="./mc_sp.js"></script> -->
+  <!--  -->
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
+
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+
+</head>
+
+<body class="search">
+  <!-- Google Tag Manager -->
+  <!-- <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TKK8PX');</script> -->
+  <!-- End Google Tag Manager -->
+
+  <!-- <script type="text/javascript">
+    var microadCompass = microadCompass || {};
+    microadCompass.queue = microadCompass.queue || [];
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="//j.microad.net/js/compass.js"
+    onload="new microadCompass.AdInitializer().initialize();" async></script>
+  <div id="57bbdca2bdfc8b1541fcb0cc3f2ab49a">
+    <script type="text/javascript">
+      microadCompass.queue.push({
+        "spot": "57bbdca2bdfc8b1541fcb0cc3f2ab49a",
+        "url": "",
+        "referrer": ""
+      });
+    </script> -->
+  </div>
+
+  <header id="search_header">
+    <!-- <script>
+      eowApp.fillHeader(document.getElementById('search_header'), { settingsButton: true });
+    </script> -->
+    <div class="nav">
+      <ul>
+        <li><a href="https://eow.alc.co.jp/" title="アルクのホームページ" id="alc_top"><amp-img alt="top-page"
+              src="//cdn2.alc.co.jp/eow/sp/images/t_symbol.svg" width="57" height="23"></a></li>
+        <li>
+          <div class="logo login"> <a href="https://eowp.alc.co.jp/login"
+              id="eowtop_p_login"><amp-img alt="eowp_login" src="//cdn2.alc.co.jp/eow/sp/images/lo_pro.svg" width="58" height="16" layout="fixed"></a></div>
+        </li>
+        <li>
+          <div class="login"> <a href="https://eowpf.alc.co.jp" id="eowtop_f_login"><amp-img
+                src="//cdn2.alc.co.jp/eow/sp/images/lo_proLite.svg" width="58" height="16" layout="fixed"></a></div>
+        </li>
+        <li><a href="#" title="Settings" id="search_settings"><amp-img 
+              src="//cdn2.alc.co.jp/eow/sp/images/search_settings.png" width="76" height="23"></a></li>
+      </ul>
+    </div>
+    <form action="/sp/search.html" method="get" id="search_form" target="_top"> <span id="input-with-clearbutton" class="clearable">
+        <input id="q" type="text" placeholder="英辞郎 on the WEB"
+          name="q" data-role="none"> <span id="clearbutton" style="display: inline;"></span> </span>
+      <div id="word_suggest" style="display: none;">
+      </div> <input type="submit" value="search" data-role="none">
+    </form>
+  </header>
+
+  <!--     EOW_NEW-115-->
+  <div style="padding: 5px 5px 5px 5px;">
+    <div style="margin:0 0 3px 0;font-size: 80%;">
+      <span class="text1"><a target="_blank"
+          href="https://ds.advg.jp/adpds_deliver/p/r?adpds_sid=1129&amp;adpds_fid=204910&amp;adpds_cpn=156452&amp;adpds_bid=467550&amp;adpds_cid=345580&amp;adpds_nocache=156171955729886384817&amp;adpds_lid=1"
+          class="prlink"><b>▼すべての例文を見る</b></a></span></div>
+    <div style="margin:0 0 3px 0;font-size: 80%;">
+      <span class="text1"><a target="_blank"
+          href="https://ds.advg.jp/adpds_deliver/p/r?adpds_sid=1129&amp;adpds_fid=204911&amp;adpds_cpn=156452&amp;adpds_bid=471415&amp;adpds_cid=349010&amp;adpds_nocache=156171955742492483688&amp;adpds_lid=1"
+          class="prlink"><b>★無料登録で、英和例文15万項目表示</b></a></span></div>
+  </div>
+  <div id="ad_header">
+    <script type="text/javascript">
+      <div id="div-gpt-ad-1544172902575-0" data-google-query-id="CNnd8duCjOMCFVC8lgodd6wJpg">
+
+        <div id="google_ads_iframe_/62532913/s_alc_320x100_header01_21946_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/62532913/s_alc_320x100_header01_21946_0" title="3rd party ad content" name="google_ads_iframe_/62532913/s_alc_320x100_header01_21946_0" width="320" height="100" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;" data-google-container-id="1" data-load-complete="true"></iframe></div>
+      </div>    
+    </script>
+  </div>
+  <div id="content">
+    <div id="results" class="content slide">
+      <div class="definition_block">
+        <div class="henka"><label>変化形</label>
+          <hk>tests</hk> , <hk>testing</hk> , <hk>tested</hk>
+        </div>
+        <div>
+          <li><span class="midashi"><span class="redtext">test</span></span>
+            <div><span class="wordclass">1名</span>
+              <ol>
+                <li>〔教育<span class="kana">｛きょういく｝</span>の〕試験<span class="kana">｛しけん｝</span>、考査<span
+                    class="kana">｛こうさ｝</span>、テスト</li>
+                <li>〔機器<span class="kana">｛きき｝</span>や製法<span class="kana">｛せいほう｝</span>などの〕検査<span
+                    class="kana">｛けんさ｝</span>、試験運転<span class="kana">｛しけん うんてん｝</span>、動作確認<span class="kana">｛どうさ
+                    かくにん｝</span></li>
+                <li>〔人や物事<span class="kana">｛ものごと｝</span>を判断<span class="kana">｛はんだん｝</span>する〕評価基準<span
+                    class="kana">｛ひょうか きじゅん｝</span>、試金石<span class="kana">｛しきんせき｝</span></li>
+                <li>〔人や物事<span class="kana">｛ものごと｝</span>を試す〕試練<span class="kana">｛しれん｝</span>、苦難<span
+                    class="kana">｛くなん｝</span></li>
+                <li>《医》〔体やサンプルの〕検査（薬）<span class="kana">｛けんさ（やく）｝</span></li>
+                <li>《化学》〔成分<span class="kana">｛せいぶん｝</span>の〕分析<span class="kana">｛ぶんせき｝</span>、検査<span
+                    class="kana">｛けんさ｝</span></li>
+                <li>《化学》〔分析<span class="kana">｛ぶんせき｝</span>の〕試薬<span class="kana">｛しやく｝</span>、試剤</li>
+                <li>《化学》〔成分<span class="kana">｛せいぶん｝</span>の〕存在反応<span class="kana">｛そんざい はんのう｝</span></li>
+                <li>〈英〉＝ <span class="refvocab">test match</span></li>
+              </ol><span class="wordclass">1他動</span>
+              <ol>
+                <li>〔どんなものかを知るために～を〕試して［経験<span class="kana">｛けいけん｝</span>して・動かして］みる</li>
+                <li>〔評価<span class="kana">｛ひょうか｝</span>するために～を〕検査<span class="kana">｛けんさ｝</span>する、試験<span
+                    class="kana">｛しけん｝</span>する</li>
+                <li>〔能力<span class="kana">｛のうりょく｝</span>を測るために人に〕試問<span class="kana">｛しもん｝</span>［質問<span
+                    class="kana">｛しつもん｝</span>］する</li>
+                <li>《医》〔体やサンプルを〕検査<span class="kana">｛けんさ｝</span>する</li>
+                <li>《化学》〔成分<span class="kana">｛せいぶん｝</span>を見るために～を〕分析<span class="kana">｛ぶんせき｝</span>する</li>
+                <li>〔人の能力<span class="kana">｛のうりょく｝</span>などを〕強いて働かせる、ひどく疲れさせる</li>
+              </ol><span class="wordclass">1自動</span>
+              <ol>
+                <li>試験<span class="kana">｛しけん｝</span>［検査<span class="kana">｛けんさ｝</span>］を受ける</li>
+                <li>《医・化学》検査<span class="kana">｛けんさ｝</span>［分析<span class="kana">｛ぶんせき｝</span>］を行う</li>
+                <li>〔試験<span class="kana">｛しけん｝</span>で〕成績<span class="kana">｛せいせき｝</span>を挙げる</li>
+                <li>〔検査<span class="kana">｛けんさ｝</span>や分析<span class="kana">｛ぶんせき｝</span>で〕結果<span
+                    class="kana">｛けっか｝</span>が出る</li>
+              </ol><span class="wordclass">2名</span>
+              <ol>《動物》〔貝や甲殻類<span class="kana">｛こうかくるい｝</span>などの〕（外）殻</ol><span class="attr"><span
+                  class="ls_normal">レベル</span>1、<span class="ls_normal">発音</span><span class="pron">tést、</span><span
+                  class="ls_normal">カナ</span>テストゥ、<span class="ls_normal">変化</span>《動》tests ｜ testing ｜ tested</span>
+            </div>
+          </li>
+        </div>
+      </div>
+      <div class="definition_block">
+        <div>
+          <li><span class="midashi"><span class="redtext">TEST</span></span>
+            <div><span class="wordclass">略</span>
+              <ol>
+                <li>＝<span class="refvocab">Thesaurus of Engineering and Scientific Terms</span><br>科学技術用語同意語辞典</li>
+                <li>＝<span class="refvocab">Travel English Standard Test</span><br>旅行業英語検定試験<span class="kana">｛りょこう ぎょう
+                    えいご けんてい しけん｝</span></li>
+              </ol>
+            </div>
+          </li>
+        </div>
+      </div>
+      <div class="definition_block">
+        <div>
+          <li><span class="midashi"><span class="redtext">test</span> ~ extensively</span>
+            <div>～を大規模<span class="kana">｛だいきぼ｝</span>［広範囲<span class="kana">｛こうはんい｝</span>］に試験<span
+                class="kana">｛しけん｝</span>［テスト］する</div>
+          </li>
+        </div>
+      </div>
+      <div class="definition_block">
+        <div>
+          <li><span class="midashi"><span class="redtext">test</span> ~ for applicability</span>
+            <div>～の適用性<span class="kana">｛てきよう せい｝</span>を検証<span class="kana">｛けんしょう｝</span>［検査<span
+                class="kana">｛けんさ｝</span>・テスト］する</div>
+          </li>
+        </div>
+      </div>
+      <div class="definition_block">
+        <div>
+          <li><span class="midashi"><span class="redtext">test</span> ~ for bacteria</span>
+            <div>～（内）の雑菌<span class="kana">｛ざっきん｝</span>（の有無<span class="kana">｛うむ｝</span>［数］）を調べる［検査<span
+                class="kana">｛けんさ｝</span>する］<br><span class="ls_normal">表現パターン</span>check ［test］ ~ for bacteria</div>
+          </li>
+        </div>
+      </div>
+      <div class="definition_block">
+        <div>
+          <li><span class="midashi"><span class="redtext">test</span> ~ for defects</span>
+            <div>欠陥<span class="kana">｛けっかん｝</span>がないか～を調べる</div>
+          </li>
+        </div>
+      </div>
+      <div class="definition_block">
+        <div>
+          <li><span class="midashi"><span class="redtext">test</span> ~ for endurance</span>
+            <div>～の耐久試験<span class="kana">｛たいきゅう しけん｝</span>を行う</div>
+          </li>
+        </div>
+      </div>
+      <div class="definition_block">
+        <div>
+          <li><span class="midashi"><span class="redtext">test</span> ~ for free</span>
+            <div>～を無料<span class="kana">｛むりょう｝</span>で試す［テストする］</div>
+          </li>
+        </div>
+      </div>
+      <div class="definition_block">
+        <div>
+          <li><span class="midashi"><span class="redtext">test</span> ~ for real</span>
+            <div>実現<span class="kana">｛じつげん｝</span>に向けて～を試行<span class="kana">｛しこう｝</span>する</div>
+          </li>
+        </div>
+      </div>
+      <div class="definition_block">
+        <div>
+          <li><span class="midashi"><span class="redtext">test</span> ~ for safety and efficacy</span>
+            <div>～の安全性<span class="kana">｛あんぜんせい｝</span>と効能<span class="kana">｛こうのう｝</span>を検査<span
+                class="kana">｛けんさ｝</span>［テスト］する</div>
+          </li>
+        </div>
+      </div>
+      <div class="next"><a href="https://eow.alc.co.jp/sp/search.html?q=test&pg=2">次のページ</a></div>
+      <div class="tip" style="display:none;">
+        <!--<button _tmplitem="82"  class="menu_copy">&nbsp;</button>--><button class="menu_search">&nbsp;</button>
+        <div class="menu_arrow">&nbsp;</div>
+      </div>
+    </div>
+    <div id="loading">
+      <div class="activity_indicator">&nbsp;</div>
+    </div>
+    <div id="landing"></div>
+  </div>
+  <!-- ▼ Infospace ▼ -->
+  <!--  ↓EOW_NEW-34 EOW (SP)SERP 下部広告枠整理のため削除 -->
+  <!-- ↑EOW_NEW-34 EOW (SP)SERP 下部広告枠整理のため削除 -->
+  <div id="infospace" style="margin-bottom:10px;">
+    <script type="text/javascript">
+          infospace();
+    </script>
+  </div>
+  <!-- ▲ Infospace ▲ -->
+  <!-- ▼ AdSense ▼ -->
+  <!--  ↓EOW_NEW-135 スマホ版レクタングル枠広告タグ変更 -->
+  <div id="ad_rect">
+    <script type="text/javascript">
+        adRect();
+    </script>
+  </div>
+  <!-- ↑EOW_NEW-135 スマホ版レクタングル枠広告タグ変更 -->
+  <!-- ▲ AdSense ▲ -->
+  <footer>
+    <p>
+      <a href="//eow.alc.co.jp/">トップページへ戻る</a>&nbsp;|&nbsp;<a href="//eowp.alc.co.jp/info2/" target="_blank">英辞郎 on the
+        WEB Pro</a>&nbsp;|&nbsp;<a href="http://www.alc.co.jp/policy/other/#eow">「英辞郎 on the WEB」
+        利用規約</a>&nbsp;|&nbsp;<a href="http://ec.alc.co.jp/?utm_source=serp_sp&utm_medium=text&utm_campaign=EOWfooter"
+        target="_blank">アルクショップ</a>&nbsp;|&nbsp;<a href="https://eikaiwa.alc.co.jp/"
+        target="_blank">アルクオンライン英会話</a>&nbsp;|&nbsp;<a
+        href="http://www.alc.co.jp/policy/privacy/">プライバシーポリシー</a>&nbsp;|&nbsp;<a
+        href="http://www.alc.co.jp/adv/">広告掲載について</a>&nbsp;|&nbsp;<a
+        href="http://www.alc.co.jp/inquiry/">お問い合わせ</a>&nbsp;|&nbsp;<a href="http://www.alc.co.jp/press/"
+        target="_blank">会社案内</a>&nbsp;|&nbsp;<a href="//eowp.alc.co.jp/info-business/" target="_blank"
+        id="eow_sp_footerhojin">法人のお客様</a></p>
+    <p class="copyright">Copyright ALC Press Inc. All rights reserved.<span style="color:rgb(255,255,255);">
+        (eow06)</span></p>
+  </footer>
+
+    <amp-analytics type="googleanalytics">
+      <script type="application/json">
+      {
+        "vars": {
+          "account": "UA-1590792-32"
+        },
+        "triggers": {
+          "default pageview": {
+            "on": "visible",
+            "request": "pageview",
+            "vars": {
+              "title": "Name of the Article"
+            }
+          },
+          "click on eowtop_p_login": {
+            "on": "ckick",
+            "selector": "#eowtop_p_login",
+            "request": "event",
+            "vars": {
+              "eventCategory": "eowtop_p_login",
+              "eventAction": "click",
+              "eventLabel" : "//eowp.alc.co.jp/login"
+            }
+          },
+          "eow_sp_footerhojin": {
+            "on": "click",
+            "selector": "#eow_sp_footerhojin",
+            "request": "event",
+            "vars": {
+              "eventCategory": "eow_sp_footerhojin",
+              "eventAction": "click",
+              "eventLabel" : "//eowp.alc.co.jp/info-business/"
+            }
+          }
+        }
+      }
+      </script>
+    </amp-analytics>
+</body>
+
+</html>

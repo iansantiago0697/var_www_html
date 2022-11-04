@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<rdf:RDF
+xmlns='//purl.org/rss/1.0/'
+xmlns:rdf='//www.w3.org/1999/02/22-rdf-syntax-ns#'
+xmlns:dc='//purl.org/dc/elements/1.1/'
+xml:lang='ja'>
+
+
+<channel rdf:about='/help/rss.rdf'>
+<title>『英辞郎 on the Web』更新情報</title>
+<link>http://www.alc.co.jp/</link>
+<description>進化を続けるオンライン英和・和英データベース『英辞郎 on the Web』の更新情報をお届けします。</description>
+<items>
+<rdf:Seq>
+<rdf:li rdf:resource='/help/update.html#111014-01'/>
+<rdf:li rdf:resource='/help/update.html#110930-01'/>
+<rdf:li rdf:resource='/help/update.html#110818-01'/>
+<rdf:li rdf:resource='/help/update.html#110707-01'/>
+<rdf:li rdf:resource='/help/update.html#110422-01'/>
+<rdf:li rdf:resource='/help/update.html#110323-01'/>
+<rdf:li rdf:resource='/help/update.html#110121-01'/>
+<rdf:li rdf:resource='/help/update.html#101217-01'/>
+<rdf:li rdf:resource='/help/update.html#101119-01'/>
+<rdf:li rdf:resource='/help/update.html#101022-01'/>
+<rdf:li rdf:resource='/help/update.html#100805-01'/>
+<rdf:li rdf:resource='/help/update.html#100706-01'/>
+<rdf:li rdf:resource='/help/update.html#100603-01'/>
+<rdf:li rdf:resource='/help/update.html#100326-01'/>
+<rdf:li rdf:resource='/help/update.html#100114-01'/>
+<rdf:li rdf:resource='/help/update.html#091022-01'/>
+<rdf:li rdf:resource='/help/update.html#090811-01'/>
+<rdf:li rdf:resource='/help/update.html#090619-01'/>
+<rdf:li rdf:resource='/help/update.html#090526-01'/>
+<rdf:li rdf:resource='/help/update.html#090512-02'/>
+</rdf:Seq>
+</items>
+</channel>
+
+<item rdf:about='/help/update.html#111014-01'>
+  <title>11/10/14：『英辞郎 on the WEB』の更新情報ページを移行します</title>
+	<link>/help/update.html#111014-01</link>
+  <description><![CDATA[ブックマークおよびRSS購読いただいていた皆様は、登録を変更いただきますよう、お願い申し上げます。]]></description>
+	<dc:date>2011-10-14 14:00:45</dc:date>
+</item>
+
+<item rdf:about='/help/update.html#110930-01'>
+  <title>11/09/30：『英辞郎 on the Web』のデータ更新をおこないました</title>
+	<link>/help/update.html#110930-01</link>
+  <description><![CDATA[11/09/30 に『英辞郎 on the Web』のデータ更新を実施しました。現在収録しているデータは、Ver.130（2011年9月22日時点のもので、英和見出項目数 = 184万、和英見出項目数 = 230万）となります（和英の見出項目は、スペースアルクの判断により削除している項目があるため、EDPが制作・直販しているものより6万項目少なくなっています）。]]></description>
+	<dc:date>2011-09-30 19:00:45</dc:date>
+</item>
+
+<item rdf:about='/help/update.html#110818-01'>
+  <title>11/08/18：『英辞郎 on the Web』のデータ更新をおこないました</title>
+	<link>/help/update.html#110818-01</link>
+  <description><![CDATA[11/08/18 に『英辞郎 on the Web』のデータ更新を実施しました。現在収録しているデータは、Ver.130（2011年8月10日時点のもので、英和見出項目数 = 184万、和英見出項目数 = 233万）となります（和英の見出項目は、スペースアルクの判断により削除している項目があるため、EDPが制作・直販しているものより6万項目少なくなっています）。]]></description>
+	<dc:date>2011-08-18 19:00:45</dc:date>
+</item>
+
+<item rdf:about='/help/update.html#110707-01'>
+  <title>11/07/07：『英辞郎 on the Web』のデータ更新をおこないました</title>
+	<link>/help/update.html#110707-01</link>
+  <description><![CDATA[11/07/07 に『英辞郎 on the Web』のデータ更新を実施しました。現在収録しているデータは、Ver.129（2011年7月7日時点のもので、英和見出項目数 = 183万、和英見出項目数 = 232万）となります（和英の見出項目は、スペースアルクの判断により削除している項目があるため、EDPが制作・直販しているものより6万項目少なくなっています）。]]></description>
+	<dc:date>2011-07-07 19:00:45</dc:date>
+</item>
+
+<item rdf:about='/help/update.html#110422-01'>
+	<title>11/04/22：『英辞郎 on the Web』のデータ更新をおこないました</title>
+	<link>/help/update.html#110422-01</link>
+	<description><![CDATA[11/04/22 に『英辞郎 on the Web』のデータ更新を実施しました。現在収録しているデータは、Ver.128（2011年4月21日時点のもので、英和見出項目数 = 182万、和英見出項目数 = 231万）となります（和英の見出項目は、スペースアルクの判断により削除している項目があるため、EDPが制作・直販しているものより6万項目少なくなっています）。]]></description>
+	<dc:date>2011-04-22 19:00:45</dc:date>
+</item>
+
+<item rdf:about='/help/update.html#110323-01'>
+	<title>11/03/23：『英辞郎 on the Web』のデータ更新をおこないました</title>
+	<link>/help/update.html#110323-01</link>
+	<description><![CDATA[11/03/23 に『英辞郎 on the Web』のデータ更新を実施しました。現在収録しているデータは、Ver.128（2011年3月9日時点のもので、英和見出項目数 = 182万、和英見出項目数 = 211万）となります（和英の見出項目は、スペースアルクの判断により削除している項目があるため、EDPが制作・直販しているものより16万項目少なくなっています）。]]></description>
+	<dc:date>2011-03-23 19:00:45</dc:date>
+</item>
+
+<item rdf:about='/help/update.html#110121-01'>
+	<title>11/01/21：『英辞郎 on the Web』のデータ更新をおこないました</title>
+	<link>/help/update.html#110121-01</link>
+	<description><![CDATA[11/01/21 に『英辞郎 on the Web』のデータ更新を実施しました。現在収録しているデータは、Ver.127（2011年1月19日時点のもので、英和見出項目数 = 181万、和英見出項目数 = 210万）となります（和英の見出項目は、スペースアルクの判断により削除している項目があるため、EDPが制作・直販しているものより16万項目少なくなっています）。]]></description>
+	<dc:date>2011-01-21 19:00:45</dc:date>
+</item>
+
+<item rdf:about='/help/update.html#101217-01'>
+<title>10/12/17：『英辞郎 on the Web』のデータ更新をおこないました</title>
+<link>/help/update.html#101217-01</link>
+<description><![CDATA[10/12/17 に『英辞郎 on the Web』のデータ更新を実施しました。現在収録しているデータは、Ver.126（2010年12月15日時点のもので、英和見出項目数 = 180万9000、和英見出項目数 = 210万）となります（和英の見出項目は、スペースアルクの判断により削除している項目があるため、EDPが制作・直販しているものより16万項目少なくなっています）。]]></description>
+<dc:date>2010-12-17 19:00:45</dc:date>
+</item>
+
+<item rdf:about='/help/update.html#101119-01'>
+<title>10/11/19：『英辞郎 on the Web』のデータ更新をおこないました</title>
+<link>/help/update.html#101119-01</link>
+<description><![CDATA[10/11/19 に『英辞郎 on the Web』のデータ更新を実施しました。現在収録しているデータは、Ver.126（2010年11月17日時点のもので、英和見出項目数 = 180万1000、和英見出項目数 = 210万）となります（和英の見出項目は、スペースアルクの判断により削除している項目があるため、EDPが制作・直販しているものより16万項目少なくなっています）。]]></description>
+<dc:date>2010-11-19 19:00:45</dc:date>
+</item>
+
+<item rdf:about='/help/update.html#101022-01'>
+<title>10/10/22：『英辞郎 on the Web』のデータ更新をおこないました</title>
+<link>/help/update.html#101022-01</link>
+<description><![CDATA[10/10/22 に『英辞郎 on the Web』のデータ更新を実施しました。現在収録しているデータは、Ver.125（2010年10月20日時点のもので、英和見出項目数 = 179万3000、和英見出項目数 = 210万）となります（和英の見出項目は、スペースアルクの判断により削除している項目があるため、EDPが制作・直販しているものより16万項目少なくなっています）。]]></description>
+<dc:date>2010-10-22 18:00:45</dc:date>
+</item>
+
+<item rdf:about='/help/update.html#100805-01'>
+<title>10/08/05：『英辞郎 on the Web』のデータ更新をおこないました</title>
+<link>/help/update.html#100805-01</link>
+<description><![CDATA[10/08/05 に『英辞郎 on the Web』のデータ更新を実施しました。現在収録しているデータは、Ver.122（2010年8月3日時点のもので、英和見出項目数 = 176万9204、和英見出項目数 = 210万）となります（和英の見出項目は、スペースアルクの判断により削除している項目があるため、EDPが制作・直販しているものより16万項目少なくなっています）。]]></description>
+<dc:date>2010-08-05 18:00:45</dc:date>
+</item>
+
+<item rdf:about='/help/update.html#100706-01'>
+<title>10/07/06：『英辞郎 on the Web』のデータ更新をおこないました</title>
+<link>/help/update.html#100706-01</link>
+<description><![CDATA[10/07/06 に『英辞郎 on the Web』のデータ更新を実施しました。現在収録しているデータは、Ver.122（2010年7月1日時点のもので、英和見出項目数 = 176 万、和英見出項目数 = 210 万）となります（和英の見出項目は、スペースアルクの判断により削除している項目があるため、EDPが制作・直販しているものより16万項目少なくなっています）。]]></description>
+<dc:date>2010-07-06 18:00:45</dc:date>
+</item>
+
+<item rdf:about='/help/update.html#100603-01'>
+<title>10/06/03：『英辞郎 on the Web』のデータ更新をおこないました</title>
+<link>/help/update.html#100603-01</link>
+<description><![CDATA[10/06/03 に『英辞郎 on the Web』のデータ更新を実施しました。現在収録しているデータは、Ver.121（2010年5月31日時点のもので、英和見出項目数 = 175 万、和英見出項目数 = 207 万）となります（和英の見出項目は、スペースアルクの判断により削除している項目があるため、EDPが制作・直販しているものより16万項目少なくなっています）。]]></description>
+<dc:date>2010-06-03 18:00:45</dc:date>
+</item>
+
+<item rdf:about='/help/update.html#100326-01'>
+<title>10/03/26：『英辞郎 on the Web』のデータ更新をおこないました</title>
+<link>/help/update.html#100326-01</link>
+<description><![CDATA[10/03/26 に『英辞郎 on the Web』のデータ更新を実施しました。現在収録しているデータは、Ver.119（2010年3月25日時点のもので、英和見出項目数 = 173 万、和英見出項目数 = 206 万）となります（和英の見出項目は、スペースアルクの判断により削除している項目があるため、EDPが制作・直販しているものより16万項目少なくなっています）。]]></description>
+<dc:date>2010-03-26 18:00:45</dc:date>
+</item>
+
+<item rdf:about='/help/update.html#100114-01'>
+<title>10/01/14：『英辞郎 on the Web』のデータ更新をおこないました</title>
+<link>/help/update.html#100114-01</link>
+<description><![CDATA[10/01/14 に『英辞郎 on the Web』のデータ更新を実施しました。現在収録しているデータは、Ver.118（2010年1月12日時点のもので、英和見出項目数 = 171 万、和英見出項目数 = 200 万）となります（和英の見出項目は、スペースアルクの判断により削除している項目があるため、EDPが制作・直販しているものより16万項目少なくなっています）。]]></description>
+<dc:date>2010-01-14 18:30:45</dc:date>
+</item>
+
+<item rdf:about='/help/update.html#091022-01'>
+<title>09/10/22：『英辞郎 on the Web』のデータ更新をおこないました</title>
+<link>/help/update.html#091022-01</link>
+<description><![CDATA[09/10/22 に『英辞郎 on the Web』のデータ更新を実施しました。現在収録しているデータは、Ver.117（2009年10月20日時点のもので、英和見出項目数 = 171 万、和英見出項目数 = 221 万）となります。]]></description>
+<dc:date>2009-10-22 19:02:34</dc:date>
+</item>
+
+<item rdf:about='/help/update.html#090811-01'>
+<title>09/08/11：キーワード入力補助機能を追加しました</title>
+<link>/help/update.html#090811-01</link>
+<description><![CDATA[β版として公開していたインクリメンタルサーチ機能を、キーワード入力補助機能として通常版の『英辞郎 on the WEB』に追加いたしました。詳しくは、<a href="/help/tips/tip013.html" target="_blank">こちらをご参照ください</a>。また、β版は2009年７月28日で終了いたしました。]]></description>
+<dc:date>2009-08-11 16:33:21</dc:date>
+</item>
+
+<item rdf:about='/help/update.html#090619-01'>
+<title>09/06/19：『英辞郎 on the Web』のデータ更新をおこないました</title>
+<link>/help/update.html#090619-01</link>
+<description><![CDATA[09/06/19 に『英辞郎 on the Web』のデータ更新を実施しました。現在収録しているデータは、Ver.116（2009年6月18日時点のもので、英和見出項目数 = 170 万、和英見出項目数 = 202 万）となります。]]></description>
+<dc:date>2009-06-19 19:02:34</dc:date>
+</item>
+
+<item rdf:about='/help/update.html#090526-01'>
+<title>09/05/26：変化形検索機能を追加しました</title>
+<link>/help/update.html#090526-01</link>
+<description><![CDATA[英単語の変化形も含めて検索ができる変化形検索を追加しました。詳しくは<a href="howto3.html#3-7">こちらをご参照ください</a>]]></description>
+<dc:date>2009-05-26 18:45:29</dc:date>
+</item>
+
+<item rdf:about='/help/update.html#090512-02'>
+<title>09/05/12：検索結果画面のユーザ設定機能を追加しました</title>
+<link>/help/update.html#090512-02</link>
+<description><![CDATA[検索結果画面の設定をカスタマイズできる、ユーザ設定機能を追加しました。詳しくは<a href="howto2.html#2-4">こちらをご参照ください</a>]]></description>
+<dc:date>2009-05-12 18:43:58</dc:date>
+</item>
+
+</rdf:RDF>

@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/*-------------------------------------------------
+ Ganko chaya
+
+ * Style URL: css/clearfix.css
+ * Last Up Date: 2008/01/08
+-------------------------------------------------*/
+
+
+
+/*-----  contents -------
+
+	1: clearfix hack
+	2: IE hack (except macIE)
+	  
+----------------------*/
+
+
+
+/*
+===== 1: clearfix hack ===========================*/
+div#container:after,
+div#wrapper:after,
+div#contents:after,
+body#top div#container div#wrapper div#contents ul#news li dl:after,
+body#special div#container div#wrapper div#contents div#shou-dis:after,
+body#faq div#container div#wrapper div#contents dl.answer dd dl#caffeine dd ul:after,
+body#special-01 div#container div#wrapper div#sonota div#sonota-shouhin {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+div#container,
+div#wrapper,
+div#contents,
+body#top div#container div#wrapper div#contents ul#news li dl,
+body#special div#container div#wrapper div#contents div#shou-dis,
+body#faq div#container div#wrapper div#contents dl.answer dd dl#caffeine dd ul,
+body#special-01 div#container div#wrapper div#sonota div#sonota-shouhin {
+	display: inline-block;
+}
+
+
+
+
+/*
+===== 2: IE hack (except macIE) ===========================*/
+
+
+/* Hides from IE-mac \*/
+
+* html div#container,
+* html div#wrapper,
+* html div#contents,
+* html body#top div#container div#wrapper div#contents ul#news li dl,
+* html body#special div#container div#wrapper div#contents div#shou-dis,
+* html body#faq div#container div#wrapper div#contents dl.answer dd dl#caffeine dd ul,
+* html body#special-01 div#container div#wrapper div#sonota div#sonota-shouhin {
+	height: 1%;
+}
+
+div#container,
+div#wrapper,
+div#contents,
+body#top div#container div#wrapper div#contents ul#news li dl,
+body#special div#container div#wrapper div#contents div#shou-dis,
+body#faq div#container div#wrapper div#contents dl.answer dd dl#caffeine dd ul 
+body#special-01 div#container div#wrapper div#sonota div#sonota-shouhin {
+	display: block;
+}
+
+/* End hide from IE-mac */

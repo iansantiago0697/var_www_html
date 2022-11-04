@@ -1,0 +1,165 @@
+body{
+	background-color: #FFFFFF;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 5px;
+	font-size: 12px;
+	color: #333333;
+	font-family:Osaka
+}
+
+td{
+	font-size: 12px;
+	color: #333333;
+	font-family:Osaka
+}
+
+li{
+	font-size: x-small;
+	line-height: 130%;
+	font-family:Arial, Osaka
+}
+
+p{
+	font-size: x-small;
+	font-family:Arial, sans-serif
+}
+
+A{
+	text-decoration: underline
+}
+
+/* ▼英辞郎検索文字列用▼ */
+.ejr_e{
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+}
+
+/* ▼和英辞郎検索文字列用▼ */
+.ejr_j{
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+}
+
+/* ▼上部ジャンルリンク用▼ */
+A.genre_t1:active{color:#FFFFFF;text-decoration:none}
+A.genre_t1:visited{color:#FFFFFF;text-decoration:none}
+A.genre_t1:hover{color:#FFFFFF;text-decoration:underline}
+A.genre_t1:link{color:#FFFFFF;text-decoration:none}
+
+/* ▼コラム用▼ */
+.ad{
+	font-size:11px;
+	line-height:14px;
+	letter-spacing:0px;
+	font-family:"Osaka－等幅"
+}
+
+
+
+
+
+
+
+
+
+
+
+.navi{
+	font-size:12px;
+	line-height:15px;
+	font-family:"Osaka"
+}
+
+.e9{
+	font-size:9px;
+	line-height:10px;font-family: "Arial", sans-serif
+}
+.e10{
+	font-size:10px;
+	line-height:11px;
+	font-family: "Arial", sans-serif
+}
+.e12{
+	font-size:12px;
+	line-height:14px;
+	font-family: "Arial", sans-serif
+}
+.e12x{
+	font-size:12px;
+	line-height:18px;
+	font-family: "Arial", sans-serif
+}
+.e18{
+	font-size:16px;
+	font-family: "Arial", sans-serif
+}
+.e18b{
+	font-size:16px;
+	font-family: "Arial", sans-serif;
+	font-weight: bold
+}
+.eT9{
+	font-size:9px;
+	line-height:10px;
+	font-family: "Times New Roman", serif
+}
+.eT10{
+	font-size:10px;
+	line-height:11px;
+	font-family: "Times New Roman", serif
+}
+.eT12{
+	font-size:12px;
+	line-height:14px;
+	font-family: "Times New Roman", serif
+}
+.eT12x{
+	font-size:12px;
+	line-height:18px;
+	font-family: "Times New Roman", serif
+}
+.eT18{
+	font-size:16px;
+	font-family: "Times New Roman", serif
+}
+.eT18b{
+	font-size:16px;
+	font-family: "Times New Roman", serif;
+	font-weight: bold
+}
+.j9{
+	font-size:9px;
+	line-height:12px;
+	font-family:"Osaka"
+}
+.j10{
+	font-size:10px;
+	line-height:13px;
+	font-family:"Osaka"
+}
+.j12{
+	font-size:12px;
+	line-height:15px;
+	font-family:"Osaka"
+}
+.j12id{
+	font-size:12px;
+	line-height:15px;
+	font-family:"Osaka"
+}
+.j12x{
+	font-size:11px;
+	line-height:19px;
+	font-family:"Osaka"
+}
+.j14{
+	font-size:14px;
+	line-height:18px;
+	font-family:"Osaka"
+}
+.j18{
+	font-size:17px;
+	line-height:22px;
+	font-family:"Osaka"
+}

@@ -1,0 +1,185 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+	トップページ
+------------------------------------------------------------*/
+.mainImg {
+	margin-bottom: 34px;
+	text-align: center;
+}
+
+.mainImg .title {
+	padding: 14px 0 14px;
+	background-color: #961E23;
+}
+
+#main .text {
+	margin: 0 75px 24px;
+	font-size: 23px;
+	line-height: 1.55;
+}
+
+#main .hosoku{
+	margin-bottom: 50px;
+	margin-left: 75px;
+	font-size: 18px;
+}
+
+#main .text span {
+	font-weight: bold;
+}
+
+#main .text .red {
+	color: #ff0000;
+}
+
+#main .text .txt {
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+#main .link {
+	margin-bottom: 12px;
+	text-align: center;
+}
+
+#main .link a:hover img {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+#main .txtLink {
+	margin-bottom: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#main .colorBox {
+	margin-bottom: 38px;
+	padding: 25px 34px 39px;
+	background-color: #F6F1D6;
+}
+
+#main .colorBox .title {
+	margin: 0 -10px 19px;
+	color: #ff0000;
+	font-size: 23px;
+	font-weight: bold;
+}
+
+#main .colorBox p {
+	margin-bottom: 20px;
+}
+
+#main .colorBox .ttl {
+	margin: 0;
+	font-weight: bold;
+}
+
+#main .colorBox .textList {
+	margin-bottom: 23px;
+}
+
+#main .colorBox .textList li {
+	padding-left: 1em;
+	text-indent: -1em;
+	letter-spacing: -0.5px;
+}
+
+#main .colorBox .textList01 li {
+	margin-top: 7px;
+	font-size: 17px;
+	line-height: 1.35;
+}
+
+#main .colorBox .textList01 li:first-child {
+	margin: 0;
+}
+
+#main .colorBox .textList02 {
+	margin: 0;
+}
+
+#main .colorBox .textList02 li {
+	font-size: 15px;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+	.mainImg {
+		margin-bottom: 9px;
+	}
+	
+	.mainImg img {
+		width: 100%;
+	}
+	
+	.mainImg .title {
+		padding: 5px 0;
+	}
+	
+	.mainImg .title img {
+		width: 93%;
+	}
+	
+	#main .text {
+		margin: 0 auto 10px;
+		font-size: 9px;
+		width: 85%;
+	}
+	
+	#main .hosoku{
+       margin: 0 auto 20px;
+	   font-size: 9px;
+	   width: 85%;
+}
+	
+	#main .link {
+		margin: 0 auto 8px;
+		width: 86%;
+	}
+	
+	#main .link img {
+		width: 100%;
+	}
+	
+	#main .txtLink {
+		margin-bottom: 13px;
+		font-size: 9px;
+	}
+	
+	#main .colorBox {
+		margin-bottom: 13px;
+		padding: 8px 5px 10px;
+	}
+	
+	#main .colorBox .title {
+		margin: 0 0 13px;
+		font-size: 9px;
+	}
+	
+	#main .colorBox p {
+		margin-bottom: 12px;
+	}
+	
+	#main .colorBox .textList {
+		margin-bottom: 12px;
+	}
+	
+	#main .colorBox .textList li {
+		letter-spacing: 0;
+		line-height: 1.45;
+	}
+	
+	#main .colorBox .textList01 li {
+		margin-top: 3px;
+		font-size: 8px;
+	}
+	
+	#main .colorBox .textList02 {
+		margin: 0;
+	}
+	
+	#main .colorBox .textList02 li {
+		font-size: 8px;
+	}
+}

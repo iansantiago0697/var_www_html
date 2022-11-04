@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<custombuttons xmlns="//toolbar.google.com/custombuttons/">
+  <button>
+    <site locale="ja">http://www.alc.co.jp/</site>
+    <title locale="ja">英辞郎 on the Web（SPACE ALC）</title>
+    <description locale="ja">英辞郎 on the Web：進化を続けるオンライン英和・和英データベース（データ提供元：EDP - Electronic Dictionary Project・サービス提供元：SPACE ALC）</description>
+    <search charset="utf-8" locale="ja">/search?q={query}&amp;ref=tg</search>
+    <send charset="utf-8" locale="ja">/search?q={selection}&amp;ref=tg</send>
+    <icon mode="base64" type="image/x-icon">
+R0lGODdhEAAQAOeSAC45ji46jy47kS87jzA8jy88kjA8kDE8kDE9kDI+kDE/lzI/lzRAkjVAlDNB
+mzdCkzdDkzpFlD1Ilj1Ilz5ImT5Jlz5Jmj9Klz9KmEBLmENOmUVPnERPoEZQnkdSn0hSoElToExW
+nktWok5Zn1BaoFBapFBapVFbpFBbqFFcplBcqVJdp1RdplRepFRfqVZgp1dgqFZhq1ljqVhjrFtk
+qltlqlxlqVxlql1mp2BprWJrqmZvrGdvrmlxrm93tHB4snJ6tHuDuHyDuHyDun6FuX+Gun+HuoCI
+vYGIu4GIvoKJvYSKvIiOwI6Uw5GXxJKYxJKYxpieypmfyJ2iy56jy56jzKCmzKKnz6OpzqSqz6Sq
+0Kar0amu0aux066z1bG11bK31bm6wbe72Li82rm927q+2rzA3L7B3b7C3sDD3cTH38XI4crN4svP
+5czP5NLV6NPV59bZ6tja6tnb69vd7Nze7N7g7t/g7t/h7uLk8OXm8ebn8unq8+vs9O3u9u7u9u7v
+9u/w9u/w9/P0+fT1+fT1+vX1+fX2+vb2+vf3+/j4+/j5+/n6/Pr6/Pr6/fr7/fv8/f39/v//////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAEAAQAAAI/gDDzIiR
+4sUNGClWsKAhw4SLGWFMLKQR5QwUGjSSmNmSgwYLEyWOjBmT59GbkW8e5Rl5pMSJK5JiypwZ88oJ
+ETV8+FiDiEybOGgQrdFZQwQKEDaGVPHSpQ8dLV6qDLEBwoOKD0wAORp0KBKkQoMcAWLyoQMHCkr8
+wHGSJZCdKU7g+FFCwUKDDU0ElWkBZI8bHi3KCGqyocEEKnogBZJzh9GgOnICQdJDZQKGL4QyJ5qZ
+KDOhLxgAiD6QAYkiRIQSIclwQDQAAxpwEAFj6A8WKXwMgTGiYwQCBkvmoFZTpMKDIGwaLcLzBAKB
+HWKs/AgxoECBASSEcEnTg0AYBBIgDwQosMCBAwUCCES4kCBMQAA7
+    </icon>
+    <update>/help/eow4gtb/eow4gtb_upd.xml</update>
+  </button>
+</custombuttons>

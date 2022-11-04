@@ -1,0 +1,108 @@
+CACHE MANIFEST
+# 「#」で始まる行はコメント
+# ファイルの先頭はCACHE MANIFESTで始まる必要がある
+
+# マニフェストファイルにはバージョンを記述しておくのが通例
+# マニフェストが更新されたかどうかはファイル内容の厳密な比較で行われるため、
+# リソースの内容が変化したらバージョン番号を変更する、という運用が一般的
+Version: 2011041101
+
+# 「NETWORK:」で始まるセクションは「オンラインホワイトリスト」と呼ばれる
+# ここに記述したリソースはキャッシュの対象にならず、必ずネットワークアクセスされる
+# この例では、「/api」で始まるURLは全てネットワークアクセスを行う
+NETWORK:
+*
+/chrome/search*
+#/chrome/search
+#/chrome/search/
+
+# 「FALLBACK:」で始まるセクションは代替エントリを定義する
+# この例では、「foo/」で始まるパスにアクセスしようとして失敗したら、
+# 代わりに「foo.html」を表示する
+# foo/  foo.html
+
+# 明示的にキャッシュリソースを定義するために、「CACHE:」でセクションを始めることも可能
+CACHE:
+/content/css/common.css
+/content/css/layout.css
+/content/css/font.css
+/content/css/eowp.css
+/content/css/chrome.css
+/content/css/eowp_chrome.css
+/content/js/eowp_footer.js
+/content/js/eowp.js
+/content/js/eowp_search.js
+/content/js/eowp_suggest.js
+/content/js/information.js
+/content/img/zenbun.png
+/content/img/alert_button.gif
+/content/img/app_bg.png
+/content/img/app_bg_110.png
+/content/img/app_go.png
+/content/img/app_more.png
+/content/img/appicon_guide.png
+/content/img/appicon_history.png
+/content/img/appicon_loading.gif
+/content/img/appicon_logout.png
+/content/img/appicon_setting.png
+/content/img/appicon_vocab.png
+/content/img/blank.gif
+/content/img/cartoon.gif
+/content/img/cond_savecon_button.png
+/content/img/cond_search_button.png
+/content/img/icon_history.gif
+/content/img/icon_history_rightbar.gif
+/content/img/icon_setting.gif
+/content/img/icon_smallmode.gif
+/content/img/icon_word.gif
+/content/img/icon_word_rightbar.gif
+/content/img/line_dot.gif
+/content/img/loading.gif
+/content/img/login_butt_bg.png
+/content/img/logo.gif
+/content/img/logo.jpg
+/content/img/logo.png
+/content/img/logo_small.gif
+/content/img/mag_icon.gif
+/content/img/option_textfield_bg01.png
+/content/img/option_textfield_bg02.png
+/content/img/question.png
+/content/img/result_bg.png
+/content/img/sample_icon.gif
+/content/img/search_button01.gif
+/content/img/search_button01.png
+/content/img/search_button02.gif
+/content/img/search_button02.png
+/content/img/search_button03.gif
+/content/img/search_button03.png
+/content/img/search_button_bg.png
+/content/img/search_history_head.gif
+/content/img/search_logo.png
+/content/img/search_textfield.png
+/content/img/setting_layout.gif
+/content/img/setting_save_button.png
+/content/img/setting_tool.gif
+/content/img/setting_unset_button.png
+/content/img/shoplink_butt.png
+/content/img/small_bg.png
+/content/img/small_clear_button.gif
+/content/img/small_search_button.gif
+/content/img/small_search_feild.png
+/content/img/tag_icon2.gif
+/content/img/tag_icon2.png
+/content/img/tag_icon3.gif
+/content/img/tag_icon.gif
+/content/img/tag_icon.png
+/content/img/word_addnewtag.png
+/content/img/word_addtag_button.gif
+/content/img/word_arrow_down.gif
+/content/img/word_arrow_up.gif
+/content/img/word_bg.png
+/content/img/word_enja_cur.gif
+/content/img/word_enja_off.gif
+/content/img/word_jaen_cur.gif
+/content/img/word_jaen_off.gif
+/content/img/word_letterlist_bg.png
+/content/img/word_plusmark.gif
+/content/img/word_tagmark.gif
+/content/img/word_xmark.gif

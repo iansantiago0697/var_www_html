@@ -1,0 +1,18 @@
+#infospace{
+/*	background:#DDD;
+	height:50px;*/
+	width:100%;
+	text-align:center;
+	margin-bottom:10px;
+	margin-top:10px;
+}
+
+#ad_rect{
+	text-align:center;
+	margin-bottom:10px;
+}
+
+#ad_header{
+	text-align:center;
+	min-height: 100px;
+}

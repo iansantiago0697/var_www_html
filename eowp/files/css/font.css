@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+
+.small {
+	font-size: 90%;
+}
+.large {
+	font-size: 115%;
+}
+.largest {
+	font-size: 130%;
+}
+.normal{
+	line-height: 1.3em;
+}
+.wide{
+	line-height: 1.6em;
+}
+.gothic{
+	font-family:"Arial","Arial New","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+.mincho{
+	font-family:"Times New Roman","ＭＳ Ｐ明朝","MS PMincho",serif;
+}
+
+
+.bold {
+font-weight: 700;
+}
+
+a {
+	color: #00008B;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #00008B;
+	text-decoration: underline;
+}
+
+.browntext {
+	color:#ED5E02;
+}
+
+a.brownlink  {
+	color: #966902;
+	text-decoration: underline;
+}
+
+a.brownlink:hover {
+	color: #09F;
+	text-decoration: underline;
+}
+
+.bluetext {
+	color: #000099;
+}
+
+.yellowtext {
+	color: #FF0;
+}
+
+.redtext {
+	color: #DC143C;
+}
+
+.pinktext {
+	color: #FF00B4;
+}
+
+.greylighttexl {
+color: #808080;
+}
+
+.greentext{
+	color: #009900;
+}
+
+/* 発音記号が表示されない問題に対処 */
+span.pron {
+	font-family: "Arial Unicode MS", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	/*font-size: 12pt;*/ /* EOW では指定されてる */
+}
+span.proni {
+	font-style: Italic
+}

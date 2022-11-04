@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+* html ,* html body {
+	height: 100%;
+	overflow-y: hidden;
+	overflow-x: auto;
+}
+* html #ie6fix {
+	overflow: auto;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+* html #ie6fix_sm {
+	overflow: auto;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+body {
+/*
+	font-size: 75%;
+*/
+}
+#wrapper {
+height:auto !important;
+height:100%;
+}
+#cond_w .cond_button {
+padding: 4px 5px 4px 5px;
+}
+#cond_w .cond_button1 {
+padding: 4px 5px 4px 5px;
+}
+/*
+#cartoon {
+margin-right: 190px !important;
+margin-right: 95px;
+}
+*/

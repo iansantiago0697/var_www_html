@@ -1,0 +1,1077 @@
+@charset "UTF-8";
+/* 2019-01-17 修正 */
+
+.clearfix:after {
+   content:"";
+   display:block;
+   clear:both;
+ }
+
+/* 2019-01-15 修正 */
+a {
+	color: #4296C0;
+	text-decoration: none;
+	font-weight:600;
+}
+
+a:hover {
+	color: #999999;
+	text-decoration: none;
+}
+
+.defs {
+	display: none;
+} 
+
+p {
+	margin:0 0 12px 0;
+} 
+
+/* Clear */
+.clear {
+	clear:both;
+	} 
+	
+/* header title */
+.header_title {
+	display:inline-block;
+	box-sizing: border-box;
+	width:100%;
+    border-bottom: #D1D1D1 2px solid;
+	padding: 0px 0 12px 0;	
+	background-color: #ffffff;
+  }
+ .headerlogo{
+	display: inline-block;
+	box-sizing: border-box;
+	width:100%;
+	margin-top:10px;
+	vertical-align:middle;
+}
+.headerlogo img[src$=".svg"]{
+    width:184px;
+    height:auto;
+	margin-right:10px;
+	vertical-align:top;
+}
+.headerlogo_title {
+	display: inline-block;
+	font-size: 2.4rem;
+	line-height:4.6rem;
+	font-weight:600;
+}
+/* header パンくず */
+.header_info {
+	display: block;
+	float: left;
+	width: 100%;
+	font-size: 0.9em;
+	width: 100%;
+	padding: 5px 0 12px 0;
+	text-align: left;
+	float: none;
+}
+/* 2019-01/15追加 */
+.header_info a { 
+    color: #2C2CBE;
+	font-weight:normal;
+}
+.header_info a:hover {
+	color: #999999; 
+}
+
+/* ページタイトルまわり */
+.page_title {
+	display: block;
+	
+}
+.page_title h1 {
+	display: inline-block;
+	font-size: 2.4rem;
+	line-height:3.2rem;
+	font-weight:600;
+	margin:0;
+}
+.page_title img[src$=".svg"]{
+	display: inline-block;
+    width:32px;
+    height:auto;
+	margin-right:10px;
+	vertical-align:top;
+}
+.page_title p {
+	display: block;
+	margin-top:3px;
+	font-size: 1.8rem;
+	line-height:2.2rem;
+}
+ul.guide_index {
+    display: inline-block;
+	list-style-type:none;
+	margin-left:-5px;
+	margin-bottom:10px;
+	padding-bottom:5px;
+}
+ul.guide_index li {
+	font-size:1.6rem;
+	line-height:2rem;
+	font-weight:600;
+	border-bottom:1px dashed #D1D1D1;
+	padding:4px 10px 2px 10px;
+}
+ul.guide_index li a {
+    color:#222;
+}
+ul.guide_index li:hover,ul.guide_index li a:hover {
+	color: #999999;
+	text-decoration: none;
+}
+span.small {
+	font-size:80%;
+	font-weight:400;
+}
+/* 本文 */
+.guide_text {
+  float: left;
+  width:100%;
+  margin-bottom:10px;
+}
+.guide_text.one-half.column {
+  float: left;
+}
+.guide_text h2 {
+	display: inline-block;
+	font-size: 2rem;
+	line-height:2.6rem;
+	font-weight:600;
+	margin:0 0 10px 0;
+	margin-left:-5px;
+	border-bottom:1px dashed #D1D1D1;
+	padding:0 10px;
+}
+.guide_text h3 {
+	display: inline-block;
+	margin:0;
+	font-size: 1.5rem;
+	line-height:1.6;
+	font-weight:400;
+}
+.guide_text.faq p:first-letter {
+    font-size: 2.6rem;
+	line-height: 1.3;
+	font-weight:700;
+    float: left;
+    margin: 0 5px 0 2px;
+}
+/* 2021-04-07追加 */
+.blockquote {
+	margin:1em 10px;
+	border: 1px solid #4296c0;
+	max-width: 830px;
+	padding: 1em;
+	}
+
+/* ドロップキャップ2018-12-12修正 */
+.guide_text.faq p:nth-of-type(1):first-letter {
+	color:#7098B0;
+}
+.guide_text.faq p:nth-of-type(2):first-letter {
+	color:#b94047;
+}
+/*.guide_text.faq p:nth-child(2n+1):first-letter {
+	color:#b94047;
+}
+.guide_text.faq p:nth-child(2n):first-letter {
+	color:#7098B0;
+} */
+
+/* リスト */
+.guide_text ul {
+	list-style-type: none;
+	padding-left:1.8rem;
+	margin-bottom:12px;
+}
+.guide_text li {
+	list-style-type: none;
+	margin-bottom: 0;
+	left:15px;
+	text-indent:-15px;
+}
+.guide_text li:before {
+	content: '・';
+} 
+.guide_text .browser li:before {
+	content: '・';
+	font-weight:700;
+}
+.guide_text li.asterisk:before {
+	content: '※';
+}
+.guide_text li.square:before {
+	content: '■';
+	margin-left:5px;
+}
+.guide_text li.b_mark {
+	position: relative;
+    padding-left: 2px; /* アイコンと文章の間のスペース */
+	left:-2px;
+	text-indent:0px;
+}
+.guide_text li.b_mark:before {
+	content: '●';
+	position: absolute;
+    left:-10px; /* アイコンのスタート位置*/
+	top:-2px;
+}
+.guide_text ol {
+	list-style-type: none;
+	padding-left:1.8rem;
+	margin-bottom:12px;
+}
+.lower-alpha li:before,.decimal li:before {
+	content: none;
+}
+.lower-alpha li {
+	list-style-type: lower-alpha;
+}
+.decimal li {
+	list-style-type: decimal;
+}
+
+/* リストスタイルなし 2018-12/14追加 */
+.guide_text ul.style_none li:before,
+.guide_text ol.style_none li:before{
+	content: none;
+} 
+
+/* キャプチャー画像まわりの処理 */
+.img_wrap {
+  display:block;
+  box-sizing: border-box;
+  width:100%;
+  height:auto;
+  margin:0 auto 12px;
+  overflow: hidden;
+}
+.img_wrap_ver {
+  display:block;
+  box-sizing: border-box;
+  float:right;
+  width:50%;
+  height:auto;
+  margin:0 auto 12px;
+  overflow: hidden;
+}
+.img_wrap_center {
+  box-sizing: border-box;
+  margin:0 auto;
+  width:70%;
+  height:auto;
+  margin:0 auto 12px;
+  overflow: hidden;
+}
+p.img_title {
+  float:left;
+  font-size:1.3rem;
+  line-height:1.7rem;
+  margin-bottom:3px;
+}
+p.cap {
+  font-size:0.8rem;
+  line-height:1.2rem;
+  float:right;
+  margin:-3px 0 0 0;
+}
+.img_wrap img,.img_wrap_ver img,.img_wrap_center img {
+	box-sizing: border-box;
+	border:1px solid #D1D1D1;
+	margin:0 auto;
+}
+
+/* メモまわり */
+.memo {
+	display:block;
+	margin: 0 0 12px 0;
+}
+.memo img[src$=".svg"]{
+	float:left;
+    width:36px;
+    height:auto;
+	margin-top:3px;
+}
+.memo p {
+	margin-left:46px;
+	margin-bottom:0;
+}
+.memo ul {
+	margin:0 0 0 46px;
+}
+
+/* 検索説明リンク */
+.guide_link {
+	display:block;
+	float:right;
+	height:22px;
+	font-weight:600;
+	line-height:2.3rem;
+	border: 2px solid #b94047;
+	border-radius: 22px;
+	padding:0 6px;
+	margin:0 3px 12px 3px;
+	clear:both;
+}
+.guide_link a {
+	color:#b94047;
+}
+.guide_link:hover {
+	filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6;
+}
+/* css arrow */
+.arrow_r,.arrow_u,.arrow_d {
+	display: block;
+	float:right;
+    position: relative;
+	margin-top:-19px;
+}
+.arrow_r:before,.arrow_u:before,.arrow_d:before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    background: #b94047;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    margin-top: -6px;
+}
+.arrow_r:after,.arrow_u:after,.arrow_d:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border: solid 7px transparent;
+    border-left: solid 10px #ffffff;
+    position: absolute;
+    top: 50%;
+}
+/* arrow右 */
+.arrow_r:after {
+	left: 19px;
+    margin-top:0px;
+}
+/* arrow上 */
+.arrow_u:after {
+   transform: rotate(-90deg);
+   -ms-transform: rotate(-90deg);
+   -moz-transform: rotate(-90deg);
+   -webkit-transform: rotate(-90deg);
+   -o-transform: rotate(-90deg);
+	left: 14px;
+    margin-top:-5px
+}
+/* arrow下 */
+.arrow_d:after {
+   transform: rotate(90deg);
+   -ms-transform: rotate(90deg);
+   -moz-transform: rotate(90deg);
+   -webkit-transform: rotate(90deg);
+   -o-transform: rotate(90deg);
+	left: 14px;
+    margin-top:5px
+}
+.arrow_r:hover:before,.arrow_u:hover:before,.arrow_d:hover:before {
+	filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6;
+}
+
+/* EOWP/EOWPFロゴまわり */
+.logo_pro,.logo_prolite {
+	display:inline-block;
+	border: 2px solid #D1D1D1;
+	border-radius: 1.5rem;
+	background-size:auto 12px;
+	background-repeat: no-repeat;
+	background-position: center center;
+    cursor: pointer;
+	height:16px;
+	width:56px;
+	vertical-align:text-bottom;
+}
+
+.logo_pro:hover,.logo_prolite:hover {
+  background-color:#dedede;
+}
+.logo_pro {
+	background-image: url(../img/pro.svg);
+	margin:0 3px;
+}
+.logo_prolite {
+	background-image: url(../img/proLite.svg);
+}
+/* 囲み */
+.box {
+	display:inline;
+	box-sizing:border-box;
+    background-image: url(../img/clip.svg);
+	background-size: 30px auto;
+	background-repeat: no-repeat;
+	background-position:8px 8px;
+	border: 2px solid #D1D1D1;
+	border-radius: 1rem;
+	float:right;
+	padding:10px 10px 10px 55px;
+	margin-bottom:12px;
+/* 	text-align: justify;
+    text-justify: inter-ideograph; */
+}
+.box_simple {
+	display:inline;
+	box-sizing:border-box;
+	border: 2px solid #D1D1D1;
+	border-radius: 1rem;
+	float:left;
+	padding:10px;
+	margin:0 0 12px 0 ;
+/*  text-align: justify;
+    text-justify: inter-ideograph; */
+}
+
+/* footer */
+.band_footer {
+	display:inline-block;
+	box-sizing: border-box;
+	width:100%;
+    border-top: #D1D1D1 1px solid;
+	padding: 15px 0 15px 0;	
+	margin-top:5px;
+	text-align: center;
+  }
+
+/* 2019-01/17修正 */
+#footermenu {
+	display:block;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0 auto;
+	padding-top:5px;
+}
+#footermenu a {
+	white-space: nowrap;
+	color:#000000;
+	text-decoration: none;
+	font-weight:normal;
+}
+#footermenu a:hover  {
+	white-space: nowrap;
+	color:#999999;
+	text-decoration: none;
+}
+#copyright {
+	display:block;
+	box-sizing: border-box;
+	font-size: 14px;
+	line-height: 18px;
+	margin:8px auto;
+}
+
+div#copyright {}
+/*　2019-01/17修正 */
+.container.footer_wrap{
+	display:block;
+	position:relative;
+	height:40px;
+	margin-top:16px;
+}	
+.footer_guidetop { 
+    display:inline-block;
+	position:absolute;
+    font-size:0.9em;
+    line-height:1.6em;
+    width:50%;
+    text-align:left;
+	left:0;
+	bottom:0;
+}
+.pagetop_right_bottom { 
+    display:inline-block;
+	position:absolute;
+    font-size:0.9em;
+    width:50%;
+    text-align:right;
+	right:0;
+	bottom:0;
+	vertical-align: bottom;
+}
+
+/* 凡例 */
+.ls_normal {
+	font-family: Verdana, Sans-Serif;
+	font-size: 12px;
+	line-height:12px;
+	vertical-align:12.6%; 
+	color: #444444;
+	background-color: #EEEEFF;
+	border: solid #BBBBBB 1px;
+	padding:1px 2px;
+	margin:0px 3px;
+	white-space: nowrap;
+}
+.ls_alert {
+	font-family: Verdana, Sans-Serif;
+	font-size: 12px;
+	line-height:12px;
+	vertical-align:12.6%;  
+	color: #444444;
+	background-color: #FFCC66;
+	border: solid #BBBBBB 1px;
+	padding:1px 2px;
+	margin:0px 3px;
+	white-space: nowrap;
+}
+.guide_text h2 .ls_normal {
+	vertical-align:25%;
+}
+.guide_text h2 .ls_alert {
+	vertical-align:25%;
+}
+/* 発音記号のtable */
+.p_symbol {
+	margin:10px 0 12px 0;
+	display:block;
+	height:auto;
+	overflow:hidden;
+}
+.p_symbol table {
+	float:left;
+	margin-right:50px;
+/*	width:210px;*/
+}
+.p_symbol table:last-child {
+	margin-right:0px;
+}
+.p_symbol th {
+	border:none;
+	height:24px;
+	padding:0;
+	margin:0;
+	vertical-align:bottom;
+	overflow:hidden;
+}
+/* 2019-01-15 修正 */
+.p_symbol td {
+	border:none;
+	height:24px;
+	padding:0;
+	text-align:left;
+}
+.p_symbol td.t_first {
+	vertical-align:top;
+	text-align:left;
+	width:42px;
+}
+.p_symbol td.t_second {
+	vertical-align:top;
+	text-align:left;
+	width:75px;
+}
+.p_symbol td.t_third {
+	vertical-align:top;
+	text-align:left;
+	width:68px;
+}
+.p_symbol span {
+	font-style: italic;
+}
+
+/* 品詞・スピーチ・分野ラベルのtable */
+.label {
+	margin:10px 0 12px 0;
+	display:block;
+	height:auto;
+	overflow:hidden;
+}
+.label table {
+	float:left;
+	margin-right:6px;
+}
+.label td {
+	border:none;
+}
+/* 2019-01-15 修正 */
+.label td.t_first {
+	vertical-align:top;
+	padding:0px 6px 4px 0;
+	text-align:left;
+}
+.label td.t_second {
+	vertical-align:top;
+	padding:0px 0px 4px 0;
+	text-align:left;
+}
+.label .t_small {
+	margin-left:-5px;
+	font-size:85%;
+	text-align:left;
+}
+
+.title_g {
+	font-weight:700;
+	color:#888;
+}
+ul.box_s {
+	display:block;
+	list-style-type:none;
+}
+.box_s li:before {
+	content: initial;
+}
+.notice {
+	display:inline-block;
+	box-sizing: border-box;
+	border:2px dotted #ccc;
+	padding:6px 10px;
+	margin:8px 0px 8px -15px;
+	font-weight:700;
+}
+ul.bottom0,p.bottom0 {
+	margin-bottom:0px;
+}
+/* cookie, javaのtable */
+.center {
+	position:relative;
+	display:block;
+	height:auto;
+	overflow:hidden;
+	width:80%;
+	margin:0 auto;
+}
+.center table {
+	font-size: 100%;
+	width:100%;
+}
+.center th, td {	
+	border: #CCCCCC 1px solid;
+	padding:2px 0px 2px 5px;
+}
+.center th {
+	text-align:center;
+}
+.center td {
+	text-align:center;
+}
+.center td:first-child {
+	background:#edf2f7;
+}
+.center .t_small {
+	margin-left:-5px;
+	font-size:85%;
+}
+
+/* 2018-12/17ヘッダー修正 2019-01-15 修正 */
+.headerlogo .header_info_button {
+	display: inline-block;
+	float: right;
+}
+
+/* 2019-01-15 修正 */
+.headerlogo .header_info_button img[src$=".svg"]{
+	display:inline-block;
+    width:140px;
+	height:36px;
+	margin-right:0;
+/*	margin-left:8px;*/
+}
+.headerlogo .header_info_button img.right{
+	margin-left:8px;
+}
+
+/* 2018-12/14追加　スマホ推奨環境table */
+.sp {
+	position:relative;
+	display:block;
+	height:auto;
+	overflow:hidden;
+	width:80%;
+	margin:0 auto;
+}
+.sp table {
+	font-size: 100%;
+	width:100%;
+	
+}
+.sp th, td {	
+	border: #CCCCCC 1px solid;
+	padding:2px 0px;
+	text-align:center;
+}
+.sp th.first {
+	width:33%;
+	background:#ECECEC;
+}
+.sp th.second,.sp td.second{
+	width:35%;
+	background:#FCF7DE;
+}
+.sp th.third,.sp td.third{
+	width:35%;
+	background:#edf2f7;
+}
+.sp td {
+	text-align:center;
+}
+
+/* 2018-12/17 ページトップへの設定変更とclassへ変更
+   フッターのクラス・スタイルの変更 */
+.pagetop_right { 
+    display:inline-block;
+    float:right;
+    font-size:0.9em;
+    width:50%;
+    padding:4px 0 10px 0;
+    text-align:right;
+}
+/* 2019-01/15追加 */
+.pagetop_right a,.footer_guidetop a,.pagetop_right_bottom a {
+    color: #2C2CBE;
+    font-weight:normal;
+}
+.pagetop_right a:hover,.footer_guidetop a:hover,.pagetop_right_bottom a:hover {
+	color: #999999; 
+}
+
+/* --------------ここからメディアクエリ---------------------------------- */
+
+/* 画面サイズが768px以下の表示に適用 */
+@media only screen and (max-width:768px) {
+	
+/* .container {
+    width:75%; 
+}  */
+
+.three.columns,.four.columns,.five.columns,
+.six.columns,.seven.columns,.eight.columns,
+.nine.columns,.ten.columns,.one-half.column { 
+   width: 100%;
+   margin-left: 0;
+}	
+	
+/* キャプチャー画像まわりの処理 */
+.img_wrap {
+  width:50%;
+  height:auto;
+}
+.img_wrap_ver {
+  width:30%;
+  height:auto;
+  float:none;
+}
+.img_wrap_center {
+  width:50%;
+  height:auto;
+}
+p.img_title {
+  font-size:1.2rem;
+  line-height:1.6rem;
+}
+
+/* 2018-12/17 修正 */
+.footer_guidetop { 
+width:70%;
+}
+.pagetop_right_bottom { 
+width:30%;
+}/*ここまで*/
+	
+}
+
+/* 画面サイズが550px以下の場合に適用  */
+@media only screen and (max-width:550px) {
+.container {
+    width:85%; 
+	padding:0;
+}
+
+/* 2019-01/17修正 */
+.header_title {
+	padding:0;	 
+}
+	
+.headerlogo img[src$=".svg"]{
+	width:130px;
+    height:auto;
+	margin-right:3px;
+}
+.headerlogo {
+	margin-top:8px;
+}
+.headerlogo_title {
+	font-size: 1.7rem;
+	line-height:3.5rem;
+}
+.header_info {
+	font-size: 0.8em;
+}
+/* 2019-01/17追加 */
+.header_info_button {
+	padding-bottom:12px;
+}
+.page_title h1 {
+	font-size: 1.8rem;
+	line-height:2.8rem;
+}
+.page_title img[src$=".svg"]{
+    width:28px;
+    height:auto;
+	margin-right:2px;
+	vertical-align:top;
+}
+.page_title p {
+	font-size: 1.5rem;
+	line-height:1.8rem;
+}
+ul.guide_index {
+	font-size:1.5rem;
+	line-height:1.5rem;
+}
+.guide_text h2 {
+	font-size: 1.7rem;
+	line-height:2.4rem;
+}
+.img_wrap {
+  width:70%;
+}
+.img_wrap_ver {
+  width:40%;
+}
+.img_wrap_center {
+  width:70%;
+}
+.memo img[src$=".svg"]{
+    width:32px;
+    height:auto;
+}
+.memo p {
+	margin-left:42px;
+}
+.guide_link {
+	height:20px;
+	font-size:1.3rem;
+	line-height:2.1rem;
+	border-radius:20px;
+	margin:0 26px 10px 0;
+}
+.guide_link:hover {
+	filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6;
+}
+/* css arrow */
+.arrow_r,.arrow_u,.arrow_d {
+	display: block;
+	float:right;
+    position: relative;
+	margin-top:0px;
+}
+.arrow_r:before,.arrow_u:before,.arrow_d:before {
+    content: '';
+    width: 23px;
+    height: 23px;
+    background: #b94047;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    margin-top:-22px;
+}
+.arrow_r:after,.arrow_u:after,.arrow_d:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border: solid 7px transparent;
+    border-left: solid 10px #ffffff;
+    position: absolute;
+    top: 50%;
+}
+/* arrow右 */
+.arrow_r:after {
+	left: 18px;
+    margin-top:-17px;
+}
+/* arrow上 */
+.arrow_u:after {
+   transform: rotate(-90deg);
+   -ms-transform: rotate(-90deg);
+   -moz-transform: rotate(-90deg);
+   -webkit-transform: rotate(-90deg);
+   -o-transform: rotate(-90deg);
+	left: 12px;
+    margin-top:-22px
+}
+/* arrow下 */
+.arrow_d:after {
+   transform: rotate(90deg);
+   -ms-transform: rotate(90deg);
+   -moz-transform: rotate(90deg);
+   -webkit-transform: rotate(90deg);
+   -o-transform: rotate(90deg);
+	left: 12px;
+    margin-top:-13px
+}
+
+/* 2018-12/14追加　スマホ推奨環境table */
+.sp table {	
+	border-bottom:#CCCCCC 1px solid;
+}
+.sp th, td {	
+	border-bottom: 0px;
+}
+.sp th.first {
+	display:inline-block;
+	box-sizing: border-box;
+	width:100%;
+	float:left;
+}
+.sp th.second,.sp td.second{
+	display:inline-block;
+	box-sizing: border-box;
+	float:left;
+	width:50%;
+	border-right: 0px;
+}
+.sp th.third,.sp td.third{
+	display:inline-block;
+	box-sizing: border-box;
+	float:left;
+	width:50%;	
+}
+/* 2018-12/14追加　フッター */
+/*　2019-01/17修正 */
+.container.footer_wrap{
+	position:static;
+	height:100%;
+}	
+.footer_guidetop { 
+	width:100%;
+	text-align:center;
+	position:static;
+}
+.pagetop_right_bottom { 
+	width:100%;
+	text-align:center;
+	position:static;
+}
+}
+
+/* cookie, javaのtable 用メディアクエリ　909px以下に適用 */
+@media only screen and (max-width:909px) {
+.center {
+	width:100%;
+}
+} /*  */
+
+
+/* cookie, javaのtable 用メディアクエリ　609px以下に適用 */
+@media only screen and (max-width:609px) {
+.center {
+	width:100%;
+}
+.center th, .center td {	
+	display:block;
+	box-sizing:border-box;
+	font-size:95%;
+	padding:2px 0px 2px 2px;
+} 
+.center th {	
+	width:100%;
+}
+.center td {
+	float:left;
+	width:70%;
+}
+.center td:last-child {
+	float:left;
+	width:30%;
+}	
+}
+/* cookie, javaのtable 用メディアクエリ　359px以下に適用 */
+@media only screen and (max-width:359px) {
+.center th, .center td {	
+	font-size:80%;
+}	
+}
+
+/* ラベル表組用メディアクエリ　599px以下に適用 */
+@media only screen and (max-width:599px) {
+.p_symbol table {
+	float:none;
+}
+.label table {
+	width:100%;
+}
+.label td.t_first {
+	vertical-align:top;
+	padding:0px 0px 4px 0;
+	width:28%;
+}
+.label td.t_second {
+	vertical-align:top;
+	padding:0px 0px 4px 0;
+	width:72%;
+}
+} 
+/* 発音記号、ラベル表組用メディアクエリ　375px以下に適用 */
+@media only screen and (max-width:375px) {	
+.label table {
+	width:100%;
+}
+.label td.t_first {
+	vertical-align:top;
+	padding:0px 0px 4px 0;
+	width:35%;
+}
+.label td.t_second {
+	vertical-align:top;
+	padding:0px 0px 4px 0;
+	width:65%;
+}
+/* 2019-01-15 追加 */
+.headerlogo .header_info_button {
+	width:100%;
+	text-align: right;
+}
+.headerlogo .header_info_button img[src$=".svg"]{
+    width:135px;
+	height:35px;
+}
+} 
+
+/* ラベル表組用メディアクエリ　368px以下に適用 */
+@media only screen and (max-width:368px) {
+.guide_link {
+	height:20px;
+	font-size:1.1rem;
+	line-height:2rem;
+	border-radius:20px;
+	margin:0 3px 10px 3px;
+}
+}
+
+/* 374pxまでの表示(iPhone5)用 */
+@media only screen and (max-width:374px) {
+.container {
+	width:280px;
+}
+.headerlogo_title {
+	font-size: 1.5rem;
+	line-height:3.5rem;
+}
+/* 2018-12/17ヘッダー修正の追加 */
+.header_info img[src$=".svg"]{
+    width:130px;
+	height:auto;
+}
+}

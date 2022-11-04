@@ -1,0 +1,134 @@
+body{
+	background-color: #FFFFFF;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 5px;
+	font-size: 12px;
+	color: #333333
+}
+
+td{
+	font-size: 12px;
+	color: #333333
+}
+
+li{
+	font-size: small;
+	line-height: 160%;
+}
+
+p{
+	font-size: small;
+}
+
+A{
+	text-decoration: underline
+}
+
+/* ▼英辞郎検索文字列用▼ */
+.ejr_e{
+	font-weight: bold;
+}
+
+/* ▼和英辞郎検索文字列用▼ */
+.ejr_j{
+	font-weight: bold;
+}
+
+/* ▼上部ジャンルリンク用▼ */
+A.genre_t1:active{color:#FFFFFF;text-decoration:none}
+A.genre_t1:visited{color:#FFFFFF;text-decoration:none}
+A.genre_t1:hover{color:#FFFFFF;text-decoration:underline}
+A.genre_t1:link{color:#FFFFFF;text-decoration:none}
+
+/* ▼コラム用▼ */
+.ad{
+	font-size:12px;
+	line-height:14px
+}
+
+
+
+
+
+
+
+
+.navi{
+	font-size:12px
+}
+
+.e9{
+	font-size:11px
+}
+.e10{
+	font-size:12px;
+	line-height:11px
+}
+.e12{
+	font-size:14px;
+	line-height:14px
+}
+.e12x{
+	font-size:14px;
+	line-height:18px
+}
+.e18{
+	font-size:18px
+}
+.e18b{
+	font-size:18px;
+	font-weight: bold
+}
+
+.eT9{
+	font-size:11px
+}
+.eT10{
+	font-size:12px;
+	line-height:11px
+}
+.eT12{
+	font-size:14px;
+	line-height:14px
+}
+.eT12x{
+	font-size:14px;
+	line-height:18px
+}
+.eT18{
+	font-size:18px
+}
+.eT18b{
+	font-size:18px;
+	font-weight: bold
+}
+
+.j9{
+	font-size:11px;
+	line-height:12px
+}
+.j10{
+	font-size:11px;
+	line-height:13px
+}
+.j12{
+	font-size:12px;
+	line-height:15px
+}
+.j12id{
+	font-size:12px;
+	line-height:15px
+}
+.j12x{
+	font-size:9pt;
+	line-height:19px
+}
+.j14{
+	font-size:15px;
+	line-height:18px
+}
+.j18{
+	font-size:18px;
+	line-height:22px
+}

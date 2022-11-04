@@ -1,0 +1,597 @@
+@charset "UTF-8";
+
+/* common */
+
+body {
+	background-color:#FFFFFF;
+	width: 100%;
+	color: #333333;
+	font-size:10pt;
+}
+
+/* ブロック格納用ボディ */
+#KcAreaBody {
+	padding-top: 2px;
+}
+
+#swTb td{
+	padding:10px 0 2px 0;
+}
+
+#kwArea {
+	line-height:140%;
+	padding:0 0 10px 0;
+}
+
+#kwArea li,p{
+	font-size:small;
+	line-height:140%;
+}
+
+#KcAreaLower {
+	background-color:#FFFFFF;
+	float:left;
+	width:952px;
+	padding:0 0 5px 0;
+}
+
+/* footer ui
+---------------------------------------------------- */
+div.pageTopLink {
+	font-size:9pt;
+	height:28px;
+	padding-top:7px;
+	text-align:right;
+}
+
+
+/* search ui
+---------------------------------------------------- */
+.kcSearchForm{
+	background:url(/kc/content/img/form_bg001.gif) no-repeat top left #b82222;
+	padding:0 0 3px 0;
+}
+
+.kcSearchFormLink {
+	color:#FFFFFF;
+	font-size:8pt;
+	text-decoration:underline;
+}
+
+a.kcSearchFormLink:hover {
+	color:#FFFFFF;
+	font-size:8pt;
+	text-decoration:underline;
+}
+
+.whtd{
+	background-color:#FFFFFF;
+}
+
+table.form_tb{
+	margin:10px 0 5px 17px;
+	font-family: courier new, monospace ;
+}
+
+table.form_tb td{
+	letter-spacing:-0.05em;
+}
+
+table.help{
+	margin:0 13px 15px 0;
+}
+
+
+input.kcbtn {
+	height: 23px;
+	vertical-align: middle;
+}
+
+input.kcqry {
+	width: 250px;
+	height: 20px;
+	border: 1px #666666 solid;
+	font-family: "Verdana", "Arial", "Arial New", "ＭＳ Ｐ ゴシック", Sans-Serif;
+	font-size: 14px;
+	vertical-align: middle;
+	margin: 0 0 3px 1px;
+	padding-left: 2px;
+	ime-mode: inactive !important;
+}
+
+.ex_txt {
+	color:#FFFFFF;
+	font-size:9pt;
+}
+
+/* divider */
+hr.dvd {
+	color: #CCCCCC;
+	margin: 1px 0px 1px 0px;
+}
+
+/* description area */
+table.dsc_tb {
+	background:url(/kc/content/img/textbg.gif) no-repeat top left #e6e6e6;
+	padding:8px 8px 8px 8px;
+	border-bottom:1px solid #cccccc;
+}
+
+table.dsc_tb td {
+	letter-spacing:-0.05em;
+}
+
+/* 検索文字列
+---------------------------------------------------- */
+#searchWord{
+	font-size:medium;
+	color:#DC143C;
+	font-family:"Arial", "ＭＳ Ｐ ゴシック";
+}
+
+.smallfont{
+	font-size:8pt;
+}
+
+.smallredfont{
+	color:#DC143C;
+	font-size:7pt;
+}
+
+.gradableWord {
+	text-decoration:none;
+	font-weight: bold;
+}
+
+.linkText {
+	color:#00008B;
+	font-size:8pt;
+	text-decoration:underline;
+	white-space:nowrap;
+}
+
+.count {
+	font-family:"Arial", "ＭＳ Ｐ ゴシック";
+}
+
+.srWord {
+	color:black;
+	font-size:10pt;
+	white-space: nowrap;
+}
+
+/* 検索結果 領域(Kwic)
+---------------------------------------------------- */
+
+#resultListKw {
+	margin-top:10px;
+	background-color:#CCCCCC;
+}
+
+#resultListKw ul{
+	margin-left:1.3em;
+	padding-left:0;
+}
+
+#resultListKw ol{
+	margin-left:2em;
+	margin-bottom:10px;
+	padding-left:0;
+}
+
+#resultListKw li div{
+	margin-bottom:5px;
+}
+
+/* エラー画面
+---------------------------------------------------- */
+#emp {
+	font-family:"Arial", "ＭＳ Ｐ ゴシック";
+	margin-left:10px;
+}
+
+.empWd {
+	font-weight: bold;
+}
+
+.empCnd {
+	font-weight: bold;
+	color:#008000;
+}
+.spc {
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* KWIC */
+/* KWIC検索結果
+---------------------------------------------------- */
+#resultAreaKwic {
+	margin:10px;
+}
+
+#resultAreaKwic td {
+	font-family:"Arial", "Arial New", "ＭＳ Ｐ ゴシック", Sans-Serif;
+}
+
+#resultAreaKwic a:link{
+	color:#000088;
+	text-decoration:none;
+}
+
+#resultAreaKwic a:visited{
+	color:#00008B;
+	text-decoration:none;
+}
+
+#resultAreaKwic strong a:link{
+	color:#00008B;
+	text-decoration:none;
+}
+
+#resultAreaKwic strong a:visited{
+	color:#00008B;
+	text-decoration:none;
+}
+
+#resultAreaKwic a:hover,
+#resultAreaKwic strong a:hover{
+	color:#0000ff;
+	text-decoration:underline;
+}
+
+#resultAreaKwic a:active,
+#resultAreaKwic strong a:active{
+	color:#0000ff;
+	text-decoration:underline;
+}
+
+/* KWIC結果一覧 行
+---------------------------------------------------- */
+TR.odd {
+	BACKGROUND-COLOR: #FFFFFF;
+}
+.oddDtl {
+	border-top: 4px dotted #DDDDDD;
+	padding-top: 0px;
+	padding-left: 10px;
+}
+.evenDtl {
+
+	border-top: 4px dotted #DDDDDD;
+	padding-top: 0px;
+	padding-left: 10px;
+}
+TR.even {
+	BACKGROUND-COLOR: #EEEEEE;
+}
+/* add 1112 */
+.evenDtl {
+	border-top: 4px dotted #BBBBBB;
+	padding-top: 0px;
+	padding-left: 10px;
+}
+/* add 1112 END */
+
+/* KWIC結果一覧 文字装飾
+---------------------------------------------------- */
+.midashiDtl{
+	color:#00008B;
+	font-size:110%;
+	font-weight:bold;
+}
+
+.midashiKwic{
+	color:#00008B;
+	font-size:90%;
+	font-weight:bold;
+	font-family: courier new, monospace;
+}
+
+.kana{
+	color:#808080;
+}
+
+.searchwordfont{
+	color:#DC143C;
+	font-weight:bold;
+}
+
+.searchwordfontKwic{
+	color:#DC143C;
+	font-weight:bold;
+}
+
+.continueRight{
+	text-align:right;
+	color:black;
+}
+
+.continueLeft{
+	text-align:left;
+	color:black;
+}
+
+.detail {
+	font-size:110%;
+	FONT-FAMILY: monospace;
+}
+
+.dtl_btn {
+	margin:0 3px 0 0;
+	width:36px;
+	height:11px;
+}
+
+/* ラベル（通常）：added 081126 */
+span.ls_normal {
+	font-family: Verdana, Sans-Serif;
+	font-size: 9pt;
+	color: #444444;
+	background-color: #EEEEFF;
+	border: solid #BBBBBB 1px;
+	padding: 2px 2px 2px 2px;
+	margin: 0px 5px 0px 5px;
+	white-space: nowrap;
+}
+
+/* ラベル（注意）：added 081126 */
+span.ls_alert {
+	font-family: Verdana, Sans-Serif;
+	font-size: 9pt;
+	color: #444444;
+	background-color: #FFCC66;
+	border: solid #BBBBBB 1px;
+	padding: 2px 2px 2px 2px;
+	margin: 0px 5px 0px 5px;
+	white-space: nowrap;
+}
+
+/* 全文表示：added 081126 */
+span.vat {
+	white-space: nowrap;
+}
+
+/* ローカルナビ
+---------------------------------------------------- */
+.left{
+	float:left;
+	width:255px;
+}
+
+.right{
+	float:right;
+	width:295px;
+}
+
+.pageNavi{
+	margin-top:5px;
+}
+
+.pageNavi td{
+	padding:2px 1px;
+	border:1px solid #CCCCCC;
+	line-height:1.2em;
+	font-size:85%;
+}
+
+.pageNavi td.active{
+	background-color:#4D4D4D;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+
+/* Collocation */
+/* Collocation検索結果
+---------------------------------------------------- */
+
+#cllOptionArea {
+	padding:7px 0 0 2px;
+}
+
+#notSearchKeyword {
+	width:490px;
+	margin:2px 0;
+	vertical-align: middle;
+}
+
+A:hover {
+	COLOR: #f00;
+	TEXT-DECORATION: underline;
+}
+
+#resultAreaCll {
+	margin:10px;
+}
+
+#resultAreaCll td {
+	font-family:"Arial", "ＭＳ Ｐ ゴシック";
+}
+
+#resultAreaCll a:link{
+	color:#000088;
+	text-decoration:none;
+}
+
+#resultAreaCll a:visited{
+	color:#00008B;
+	text-decoration:none;
+}
+
+#resultAreaCll strong a:link{
+	color:#00008B;
+	text-decoration:none;
+}
+
+#resultAreaCll strong a:visited{
+	color:#00008B;
+	text-decoration:none;
+}
+
+#resultAreaCll a:hover,
+#resultAreaCll strong a:hover{
+	color:#0000ff;
+	text-decoration:underline;
+}
+
+#resultAreaCll a:active,
+#resultAreaCll strong a:active{
+	color:#0000ff;
+	text-decoration:underline;
+}
+
+/* Collocation結果一覧 列
+---------------------------------------------------- */
+TD.left3 {
+	BACKGROUND-COLOR: #ffe5e5;
+	text-align: center;
+	padding:3px 5px;
+}
+
+TD.left2 {
+	BACKGROUND-COLOR: #ffc7c7;
+	text-align: center;
+	padding:3px 5px;
+}
+
+TD.left1 {
+	BACKGROUND-COLOR: #ffadad;
+	text-align: center;
+	padding:3px 5px;
+}
+
+TD.qryArea {
+	BACKGROUND-COLOR: #ff9696;
+	padding:10px;
+}
+
+TD.right1 {
+	BACKGROUND-COLOR: #ffadad;
+	text-align: center;
+	padding:3px 5px;
+}
+
+TD.right2 {
+	BACKGROUND-COLOR: #ffc7c7;
+	text-align: center;
+	padding:3px 5px;
+}
+
+TD.right3 {
+	BACKGROUND-COLOR: #ffe5e5;
+	text-align: center;
+	padding:3px 5px;
+}
+
+/* Collocation結果一覧 文字装飾
+---------------------------------------------------- */
+.qry55 {
+	FONT-SIZE: 36pt;
+	COLOR: #f00;
+}
+.qry50 {
+	FONT-SIZE: 36pt;
+	COLOR: #f00;
+}
+.qry45 {
+	FONT-SIZE: 36pt;
+	COLOR: #f00;
+}
+.qry40 {
+	FONT-SIZE: 36pt;
+	COLOR: #f00;
+}
+.qry35 {
+	FONT-SIZE: 33pt;
+	COLOR: #f00;
+}
+.qry30 {
+	FONT-SIZE: 30pt;
+	COLOR: #f00;
+}
+.qry25 {
+	FONT-SIZE: 27pt;
+	COLOR: #f00;
+}
+.qry20 {
+	FONT-SIZE: 24pt;
+	COLOR: #f00;
+}
+.qry15 {
+	FONT-SIZE: 21pt;
+	COLOR: #f00;
+}
+.qry10 {
+	FONT-SIZE: 18pt;
+	COLOR: #f00;
+}
+.qry5 {
+	FONT-SIZE: 15pt;
+	COLOR: #f00;
+}
+
+.fs55 {
+	FONT-SIZE: 30pt
+}
+.fs50 {
+	FONT-SIZE: 28pt
+}
+.fs45 {
+	FONT-SIZE: 26pt
+}
+.fs40 {
+	FONT-SIZE: 24pt
+}
+.fs35 {
+	FONT-SIZE: 22pt
+}
+.fs30 {
+	FONT-SIZE: 20pt
+}
+.fs25 {
+	FONT-SIZE: 18pt
+}
+.fs20 {
+	FONT-SIZE: 16pt
+}
+.fs15 {
+	FONT-SIZE: 14pt
+}
+.fs10 {
+	FONT-SIZE: 12pt
+}
+.fs05 {
+	FONT-SIZE: 10pt
+}
+.cnt {
+	FONT-SIZE: 15pt;
+	COLOR : #000000;
+}
+
+/* Collocation結果一覧 tooltip
+---------------------------------------------------- */
+.tooltip{
+	width: 200px;
+	color:#000;
+	font:lighter 15px/1.3 Arial,sans-serif;
+	text-decoration:none;text-align:center;
+}
+.tooltip span.top{padding: 30px 8px 0;
+	background: url(/kc/content/js/bt/bt.gif) no-repeat top;
+}
+.tooltip b.bottom{padding:3px 8px 15px;color: #548912;
+	background: url(/kc/content/js/bt/bt.gif) no-repeat bottom;
+}
+
+/* eowp化
+---------------------------------------------------- */
+.eowpkclogo{
+	border:medium none;
+}
+#topmenu {
+	float:right;
+}
+#topmenu a {
+	text-decoration:none;
+}
+

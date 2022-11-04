@@ -1,0 +1,240 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* 2018/11/21 ヘッダ部分修正とテキスト検索設置 */
+/* 2018/12/15 ヘッダ高さ変更 */
+/* 2019/01/15 ヘッダ、リンクカラー修正 */
+
+.header_wrap{
+    position: fixed;
+	display:inline-block;
+/*	height:150px;*/
+	height:130px;
+	width:100%;
+	z-index:2;
+	background: rgb(253,253,253);
+ }
+
+/*2018/12/15高さ変更*/
+.content {
+/*	display:inline-block;*/
+/*	margin-top:150px;*/
+	margin-top:130px;
+}
+.index_wrap_h{
+    display: inline-block;
+	width: 100%;
+	letter-spacing: -1em;
+	padding-top:17px;
+}
+.index_inner_h{
+	display: inline-block;
+	box-sizing: border-box;
+	float:left;
+	width:45%;
+	letter-spacing:0;
+	align:top;
+}
+.index_inner_h.search_h{
+	float:right;
+	text-align:right;
+	width:55%;
+	padding-top:2px;
+}
+mark {
+    background: yellow;
+}
+mark.current {
+    background: orange;
+}
+
+input.mark_window_h{
+	width: 220px;
+	height: 24px;
+	font-size:16px;
+	line-height:12px;
+	font-weight: 400;
+	vertical-align:top;
+	padding:initial;
+	padding-left:3px;
+	background-color: #fff;
+	border: 1px solid #C3C3C3;
+	border-radius: 0;
+	box-shadow: none;
+	box-sizing: border-box;
+	color:#000;
+}
+
+input[type="search"]:focus {
+  border: 1px solid #3283C8;
+  box-shadow:0px 0px 5px #3283C8;
+}
+
+input::-webkit-input-placeholder{
+  color:#aaaaaa;
+  font-size: 12px;
+  line-height: normal;
+  font-weight: 400;
+}
+input:-ms-input-placeholder{
+  color:#aaaaaa;
+  font-size: 12px;
+ /* line-height:18px;*/
+  font-weight: 400;
+}
+input::-moz-placeholder{
+  color:#aaaaaa;
+  font-size: 12px;
+/*  line-height:18px;*/
+  font-weight: 400;
+}
+.mark_button_h{
+	padding:0;
+	margin:0;
+	background:none;
+	border:0;
+	font-size:0;
+	line-height:0;
+ 	overflow:visible;
+	cursor:pointer;
+	outline:none;
+	vertical-align:top;
+}
+.mark_button_h.clear{
+    margin-left:5px;
+}
+/* 幅数値指定 */
+.mark_button_h img[src$=".svg"]{
+	display:inline-block;
+	height:24px;
+    width:42px;
+	vertical-align:top;
+	margin-right:0;
+}
+
+/* tipを表示する */
+a.tip:hover {
+     text-decoration: none;
+}
+a.tip span {
+    display: none;
+    padding: 6px;
+    font-size: 11px;
+    line-height: 1.4;
+	text-align: justify;
+}
+a.tip:hover span{
+    display: block;
+    position: absolute;
+    background-color: rgba(51,51,51, 0.6);
+    border: 1px solid #cccccc;
+    color: #ffffff;
+    width: 175px; 
+	right:0;
+	margin:12px 105px 0 0;
+	border-radius: 6px;
+}
+a.tip:hover span::after{
+    content: " ";
+    position: absolute;
+    bottom: 100%; 
+    left: 50%;
+    margin-left: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent rgba(51,51,51, 0.6) transparent;
+}
+
+:target:before {
+   content:"";
+   display:block;
+   height:130px;
+   margin:-130px 0 0;
+ /*  height:150px;/* ヘッダの高さ */
+ /*  margin:-150px 0 0;/* ヘッダの高さ */
+}
+
+
+/* 2018-12/17変更　メディアクエリ/画面サイズが886px以下の表示に適用*/
+@media only screen and (max-width:886px) { 
+.header_wrap{
+/*	height:178px;*/
+	height:165px; 
+}
+.content {
+	margin-top:165px;
+}
+:target:before {
+   content:"";
+   display:block;
+   height:165px;/* ヘッダの高さ*/ 
+   margin:-165px 0 0;/* ヘッダの高さ*/ 
+}
+}
+
+/* 2018-12/17変更　メディアクエリ/画面サイズが768px以下の表示に適用*/
+@media only screen and (max-width:768px) { 
+/*2018/12/15高さ変更*/
+.header_wrap{
+	height:190px;
+}
+.content {
+	margin-top:190px;
+}
+.index_inner_h{
+	width:100%;	
+}
+.index_inner_h.search_h{
+	padding:0 0 5px 0;
+	width:100%;
+}
+.mark_button_h.clear{
+    margin-left:8px;
+}
+:target:before {
+   content:"";
+   display:block;
+   height:190px;/* ヘッダの高さ*/ 
+   margin:-190px 0 0;/* ヘッダの高さ*/ 
+}
+}
+
+/* 画面サイズが550px以下の場合に適用 */
+@media only screen and (max-width:550px) {
+/* 2018/12/15高さ変更*/
+.header_wrap{
+/*	height:145px;*/
+	height:175px;
+}
+.content {
+	margin-top:175px;
+}
+:target:before {
+   content:"";
+   display:block;
+   height:175px;/* ヘッダの高さ*/ 
+   margin:-175px 0 0;/* ヘッダの高さ*/ 
+}
+input.mark_window_h{
+	width: 200px;
+}
+} 
+
+/* メディアクエリ/画面サイズが380px以下の表示に適用 */
+@media only screen and (max-width:380px) {
+
+input.mark_window_h{
+	width: 185px;
+}
+.index_inner_h.search_h{
+	float: none;
+}
+a.tip:hover span{
+	margin:12px 98px 0 0;
+}	
+}
+
+span.app {
+display:inline-block;
+margin-left:22px;
+}

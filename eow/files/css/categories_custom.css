@@ -1,0 +1,100 @@
+main.contents div.contents-main{
+    width: 100%!important;
+    max-width: 100%!important;
+}
+
+main.contents .category_title_container{
+    background-color: #eeeeee;
+    border-radius: 5px;
+    margin-bottom: 28px;
+}
+
+main.contents .category_title_container > h2{
+    padding-left: 25px;
+    font-size: 22px;
+    font-weight: 600;
+    padding-top: 25px;
+}
+main.contents .category_title_container > h2 span.ctc_letter{
+    font-size: 35px!important;
+}
+main.contents .category_title_container > h2 span.ctc_title{
+    position: relative;
+    display: inline-block;
+    padding-top: 11px;
+    font-size: 25px;
+    left: -7px;
+}
+main.contents .category_title_container > h2 span.ctc_link{
+    position: relative;
+    display: inline-block;
+    padding-top: 7px;
+    font-size: 25px;
+    display:none;
+}
+
+main.contents .category_title_container:hover > h2 span.ctc_link{
+    display: inline-block;
+    color: #000000;
+}
+
+main.contents .category_title_container ul{
+    padding-left: 27px;
+    padding-top: 18px;
+    padding-bottom: 30px;
+    width: 100%;
+    max-width: 100%;
+}
+main.contents .category_title_container ul li{
+    padding-bottom: 8px;
+}
+main.contents .category_title_container ul li a{
+    color: #000000!important;
+}
+
+main.contents div.contents-main div.footnote{
+    font-size: 90%!important;
+    margin: auto;
+    margin-top: 23px;
+    margin-bottom: 15px;
+}
+main.contents div.contents-main div.footnote-closer{
+    font-size: 90%!important;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.categories-main-title{
+    margin-top: auto!important;
+    margin-bottom: 0px!important;
+}
+.categories-main-title::after{
+    border-top: unset!important;
+}
+.categories-main-title span{
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+
+.index_title_red span{
+    color: #8a2927!important;
+}
+.index_title_red::after{
+    border-top: 4px solid #8a2927 !important;
+}
+
+.margin-bottom-30{
+    margin-bottom: 30px!important;
+}
+
+.ul-solo{
+    margin-top: 35px!important;
+}
+
+.ul-solo li{
+    padding-bottom: 4px;
+}
+
+body .footer div#footer_info_left{
+    margin-top: 30px;
+}

@@ -1,0 +1,38 @@
+body {
+	font-family: sans-serif;
+}
+
+dl {
+	margin-left: 1em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-left: 1em;
+}
+
+h1 {
+	font-size: 140%;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 120%;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 110%;
+}
+
+.showver {
+	padding-left: 1em;
+	text-indent: -1em;
+}
+.showrei {
+	font-size:75%; 
+	color:#DC143C;
+}

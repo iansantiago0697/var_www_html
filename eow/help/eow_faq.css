@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/* EOW HELP FAQ 2018-11-07 */
+
+
+.index_wrap {
+	letter-spacing: -1em;
+	display:inline-block;
+	width:950px;
+}
+.content {
+	margin-top:150px;
+}
+.index_inner{
+	display: block;
+	box-sizing: border-box;
+	float:left;
+	width:50%;
+	letter-spacing:0;
+	align:top;
+}
+.index_inner.search{
+	text-align:right;
+	width:50%;
+	margin-top:20px;
+}
+mark {
+    background: yellow;
+}
+mark.current {
+    background: orange;
+}
+.mark_window{
+	width: 220px;
+	height: 24px;
+	font-size:12px;
+	font-weight: 400;
+	border: 1px solid #C3C3C3;
+	vertical-align:top;
+	padding-left:3px;
+	box-sizing: border-box;
+	color:#000;
+}
+
+.mark_button{
+	padding:0;
+	margin:0;
+	background:none;
+	border:0;
+	font-size:0;
+	line-height:0;
+ 	overflow:visible;
+	cursor:pointer;
+	outline:none;
+	vertical-align:top;
+}
+.mark_button.clear{
+    margin-left:5px;
+}
+.mark_button img[src$=".svg"]{
+	display:inline-block;
+	height:24px;
+    width:auto;
+	vertical-align:top;
+	margin-right:0;
+}
+
+.header_wrap {
+	display:inline-block;
+	position:fixed;
+	height:180px;
+	z-index:1000;
+	background-color: #fff;
+	padding-top:10px;
+    top:0;
+	left:0;
+	right:0;
+}
+
+/* tipを表示する */
+a.tip:hover {
+     text-decoration: none;
+}
+a.tip span {
+    display: none;
+    padding: 6px;
+    font-size: 11px;
+    line-height: 1.4;
+	text-align: justify;
+}
+a.tip:hover span{
+    display: block;
+    position: absolute;
+    background-color: rgba(51,51,51, 0.6);
+    border: 1px solid #cccccc;
+    color: #ffffff;
+    width: 175px; 
+	float:left;
+	margin:12px 0 0 180px;
+	border-radius: 6px;
+}
+a.tip:hover span::after{
+    content: " ";
+    position: absolute;
+    bottom: 100%; 
+    left: 50%;
+    margin-left: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent rgba(51,51,51, 0.6) transparent;
+}
+
+:target:before {
+   content:"";
+   display:block;
+   height:195px;/* ヘッダの高さ+余白 */
+   margin:-195px 0 0;/* ヘッダの高さ+余白 */
+}
+
+.header_inner {
+	width:950px;
+	margin:0 auto;
+}

@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <!-- EOW_SHOP-323 -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- End EOW_SHOP-323 -->
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>英辞郎 on the WEB</title>
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta http-equiv="Content-Language" content="ja">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache, must-revalidate">
+  <meta name="keywords" content="英辞郎 on the WEB, オンライン英和辞書, オンライン和英辞書, えいじろう">
+  <meta name="description" content="アルクがお届けする進化するオンライン英和・和英辞書データベース。一般的な単語や連語から、イディオム、専門用語、スラングまで幅広く収録">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="apple-touch-icon" href="//cdn2.alc.co.jp/eow/sp/images/icon.png" />
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="/content/css/normalize.css">
+  <link rel="stylesheet" href="/content/css/skeleton.css">
+  <link rel="stylesheet" href="/content/css/custom.css">
+
+  <script type="text/javascript" language="JavaScript" src="/content/js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" language="JavaScript" src="/content/js/eow_top.js" charset="UTF-8"></script>
+  <script type="text/javascript" language="JavaScript" src="/content/js/touchdevice.js" charset="UTF-8"></script>
+  <script type="text/javascript" language="JavaScript" src="/content/js/information_control.js" charset="UTF-8"></script>
+  <script type="text/javascript" language="JavaScript" src="/content/js/matchMedia.js" charset="UTF-8"></script>
+  <script type="text/javascript" language="JavaScript" src="/content/js/jquery.balloon.js" charset="UTF-8"></script>
+
+  <!-- EOW_SHOP-323 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css">
+  <link rel="stylesheet" href="/content/css/header_style.css">
+  <script type="text/javascript" language="JavaScript" src="/content/js/header_action.js" charset="UTF-8"></script>
+  <script type="text/javascript" language="JavaScript" src="/content/js/footer_action.js" charset="UTF-8"></script>
+  <!-- End EOW_SHOP-323 -->
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-1590792-9', 'auto');
+    ga('send', 'pageview');
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').then(function (reg) {
+        console.log('Successfully registered service worker', reg);
+      }).catch(function (err) {
+        console.warn('Error whilst registering service worker', err);
+      });
+    }
+  </script>
+
+  <!-- 広告タグ用ヘッダー ↓↓↓-->
+  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+  <script>
+    window.googletag = window.googletag || { cmd: [] };
+    googletag.cmd.push(function () {
+      googletag.defineSlot('/21619764421/eow_top_left_banner01', ['fluid', [300, 250]], 'div-gpt-ad-1615273199448-0').addService(googletag.pubads());
+      googletag.defineSlot('/21619764421/eow_top_left_banner02', [[300, 250], [300, 600]], 'div-gpt-ad-1615273132199-0').addService(googletag.pubads());
+      googletag.defineSlot('/21619764421/eow_top_right_banner01', ['fluid', [300, 250]], 'div-gpt-ad-1615273083923-0').addService(googletag.pubads());
+      googletag.defineSlot('/21619764421/eow_top_right_banner02', [[300, 250], [300, 600]], 'div-gpt-ad-1615272974213-0').addService(googletag.pubads());
+
+      googletag.pubads().enableSingleRequest();
+      googletag.pubads().collapseEmptyDivs();
+      googletag.enableServices();
+    });
+  </script>
+  <!-- 広告タグ用ヘッダー ↑↑↑ -->
+</head>
+
+<body>
+  <!-- svg読み込み
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="svgArea"></div>
+  <script>
+    $(function () {
+      $("#svgArea").load("content/img/symbol-defs.svg", function () {
+
+        //SVGの処理
+
+      });
+    });
+  </script>
+
+
+  <!-- アコーディオン
+–––––––––––––––––––––––––––––––––––––––––––––––-->
+  <script type="text/javascript">
+
+    $(function () {
+      var timer = false;
+      $(window).resize(function () {
+        if (timer !== false) {
+          clearTimeout(timer);
+        }
+        timer = setTimeout(function () {
+          if ($(window).width() >= 769) {
+            $(".index_title.sli").next(".index.sli ul").removeAttr("style");
+          }
+        }, 200);
+      });
+      $(".index_title.sli").click(function () {
+        if ($(window).width() < 769) {
+          $(this).next(".index.sli ul").slideToggle();
+        }
+      });
+    });
+
+  </script>
+
+  <!-- 矢印回転
+–––––––––––––––––––––––––––––––––––––––––––––––-->
+  <script>
+    $(function () {
+      $(".index_title.sli h3").on("click", function () {
+        $(this).next().slideToggle();
+        $(this).toggleClass("active");
+      });
+    });
+  </script>
+  <script>
+    $(function () {
+      $(".index_title.sli h4").on("click", function () {
+        $(this).next().slideToggle();
+        $(this).toggleClass("active");
+      });
+    });
+  </script>
+
+
+  <!-- balloon tips
+–––––––––––––––––––––––––––––––––––––––––––––––-->
+  <script>
+    $(function () {
+      $('.target1').balloon({
+        position: "top",
+
+        css: {
+          "color": "#fff",
+          "font-size": "0.8em",
+          "font-weight": "600",
+          "padding": "6px 8px",
+          "background-color": "rgba(51,51,51, 0.8)",
+        }
+
+      });
+    });
+  </script>
+
+<!-- EOW_SHOP-323 -->
+<div class="header">
+  <header>
+    <div class="wrap-inner">
+      <div class="header-1"><a href="/"><img class="header-logo" src="/content/img/lo_eow.svg" alt="英辞郎 on the WEB" title="英辞郎 on the WEB"></a></div>
+      <div class="header-2">
+        <div class="header-biz-menu">
+          <div class="header-biz-menu-ttl">英辞郎 on the WEB Pro / Pro Lite</div>
+          <div class="header-biz-menu-inner">
+            <div><a class="btn-01" target="_self" href="https://eowpf.alc.co.jp/login" onclick="ga('send', 'event', 'eowtop_p_login', 'click', 'https://eowpf.alc.co.jp/login')" id="eowtop_p_login">ログイン</a></div>
+            <div><a class="btn-02" target="_self" href="https://eowp-user.alc.co.jp/signup">無料登録</a></div>
+          </div>
+        </div>
+        <div class="header-biz-bnr"><a target="_blank" href="https://eowp.alc.co.jp/info-business/"><img src="/content/img/header_bnr-biz.png" alt="法人向け 英辞郎 on WEB Pro"></a></div>
+        <div class="header-gnav-btn">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div><!-- /.wrap-inner -->
+    <div class="header-gnav-sp">
+      <ul class="header-gnav-sp-menu">
+        <li>
+          <a target="_self" href="https://eowpf.alc.co.jp/login" onclick="ga('send', 'event', 'eowtop_p_login_sp', 'click', 'https://eowpf.alc.co.jp/login')" id="eowtop_p_login_sp">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.95 29.95">
+              <path d="M16,1.025A14.975,14.975,0,1,0,30.975,16,14.976,14.976,0,0,0,16,1.025ZM8.048,27.1c1.439-3.636,4.5-5.953,7.952-5.953s6.513,2.317,7.952,5.953a13.579,13.579,0,0,1-15.9,0Zm16.959-.839a10.717,10.717,0,0,0-5.9-5.836,7.15,7.15,0,1,0-6.22,0,10.717,10.717,0,0,0-5.9,5.836,13.675,13.675,0,1,1,18.014,0ZM16,19.85A5.85,5.85,0,1,1,21.85,14,5.856,5.856,0,0,1,16,19.85Z" transform="translate(-1.025 -1.025)"/>
+            </svg>
+            <p>ログイン</p>
+          </a>
+        </li>
+        <li>
+          <a target="_self" href="https://eowp-user.alc.co.jp/signup">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.95 29.95">
+              <g transform="translate(-1.025 -1.025)">
+                <path d="M13.974,20.473,8.013,15.356l-1.1,1.583,7.212,6.192,11.056-12.3-1.27-1.41Z"/>
+                <path d="M16,1.025A14.975,14.975,0,1,0,30.975,16,14.976,14.976,0,0,0,16,1.025Zm0,28.65A13.675,13.675,0,1,1,29.675,16,13.691,13.691,0,0,1,16,29.675Z"/>
+              </g>
+            </svg>
+            <p>無料登録</p>
+          </a>
+        </li>
+        <li>
+          <div id="js_s_onsei_sp">
+            <svg id="icon-i_history" version="1.0" xmlns="http://www.w3.org/2000/svg" width="150.000000pt" height="150.000000pt" viewBox="0 0 150.000000 150.000000" preserveAspectRatio="xMidYMid meet">
+              <g transform="translate(0.000000,150.000000) scale(0.100000,-0.100000)" stroke="none">
+              <path d="M695 1190 c-60 -61 -158 -156 -216 -211 l-107 -99 -116 0 -116 0 0
+                -180 0 -180 123 0 122 -1 209 -204 c207 -204 208 -205 252 -205 32 0 44 4 44
+                15 0 8 7 15 15 15 13 0 15 68 13 578 l-3 577 -55 3 -55 2 -110 -110z m173
+                -482 c-3 -534 -3 -543 -23 -546 -14 -2 -79 55 -230 202 l-210 205 -107 1 -108
+                0 0 130 0 130 101 0 102 0 51 47 c28 26 126 120 219 210 103 101 175 163 187
+                163 20 0 20 -5 18 -542z"></path>
+              <path d="M1217 1123 c-12 -11 -8 -40 8 -53 29 -24 84 -118 105 -181 28 -81 31
+                -200 6 -284 -19 -64 -72 -159 -106 -190 -29 -26 -27 -65 4 -65 54 0 155 173
+                177 303 24 143 -17 298 -112 424 -36 48 -64 64 -82 46z"></path>
+              <path d="M1106 1015 c-3 -9 11 -37 33 -67 99 -130 93 -309 -14 -436 -29 -34
+                -25 -62 10 -62 16 0 34 15 58 48 107 146 103 356 -10 497 -29 37 -66 46 -77
+                20z"></path>
+              <path d="M1029 924 c-10 -12 -10 -19 -1 -32 30 -41 62 -120 62 -152 0 -34 -21
+                -84 -58 -142 -16 -26 -16 -28 0 -45 17 -16 19 -16 44 8 49 45 69 97 69 179 0
+                81 -15 121 -63 173 -30 31 -35 33 -53 11z"></path>
+              </g>
+            </svg>
+            <p>音声再生</p>
+          </div>
+        </li>
+        <li>
+          <div id="js_s_history_sp">
+            <svg id="icon-i_history" viewBox="0 0 32 32">
+              <title>i_history</title>
+              <path class="path1" d="M20.211 17.347h-5.558v-8.337c0-0.337 0.337-0.674 0.674-0.674s0.674 0.337 0.674 0.674v6.989h4.211c0.337 0 0.674 0.337 0.674 0.674s-0.337 0.674-0.674 0.674z"></path>
+              <path class="path2" d="M28.547 1.347c1.179 0 2.189 0.926 2.189 2.189v25.011c0 1.179-0.926 2.189-2.189 2.189h-25.095c-1.179 0-2.189-0.926-2.189-2.189v-25.095c0-1.179 0.926-2.189 2.189-2.189h25.095zM28.547 0h-25.095c-1.853 0-3.453 1.6-3.453 3.453v25.011c0 1.937 1.6 3.537 3.453 3.537h25.011c1.937 0 3.453-1.6 3.453-3.453v-25.095c0.084-1.853-1.516-3.453-3.368-3.453v0z"></path>
+              <path class="path3" d="M16 5.474c5.811 0 10.526 4.716 10.526 10.526s-4.716 10.526-10.526 10.526-10.526-4.716-10.526-10.526 4.716-10.526 10.526-10.526zM16 4.211c-6.568 0-11.789 5.221-11.789 11.789s5.305 11.789 11.789 11.789c6.568 0 11.789-5.305 11.789-11.789s-5.221-11.789-11.789-11.789v0z"></path>
+            </svg>
+            <p>検索履歴</p>
+          </div>
+        </li>
+        <li>
+          <div id="js_s_wordbook_sp">
+            <svg id="icon-i_words" viewBox="0 0 32 32">
+              <title>i_words</title>
+              <path class="path1" d="M30.653 4.8v20.884h-29.305v-20.884h29.305zM32 3.453h-32v23.579h32v-23.579z"></path>
+              <path class="path2" d="M2.863 31.579l-0.253-3.284c0-0.337 0.253-0.674 0.589-0.758 0.337 0 0.674 0.253 0.758 0.589l0.168 1.937 19.284-2.526c0.337-0.084 0.674 0.168 0.758 0.589 0.084 0.337-0.168 0.674-0.589 0.758l-20.716 2.695z"></path>
+              <path class="path3" d="M25.011 18.189c-1.6 0-2.863-1.263-2.863-2.863s1.263-2.863 2.863-2.863 2.863 1.263 2.863 2.863c0 1.6-1.263 2.863-2.863 2.863zM25.011 13.811c-0.842 0-1.516 0.674-1.516 1.516s0.674 1.516 1.516 1.516 1.516-0.674 1.516-1.516c0-0.842-0.674-1.516-1.516-1.516z"></path>
+            </svg>
+            <p>単語帳</p>
+          </div>
+        </li>
+        <li>
+          <a href="/help/guide/" target="_self">
+            <svg id="icon-i_guide" viewBox="0 0 32 32">
+              <title>i_guide</title>
+              <path class="path1" d="M16 23.242c-0.842 0-1.432 0.674-1.432 1.432 0 0.842 0.674 1.432 1.432 1.432 0.842 0 1.432-0.674 1.432-1.432s-0.589-1.432-1.432-1.432v0z"></path>
+              <path class="path2" d="M16 1.347c8.084 0 14.653 6.568 14.653 14.653s-6.568 14.653-14.653 14.653-14.653-6.568-14.653-14.653 6.568-14.653 14.653-14.653zM16 0c-8.842 0-16 7.158-16 16s7.158 16 16 16 16-7.158 16-16c0-8.842-7.158-16-16-16v0z"></path>
+              <path class="path3" d="M16 21.726c-0.337 0-0.674-0.337-0.674-0.674v-4.379c0-0.337 0.337-0.674 0.674-0.674 2.021 0 3.705-1.684 3.705-3.705s-1.684-3.705-3.705-3.705-3.705 1.684-3.705 3.705c0 0.337-0.337 0.674-0.674 0.674s-0.674-0.253-0.674-0.589c0-2.779 2.274-5.053 5.053-5.053s5.053 2.274 5.053 5.053c0 2.526-1.937 4.632-4.379 4.968v3.705c0 0.421-0.337 0.674-0.674 0.674z"></path>
+            </svg>
+            <p>ガイド</p>
+          </a>
+        </li>
+        <li>
+          <a href="/setting.html">
+            <svg id="icon-i_setting" viewBox="0 0 32 32">
+              <title>i_setting</title>
+              <path class="path1" d="M18.021 32h-4.042c-0.337 0-0.674-0.337-0.674-0.674v-3.789c-1.095-0.253-2.189-0.589-3.116-1.011l-2.695 2.695c-0.253 0.253-0.674 0.253-0.926 0l-3.789-3.789c-0.084-0.084-0.168-0.253-0.168-0.505s0.084-0.337 0.168-0.505l2.695-2.695c-0.421-0.842-0.758-2.021-1.011-3.116h-3.789c-0.337 0-0.674-0.337-0.674-0.674v-4.042c0-0.337 0.337-0.674 0.674-0.674h3.789c0.253-1.095 0.589-2.189 1.011-3.116l-2.695-2.611c-0.084-0.084-0.168-0.253-0.168-0.421s0.084-0.337 0.168-0.505l3.789-3.789c0.253-0.253 0.674-0.253 0.926 0l2.695 2.695c0.926-0.421 2.021-0.758 3.116-1.011v-3.789c0-0.337 0.337-0.674 0.674-0.674h4.042c0.337 0 0.674 0.337 0.674 0.674v3.789c1.011 0.253 2.189 0.589 3.116 1.011l2.695-2.695c0.253-0.253 0.674-0.253 0.926 0l3.789 3.789c0.084 0.084 0.168 0.253 0.168 0.505s-0.084 0.337-0.168 0.505l-2.695 2.695c0.421 0.926 0.758 2.021 1.011 3.116h3.789c0.337 0 0.674 0.337 0.674 0.674v4.042c0 0.337-0.337 0.674-0.674 0.674h-3.789c-0.253 1.095-0.589 2.189-1.011 3.116l2.695 2.695c0.253 0.253 0.253 0.674 0 0.926l-3.789 3.789c-0.253 0.253-0.674 0.253-0.926 0l-2.695-2.695c-0.842 0.421-2.021 0.758-3.116 1.011v3.789c0 0.337-0.337 0.589-0.674 0.589zM14.653 30.653h2.695v-3.705c0-0.337 0.168-0.589 0.505-0.674 0.758-0.168 2.695-0.674 3.705-1.263 0.253-0.168 0.589-0.084 0.842 0.084l2.611 2.611 2.863-2.863-2.611-2.611c-0.253-0.253-0.253-0.589-0.084-0.842 0.589-1.011 1.095-2.947 1.263-3.705 0.084-0.337 0.337-0.505 0.674-0.505h3.705v-2.695h-3.705c-0.337 0-0.589-0.253-0.674-0.505-0.253-1.179-0.758-2.779-1.263-3.705-0.168-0.253-0.084-0.589 0.084-0.842l2.526-2.358-2.863-2.863-2.611 2.611c-0.253 0.253-0.589 0.253-0.842 0.084-0.926-0.505-2.526-1.011-3.705-1.263-0.337-0.084-0.505-0.337-0.505-0.674v-3.621h-2.695v3.705c0 0.337-0.168 0.589-0.505 0.674-1.179 0.253-2.779 0.758-3.705 1.263-0.253 0.168-0.589 0.084-0.842-0.084l-2.442-2.695-2.863 2.863 2.611 2.611c0.253 0.253 0.253 0.589 0.084 0.842-0.589 1.011-1.095 2.947-1.263 3.705-0.084 0.337-0.337 0.505-0.674 0.505h-3.621v2.695h3.621c0.337 0 0.589 0.168 0.674 0.505 0.168 0.758 0.674 2.695 1.263 3.705 0.168 0.253 0.084 0.589-0.084 0.842l-2.611 2.442 2.863 2.863 2.611-2.611c0.253-0.253 0.589-0.253 0.842-0.084 1.011 0.589 2.947 1.095 3.705 1.263 0.337 0.084 0.505 0.337 0.505 0.674v3.621z"></path>
+              <path class="path2" d="M16 22.653c-3.705 0-6.653-3.032-6.653-6.653s3.032-6.653 6.653-6.653c3.705 0 6.653 3.032 6.653 6.653s-2.947 6.653-6.653 6.653zM16 10.695c-2.947 0-5.305 2.358-5.305 5.305s2.358 5.305 5.305 5.305c2.947 0 5.305-2.358 5.305-5.305s-2.358-5.305-5.305-5.305z"></path>
+            </svg>
+            <p>環境設定</p>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://eowp.blogspot.com/">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 32">
+              <g transform="translate(-1)">
+                <path d="M30,1V31H2V1H30m1-1H1V32H31V0Z"/>
+                <rect width="8" height="10" transform="translate(19 5)"/>
+                <rect width="12" height="2" transform="translate(5 5)"/>
+                <rect width="12" height="2" transform="translate(5 9)"/>
+                <rect width="12" height="2" transform="translate(5 13)"/>
+                <rect width="22" height="2" transform="translate(5 17)"/>
+                <rect width="22" height="2" transform="translate(5 21)"/>
+                <rect width="22" height="2" transform="translate(5 25)"/>
+              </g>
+            </svg>
+            <p>お知らせ</p>
+          </a>
+        </li>
+      </ul>
+      <div class="header-gnav-sp-app">
+        <h2 class="header-gnav-sp-app-ttl">英和・和英検索をもっと便利に</h2>
+        <p>アプリならすべてのサービスを<br>ご利用いただけます。</p>
+        <ul class="btn-store">
+          <li><a target="_blank" href="https://apps.apple.com/app/apple-store/id365874160?pt=210463&ct=eow_top_app_store_link_2021_02&mt=8"><img src="/content/img/footer_btn-appstore.png" alt="App Store"></a></li>
+          <li><a target="_blank" href="https://play.google.com/store/apps/details?id=jp.co.alc.eow&referrer=utm_source%3Deow_top%26utm_medium%3Dbanner%26utm_campaign%3Dandroid_app"><img src="/content/img/footer_btn-googleplay.png" alt="Google Play"></a></li>
+        </ul>
+      </div>
+    </div><!-- /.header-gnav-sp -->
+  </header>
+  <div class="header-search">
+    <div class="wrap-inner">
+      <div class="header-search-box">
+        <form id="fm1" name="fm1" action="#" onsubmit="return goF1('fm1')">
+          <input type="search" id="q" name="q" autocomplete="off" class="small_search_field" accesskey="e" maxlength="1000" value="" placeholder="英和・和英検索はココから">
+          <input type="reset" value="×">
+          <button type="image" id="submitMessage" value="">
+            <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 20 20">
+              <path d="M14.7,12.208A7.966,7.966,0,1,0,12.207,14.7l5.3,5.3L20,17.508Zm-3.116-.624a5.122,5.122,0,1,1,0-7.244A5.127,5.127,0,0,1,11.583,11.584Z" transform="translate(0 -0.001)"/>
+            </svg>
+            検索</button>
+        </form>
+        <div id="suggest" style="display: none;"></div>
+        <div class="header-search-box-att">
+          <div>データ提供：EDP ※データの転載は禁じられています。</div>
+          <div>
+              <a class="header-link" target="_blank" href="https://eowp.blogspot.com/2017/12/chrome.html">悪質な拡張機能にご注意ください。</a>
+          </div>
+        </div>
+        <form id="f1" name="f1" method="post" action="">
+          <input name="q" type="hidden" value="" />
+          <input name="ie" type="hidden" value="UTF-8" />
+        </form>
+      </div>
+      <div class="header-menu">
+        <ul>
+          <li>
+          <div id="js_s_onsei">
+            <svg id="icon-i_history" version="1.0" xmlns="http://www.w3.org/2000/svg" width="150.000000pt" height="150.000000pt" viewBox="0 0 150.000000 150.000000" preserveAspectRatio="xMidYMid meet">
+              <g transform="translate(0.000000,150.000000) scale(0.100000,-0.100000)" stroke="none">
+              <path d="M695 1190 c-60 -61 -158 -156 -216 -211 l-107 -99 -116 0 -116 0 0
+                -180 0 -180 123 0 122 -1 209 -204 c207 -204 208 -205 252 -205 32 0 44 4 44
+                15 0 8 7 15 15 15 13 0 15 68 13 578 l-3 577 -55 3 -55 2 -110 -110z m173
+                -482 c-3 -534 -3 -543 -23 -546 -14 -2 -79 55 -230 202 l-210 205 -107 1 -108
+                0 0 130 0 130 101 0 102 0 51 47 c28 26 126 120 219 210 103 101 175 163 187
+                163 20 0 20 -5 18 -542z"></path>
+              <path d="M1217 1123 c-12 -11 -8 -40 8 -53 29 -24 84 -118 105 -181 28 -81 31
+                -200 6 -284 -19 -64 -72 -159 -106 -190 -29 -26 -27 -65 4 -65 54 0 155 173
+                177 303 24 143 -17 298 -112 424 -36 48 -64 64 -82 46z"></path>
+              <path d="M1106 1015 c-3 -9 11 -37 33 -67 99 -130 93 -309 -14 -436 -29 -34
+                -25 -62 10 -62 16 0 34 15 58 48 107 146 103 356 -10 497 -29 37 -66 46 -77
+                20z"></path>
+              <path d="M1029 924 c-10 -12 -10 -19 -1 -32 30 -41 62 -120 62 -152 0 -34 -21
+                -84 -58 -142 -16 -26 -16 -28 0 -45 17 -16 19 -16 44 8 49 45 69 97 69 179 0
+                81 -15 121 -63 173 -30 31 -35 33 -53 11z"></path>
+              </g>
+            </svg>
+            <p>音声再生</p>
+          </div>
+          </li>
+          <li>
+          <div id="js_s_history">
+            <svg id="icon-i_history" viewBox="0 0 32 32">
+              <title>i_history</title>
+              <path class="path1" d="M20.211 17.347h-5.558v-8.337c0-0.337 0.337-0.674 0.674-0.674s0.674 0.337 0.674 0.674v6.989h4.211c0.337 0 0.674 0.337 0.674 0.674s-0.337 0.674-0.674 0.674z"></path>
+              <path class="path2" d="M28.547 1.347c1.179 0 2.189 0.926 2.189 2.189v25.011c0 1.179-0.926 2.189-2.189 2.189h-25.095c-1.179 0-2.189-0.926-2.189-2.189v-25.095c0-1.179 0.926-2.189 2.189-2.189h25.095zM28.547 0h-25.095c-1.853 0-3.453 1.6-3.453 3.453v25.011c0 1.937 1.6 3.537 3.453 3.537h25.011c1.937 0 3.453-1.6 3.453-3.453v-25.095c0.084-1.853-1.516-3.453-3.368-3.453v0z"></path>
+              <path class="path3" d="M16 5.474c5.811 0 10.526 4.716 10.526 10.526s-4.716 10.526-10.526 10.526-10.526-4.716-10.526-10.526 4.716-10.526 10.526-10.526zM16 4.211c-6.568 0-11.789 5.221-11.789 11.789s5.305 11.789 11.789 11.789c6.568 0 11.789-5.305 11.789-11.789s-5.221-11.789-11.789-11.789v0z"></path>
+            </svg>
+            <p>検索履歴</p>
+          </div>
+          </li>
+          <li>
+          <div id="js_s_wordbook">
+            <svg id="icon-i_words" viewBox="0 0 32 32">
+              <title>i_words</title>
+              <path class="path1" d="M30.653 4.8v20.884h-29.305v-20.884h29.305zM32 3.453h-32v23.579h32v-23.579z"></path>
+              <path class="path2" d="M2.863 31.579l-0.253-3.284c0-0.337 0.253-0.674 0.589-0.758 0.337 0 0.674 0.253 0.758 0.589l0.168 1.937 19.284-2.526c0.337-0.084 0.674 0.168 0.758 0.589 0.084 0.337-0.168 0.674-0.589 0.758l-20.716 2.695z"></path>
+              <path class="path3" d="M25.011 18.189c-1.6 0-2.863-1.263-2.863-2.863s1.263-2.863 2.863-2.863 2.863 1.263 2.863 2.863c0 1.6-1.263 2.863-2.863 2.863zM25.011 13.811c-0.842 0-1.516 0.674-1.516 1.516s0.674 1.516 1.516 1.516 1.516-0.674 1.516-1.516c0-0.842-0.674-1.516-1.516-1.516z"></path>
+            </svg>
+            <p>単語帳</p>
+          </div>
+          </li>
+          <li>
+          <a href="/help/guide/" target="_blank">
+            <svg id="icon-i_guide" viewBox="0 0 32 32">
+              <title>i_guide</title>
+              <path class="path1" d="M16 23.242c-0.842 0-1.432 0.674-1.432 1.432 0 0.842 0.674 1.432 1.432 1.432 0.842 0 1.432-0.674 1.432-1.432s-0.589-1.432-1.432-1.432v0z"></path>
+              <path class="path2" d="M16 1.347c8.084 0 14.653 6.568 14.653 14.653s-6.568 14.653-14.653 14.653-14.653-6.568-14.653-14.653 6.568-14.653 14.653-14.653zM16 0c-8.842 0-16 7.158-16 16s7.158 16 16 16 16-7.158 16-16c0-8.842-7.158-16-16-16v0z"></path>
+              <path class="path3" d="M16 21.726c-0.337 0-0.674-0.337-0.674-0.674v-4.379c0-0.337 0.337-0.674 0.674-0.674 2.021 0 3.705-1.684 3.705-3.705s-1.684-3.705-3.705-3.705-3.705 1.684-3.705 3.705c0 0.337-0.337 0.674-0.674 0.674s-0.674-0.253-0.674-0.589c0-2.779 2.274-5.053 5.053-5.053s5.053 2.274 5.053 5.053c0 2.526-1.937 4.632-4.379 4.968v3.705c0 0.421-0.337 0.674-0.674 0.674z"></path>
+            </svg>
+            <p>ガイド</p>
+            </a>
+          </li>
+          <li>
+          <a href="/setting.html">
+            <svg id="icon-i_setting" viewBox="0 0 32 32">
+              <title>i_setting</title>
+              <path class="path1" d="M18.021 32h-4.042c-0.337 0-0.674-0.337-0.674-0.674v-3.789c-1.095-0.253-2.189-0.589-3.116-1.011l-2.695 2.695c-0.253 0.253-0.674 0.253-0.926 0l-3.789-3.789c-0.084-0.084-0.168-0.253-0.168-0.505s0.084-0.337 0.168-0.505l2.695-2.695c-0.421-0.842-0.758-2.021-1.011-3.116h-3.789c-0.337 0-0.674-0.337-0.674-0.674v-4.042c0-0.337 0.337-0.674 0.674-0.674h3.789c0.253-1.095 0.589-2.189 1.011-3.116l-2.695-2.611c-0.084-0.084-0.168-0.253-0.168-0.421s0.084-0.337 0.168-0.505l3.789-3.789c0.253-0.253 0.674-0.253 0.926 0l2.695 2.695c0.926-0.421 2.021-0.758 3.116-1.011v-3.789c0-0.337 0.337-0.674 0.674-0.674h4.042c0.337 0 0.674 0.337 0.674 0.674v3.789c1.011 0.253 2.189 0.589 3.116 1.011l2.695-2.695c0.253-0.253 0.674-0.253 0.926 0l3.789 3.789c0.084 0.084 0.168 0.253 0.168 0.505s-0.084 0.337-0.168 0.505l-2.695 2.695c0.421 0.926 0.758 2.021 1.011 3.116h3.789c0.337 0 0.674 0.337 0.674 0.674v4.042c0 0.337-0.337 0.674-0.674 0.674h-3.789c-0.253 1.095-0.589 2.189-1.011 3.116l2.695 2.695c0.253 0.253 0.253 0.674 0 0.926l-3.789 3.789c-0.253 0.253-0.674 0.253-0.926 0l-2.695-2.695c-0.842 0.421-2.021 0.758-3.116 1.011v3.789c0 0.337-0.337 0.589-0.674 0.589zM14.653 30.653h2.695v-3.705c0-0.337 0.168-0.589 0.505-0.674 0.758-0.168 2.695-0.674 3.705-1.263 0.253-0.168 0.589-0.084 0.842 0.084l2.611 2.611 2.863-2.863-2.611-2.611c-0.253-0.253-0.253-0.589-0.084-0.842 0.589-1.011 1.095-2.947 1.263-3.705 0.084-0.337 0.337-0.505 0.674-0.505h3.705v-2.695h-3.705c-0.337 0-0.589-0.253-0.674-0.505-0.253-1.179-0.758-2.779-1.263-3.705-0.168-0.253-0.084-0.589 0.084-0.842l2.526-2.358-2.863-2.863-2.611 2.611c-0.253 0.253-0.589 0.253-0.842 0.084-0.926-0.505-2.526-1.011-3.705-1.263-0.337-0.084-0.505-0.337-0.505-0.674v-3.621h-2.695v3.705c0 0.337-0.168 0.589-0.505 0.674-1.179 0.253-2.779 0.758-3.705 1.263-0.253 0.168-0.589 0.084-0.842-0.084l-2.442-2.695-2.863 2.863 2.611 2.611c0.253 0.253 0.253 0.589 0.084 0.842-0.589 1.011-1.095 2.947-1.263 3.705-0.084 0.337-0.337 0.505-0.674 0.505h-3.621v2.695h3.621c0.337 0 0.589 0.168 0.674 0.505 0.168 0.758 0.674 2.695 1.263 3.705 0.168 0.253 0.084 0.589-0.084 0.842l-2.611 2.442 2.863 2.863 2.611-2.611c0.253-0.253 0.589-0.253 0.842-0.084 1.011 0.589 2.947 1.095 3.705 1.263 0.337 0.084 0.505 0.337 0.505 0.674v3.621z"></path>
+              <path class="path2" d="M16 22.653c-3.705 0-6.653-3.032-6.653-6.653s3.032-6.653 6.653-6.653c3.705 0 6.653 3.032 6.653 6.653s-2.947 6.653-6.653 6.653zM16 10.695c-2.947 0-5.305 2.358-5.305 5.305s2.358 5.305 5.305 5.305c2.947 0 5.305-2.358 5.305-5.305s-2.358-5.305-5.305-5.305z"></path>
+            </svg>
+            <p>環境設定</p>
+          </a>
+          </li>
+          <li>
+          <a target="_blank" href="https://eowp.blogspot.com/">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 32">
+              <g transform="translate(-1)">
+                <path d="M30,1V31H2V1H30m1-1H1V32H31V0Z"/>
+                <rect width="8" height="10" transform="translate(19 5)"/>
+                <rect width="12" height="2" transform="translate(5 5)"/>
+                <rect width="12" height="2" transform="translate(5 9)"/>
+                <rect width="12" height="2" transform="translate(5 13)"/>
+                <rect width="22" height="2" transform="translate(5 17)"/>
+                <rect width="22" height="2" transform="translate(5 21)"/>
+                <rect width="22" height="2" transform="translate(5 25)"/>
+              </g>
+            </svg>
+            <p>お知らせ</p>
+          </a>
+          </li>
+        </ul>
+        </div>
+    </div><!-- /.wrap-inner -->
+  </div><!-- /.header-search -->
+</div><!-- /.header -->
+<!-- End EOW_SHOP-323 -->
+
+<!-- EOW_SHOP-323 Body -->
+<main class="contents">
+    <div class="wrap-inner">
+        <div class="contents-main">
+            <div class="pro">
+                <div class="pro-block-lite">
+                    <div class="pro-ttl-lite">
+                            <div>無料<span>（要登録）</span></div>
+                    </div>
+                    <div class="pro-cont">
+                        <div class="logo"><img src="/content/img/body_logo-prolite.svg" alt="英辞郎 on the WEB Pro Lite"></div>
+                        <div class="txt">単語帳への登録や例文検索が<br>できる無料サービス</div>
+                        <div class="btn"><a class="btn-03" href="https://eowp-user.alc.co.jp/signup">無料登録</a></div>
+                    </div>
+                </div>
+                <div class="pro-block">
+                    <div class="pro-ttl">
+                        <div class="mark"><img src="/content/img/body_icon-crown.svg" alt=""><p>おすすめ<br>プラン</p></div>
+                        <div>月額 330円<span>年額3,630円（税込）</span></div>
+                    </div>
+                    <div class="pro-cont">
+                        <div class="logo"><img src="/content/img/body_logo-pro.svg" alt="英辞郎 on the WEB Pro"></div>
+                        <div class="txt">検索や登録機能が豊富で<br>例文データが充実の有料版</div>
+                        <div class="btn"><a class="btn-03" href="https://eowp.alc.co.jp/info/">詳しく知る・お申し込み</a></div>
+                    </div>
+                </div>
+            </div><!-- /.pro -->
+
+            <section class="info-area" id="info_box"></section>
+            
+            <div class="index-area">
+                <h3 id="pos" class="index-ttl-01"><span>品詞別索引</span></h3>
+                <ul class="index-item-01">
+                    <li><a href="/pos_v.html">動詞</a></li>
+                    <li><a href="/pos_vi.html">自動詞</a></li>
+                    <li><a href="/pos_vt.html">他動詞</a></li>
+                    <li><a href="/pos_pv.html">句動詞</a></li>
+                    <li><a href="/pos_pvi.html">句自動詞</a></li>
+                    <li><a href="/pos_pvt.html">句他動詞</a></li>
+                    <li><a href="/pos_n.html">名詞</a></li>
+                    <li><a href="/pos_prop_n.html">固有名詞</a></li>
+                    <li><a href="/pos_pron.html">代名詞</a></li>
+                    <li><a href="/pos_adj.html">形容詞</a></li>
+                    <li><a href="/pos_adv.html">副詞</a></li>
+                    <li><a href="/pos_aux.html">助動詞</a></li>
+                    <li><a href="/pos_prep.html">前置詞</a></li>
+                    <li><a href="/pos_conj.html">接続詞</a></li>
+                    <li><a href="/pos_int.html">間投詞</a></li>
+                    <li><a href="/pos_pref.html">接頭辞</a></li>
+                    <li><a href="/pos_suf.html">接尾辞</a></li>
+                    <li><a href="/pos_comb.html">連結形</a></li>
+                    <li><a href="/pos_abbr.html">省略形</a></li>
+                </ul>
+
+                <h3 id="lbl" class="index-ttl-01"><span>分野別索引</span></h3>
+                <h4 class="index-ttl-02">医学</h4>
+                <ul class="index-item-02">
+                <li><a href="/lbl_med.html">医学</a></li>
+                    <li><a href="/lbl_her.html">遺伝</a></li>
+                    <li><a href="/lbl_ana.html">解剖</a></li>
+                    <li><a href="/lbl_oph.html">眼科</a></li>
+                    <li><a href="/lbl_sur.html">外科</a></li>
+                    <li><a href="/lbl_den.html">歯科</a></li>
+                    <li><a href="/lbl_psy.html">精神</a></li>
+                    <li><a href="/lbl_pat.html">病理</a></li>
+                    <li><a href="/lbl_imm.html">免疫</a></li>
+                    <li><a href="/lbl_pha.html">薬学</a></li>
+                </ul>
+
+                <h4 class="index-ttl-02">経済・政治</h4>
+                <ul class="index-item-02">
+                    <li><a href="/lbl_acc.html">会計</a></li>
+                    <li><a href="/lbl_mar.html">海事</a></li>
+                    <li><a href="/lbl_sec.html">株・証券</p></a></li>
+                    <li><a href="/lbl_fin.html">金融</a></li>
+                    <li><a href="/lbl_mil.html">軍事</a></li>
+                    <li><span class="target1" title="契約・契約書"><a href="/lbl_con.html">契約</a></span></li>
+                    <li><a href="/lbl_agr.html">農業</a></li>
+                    <li><a href="/lbl_law.html">法律</a></li>
+                </ul>
+
+                <h4 class="index-ttl-02">自然科学</h4>
+                <ul class="index-item-02">
+                    <li><a href="/lbl_spa.html">宇宙</a></li>
+                    <li><a href="/lbl_che.html">化学</a></li>
+                    <li><a href="/lbl_wea.html">気象</a></li>
+                    <li><a href="/lbl_met.html">金属</a></li>
+                    <li><a href="/lbl_pho.html">光学</a></li>
+                    <li><a href="/lbl_eng.html">工学</a></li>
+                    <li><a href="/lbl_min.html">鉱物</a></li>
+                    <li><a href="/lbl_math.html">数学</a></li>
+                    <li><a href="/lbl_bioche.html">生化学</a></li>
+                    <li><a href="/lbl_bio.html">生物</a></li>
+                    <li><a href="/lbl_geo.html">地学</a></li>
+                    <li><a href="/lbl_ele.html">電気</a></li>
+                    <li><a href="/lbl_ast.html">天文</a></li>
+                    <li><a href="/lbl_sta.html">統計</a></li>
+                    <li><a href="/lbl_phy.html">物理</a></li>
+                </ul>
+
+                <h4 class="index-ttl-02">宗教</h4>
+                <ul class="index-item-02">
+                    <li><span class="target1" title="イスラム教・回教"><a href="/lbl_isl.html">イスラム</a></span></li>
+                    <li><span class="target1" title="カトリック"><a href="/lbl_cat.html">カト</a></span></li>
+                    <li><span class="target1" title="キリスト教"><a href="/lbl_chr.html">キリスト</a></span></li>
+                    <li><a href="/lbl_rel.html">宗教全般</a></li>
+                    <li><span class="target1" title="聖書（新約・旧約）"><a href="/lbl_bib.html">聖書</a></span></li>
+                    <li><a href="/lbl_jew.html">ユダヤ教</p></a></li>
+                </ul>
+
+                <h4 class="index-ttl-02">情報・技術</h4>
+                <ul class="index-item-02">
+                    <li><span class="target1" title="インターネット"><a href="/lbl_net.html">ネット</a></span></li>
+                    <li><span class="target1" title="コンピューター"><a href="/lbl_com.html">コン</a></span></li>
+                    <li><a href="/lbl_mach.html">機械</a></li>
+                    <li><a href="/lbl_arch.html">建築</a></li>
+                    <li><a href="/lbl_air.html">航空機</a></li>
+                    <li><a href="/lbl_auto.html">自動車</a></li>
+                    <li><a href="/lbl_tel.html">通信</a></li>
+                    <li><a href="/lbl_eleng.html">電子工学</a></li>
+                </ul>
+
+                <h4 class="index-ttl-02">文化・社会</h4>
+                <ul class="index-item-02">
+                    <li><a href="/lbl_igo.html">囲碁</a></li>
+                    <li><span class="target1" title="英国（の組織・固有名詞など）"><a href="/lbl_UK.html">英国</a></span></li>
+                    <li><a href="/lbl_mus.html">音楽</a></li>
+                    <li><span class="target1" title="ギリシャ神話"><a href="/lbl_Gmy.html">ギ神話</a></span></li>
+                    <li><a href="/lbl_ling.html">言語学</a></li>
+                    <li><span class="target1" title="米国（の組織・固有名詞など）"><a href="/lbl_US.html">米国</a></span></li>
+                    <li><a href="/lbl_cok.html">料理</a></li>
+                    <li><span class="target1" title="論理・哲学"><a href="/lbl_eth.html">哲学</a></span></li>
+                </ul>
+
+                <h4 class="index-ttl-02">スポーツ</h4>
+                <ul class="index-item-02">
+                    <li><span class="target1" title="アメリカンフットボール"><a href="/lbl_Aft.html">アメフト</p></a></span></li>
+                    <li><a href="lbl_glf.html">ゴルフ</a></li>
+                    <li><a href="/lbl_soc.html">サッカー</a></li>
+                    <li><span class="target1" title="スポーツ全般"><a href="/lbl_spo.html">スポーツ</a></span></li>
+                    <li><a href="/lbl_sumo.html">相撲</a></li>
+                    <li><a href="/lbl_ten.html">テニス</a></li>
+                    <li><span class="target1" title="バスケットボール"><a href="/lbl_bas.html"><span class="is-pc">バスケ</span><span class="is-sp tx7">バスケットボール</span></a></span></li>
+                    <li><a href="/lbl_base.html">野球</a></li>
+                </ul>
+
+                <h4 class="index-ttl-02">生物</h4>
+                <ul class="index-item-02">
+                    <li><a href="/lbl_shl.html">貝類</a></li>
+                    <li><a href="/lbl_fish.html">魚類</a></li>
+                    <li><a href="/lbl_fung.html">菌類</a></li>
+                    <li><a href="/lbl_ins.html">昆虫</a></li>
+                    <li><a href="/lbl_pla.html">植物</a></li>
+                    <li><a href="/lbl_bird.html">鳥類</a></li>
+                    <li><a href="/lbl_ani.html">動物</a></li>
+                </ul>
+
+                <section class="index-block-speech">
+                    <h4 class="index-ttl-02">スピーチ</h4>
+                    <ul class="index-item-02">
+                        <li><a href="/lbl_It.html">イタリア</a></li>
+                        <li><span class="target1" title="スコットランド"><a href="/lbl_Sc.html">スコット</a></span></li>
+                        <li><a href="lbl_Fr.html">フランス</a></li>
+                        <li><a href="/lbl_La.html">ラテン</a></li>
+                        <li><a href="/lbl_Br.html">イギリス</a></li>
+                        <li><span class="target1" title="英話・英俗"><a href="/lbl_Bricol.html">英話・英</a></span></li>
+                        <li><a href="/lbl_Au.html">豪州</a></li>
+                        <li><span class="target1" title="豪話・豪俗"><a href="/lbl_Aucol.html">豪話・豪</a></span></li>
+                        <li><a href="/lbl_Am.html">アメリカ</a></li>
+                        <li><span class="target1" title="米話・米俗"><a href="/lbl_Amcol.html">米話・米</a></span></li>
+                        <li class="field_5"><span class="target1" title="その他の地域"><a href="/lbl_reg.html"><span class="is-pc">他地域</span><span class="is-sp">その他地域</span></a></span></li>
+                        <li><a href="/lbl_des.html">軽蔑的</a></li>
+                        <li><a href="/lbl_fig.html">比喩的</a></li>
+                        <li><a href="/lbl_old.html">古語</a></li>
+                        <li><a href="/lbl_sla.html">俗語</a></li>
+                        <li><a href="/lbl_vul.html">卑語</a></li>
+                        <li><a href="/lbl_wrt.html">文語</a></li>
+                        <li><a href="/lbl_spk.html">口語</a></li>
+                    </ul>
+                </section>
+
+                <section class="index-block-relation">
+                    <h4 class="index-ttl-02">関連語</h4>
+                    <ul class="index-item-02">
+                        <li><a href="/lbl_abbr.html">略語</a></li>
+                        <li><a href="/lbl_syn.html">同意語</a></li>
+                        <li><a href="/lbl_ant.html">反意語</a></li>
+                        <li><a href="/lbl_sim.html">類語</a></li>
+                        <li><span class="target1" title="対になる語"><a href="/lbl_cong.html"><span class="is-pc">対になる</span><span class="is-sp">対になる語</span></a></span></li>
+                        <li><a href="/lbl_aca.html">学名</a></li>
+                    </ul>
+                </section>
+
+                <h3 id="svl" class="index-ttl-01"><span>レベル別索引</span></h3>
+                <ul class="index-item-level">
+                    <li><a href="/svl_level1.html">Level&nbsp;1</a></li>
+                    <li><a href="/svl_level2.html">Level&nbsp;2</a></li>
+                    <li><a href="/svl_level3.html">Level&nbsp;3</a></li>
+                    <li><a href="/svl_level4.html">Level&nbsp;4</a></li>
+                    <li><a href="/svl_level5.html">Level&nbsp;5</a></li>
+                    <li><a href="/svl_level6.html">Level&nbsp;6</a></li>
+                    <li><a href="/svl_level7.html">Level&nbsp;7</a></li>
+                    <li><a href="/svl_level8.html">Level&nbsp;8</a></li>
+                    <li><a href="/svl_level9.html">Level&nbsp;9</a></li>
+                    <li><a href="/svl_level10.html">Level&nbsp;10</a></li>
+                    <li><a href="/svl_level11.html">Level&nbsp;11</a></li>
+                    <li><a href="/svl_level12.html">Level&nbsp;12</a></li>
+                </ul>
+                <ul class="list-a01"><li>レベルとはアルクが厳選した重要英単語リスト<a href="http://www.alc.co.jp/vocgram/article/svl/" title=""><b>「標準語彙水準SVL12000」</b></a>に準じます。日本人の英語学習者にとって有用であると思われる英語語彙１万2000語を選び出し、基礎から上級へと12のレベルに区分した段階別学習語彙リストです。</li></ul>
+
+                <h3 id="alphabet" class="index-ttl-01"><span>アルファベット・五十音別索引</span></h3>
+                <ul class="index-item-alphabet">
+                    <li><a href="/alphabetA.html">A</a></li>
+                    <li><a href="/alphabetB.html">B</a></li>
+                    <li><a href="/alphabetC.html">C</a></li>
+                    <li><a href="/alphabetD.html">D</a></li>
+                    <li><a href="/alphabetE.html">E</a></li>
+                    <li><a href="/alphabetF.html">F</a></li>
+                    <li><a href="/alphabetG.html">G</a></li>
+                    <li><a href="/alphabetH.html">H</a></li>
+                    <li><a href="/alphabetI.html">I</a></li>
+                    <li><a href="/alphabetJ.html">J</a></li>
+                    <li><a href="/alphabetK.html">K</a></li>
+                    <li><a href="/alphabetL.html">L</a></li>
+                    <li><a href="/alphabetM.html">M</a></li>
+                    <li><a href="/alphabetN.html">N</a></li>
+                    <li><a href="/alphabetO.html">O</a></li>
+                    <li><a href="/alphabetP.html">P</a></li>
+                    <li><a href="/alphabetQ.html">Q</a></li>
+                    <li><a href="/alphabetR.html">R</a></li>
+                    <li><a href="/alphabetS.html">S</a></li>
+                    <li><a href="/alphabetT.html">T</a></li>
+                    <li><a href="/alphabetU.html">U</a></li>
+                    <li><a href="/alphabetV.html">V</a></li>
+                    <li><a href="/alphabetW.html">W</a></li>
+                    <li><a href="/alphabetX.html">X</a></li>
+                    <li><a href="/alphabetY.html">Y</a></li>
+                    <li><a href="/alphabetZ.html">Z</a></li>
+                    <li class="w2"><a href="/alphabetEtc.html">その他</a></li>
+                </ul>
+                <ul class="index-item-aiueo">
+                    <li><a href="/alphabet_ja_a.html">あ行</a></li>
+                    <li><a href="/alphabet_ja_ka.html">か行</a></li>
+                    <li><a href="/alphabet_ja_sa.html">さ行</a></li>
+                    <li><a href="/alphabet_ja_ta.html">た行</a></li>
+                    <li><a href="/alphabet_ja_na.html">な行</a></li>
+                    <li><a href="/alphabet_ja_ha.html">は行</a></li>
+                    <li><a href="/alphabet_ja_ma.html">ま行</a></li>
+                    <li><a href="/alphabet_ja_ya.html">や行</a></li>
+                    <li><a href="/alphabet_ja_ra.html">ら行</a></li>
+                    <li><a href="/alphabet_ja_wa.html">わ行</a></li>
+                </ul>
+            </div><!-- .index -->
+        </div><!-- /.contents-main -->
+        <div class="contents-side">
+            <div class="side-ad">
+                <h2 class="side-ad-ttl">アルクからのおすすめ [PR]</h2>
+                <div class="side-ad-inner">
+                    <div class="side-ad-item">
+                        <div class="eow_top_ad">
+                            <!-- /21619764421/eow_top_right_banner01 -->
+                            <div id='div-gpt-ad-1615273083923-0'>
+                                <script>
+                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1615273083923-0'); });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-ad-item">
+                        <div class="eow_top_ad">
+                            <!-- /21619764421/eow_top_right_banner02 -->
+                            <div id='div-gpt-ad-1615272974213-0'>
+                                <script>
+                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1615272974213-0'); });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-ad-item">
+                        <div class="eow_top_ad">
+                            <!-- /21619764421/eow_top_left_banner01 -->
+                            <div id='div-gpt-ad-1615273199448-0'>
+                                <script>
+                                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1615273199448-0'); });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-ad-item">
+                        <div class="eow_top_ad">
+                            <!-- /21619764421/eow_top_left_banner02 -->
+                            <div id='div-gpt-ad-1615273132199-0'>
+                                <script>
+                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1615273132199-0'); });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.contents-side -->
+    </div><!-- /.wrap-inner -->
+</main>
+<!-- End EOW_SHOP-323 Body -->
+
+<!-- EOW_SHOP-323 Footer -->
+<footer class="footer">
+    <div class="footer-btn">
+        <div class="wrap-inner">
+            <a href="#"><img src="/content/img/footer_icon-arr-2.svg" alt="ページの先頭に戻る"></a>
+        </div>
+    </div>
+    <div class="footer-top">
+        <div class="wrap-inner">
+            <div class="footer-top-1">
+                <div><a href="/"><img class="footer-logo" src="/content/img/lo_eow.svg" alt="英辞郎 on the WEB" title="英辞郎 on the WEB"></a></div>
+                <ul class="btn-store">
+                    <li><a target="_blank" href="https://apps.apple.com/app/apple-store/id365874160?pt=210463&ct=eow_top_app_store_link_2021_02&mt=8"><img src="/content/img/footer_btn-appstore.png" alt="App Store"></a></li>
+                    <li><a target="_blank" href="https://play.google.com/store/apps/details?id=jp.co.alc.eow&referrer=utm_source%3Deow_top%26utm_medium%3Dbanner%26utm_campaign%3Dandroid_app"><img src="/content/img/footer_btn-googleplay.png" alt="Google Play"></a></li>
+                </ul>
+            </div>
+            <div class="footer-top-2">
+                <div class="footer-menu">
+                    <dl>
+                        <dt>アルクグループ</dt>
+                        <dd>
+                            <a href="https://www.alc.co.jp/index.html?utm_source=EOW&amp;utm_medium=footer&amp;utm_campaign=eow_wwwtop" target="_blank">アルクのウェブサイト</a>
+                            <a href="https://shop.alc.co.jp/?utm_source=serp_pc&utm_medium=text&utm_campaign=EOWfooter">アルク通信講座</a>
+                            <a href="https://eowp.alc.co.jp/info/">英辞郎 on the WEB Pro</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>サイトのご利用について</dt>
+                        <dd>
+                            <a href="https://www.alc.co.jp/policy/other/#eowp" rel="nofollow">英辞郎 on the WEB 利用規約</a>
+                            <a href="https://www.alc.co.jp/policy/privacy/" rel="nofollow">プライバシーポリシー</a>
+                            <a href="https://www.alc.co.jp/policy/exoneration/" rel="nofollow">免責条項</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>お客様相談室</dt>
+                        <dd>
+                            <a href="https://eowp.alc.co.jp/info/business/">法人のお客様</a>
+                            <a href="https://www.alc.co.jp/inquiry/">お問い合わせ</a>
+                        </dd>
+                    </dl>
+                </div>
+                <ul class="btn-store">
+                    <li><a target="_blank" href="https://apps.apple.com/app/apple-store/id365874160?pt=210463&ct=eow_top_app_store_link_2021_02&mt=8"><img src="/content/img/footer_btn-appstore.png" alt="App Store"></a></li>
+                    <li><a target="_blank" href="https://play.google.com/store/apps/details?id=jp.co.alc.eow&referrer=utm_source%3Deow_top%26utm_medium%3Dbanner%26utm_campaign%3Dandroid_app"><img src="/content/img/footer_btn-googleplay.png" alt="Google Play"></a></li>
+                </ul>
+            </div>
+        </div><!-- /.wrap-inner -->
+    </div><!-- /.footer-top -->
+    <div class="footer-btm">
+        <div class="wrap-inner">
+            <ul class="btn-sns">
+                <li><a href="http://eowp.blogspot.jp/" target="_blank"><img src="/content/img/footer_icon-sns-blogspot.svg" alt="Blogspot"></a></li>
+                <li><a href="https://twitter.com/eow_alc" target="_blank"><img src="/content/img/footer_icon-sns-twitter.svg" alt="Twitter"></a></li>
+            </ul>
+            <div class="footer-copyright">Copyright © 2000-<span id="footer-copyright-year">2021</span> ALC PRESS INC. All Rights Reserved.</div>
+        </div><!-- /.wrap-inner -->
+    </div><!-- /.footer-btm -->
+</footer>
+<!-- End EOW_SHOP-323 Footer -->
+
+  <!-- Google Tag Manager_NEW -->
+  <noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-TKK8PX" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-TKK8PX');</script>
+  <!-- End Google Tag Manager_NEW -->
+
+  <!-- パネル 音声再生 -->
+  <div id="js_p_onsei" style="display: none;">
+    <div class="bg_box"></div>
+    <div class="bg_box2">
+      <div id="js_p_onsei_modal" class="modal">
+        <div class="js_p_top">
+          <img src="/content/img/icon_eow_02.svg" class="js_p_img" />
+          <div class="js_p_text" style="float: left;">音声再生は「英辞郎 on the WEB Pro」でご利用いただけます。</div>
+          <div class="js_p_alc">※アルクのIDをお持ちでない方は、下記の新規登録（無料）からお進みください。</div>
+          <div class="js_p_close">
+            <img src="/content/img/close.png">
+          </div>
+        </div>
+        <div class="js_p_bottom">
+          <div class="js_p_b_img">
+            <div class="onsei_btn" style="margin-top: 30px;">
+              <img src="/content/img/onsei_btn.png" style="margin-left: 20px;width: 100px;float: left;" />
+              <p style="float: left;margin-top: 5px;">から再生できます。</p>
+            </div>
+            <img src="/content/img/onsei.png" />
+          </div>
+          <div class="js_p_b_login">
+            <div class="js_p_b_text">
+              <span>「英辞郎 on the WEB Pro」「英辞郎 on the WEB Pro Lite」は、アルクのメールアドレスIDでお使いいただけます。</span>
+            </div>
+            <div class="js_p_b_input">
+              <div style="text-align: center;margin: 10px 0;">
+                <a href="https://eowpf.alc.co.jp/top">
+                  <input id="submit_button" name="login" type="submit" value="ログイン" class="js_btn_login">
+                </a>
+              </div>
+              <div style="text-align: center;margin: 10px 0;">
+                <a href="https://eowp-user.alc.co.jp/signup/">
+                  <input id="submit_button" name="register" type="submit" value="新規登録" class="js_btn_register"
+                    onclick="ga('send', 'event', 'eowmodal_user', 'click', 'https://eowp-user.alc.co.jp/signup/');"
+                    id="eowmodal_user">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- パネル 検索履歴 -->
+  <div id="js_p_history" style="display: none;">
+    <div class="bg_box"></div>
+    <div class="bg_box2">
+      <div id="js_p_history_modal" class="modal">
+        <div class="js_p_top">
+          <img src="/content/img/icon_eow_03.svg" class="js_p_img" />
+          <div class="js_p_text" style="float: left;">検索履歴は「英辞郎 on the WEB Pro」でご利用いただけます。</div>
+          <div class="js_p_alc">※アルクのIDをお持ちでない方は、下記の新規登録（無料）からお進みください。</div>
+          <div class="js_p_close">
+            <img src="/content/img/close.png">
+          </div>
+        </div>
+        <div class="js_p_bottom">
+          <div class="js_p_b_img">
+            <img src="/content/img/rireki.png" />
+          </div>
+          <div class="js_p_b_login">
+            <div class="js_p_b_text">
+              <span>「英辞郎 on the WEB Pro」「英辞郎 on the WEB Pro Lite」は、アルクのメールアドレスIDでお使いいただけます。</span>
+            </div>
+            <div class="js_p_b_input">
+              <div style="text-align: center;margin: 10px 0;">
+                <a href="https://eowpf.alc.co.jp/top">
+                  <input id="submit_button" name="login" type="submit" value="ログイン" class="js_btn_login">
+                </a>
+              </div>
+              <div style="text-align: center;margin: 10px 0;">
+                <a href="https://eowp-user.alc.co.jp/signup/">
+                  <input id="submit_button" name="register" type="submit" value="新規登録" class="js_btn_register"
+                    onclick="ga('send', 'event', 'eowmodal_user', 'click', 'https://eowp-user.alc.co.jp/signup/');"
+                    id="eowmodal_user">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- パネル 単語帳 -->
+  <div id="js_p_wordbook" style="display: none;">
+    <div class="bg_box"></div>
+    <div class="bg_box2">
+      <div id="js_p_wordbook_modal" class="modal">
+        <div class="js_p_top">
+          <img src="/content/img/icon_eow_01.svg" class="js_p_img" />
+          <div class="js_p_text" style="float: left;">単語帳は「英辞郎 on the WEB Pro」でご利用いただけます。</div>
+          <div class="js_p_alc">※アルクのIDをお持ちでない方は、下記の新規登録（無料）からお進みください。</div>
+          <div class="js_p_close">
+            <img src="/content/img/close.png">
+          </div>
+        </div>
+        <div class="js_p_bottom">
+          <div class="js_p_b_img">
+            <img src="/content/img/tango.png" />
+          </div>
+          <div class="js_p_b_login">
+            <div class="js_p_b_text">
+              <span>「英辞郎 on the WEB Pro」「英辞郎 on the WEB Pro Lite」は、アルクのメールアドレスIDでお使いいただけます。</span>
+            </div>
+            <div class="js_p_b_input">
+              <div style="text-align: center;margin: 10px 0;">
+                <a href="https://eowpf.alc.co.jp/top">
+                  <input id="submit_button" name="login" type="submit" value="ログイン" class="js_btn_login">
+                </a>
+              </div>
+              <div style="text-align: center;margin: 10px 0;">
+                <a href="https://eowp-user.alc.co.jp/signup/">
+                  <input id="submit_button" name="register" type="submit" value="新規登録" class="js_btn_register"
+                    onclick="ga('send', 'event', 'eowmodal_user', 'click', 'https://eowp-user.alc.co.jp/signup/');"
+                    id="eowmodal_user">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>

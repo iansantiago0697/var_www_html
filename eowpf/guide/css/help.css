@@ -1,0 +1,790 @@
+@charset "UTF-8";
+
+/*-------------------------------------------------
+ EOWPF
+
+ * Style URL: css/help.css
+ * Last Up Date: 2010/10/12
+-------------------------------------------------*/
+
+
+/*-----  contents -------
+
+	1: base 
+	2: common
+	3: index
+	4: wrapper
+	5: 
+	6: 
+----------------------*/
+
+
+/* 1: base
+=========================================*/
+.help {
+	background: url(../images/bg_header.gif) repeat-x;
+}
+
+ol li{
+	list-style:none;
+}
+a {
+	text-decoration:underline;
+}
+
+/* 2: common
+=========================================*/
+div.help div#wrapper {
+	width: 850px;
+	text-align:center;
+}
+
+div.help div#wrapper div#header {
+	width:850px;
+	height:90px;
+}
+
+div.help div#wrapper div#header div#logo {
+ 	width:268px; 
+	position:absolute;
+	top:20px; left:0px;
+}
+
+div.help div#wrapper div#header h1 {
+	width:213px;
+	position:absolute;
+	top:27px; left:280px;
+}
+
+div.help div#wrapper div#content{
+	width: 850px;
+	color:#333;
+	margin::0 0 25px 0;
+	padding:0 0 25px 0;
+}
+
+div.help div#wrapper div#content p.lead{
+	width:820px;
+	line-height:1.6;
+	margin:15px 15px 0;
+}
+
+div.help div#wrapper div#content div.for-helpindex {
+	width:850px;
+	margin:30px 0 0;
+	text-align: right;
+}
+
+div.help div#wrapper div#content div.totop-help {
+	width:850px;
+	margin:30px 0 0;
+	text-align: right;
+}
+
+/* 3: index
+=========================================*/
+div.help div#wrapper div#content h2 {
+	width: 850px;
+	margin:20px 0 0;
+}
+
+div.help div#wrapper div#content ul.btn-01 {
+	width:850px;
+	margin:0;
+	padding:25px 0 0;
+}
+
+div.help div#wrapper div#content ul.btn-01 li {
+	width:403px;
+	margin:0;
+	padding:0 0 0 15px;
+	line-height:2;
+	display: inline;
+}
+
+div.help div#wrapper div#content ul.btn-02 {
+	width:850px;
+	margin:30px 0;
+	padding:20px 0 0;
+	border-top: #666 dashed 1px;
+	text-align: center;
+} 
+
+div.help div#wrapper div#content ul.btn-02 li {
+	margin:0;
+	padding:0 0 0 25px;
+	display: inline;
+}
+
+div.help div#wrapper div#content ul.btn-03 {
+	width:850px;
+	border-bottom: #666 dashed 1px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+div.help div#wrapper div#content ul.btn-03 li {
+	margin:0 0 0 10px;
+	padding:0 0 0 10px;
+	background:url(../images/list_01.gif) no-repeat left;
+	display: inline;
+}
+
+div.ssl{
+	width:500px;
+	margin:15px auto -25px auto;
+}
+
+div.ssl p{
+	display: inline;
+	vertical-align: 100%; 
+	color: #666666;
+}
+
+/* 4: other
+=========================================*/
+div.help div#wrapper div#content h3 {
+	width: 825px;
+	margin:15px 0 0;
+	padding:0 0 0 25px;
+	line-height:4;
+	font-size:130%;
+	background: url(../images/bg_h2.gif) no-repeat center;
+}
+
+div.help div#wrapper div#content h4 {
+	clear: left;
+	width:780px;
+	margin:15px 0 0 20px;
+	padding:0 0 5px 15px;
+	background: url(../images/bg_h3.jpg) no-repeat top left;
+}
+
+div.help div#wrapper div#content h3.rules{
+	margin:20px 0;
+	padding: 5px;
+	background: none;
+	font-size:120%;
+	line-height: 1em;
+	border-bottom: 1px dotted #ccc;
+}
+
+div.help div#wrapper div#content ol#mokuji {
+	width:300px;
+	margin:5px 20px 0;
+	padding:15px;
+	background: #eff9ff;
+	border:#ccccff 1px solid;
+}
+
+div.help div#wrapper div#content ol#mokuj.update {
+	width:800px;
+}
+
+div.help div#wrapper div#content ol#mokuji li {
+	line-height: 1.8;
+	font-weight: bold;
+	color: #000066;
+	list-style: inside;
+	list-style-type: none;
+}
+
+div.help div#wrapper div#content ol#mokuji li a {
+	text-decoration:none;
+}
+
+
+div.help div#wrapper div#content ol#mokuji_notes {
+	width:700px;
+	margin:5px 20px 0;
+	padding:15px;
+	background: #eff9ff;
+	border:#ccccff 1px solid;
+}
+
+div.help div#wrapper div#content ol#mokuji_notes li {
+	line-height: 1.8;
+	font-weight: bold;
+	color: #000066;
+	list-style: inside;
+	list-style-type: none;
+}
+
+div.help div#wrapper div#content ol#mokuji_notes li a {
+	text-decoration:none;
+}
+
+div.help div#wrapper div#content ol#mokuji.kwic {
+	width:500px;
+}
+
+div.help div#wrapper div#content ol#mokuji.update {
+	width:700px;
+}
+
+div.help div#wrapper div#content ol.rules_list{
+	margin: 0 2em 40px 2em;
+	padding-left: 20px;
+}
+
+div.help div#wrapper div#content ol.rules_list li{
+	list-style-type: decimal;
+	margin-bottom: 1em;
+}
+
+div.help div#wrapper div#content ol.rules_list ol{
+	margin: 1em 2em ;
+	padding-left: 20px;
+}
+
+div.help div#wrapper div#content ol.rules_list ol.rules_list_nesting2 li{
+	list-style-type: lower-roman;
+}
+
+div.help div#wrapper div#content ul.rules_list_nesting_ul{
+	margin: 1em 2em ;
+	padding-left: 20px;
+}
+
+div.help div#wrapper div#content p.rules{
+	margin-bottom: 40px;
+	padding-left: 20px;
+}
+
+div.help div#wrapper div#content ul.rules_list_nesting_ul li{
+	list-style-type:disc;
+	margin:0;
+}
+
+div.help div#wrapper div#content .imgleft {
+	text-align: left;
+	margin: 10px 0 10px 18px;
+	border: #CCCCCC 2px solid;
+}
+
+div.help div#wrapper div#content .imgct400 {
+	width:400px;
+	margin:20px 200px;
+	text-align:center;
+	border: #CCCCCC 2px solid;
+}
+
+div.help div#wrapper div#content .imgct600 {
+	width:600px;
+	margin:30px 100px;
+	text-align:center;
+	border: #CCCCCC 2px solid;
+}
+
+div.help div#wrapper div#content .imgct800 {
+	width:800px;
+	margin:30px auto;
+	text-align:center;
+	border: #CCCCCC 2px solid;
+}
+
+div.help div#wrapper div#content .imgfl {
+	float: left;
+	margin:10px 0;
+	width:400px;
+	border: #CCCCCC 2px solid;
+}
+
+div.help div#wrapper div#content .imgct_shop {
+	margin:40px auto;
+	text-align:center;
+}
+
+div.help div#wrapper div#content p.text {
+	width:810px;
+	margin:15px 20px 0;
+	padding:0;
+	line-height:1.6;
+}
+
+div.help div#wrapper div#content p.text img {
+	padding:0 2px;
+}
+
+div.help div#wrapper div#content p.text02 {
+	width:780px;
+	margin:5px 0 0 60px;
+	padding:0;
+	line-height:1.4;
+}
+
+div.help div#wrapper div#content p.detailed {
+	width:850px;
+	margin:15px 0 0;
+	text-align:right;
+}
+
+div.help div#wrapper div#content ul.honbun {
+	width:750px;
+	margin:10px 0 0 30px;
+	padding:10px 0 0 1em;
+}
+
+div.help div#wrapper div#content ul.honbun li {
+	width:750px;
+	margin:0 0 0 2px;
+	padding:0;
+	list-style: outside;
+	list-style-type:disc;
+	/vertical-align:top;
+	line-height: 1.75em;
+}
+
+div.help div#wrapper div#content ul.kc_honbun {
+	width:750px;
+	margin: 0 0 20px 30px;
+	padding:10px 0 0 1em;
+}
+
+div.help div#wrapper div#content ul.kc_honbun li {
+	width:750px;
+	margin:0 0 0 2px;
+	padding:0;
+	list-style: outside;
+	list-style-type:disc;
+	line-height: 1.75em;
+}
+
+div.help div#wrapper div#content ul.honbun li.kc {
+	width:700px;
+	margin:0 0 5px 2px;
+	padding:0 0 5px 45px;
+	background: url(../images/ico_01.gif) no-repeat top left;
+	list-style-type: none;
+}
+
+div.help div#wrapper div#content ol.kc_3{
+	margin: 20px ;
+	padding: 0 20px;
+	border: 1px solid #ccc;
+}
+
+div.help div#wrapper div#content ol.kc_3 li{
+	margin-left: 10px;
+	list-style-type: decimal; 
+}
+
+div.help div#wrapper div#content ol.kc_3 li ul{
+	margin: 10px 0 10px 10px;
+}
+
+div.help div#wrapper div#content ol.kc_3 li ul li{
+	list-style-type: disc; 
+}
+
+div.help div#wrapper div#content dl {
+	width:780px;
+	margin:25px 0 0 10px;
+	padding:0;
+}
+
+div.help div#wrapper div#content dl dt{
+	clear: left;
+	width:780px;
+	margin:15px 0 0 20px;
+	padding:0 0 5px 15px;
+	background:url(../images/bg_h3.jpg) no-repeat top left;
+}
+
+div.help div#wrapper div#content dl dd{
+	width:800px;
+	margin:0;
+	padding:0 0 20px 35px;
+}
+
+div.help div#wrapper div#content dl dd ul{
+	width:750px;
+	margin:15px 0 0 0;
+	padding:0 0 0 1em;
+}
+
+div.help div#wrapper div#content dl dd li{
+	width:720px;
+	margin:5px 0 10px 3px;
+	padding:0 0 0 3px;
+	line-height:1.5em;
+	list-style: outside;
+	list-style-type: circle;
+	vertical-align:top;
+}
+
+div.help div#wrapper div#content dl dd ul.fl-l {
+	float:left;
+	width:365px;
+	margin:0 0 10px 0;
+	padding: 0 0 0 1em;
+}
+
+div.help div#wrapper div#content p.fl-l {
+	float:left;
+	width:365px;
+	margin:10px 10px 10px 0;
+	padding: 0 0 0 1em;
+}
+
+div.help div#wrapper div#content dl dd ul.fl-l li{
+	width:300px;
+	margin:5x 0 0 2px;
+	padding:0;
+	line-height:1.5em;
+	list-style: outside;
+	list-style-type: circle;
+}
+
+div.help div#wrapper div#content dl dd ul ul.detail{
+	margin-bottom: 20px;
+	padding-left: 20px;
+}
+
+div.help div#wrapper div#content dl dd ul ul.detail li{
+	list-style-type: disc ;
+	margin: 0;
+}
+
+div.help div#wrapper div#content ul.notes_sample{
+	width:750px;
+	margin:0;
+	padding:0 0 0 1em;
+}
+
+div.help div#wrapper div#content ul.notes_sample li{
+	list-style-type: disc;
+	margin:0 0 0 8px;
+	line-height: 1.75em;
+}
+
+
+div.help div#wrapper div#content ul.sample{
+	width:750px;
+	margin:0 0 0 18px;
+	padding:0 0 0 1em;
+}
+
+div.help div#wrapper div#content ul.sample li{
+	list-style-type: disc;
+	margin:0 0 0 8px;
+	line-height: 1.75em;
+}
+
+div.help div#wrapper div#content div.ver_info, .browser{
+	margin:10px 55px 35px 55px;
+	padding:10px 15px;
+	border: 1px dotted #666;
+}
+
+div.help div#wrapper div#content div.ver_info li{
+list-style-type:none;
+}
+
+div.help div#wrapper div#content ul.makesure{
+	margin: 20px 30px 0 40px;
+	padding-left:15px;
+	font-weight: 700;
+	color: #B30F00;
+}
+
+div.help div#wrapper div#content ul.makesure#aboutinquiry{
+	margin: 0 30px 0 40px;
+	font-weight: normal;
+}
+
+div.help div#wrapper div#content ul.makesure li{
+	margin-bottom: 1em;
+}
+
+div.help div#wrapper div#content div.memo {
+	margin: 10px 0 30px 8px;
+	border-left: 6px groove #ECECEC;
+	line-height: 1.75em;
+}
+
+div.help div#wrapper div#content div.memo p{
+	margin: 5px 0 5px 10px;
+}
+
+
+div.help div#wrapper div#content dl.faq,
+div.help div#wrapper div#content dl.faq-first {
+	width:840px;
+}
+
+div.help div#wrapper div#content dl.faq {
+	margin:0 0 0 10px;
+	padding:0 0 20px 0;
+	border-top: #999999 2px dotted;
+}
+
+
+div.help div#wrapper div#content dl.faq-first {
+	border:none;
+	margin:0 0 0 10px;
+	padding:0 0 20px 0;
+}
+
+div.help div#wrapper div#content dl.faq dt,
+div.help div#wrapper div#content dl.faq dd,
+div.help div#wrapper div#content dl.faq-first dt,
+div.help div#wrapper div#content dl.faq-first dd {
+	width:790px;
+	padding:0 0 5px 30px;
+}
+
+div.help div#wrapper div#content dl.faq dt,
+div.help div#wrapper div#content dl.faq-first dt {
+	margin:30px 0 0 20px;
+	background: url(../images/que.gif) no-repeat top left;
+}
+
+div.help div#wrapper div#content dl.faq dd,
+div.help div#wrapper div#content dl.faq-first dd {
+	margin:15px 0 0 20px;
+	background: url(../images/ans.gif) no-repeat top left;
+}
+
+div.help div#wrapper div#content dl.faq dd ul, 
+div.help div#wrapper div#content dl.faq-first dd ul{
+	padding:0 0 10px 0;
+	width:750px;
+}
+
+div.help div#wrapper div#content dl.faq dd ul li, 
+div.help div#wrapper div#content dl.faq-first dd ul li {
+	width:750px;
+}
+
+div.help div#wrapper div#content dl.joho {
+	width:600px;
+	margin:0 80px 40px;
+	padding:10px 0 10px 10px ;
+	background:#F5F5F5; 
+}
+
+div.help div#wrapper div#content dl.joho_utilities {
+	width:600px;
+	margin:20px 80px 40px 20px;
+	padding:10px 0 10px 10px ;
+	background:#F5F5F5; 
+}
+
+div.help div#wrapper div#content dl.joho dt,
+div.help div#wrapper div#content dl.joho02 dt{
+	margin:0;
+	padding:0;
+	background:none;
+	font-weight:bold;
+	color: #256146;
+}
+
+div.help div#wrapper div#content dl.joho_utilities dt,
+div.help div#wrapper div#content dl.joho02_utilities dt{
+	margin:0;
+	padding:0;
+	background:none;
+	font-weight:bold;
+	color: #256146;
+}
+
+div.help div#wrapper div#content dl.joho dd {
+	width:580px;
+	margin:0;
+	padding:0 0 0 15px;
+	background: url(../images/list_01.gif) no-repeat center left;
+}
+
+div.help div#wrapper div#content dl.joho_utilities dd {
+	width:580px;
+	margin:0;
+	padding:0 0 0 15px;
+	background: url(../images/list_01.gif) no-repeat center left;
+}
+
+div.help div#wrapper div#content dl.joho02 {
+	width:700px;
+	margin:5px 80px 20px;
+	padding:10px;
+	background:#eee; 
+}
+
+div.help div#wrapper div#content dl.joho02 dd {
+	width:700px;
+	margin:0;
+	padding:0 0 0 15px;
+	background: none;
+
+}
+
+div.help div#wrapper div#content dl.joho02 dd ol {
+	padding:0 0 6px 0;
+}
+
+div.help div#wrapper div#content dl.joho02 dd ol li{
+	width:670px;
+	list-style: none;
+}
+
+div.help div#wrapper div#content div.for-helpindex{
+	text-align:left;
+}
+
+div.help div#wrapper div#content .notes{
+	font-size: 85%;
+	color: #DC143C;
+}
+
+table {
+	margin: 0 0 0 30px;
+	padding: 0;
+	border-collapse: collapse;
+	empty-cells: show;
+	font-size: 100%;
+	text-align: left;
+}
+
+.faq-first th, td {
+	padding:3px;
+	border: #CCCCCC 1px solid;
+}
+
+th {
+	text-align:left;
+	background:#edf2f7;
+}
+
+td {
+	text-align:center;
+}
+
+em {
+	font-weight: bold;
+	font-style:normal;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.key {
+	background-color:#DDDDDD;
+	border-bottom:2px solid #888888;
+	border-right:2px solid #888888;
+	font-family: "Verdana","Arial","Arial New", sans-serif;
+	padding:4px;
+}
+
+ol.shortcuts {
+	margin: 10px 0 0 50px;
+}
+
+ol.shortcuts li {
+	list-style-type: decimal;
+	margin-bottom: 10px;
+}
+
+ol.shortcuts li ul li{
+	list-style-type: none;
+}
+
+ol.col_honbun{
+	margin-left:2em;
+}
+
+ol.col_honbun li {
+	list-style-type: decimal;
+	margin-bottom: 10px;
+}
+
+td.eee{
+	background-color: #f2f2f2;
+	font-size: 80%;
+}
+
+td.ccc{
+	background-color: #CCCCCC;
+	text-align: left;
+}
+
+.maru {
+color:#DC143C;
+font-size:12pt;
+font-weight:bold;
+text-decoration:none;
+}
+
+.batsu {
+color:#34429C;
+font-size:20pt;
+text-decoration:none;
+}
+
+dl.faq-first{
+font-size:110%;
+line-height: 1.5em;
+}
+
+dl.faq{
+font-size:110%;
+line-height: 1.5em;
+}
+
+table#normal_fz{
+	width: 100%;
+	margin: 1em 0;
+	padding: 0;
+}
+table#normal_fz tr{
+	line-height: 2.5em;
+	font-weight: 900;
+	font-size:110%;
+}
+tr.fz_e-j{
+	background-color: #FEECFF;
+}
+tr.fz_j-e{
+	background-color: #ECF3FF;
+}
+td.keyword_title{
+	background-color: #f2f2f2;
+}
+td.serp_title{
+	background-color: #f2f2f2;
+}
+td.ejje{
+	width: 6%;
+}
+td.keyword{
+	width: 50%;
+	text-align: left;
+	padding-left: 1em;
+}
+td.normal_serp{
+	width: 22%;
+}
+td.fz_serp{
+	width: 22%;
+}
+
+
+/* 
+.browser table, tbody, tr, td,th{
+	text-align: left!important;
+	border: none;
+	background: transparent!important;
+}
+=================================================*/
+
+/* 5.hac
+=================================================*/
+
+/* Hides from IE-mac \*/
+
+* html .clear {height: 1%;}
+
+div.clear {display:block;}
+
+/* End hide from IE-mac */
+

@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+/*-------------------------------------------------
+ EOWP
+
+ * Style URL: css/help.css
+ * Last Up Date: 2010/10/12---------> 
+2017/06/13にガイドページ改修で必要になった
+スタイルをタグ名を変えて設定
+-------------------------------------------------*/
+
+
+/*-----  contents -------
+
+	1: base 
+	2: common
+	3: index
+	4: wrapper
+	5: 
+	6: 
+----------------------*/
+
+
+/* 1: base
+=========================================*/
+.eowpguide {
+	background: url(../images/bg_header.gif) repeat-x;
+}
+
+ol li{
+	list-style:none;
+}
+a {
+	text-decoration:underline;
+}
+
+/* 2: common
+=========================================*/
+.eowpguide #wrapper {
+	width: 850px;
+	text-align:center;
+}
+
+.eowpguide #wrapper #header {
+	width:850px;
+	height:90px;
+}
+
+.eowpguide #wrapper #header #logo {
+ 	width:268px; 
+	position:absolute;
+	top:10px; left:0px;
+}
+
+.eowpguide #wrapper #header h1 {
+	width:213px;
+	position:absolute;
+	top:27px; left:280px;
+}
+
+.eowpguide #wrapper #content{
+	width: 850px;
+	color:#333;
+	margin::0 0 25px 0;
+	padding:0 0 25px 0;
+}
+
+.eowpguide #wrapper #content p.lead{
+	width:820px;
+	line-height:1.6em;
+	margin:15px 15px 10px 15px;
+	text-align: center;
+}
+
+.eowpguide #wrapper #content div.for-helpindex {
+	width:850px;
+	margin:30px 0 0;
+	text-align: right;
+}
+
+.eowpguide #wrapper #content .totop-help {
+	width:850px;
+	margin:30px 0 0;
+	text-align: right;
+}
+
+.eowpguide #wrapper #content h2 {
+	display: inline-block;
+	width: 850px;
+	height:42px;
+	margin:18px 0 0;
+	background-image: url(../images/h2_01.gif);
+	background-repeat:no-repeat;
+	font-size: 1.6em;
+	line-height: 1.8em;
+	text-indent: 12px;
+	font-weight: 500;
+	color: #000B85;
+}
+
+/* 2020-12-21 追加 */
+.eowpguide .btn-shop {
+	display: inline-block;
+	float:right;
+	margin-top:-98px;
+	margin-right:130px;
+	width: 160px;
+	height:30px;
+	background-color: #951e22;
+	border-radius: 8px;
+	font-size:1.1em;
+	text-align: center;
+	line-height:2em;
+	box-shadow: 1px 1px 1px #666;
+}
+
+.eowpguide .btn-shop a {
+	text-decoration: none;
+	font-weight:500;
+	color: #fff;
+}
+
+.eowpguide .btn-shop a:hover {
+	opacity:0.5;
+}
+
+.eowpguide .report {
+	display: inline-block;
+	float:right;
+	margin-top:-98px;
+	width: 116px;
+	height:30px;
+	background-color: #99cc33;
+	border-radius: 8px;
+	font-size:1.1em;
+	text-align: center;
+	line-height:2em;
+	box-shadow: 1px 1px 1px #666;
+}
+
+.eowpguide .report a {
+	text-decoration: none;
+	font-weight:500;
+	color: #fff;
+}
+
+.eowpguide .report a:hover {
+	opacity:0.5;
+}
+
+.eowpguide #wrapper div#content ul.btn-01 {
+	display: inline-block;
+	box-sizing: border-box;
+	width:840px;
+	margin-left:12px;
+	padding:6px 0 6px 0;
+	clear:both;
+}
+
+.eowpguide #wrapper #content ul.btn-01 li {
+	display: inline-block;
+	float: left;
+	width:340px;
+	height: 40px;
+	margin-left:30px;
+	padding:0 0 0 30px;
+	font-size: 1.4em;
+	line-height: 2.2em;
+	font-weight: 500;
+	color: #000B85;
+	background-image: url(../images/arrow.svg);
+	background-repeat:no-repeat;
+	background-size: 22px;
+	background-position: left;
+	border-bottom: 1px solid #EDE4C5;
+}
+
+.eowpguide #wrapper div#content ul.btn-01b {
+	display: inline-block;
+	box-sizing: border-box;
+	width:850px;
+	margin:18px 0px;
+	padding:2px 0 0 0;
+	border-top:1px dashed #000B85;
+}
+.eowpguide #wrapper #content ul.btn-01b li {
+	display: inline-block;
+	float: left;
+	width:340px;
+	height: 32px;
+	margin-left:48px;
+	padding:0 0 0 26px;
+	font-size: 1.2em;
+	line-height: 2em;
+	font-weight: 500;
+	color: #000B85;
+	background-image: url(../images/arrow_b.svg);
+	background-repeat:no-repeat;
+	background-size: 16px;
+	background-position: left;
+	border-bottom: 1px solid #EDE4C5;
+}
+.eowpguide #wrapper #content ul.btn-01b li {
+	border-bottom: 1px solid #EDE4C5;
+}
+.eowpguide #wrapper #content ul.btn-01 li a {
+	text-decoration: none;
+}
+.eowpguide #wrapper #content ul.btn-01 li:hover {
+	background-image: url(../images/arrow.svg);
+	filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+.eowpguide #wrapper #content ul.btn-01b li a {
+	text-decoration: none;
+}
+.eowpguide #wrapper #content ul.btn-01b li:hover {
+	background-image: url(../images/arrow_b.svg);
+	filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+.eowpguide table.manual {
+	margin:16px 30px 6px 30px;
+	border-collapse:collapse;
+}
+.eowpguide td {
+	font-size: 1.4em;
+	font-weight: 500;
+	color: #fff;
+	text-align: center;
+	padding:4px 20px;
+	background-color: #99cc33;
+	border-top: 2px solid #99cc33;
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	border-left: 2px solid #fff;
+}
+.eowpguide td.small {
+	font-size: 1.2em;
+	line-height: 2em;
+	font-weight: 500;
+	color: #000B85;
+	text-align: left;
+	text-indent:10px;
+	background-color: #fff;
+	border-top: 1px solid #99cc33;
+	border-bottom: 1px solid #99cc33;
+	background-image: url(../images/arrow.svg);
+	background-repeat:no-repeat;
+	background-size: 16px;
+	background-position: 6px 11px;
+}
+.eowpguide td.small.beige {
+	border-top: 1px solid #EDE4C5;
+	border-bottom: 1px solid #EDE4C5;
+}
+.eowpguide td.small.beige:hover {
+	filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+.eowpguide td.small a {
+	text-decoration: none;
+	color: #000B85;
+}
+.eowpguide td.small:hover {
+	background-image: url(../images/arrow.svg);
+	filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}

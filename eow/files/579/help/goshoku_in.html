@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"//www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=shift_jis">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<title>英辞郎 on the Web - 誤植レポート</title>
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<script type="text/javascript" src="/content/js/css_style.js" charset="Shift_JIS"></script>
+		<script language="JavaScript">
+			<!--
+				function checkinput() {
+					if (!document.inquiry.word.value) {
+						window.alert('見出し語が記入されていません。');
+						document.inquiry.word.focus();
+						return false;
+					};
+					if (!document.inquiry.mistake.value) {
+						window.alert('誤植部分が記入されていません。');
+						document.inquiry.mistake.focus();
+						return false;
+					};
+					if (!document.inquiry.right.value) {
+						window.alert('正しい表記が記入されていません。');
+							document.inquiry.right.focus();
+							return false;
+					};
+				};
+			// -->
+		</script>
+	</head>
+	<body>
+		<table width="550" border="0" cellspacing="0" cellpadding="0">
+			<tr><td width="145" valign="top" bgcolor="#FFFFFF"><!-- ▼ 画像ファイルの URL 要確認 --><img src="/content/img/logo_eow.gif" alt="英辞郎 on the WEB" width="145" height="23"><!-- ▲ end: 画像ファイルの URL 要確認 --></td><td width="2"><img src="/content/img/spacer.gif" alt="" width="2" height="1" border="0"></td><td width="130" align="center">誤植レポート</td><td width="2"><img src="/content/img/spacer.gif" alt="" width="2" height="1" border="0"></td><td width="130" align="center"></td><td width="86"><img src="/content/img/spacer.gif" alt="" width="86" height="1" border="0"></td><td width="55" align="right" valign="bottom"><!-- ▼ 画像ファイルの URL 要確認 --><img src="/content/img/ic_doctor_01.gif" alt="" width="55" height="23"><!-- ▲ end: 画像ファイルの URL 要確認 --></td></tr>
+			<tr><td colspan="6" height="4" bgcolor="#34429C"><img src="/content/img/spacer.gif" alt="" width="1" height="4" border="0"></td><td align="right" valign="top" bgcolor="#34429C"><!-- ▼ 画像ファイルの URL 要確認 --><img src="/content/img/ic_doctor_02.gif" alt="" width="55" height="4"><!-- ▲ end: 画像ファイルの URL 要確認 --></td></tr>
+			<tr>
+				<td colspan="6" valign="middle" bgcolor="#DFE2F2">
+					<p>
+						英辞郎のデータにおいて誤字やミスなど、修正すべき点を発見してくださった場合は、以下のフォームに「該当する見出し語」「誤植部分」「正しい表記」という形式で入力して送信していただければ幸いです。この情報は、英辞郎編集グループ（EDP）に送信されます。
+					</p>
+					<p>
+						<span style="color:#CC0000">このレポートは、辞書データにおける誤字と、それに代わる正しい情報を英辞郎制作グループEDPに送信するためのものです。検索ソフト面の機能に関する質問・要望を送信することはご遠慮ください。【英辞郎 on the Web】の検索機能に関する不具合・お問い合わせは<a href="http://www.alc.co.jp/srg/sa_new_inq.html" target="_blank">【お問い合わせ】フォーム</a>よりお願いいたします。</span>
+					<p> ＊文字化けにご注意ください検索結果で全角文字の横に意味不明の半角文字がついて表示される場合、それは通信障害による文字化けである可能性があります（たとえば「ストレス」と表示されるべきところが「スgレス」と表示されるなど）。この場合は、リロード(再読み込み)を行って、画面を再表示してみてください。リロードを行うには、 Microsoft Internet Explorer の場合、メニューバーから【表示】→【最新の情報に更新】を選択します。
+					</p>
+				</td>
+				<td align="right" valign="top" bgcolor="#DFE2F2">
+					<!-- ▼ 画像ファイルの URL 要確認 -->
+					<img src="/content/img/ic_doctor_03.gif" alt="" width="55" height="28">
+					<!-- ▲ end: 画像ファイルの URL 要確認 -->
+				</td>
+			</tr>
+			<tr>
+				<td colspan="7" height="1" bgcolor="#34429C"><img src="/content/img/spacer.gif" alt="" width="1" height="1" border="0"></td>
+			</tr>
+			<tr>
+				<td colspan="7" height="5" bgcolor="#DFE2F2"><img src="/content/img/spacer.gif" alt="" width="1" height="5" border="0"></td>
+			</tr>
+			<tr>
+				<td colspan="7" valign="middle" bgcolor="#DFE2F2">
+					<form action="http://www.alc.co.jp/asa/eijiro/user_report.php" method="post" name="inquiry">
+						<table border="0">
+							<tr> 
+								<td valign="top" nowrap><span style="color:#CC0000">該当する見出し語：<br>（必須項目）</span></td>
+								<td valign="top"> 
+									<textarea name="word" rows="2" cols="50"></textarea>
+								</td>
+							</tr>
+							<tr> 
+								<td valign="top" nowrap><span style="color:#CC0000">誤植部分：<br>（必須項目）</span></td>
+								<td valign="top"> 
+									<textarea name="mistake" rows="3" cols="50"></textarea>
+								</td>
+							</tr>
+							<tr> 
+								<td valign="top" nowrap><span style="color:#CC0000">正しい表記：<br>（必須項目）</span></td>
+								<td valign="top"> 
+									<textarea name="right" rows="3" cols="50"></textarea>
+								</td>
+							</tr>
+							<tr> 
+								<td valign="top" nowrap>備考：</td>
+								<td valign="top"> 
+									<textarea name="other" rows="10" cols="50"></textarea>
+								</td>
+							</tr>
+							<tr> 
+								<td valign="top" nowrap></td>
+								<td valign="top"> 
+								<input type="submit" value="送信" onClick="javascript:return checkinput();">
+								</td>
+							</tr>
+						</table>
+					</form>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

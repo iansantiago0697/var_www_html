@@ -1,0 +1,142 @@
+body {
+ color: #555;
+ margin: 0;
+ padding: 0;
+ line-height: 18px;
+ font-size: 12px;
+ font-family: "ÇlÇr ÉSÉVÉbÉN", "OsakaÅ|ìôïù";
+ font-family: Arial, Helvetica, sans-serif;
+}
+#container {
+	width: 900px;
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 0;
+}
+img { border: none; }
+/* link
+---------------------------------------------------- */
+a { overflow:hidden; }
+/* header
+---------------------------------------------------- */
+#header {background-image: url(images/bg_rogo.jpg) ; width:900px; height: 62px;}
+#mainimg { width: 900px; height: 260px;}
+/* titleelement
+---------------------------------------------------- */
+h1 {margin: 5px 0 5px 0;}
+.bb { font-size: 14px; color:#669000; font-weight: bold; line-height: 21px; margin-bottom: 15px;}
+.b { font-size: 14px; color:#669000; line-height: 21px; margin-bottom: 15px;}
+.gb { font-size: 12px; color:#669000; line-height: 21px; margin-bottom: 15px; font-weight: bold;}
+h2 {
+	background: url(images/title_bg-content.jpg) no-repeat;
+	font-size: 14px;
+	padding-top: 6px;
+	text-indent: 15px;
+	height: 28px;
+	color: #fff;
+	margin-bottom: 10px;
+	font-weight:normal;
+}
+/* element
+---------------------------------------------------- */
+#area_green { border: 1px solid #c7dc95; background-color: #faffee; padding: 18px 0 18px 18px; margin-bottom: 20px;}
+#area_green2 { border: 1px solid #c7dc95; background-color: #ffffff; padding: 0px 0 18px 18px; margin: 0px 35px 0px 35px;}
+#area_orange { border: 1px solid #f2be8f; background-color: #fff6ee; padding: 18px 0 18px 18px; margin-bottom: 20px;}
+#area_ygreen { background-color: #f8faf3; padding: 10px 30px 20px 30px; margin-bottom: 20px;}
+#maincol { float: left; width: 590px; }
+#subcol { float: right; width: 280px; border-bottom: 1px solid #d8d8d8; background-image: url(images/bg_developer.jpg);background-repeat: repeat-y;}
+#textarea_developer { margin: 20px;}
+#area_developerprofile { border: 1px solid #c7dc95; background-color: #faffee; padding: 5px; margin-bottom: 20px; height: 64px;}
+.voicebox {
+margin-top: 10px;
+width: 590px;
+}
+.voiceitem-start {
+border-top:1px solid #d8d8d8;
+border-right:1px solid #d8d8d8;
+border-left:1px solid #d8d8d8;
+border-bottom:1px solid #d8d8d8;
+width: 122px;
+padding: 10px 0 10px 10px;
+}
+.voiceitem {
+border-bottom:1px solid #d8d8d8;
+border-right:1px solid #d8d8d8;
+border-left:1px solid #d8d8d8;
+width: 122px;
+padding: 10px 0 10px 10px;
+}
+.voicecontent-start {
+border-top:1px solid #d8d8d8;
+border-right:1px solid #d8d8d8;
+border-bottom: 1px solid #d8d8d8;
+padding: 10px 10px 10px 20px;
+}
+.voicecontent {
+border-right:1px solid #d8d8d8;
+border-bottom: 1px solid #d8d8d8;
+padding: 10px 10px 10px 20px;
+}
+.bg_w{ background-color: #FFFEF0;}
+.bg_m{ background-color: #FAFFEE;}
+.icon_w {
+	text-indent: 25px;
+	background-image:url(images/icon_w.gif);
+	background-repeat: no-repeat;
+	background-position: 5px 0;
+	}
+	
+.icon_m {
+	text-indent: 25px;
+	background-image:url(images/icon_m.gif);
+	background-repeat: no-repeat;
+	background-position: 5px 0;
+	}
+.line_g {padding-bottom: 10px; border-bottom: 1px solid #c7dc95;}
+.mrl10 {margin: 0 10px 0 10px;}
+.w862 {width: 862px;}
+.w820 {width: 790px;}
+.w411 {width: 411px}
+.pl40 {padding-left:40px;}
+.mt15 {margin-top: 15px;}
+.mt30 {margin-top: 30px;}
+.mb30 {margin-bottom: 30px;}
+.rightimg {float: right; margin-left: 20px;}
+.leftimg {float: left; margin-right: 10px;}
+.clear {clear: both;}
+/* form element
+---------------------------------------------------- */
+#formcol {
+width: 680px;
+margin-left: 110px;
+}
+#formarea {
+border-right: 1px solid #bdbcba;
+border-left: 1px solid #bdbcba;
+background-color: #fff;
+padding: 20px 0px 20px 90px;
+}
+.text {
+margin: 0 10px;
+width: 250px;
+}
+.select {
+width: 130px;
+margin: 0 10px;
+}
+.submit {
+margin: 10px auto 10px 110px;
+}
+/* contents element
+---------------------------------------------------- */
+.ctextarea {
+padding: 0px 20px;
+}
+#footer {
+margin-top: 30px;
+padding: 20px 0;
+width: 900px;
+background-color: #ace600;
+color: #000;
+text-align: center;
+}

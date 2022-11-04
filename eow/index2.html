@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta charset="utf-8">
+<title>英辞郎 on the WEB</title>
+
+<!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta http-equiv="Content-Language" content="ja">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache, must-revalidate">
+<meta name="keywords" content="英辞郎 on the WEB, オンライン英和辞書, オンライン和英辞書, えいじろう">
+<meta name="description" content="アルクがお届けする進化するオンライン英和・和英辞書データベース。一般的な単語や連語から、イディオム、専門用語、スラングまで幅広く収録">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="apple-touch-icon" href="//cdn2.alc.co.jp/eow/sp/images/icon.png"/>
+<!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="/content/css/normalize.css">
+<link rel="stylesheet" href="/content/css/skeleton.css">
+<link rel="stylesheet" href="/content/css/custom.css">
+<link rel="manifest" href="/manifest.json">
+<script type="text/javascript" language="JavaScript" src="/content/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" language="JavaScript" src="/content/js/eow_top.js" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript" src="/content/js/touchdevice.js" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript" src="//cdn2.alc.co.jp/eow/eow/js/information.js" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript" src="/content/js/matchMedia.js" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript" src="/content/js/jquery.balloon.js" charset="UTF-8"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1590792-9', 'auto');
+  ga('send', 'pageview');
+  
+  window.addEventListener('load', function() {
+	  if ('serviceWorker' in navigator) {
+	    navigator.serviceWorker.register("/content/js/ServiceWorker/sw.js")
+	      .then(function(registration) {
+	        console.log("serviceWorker registed.");
+	      }).catch(function(error) {
+	        console.warn("serviceWorker error.", error);
+	      });
+	  }
+	});
+</script>
+</head>
+
+<body>
+
+<!-- svg読み込み
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div id="svgArea"></div>
+<script>
+$(function(){
+	$("#svgArea").load("content/img/symbol-defs.svg", function(){
+
+		//SVGの処理
+
+	});
+});
+</script> 
+
+<!-- アコーディオン
+–––––––––––––––––––––––––––––––––––––––––––––––--> 
+<script type="text/javascript">
+
+$(function() {
+	var timer = false;
+	$(window).resize(function() {
+		if (timer !== false) {
+			clearTimeout(timer);
+		}
+		timer = setTimeout(function() {
+			if($(window).width()>=1024){
+				$(".index_title.sli").next(".index.sli ul").removeAttr("style");
+			}
+		}, 200);
+	});
+	$(".index_title.sli").click(function() {
+		if($(window).width()<1024){
+			$(this).next(".index.sli ul").slideToggle();
+		}
+	});
+});
+
+</script> 
+
+<!-- 矢印回転
+–––––––––––––––––––––––––––––––––––––––––––––––--> 
+<script>
+    $(function(){
+        $(".index_title.sli h3").on("click", function() {
+            $(this).next().slideToggle();
+            $(this).toggleClass("active");
+        });
+    });
+</script> 
+<script>
+    $(function(){
+        $(".index_title.sli h4").on("click", function() {
+            $(this).next().slideToggle();
+            $(this).toggleClass("active");
+        });
+    });
+</script> 
+
+<!-- balloon tips
+–––––––––––––––––––––––––––––––––––––––––––––––--> 
+<script>
+$(function(){
+	$('.target1').balloon({
+		position: "top",
+
+    css: {
+			"color": "#fff",
+			"font-size": "0.8em",
+			"font-weight": "600",
+			"padding": "6px 8px",
+			"background-color":"rgba(51,51,51, 0.8)",
+		}
+
+	});
+});
+</script> 
+<!-- ログインドロップダウン
+–––––––––––––––––––––––––––––––––––––––––––––––--> 
+<script type="text/javascript">
+$(function(){
+    $('#log').hover(function(){
+        $("div.dropdown:not(:animated)", this).slideDown('slow');
+    }, function(){
+        $("div.dropdown", this).slideUp('slow');
+    });
+});
+</script>
+  <!-- スマホハンバーガーメニュー
+–––––––––––––––––––––––––––––––––––––––––––––––--> 
+<script>
+$(function(){
+  var $logSp = $('#log_sp');
+  var $dropdownUl = $logSp.siblings('.js-dropdown').children('ul');
+  $logSp.on('click', function () {
+    $dropdownUl.slideToggle();
+  });
+});
+
+$(function(){
+  var $menuSp = $('.menu_icon_sp');
+  var $dropdownUl = $('#toggle_menu');
+  var $logSp = $('#log_sp');
+  var $dropdownUl_inner = $logSp.siblings('.js-dropdown').children('ul');
+  $menuSp.on('click', function () {
+    $dropdownUl.slideToggle();
+    $dropdownUl_inner.slideUp();
+    $menuSp.toggleClass('open');
+    $('html').toggleClass('scroll_prevent');
+  });
+});
+</script> 
+
+<!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="header">
+  <div class="container head">
+    <div class="row">
+      <div class="header_up">
+        <div class="headerlogo ">
+          <h1> <img src="/content/img/lo_eow.svg" alt="英辞郎 on the WEB" title="" width="200%" height="auto"/> </h1>
+        </div>
+        <div class="sfborder">
+          <div class="search">
+            <form id="fm1" name="fm1" action="#" onsubmit="return goF1('fm1')">
+              <input type="text" id="q" name="q" class="small_search_field" autocomplete="off" accesskey="e" maxlength="1000" value="" placeholder="英和・和英検索はココから" />
+              <span class="reset_button"></span>
+              <input type="image" class="search_button" id="submitMessage" value="" src="/content/img/search_button01.svg" />
+            </form>
+            <form id="f1" name="f1" method="post" action="">
+              <input name="q" type="hidden" value="" />
+              <input name="ie" type="hidden" value="UTF-8" />
+            </form>
+          </div>
+        </div>
+        <div class="edp">データ提供：<a href="http://www.eijiro.jp/" target="_blank">EDP</a><a href="https://eowp.blogspot.com/2017/12/chrome.html" target="_blank"><span style="float: right;" >悪質な拡張機能にご注意ください</span></a></div>
+      </div>
+      <!--PCmenu-->
+      <div class="header_down spNone">
+        <div class="header_menu">
+          <ul>
+            <li>
+              <div>
+                <div class="fukidashi">
+                  <div class="menu-text">小窓モード</div>
+                  <div class="box">
+                    <p class="text">この機能は、ProまたはPro Liteでご利用ください</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="fukidashi">
+                <div class="menu-text">検索履歴</div>
+                <div class="box">
+                  <p class="text">この機能は、ProまたはPro Liteでご利用ください</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="fukidashi">
+                <div class="menu-text">単語帳</div>
+                <div class="box">
+                  <p class="text">この機能は、ProまたはPro Liteでご利用ください</p>
+                </div>
+              </div>
+            </li>
+            <li> <a href="https://alc.dga.jp/eowp/246/" target="_blank" >
+              <div class="menu-text"> データ投稿</div>
+              </a> </li>
+            <li> <a href="/help/guide/" target="_blank">
+              <div class="menu-text">ガイド</div>
+              </a> </li>
+            <li> <a href="/setting.html" >
+              <div class="menu-text">環境設定</div>
+              </a> </li>
+          </ul>
+        </div>
+        <div class="header_login">
+          <div id="log" >
+            <p>ログイン<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4LjY0MiIgaGVpZ2h0PSI3LjQ4NCIgdmlld0JveD0iMCAwIDguNjQyIDcuNDg0Ij4NCiAgPHBhdGggaWQ9IuODkeOCuV8xNiIgZGF0YS1uYW1lPSLjg5HjgrkgMTYiIGQ9Ik00LjMyMSwwLDAsNy40ODRIOC42NDJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4LjY0MiA3LjQ4NCkgcm90YXRlKDE4MCkiIGZpbGw9IiM0ZDRkNGQiLz4NCjwvc3ZnPg==" class="ml10"></p>
+            <div class="dropdown">
+              <div class="login"> <a href="https://eowp.alc.co.jp/login" onclick="ga('send', 'event', 'eowtop_p_login', 'click', 'https://eowp.alc.co.jp/login');"id="eowtop_p_login">Pro ログイン</a> </div>
+              <div class="login"> <a href="https://eowpf.alc.co.jp" id="eowtop_f_login">Pro Lite ログイン</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--SPmenu-->
+      <div class="header_down pcNone">
+        <div class="header_menu_sp">
+          <div class="menu_icon_sp">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <ul id="toggle_menu">
+            <li id="log_sp"><span class="inner">ログイン<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4LjY0MiIgaGVpZ2h0PSI3LjQ4NCIgdmlld0JveD0iMCAwIDguNjQyIDcuNDg0Ij4NCiAgPHBhdGggaWQ9IuODkeOCuV8xNiIgZGF0YS1uYW1lPSLjg5HjgrkgMTYiIGQ9Ik00LjMyMSwwLDAsNy40ODRIOC42NDJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4LjY0MiA3LjQ4NCkgcm90YXRlKDE4MCkiIGZpbGw9IiM0ZDRkNGQiLz4NCjwvc3ZnPg==" class="ml10"></span>
+            <li class="js-dropdown"> 
+              <ul class="login_menu_sp" style="display: none;">
+                <li><a class="inner" href="https://eowp.alc.co.jp/login" onclick="ga('send', 'event', 'eowtop_p_login', 'click', 'https://eowp.alc.co.jp/login');" id="eowtop_p_login">Pro ログイン</a></li>
+                <li><a class="inner" href="https://eowpf.alc.co.jp" id="eowtop_f_login">Pro Lite ログイン</a></li>
+              </ul>
+            </li>
+            <li><a class="inner" href="https://alc.dga.jp/eowp/246/" target="_blank" >データ投稿</a></li>
+            <li><a class="inner" href="/help/guide/" target="_blank">ガイド</a></li>
+            <li><a class="inner" href="/setting.html" >環境設定</a></li>
+            <li><div>&copy; 2000 
+              <script type="text/javascript" language="JavaScript"> 
+<!-- 
+TYnow = new Date();document.write( ' - ' + TYnow.getFullYear() );
+// -->
+</script> 
+              ALC PRESS INC.</div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="eleven columns alpha"> 
+      <script type="text/javascript">
+      <!--
+        document.write(info_box);
+      //  -->
+    </script>
+      <div class="spNone">
+        <div class="ad_wrap b"> 
+          <script language='javascript' src='//ds.advg.jp/adpds_deliver/js/pjs.js'></script> 
+          <script language='javascript'>adpds_js('//ds.advg.jp/adpds_deliver', 'adpds_site=alcad0505&adpds_frame=eow_top_pc_1st_728-90');</script>
+          <noscript>
+          <a target='_blank' href='//ds.advg.jp/adpds_deliver/p/r?adpds_site=alcad0505&adpds_frame=eow_top_pc_1st_728-90'> <img src='//ds.advg.jp/adpds_deliver/p/img?adpds_site=alcad0505&adpds_frame=eow_top_pc_1st_728-90' border=0></a>
+          </noscript>
+        </div>
+      </div>
+      <div class="clear"></div>
+      
+      <!-- left Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      
+      <div class="info survice" >
+        <h2>アルクが提供する<br>
+          「英辞郎 on the WEB」の3サービス</h2>
+        <div class="appli">
+          <div class="button_info gr"> <a href="http://www.alc.co.jp/tg/eowf/" target="_blank" onclick="ga('send', 'event', eowtop_3comparison', 'click', 'http://www.alc.co.jp/tg/eowf/');" id="eowtop_3comparison">3サービスの比較はこちら</a></div>
+        </div>
+        <div class="section">
+          <div class="article alpha">
+            <div class="button_info fee">無料</div>
+            <svg class="service logo-lo_eow">
+              <use xlink:href="#logo-lo_eow"></use>
+            </svg>
+            <p>登録不要で例文・単語帳なし<br>
+              のシンプル版</p>
+          </div>
+          <div class="article">
+            <div class="button_info fee">無料</div>
+            <svg class="service logo-lo_eowpf">
+              <use xlink:href="#logo-lo_eowpf"></use>
+            </svg>
+            <p>単語帳が使えて例文検索ができる<br>
+              無料登録版</p>
+            <div class="button_info cl"><a href="https://user.alc.co.jp/general/member/index/" onclick="ga('send', 'event', eowtop_user', 'click', 'https://user.alc.co.jp/general/member/index/');" id="eowtop_user">ユーザー登録</a></div>
+          </div>
+          <div class="article">
+            <div class="button_info fee">月額300円（税別）</div>
+            <svg class="service logo-lo_eowpf">
+              <use xlink:href="#logo-lo_eowp"></use>
+            </svg>
+            <p>検索や登録機能が豊富で例文<br>
+              データが充実の有料版<!--<a href="//eowp.alc.co.jp/info/?utm_source=eow_top&utm_campaign=eowtop_3service&utm_medium=text" target="_blank"><span style="color:#fca703; font-weight:700;">&#9654;&#9654;</span></a>--></p>
+            <div class="button_info cl"><a href="https://ec.alc.co.jp/search_detail/?q=%E8%8B%B1%E8%BE%9E%E9%83%8E+on+the+WEB+Pro&x=0&y=0&searchbox=1" onclick="ga('send', 'event', eowtop_p_cart', 'click', 'http://ec.alc.co.jp/search_detail/?q=%E8%8B%B1%E8%BE%9E%E9%83%8E+on+the+WEB+Pro&x=0&y=0&searchbox=1');" id="eowtop_p_cart">申し込み</a></div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="appli store">
+          <div class="eijirou_l"> <a href="https://eowp.alc.co.jp/info/app/index.html" target="_blank"> <img src="/content/img/sp_app_icon.png" alt="" title="" width="133px" height="157px"/> </a> </div>
+          <div class="eijirou_r">
+            <p>すべてのサービスが<br>
+              スマホアプリで使えます<!--<a href="https://eowp.alc.co.jp/info/app/index.html" target="_blank"><span style="color:#fca703; font-weight:700;">&#9654;&#9654;</span></a>--></p>
+            <ul>
+              <li> <a href="//bit.ly/eowtop_iosicon1" title="">
+                <div class="applogo"> <img src="/content/img/Download_on_the_App_Store_JP_135x40.svg" alt="" title="" /></div>
+                </a> </li>
+              <li> <a href="//bit.ly/2dLWbK1" title=""><img src="/content/img/google-play-badge.png" alt="" title="" width="auto" height="30px" /></a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="application">
+          <div class="merit">メリット<br>
+            01</div>
+          <div>銀行振込による<br class="tbNone">
+            一括決済</div>
+          <hr class="tbNone">
+        </div>
+        <div class="application">
+          <div class="merit">メリット<br>
+            02</div>
+          <div>ご利用アカウントの<br class="tbNone">
+            一括登録</div>
+        </div>
+        <div class="application jump"> <a href="//eowp.alc.co.jp/info-business/" target="_blank" onclick="ga('send', 'event', 'eowtop_hojin', 'click', '//eowp.alc.co.jp/info-business/');" id="eowtop_hojin">
+          <div>学校法人のお申し込み<br class="tbNone">はこちら</div>
+          </a>
+          <div class="merit">&#9654;</div>
+        </div>
+      </div>
+      <!--AD
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="ad_left">
+        <div class="ad_left_wrap"> 
+          <script language="javascript" src="//ds.advg.jp/adpds_deliver/js/pjs.js"></script> 
+          <script language="javascript">adpds_js('//ds.advg.jp/adpds_deliver', 'adpds_site=alcad0505&adpds_frame=eow_newWtop_bottom_bn');</script>
+          <noscript>
+          <a target="_blank" href="//ds.advg.jp/adpds_deliver/p/r?adpds_site=alcad0505&adpds_frame=eow_newWtop_bottom_bn"> <img src='//ds.advg.jp/adpds_deliver/p/img?adpds_site=alcad0505&adpds_frame=eow_newWtop_bottom_bn' border=0></a>
+          </noscript>
+        </div>
+        <div class="ad_left_wrap"> 
+          <script language='javascript' src='//ds.advg.jp/adpds_deliver/js/pjs.js'></script> 
+          <script language='javascript'>adpds_js('//ds.advg.jp/adpds_deliver', 'adpds_site=alcad0505&adpds_frame=www_ec_eow');</script>
+          <noscript>
+          <a target='_blank' href='//ds.advg.jp/adpds_deliver/p/r?adpds_site=alcad0505&adpds_frame=www_ec_eow'> <img src='//ds.advg.jp/adpds_deliver/p/img?adpds_site=alcad0505&adpds_frame=www_ec_eow' border=0></a>
+          </noscript>
+        </div>
+      </div>
+      
+      <!-- index
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="index sli clearfix">
+        <div class="index_title sli clearfix part_of_speech">
+          <h3 id="pos">品詞別索引</h3>
+        </div>
+        <ul class="wrap part_of_speech">
+          <li class="pos"><a href="/pos_v.html">動詞</a></li>
+          <li class="pos"><a href="/pos_vi.html">自動詞</a></li>
+          <li class="pos"><a href="/pos_vt.html">他動詞</a></li>
+          <li class="pos"><a href="/pos_pv.html">句動詞</a></li>
+          <li class="pos"><a href="/pos_pvi.html">句自動詞</a></li>
+          <li class="pos"><a href="/pos_pvt.html">句他動詞</a></li>
+          <li class="pos"><a href="/pos_n.html">名詞</a></li>
+          <li class="pos"><a href="/pos_prop_n.html">固有名詞</a></li>
+          <li class="pos"><a href="/pos_pron.html">代名詞</a></li>
+          <li class="pos"><a href="/pos_adj.html">形容詞</a></li>
+          <li class="pos"><a href="/pos_adv.html">副詞</a></li>
+          <li class="pos"><a href="/pos_aux.html">助動詞</a></li>
+          <li class="pos"><a href="/pos_prep.html">前置詞</a></li>
+          <li class="pos"><a href="/pos_conj.html">接続詞</a></li>
+          <li class="pos"><a href="/pos_int.html">間投詞</a></li>
+          <li class="pos"><a href="/pos_pref.html">接頭辞</a></li>
+          <li class="pos"><a href="/pos_suf.html">接尾辞</a></li>
+          <li class="pos"><a href="/pos_comb.html">連結形</a></li>
+          <li class="pos"><a href="/pos_abbr.html">省略形</a></li>
+        </ul>
+        <div class="index_title sli clearfix">
+          <h3 id="lbl" >分野別索引</h3>
+        </div>
+        <ul class="f_con">
+          <div class="index_title sli clearfix">
+            <h4>医学</h4>
+          </div>
+          <ul class="f_wrap">
+            <li class="field_1"><a href="/lbl_med.html">医学</a></li>
+            <li class="field_1"><a href="/lbl_her.html">遺伝</a></li>
+            <li class="field_1"><a href="/lbl_ana.html">解剖</a></li>
+            <li class="field_1"><a href="/lbl_oph.html">眼科</a></li>
+            <li class="field_1"><a href="/lbl_sur.html">外科</a></li>
+            <li class="field_1"><a href="/lbl_den.html">歯科</a></li>
+            <li class="field_1"><a href="/lbl_psy.html">精神</a></li>
+            <li class="field_1"><a href="/lbl_pat.html">病理</a></li>
+            <li class="field_1"><a href="/lbl_imm.html">免疫</a></li>
+            <li class="field_1"><a href="/lbl_pha.html">薬学</a></li>
+          </ul>
+          <div class="index_title sli clearfix">
+            <h4>経済・政治</h4>
+          </div>
+          <ul class="f_wrap">
+            <li class="field_1"><a href="/lbl_acc.html">会計</a></li>
+            <li class="field_1"><a href="/lbl_mar.html">海事</a></li>
+            <li class="field_1"><a href="/lbl_sec.html">
+              <p class="cond">株・証券</p>
+              </a></li>
+            <li class="field_1"><a href="/lbl_fin.html">金融</a></li>
+            <li class="field_1"><a href="/lbl_mil.html">軍事</a></li>
+            <li class="field_1"><span class="target1"
+	 title="契約・契約書"><a href="/lbl_con.html">契約</a></span></li>
+            <li class="field_1"><a href="/lbl_agr.html">農業</a></li>
+            <li class="field_1"><a href="/lbl_law.html">法律</a></li>
+          </ul>
+          <div class="index_title sli clearfix">
+            <h4>自然科学</h4>
+          </div>
+          <ul class="f_wrap">
+            <li class="field_1"><a href="/lbl_spa.html">宇宙</a></li>
+            <li class="field_1"><a href="/lbl_che.html">化学</a></li>
+            <li class="field_1"><a href="/lbl_wea.html">気象</a></li>
+            <li class="field_1"><a href="/lbl_met.html">金属</a></li>
+            <li class="field_1"><a href="/lbl_pho.html">光学</a></li>
+            <li class="field_1"><a href="/lbl_eng.html">工学</a></li>
+            <li class="field_1"><a href="/lbl_min.html">鉱物</a></li>
+            <li class="field_1"><a href="/lbl_math.html">数学</a></li>
+            <li class="field_1"><a href="/lbl_bioche.html">生化学</a></li>
+            <li class="field_1"><a href="/lbl_bio.html">生物</a></li>
+            <li class="field_1"><a href="/lbl_geo.html">地学</a></li>
+            <li class="field_1"><a href="/lbl_ele.html">電気</a></li>
+            <li class="field_1"><a href="/lbl_ast.html">天文</a></li>
+            <li class="field_1"><a href="/lbl_sta.html">統計</a></li>
+            <li class="field_1"><a href="/lbl_phy.html">物理</a></li>
+          </ul>
+          <div class="index_title sli clearfix">
+            <h4>宗教</h4>
+          </div>
+          <ul class="f_wrap">
+            <li class="field_1"><span class="target1"
+	 title="イスラム教・回教"><a href="/lbl_isl.html">
+              <p class="cond">イスラム</p>
+              </a></span></li>
+            <li class="field_1"><span class="target1"
+	 title="カトリック"><a href="/lbl_cat.html">カト</a></span></li>
+            <li class="field_1"><span class="target1"
+	 title="キリスト教"><a href="/lbl_chr.html">
+              <p class="cond">キリスト</p>
+              </a></span></li>
+            <li class="field_1"><a href="/lbl_rel.html">
+              <p class="cond">宗教全般</p>
+              </a></li>
+            <li class="field_1"><span class="target1"
+	 title="聖書（新約・旧約）"><a href="/lbl_bib.html">聖書</a></span></li>
+            <li class="field_1"><a href="/lbl_jew.html">
+              <p class="cond">ユダヤ教</p>
+              </a></li>
+          </ul>
+          <div class="index_title sli clearfix">
+            <h4>情報・技術</h4>
+          </div>
+          <ul class="f_wrap">
+            <li class="field_1"><span class="target1"
+	 title="インターネット"><a href="/lbl_net.html">ネット</a></span></li>
+            <li class="field_1"><span class="target1"
+	 title="コンピューター"><a href="/lbl_com.html">コン</a></span></li>
+            <li class="field_1"><a href="/lbl_mach.html">機械</a></li>
+            <li class="field_1"><a href="/lbl_arch.html">建築</a></li>
+            <li class="field_1"><a href="/lbl_air.html">航空機</a></li>
+            <li class="field_1"><a href="/lbl_auto.html">自動車</a></li>
+            <li class="field_1"><a href="/lbl_tel.html">通信</a></li>
+            <li class="field_1"><a href="/lbl_eleng.html">
+              <p class="cond">電子工学</p>
+              </a></li>
+          </ul>
+          <div class="index_title sli clearfix">
+            <h4>文化・社会</h4>
+          </div>
+          <ul class="f_wrap">
+            <li class="field_1"><a href="/lbl_igo.html">囲碁</a></li>
+            <li class="field_1"><span class="target1"
+	 title="英国（の組織・固有名詞など）"><a href="/lbl_UK.html">英国</a></span></li>
+            <li class="field_1"><a href="/lbl_mus.html">音楽</a></li>
+            <li class="field_1"><span class="target1"
+	 title="ギリシャ神話"><a href="/lbl_Gmy.html">ギ神話</a></span></li>
+            <li class="field_1"><a href="/lbl_ling.html">言語学</a></li>
+            <li class="field_1"><span class="target1"
+	 title="米国（の組織・固有名詞など）"><a href="/lbl_US.html">米国</a></span></li>
+            <li class="field_1"><a href="/lbl_cok.html">料理</a></li>
+            <li class="field_1"><span class="target1"
+	 title="論理・哲学"><a href="/lbl_eth.html">哲学</a></span></li>
+          </ul>
+          <div class="index_title sli clearfix">
+            <h4>スポーツ</h4>
+          </div>
+          <ul class="f_wrap">
+            <li class="field_1"><span class="target1"
+	 title="アメリカンフットボール"><a href="/lbl_Aft.html">
+              <p class="cond">アメフト</p>
+              </a></span></li>
+            <li class="field_1"><a href="lbl_glf.html">ゴルフ</a></li>
+            <li class="field_1"><a href="/lbl_soc.html">
+              <p class="cond">サッカー</p>
+              </a></li>
+            <li class="field_1"><span class="target1"
+	 title="スポーツ全般"><a href="/lbl_spo.html">
+              <p class="cond">スポーツ</p>
+              </a></span></li>
+            <li class="field_1"><a href="/lbl_sumo.html">相撲</a></li>
+            <li class="field_1"><a href="/lbl_ten.html">テニス</a></li>
+            <li class="field_1"><span class="target1"
+	 title="バスケットボール"><a href="/lbl_bas.html">バスケ</a></span></li>
+            <li class="field_3">
+              <p class="cond"><span class="target1" title="バスケットボール"><a href="/lbl_bas.html">バスケット</p>
+              </a></span></li>
+            <li class="field_1"><a href="/lbl_base.html">野球</a></li>
+          </ul>
+          <div class="index_title sli clearfix">
+            <h4>生物</h4>
+          </div>
+          <ul class="f_wrap">
+            <li class="field_1"><a href="/lbl_shl.html">貝類</a></li>
+            <li class="field_1"><a href="/lbl_fish.html">魚類</a></li>
+            <li class="field_1"><a href="/lbl_fung.html">菌類</a></li>
+            <li class="field_1"><a href="/lbl_ins.html">昆虫</a></li>
+            <li class="field_1"><a href="/lbl_pla.html">植物</a></li>
+            <li class="field_1"><a href="/lbl_bird.html">鳥類</a></li>
+            <li class="field_1"><a href="/lbl_ani.html">動物</a></li>
+          </ul>
+          <div class="index_title sli clearfix">
+            <h4 id="spc"  class="index_title sli clearfix">スピーチ</h4>
+          </div>
+          <ul class="f_wrap speech">
+            <li class="field_1"><a href="/lbl_It.html">
+              <p class="cond">イタリア</p>
+              </a></li>
+            <li class="field_1"><span class="target1"
+	 title="スコットランド"><a href="/lbl_Sc.html">
+              <p class="cond">スコット</p>
+              </a></span></li>
+            <li class="field_1"><a href="lbl_Fr.html">
+              <p class="cond">フランス</p>
+              </a></li>
+            <li class="field_1"><a href="/lbl_La.html">ラテン</a></li>
+            <li class="field_1"><a href="/lbl_Br.html">
+              <p class="cond">イギリス</p>
+              </a></li>
+            <li class="field_1"><span class="target1"
+	 title="英話・英俗"><a href="/lbl_Bricol.html">
+              <p class="cond">英話・英</p>
+              </a></span></li>
+            <li class="field_1"><a href="/lbl_Au.html">豪州</a></li>
+            <li class="field_1"><span class="target1"
+	 title="豪話・豪俗"><a href="/lbl_Aucol.html">
+              <p class="cond">豪話・豪</p>
+              </a></span></li>
+            <li class="field_1"><a href="/lbl_Am.html">
+              <p class="cond">アメリカ</p>
+              </a></li>
+            <li class="field_1"><span class="target1"
+	 title="米話・米俗"><a href="/lbl_Amcol.html">
+              <p class="cond">米話・米</p>
+              </a></span></li>
+            <li class="field_1"><span class="target1"
+	 title="その他の地域"><a href="/lbl_reg.html">他地域</a></span></li>
+            <li class="field_6"><span class="target1"
+	 title="その他の地域"><a href="/lbl_reg.html">
+              <p class="cond">その他地域</p>
+              </a></span></li>
+            <li class="field_1"><a href="/lbl_des.html">軽蔑的</a></li>
+            <li class="field_1"><a href="/lbl_fig.html">比喩的</a></li>
+            <li class="field_1"><a href="/lbl_old.html">古語</a></li>
+            <li class="field_1"><a href="/lbl_sla.html">俗語</a></li>
+            <li class="field_1"><a href="/lbl_vul.html">卑語</a></li>
+            <li class="field_1"><a href="/lbl_wrt.html">文語</a></li>
+            <li class="field_1"><a href="/lbl_spk.html">口語</a></li>
+          </ul>
+          <div class="index_title sli clearfix">
+            <h4 id="rel" class="index_title sli clearfix">関連語</h4>
+          </div>
+          <ul class="f_wrap related_terms">
+            <li class="field_1"><a href="/lbl_abbr.html">略語</a></li>
+            <li class="field_1"><a href="/lbl_syn.html">同意語</a></li>
+            <li class="field_1"><a href="/lbl_ant.html">反意語</a></li>
+            <li class="field_1"><a href="/lbl_sim.html">類語</a></li>
+            <li class="field_1"><span class="target1" title="対になる語"><a href="/lbl_cong.html">
+              <p class="cond">対になる</p>
+              </a></span></li>
+            <li class="field_9"><a href="/lbl_cong.html">
+              <p class="cond">対になる語</p>
+              </a></li>
+            <li class="field_1"><a href="/lbl_aca.html">学名</a></li>
+          </ul>
+          <div class="clear"></div>
+        </ul>
+        <div class="index_title sli clearfix">
+          <h3 id="svl" >レベル別索引</h3>
+        </div>
+        <ul class="f_wrap">
+          <li class="level"><a href="/svl_level1.html">Level&nbsp;1</a></li>
+          <li class="level"><a href="/svl_level2.html">Level&nbsp;2</a></li>
+          <li class="level"><a href="/svl_level3.html">Level&nbsp;3</a></li>
+          <li class="level"><a href="/svl_level4.html">Level&nbsp;4</a></li>
+          <li class="level"><a href="/svl_level5.html">Level&nbsp;5</a></li>
+          <li class="level"><a href="/svl_level6.html">Level&nbsp;6</a></li>
+          <li class="level"><a href="/svl_level7.html">Level&nbsp;7</a></li>
+          <li class="level"><a href="/svl_level8.html">Level&nbsp;8</a></li>
+          <li class="level"><a href="/svl_level9.html">Level&nbsp;9</a></li>
+          <li class="level"><a href="/svl_level10.html">Level&nbsp;10</a></li>
+          <li class="level"><a href="/svl_level11.html">Level&nbsp;11</a></li>
+          <li class="level"><a href="/svl_level12.html">Level&nbsp;12</a></li>
+          <div class="footnote clearfix">※レベルとはアルクが厳選した重要英単語リスト<a href="http://www.alc.co.jp/vocgram/article/svl/" title="">「標準語彙水準SVL12000」</a>に準じます。日本人の英語学習者にとって有用であると思われる英語語彙１万2000語を選び出し、基礎から上級へと12のレベルに区分した段階別学習語彙リストです。　 </div>
+        </ul>
+        <div class="index_title sli clearfix">
+          <h3 id="alphabet" >アルファベット・五十音別索引</h3>
+        </div>
+        <ul class="f_wrap">
+          <li class="alphabet"><a href="/alphabetA.html">A</a></li>
+          <li class="alphabet"><a href="/alphabetB.html">B</a></li>
+          <li class="alphabet"><a href="/alphabetC.html">C</a></li>
+          <li class="alphabet"><a href="/alphabetD.html">D</a></li>
+          <li class="alphabet"><a href="/alphabetE.html">E</a></li>
+          <li class="alphabet"><a href="/alphabetF.html">F</a></li>
+          <li class="alphabet"><a href="/alphabetG.html">G</a></li>
+          <li class="alphabet"><a href="/alphabetH.html">H</a></li>
+          <li class="alphabet"><a href="/alphabetI.html">I</a></li>
+          <li class="alphabet"><a href="/alphabetJ.html">J</a></li>
+          <li class="alphabet"><a href="/alphabetK.html">K</a></li>
+          <li class="alphabet"><a href="/alphabetL.html">L</a></li>
+          <li class="alphabet"><a href="/alphabetM.html">M</a></li>
+          <li class="alphabet"><a href="/alphabetN.html">N</a></li>
+          <li class="alphabet"><a href="/alphabetO.html">O</a></li>
+          <li class="alphabet"><a href="/alphabetP.html">P</a></li>
+          <li class="alphabet"><a href="/alphabetQ.html">Q</a></li>
+          <li class="alphabet"><a href="/alphabetR.html">R</a></li>
+          <li class="alphabet"><a href="/alphabetS.html">S</a></li>
+          <li class="alphabet"><a href="/alphabetT.html">T</a></li>
+          <li class="alphabet"><a href="/alphabetU.html">U</a></li>
+          <li class="alphabet"><a href="/alphabetV.html">V</a></li>
+          <li class="alphabet"><a href="/alphabetW.html">W</a></li>
+          <li class="alphabet"><a href="/alphabetX.html">X</a></li>
+          <li class="alphabet"><a href="/alphabetY.html">Y</a></li>
+          <li class="alphabet"><a href="/alphabetZ.html">Z</a></li>
+          <li class="alphabet_last"><a href="/alphabetEtc.html">その他</a></li>
+          <div class="adj">
+            <li class="aiueo"><a href="/alphabet_ja_a.html">あ行</a></li>
+            <li class="aiueo"><a href="/alphabet_ja_ka.html">か行</a></li>
+            <li class="aiueo"><a href="/alphabet_ja_sa.html">さ行</a></li>
+            <li class="aiueo"><a href="/alphabet_ja_ta.html">た行</a></li>
+            <li class="aiueo"><a href="/alphabet_ja_na.html">な行</a></li>
+            <li class="aiueo"><a href="/alphabet_ja_ha.html">は行</a></li>
+            <li class="aiueo"><a href="/alphabet_ja_ma.html">ま行</a></li>
+            <li class="aiueo"><a href="/alphabet_ja_ya.html">や行</a></li>
+            <li class="aiueo"><a href="/alphabet_ja_ra.html">ら行</a></li>
+            <li class="aiueo"><a href="/alphabet_ja_wa.html">わ行</a></li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- right Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="five columns right">
+      <div class="ad_wrap s"> 
+        <script language="javascript" src="//ds.advg.jp/adpds_deliver/js/pjs.js"></script> 
+        <script language="javascript">adpds_js('//ds.advg.jp/adpds_deliver', 'adpds_site=alcad0505&adpds_frame=eow_newWtop_right_bn');</script>
+        <noscript>
+        <a target="_blank" href="//ds.advg.jp/adpds_deliver/p/r?adpds_site=alcad0505&adpds_frame=eow_newWtop_right_bn"> <img src="//ds.advg.jp/adpds_deliver/p/img?adpds_site=alcad0505&adpds_frame=eow_newWtop_right_bn" border=0></a>
+        </noscript>
+      </div>
+      <div class="ad_wrap"> 
+        <script language="javascript" src="//ds.advg.jp/adpds_deliver/js/pjs.js"></script> 
+        <script language="javascript">adpds_js('//ds.advg.jp/adpds_deliver', 'adpds_site=alcad0505&adpds_frame=eow_top_pc_1st_rec');</script>
+        <noscript>
+        <a target="_blank" href="//ds.advg.jp/adpds_deliver/p/r?adpds_site=alcad0505&adpds_frame=eow_top_pc_1st_rec"> <img src="//ds.advg.jp/adpds_deliver/p/img?adpds_site=alcad0505&adpds_frame=eow_top_pc_1st_rec" border=0></a>
+        </noscript>
+      </div>
+      <div class="ad_wrap"> 
+        <script language="javascript" src="//ds.advg.jp/adpds_deliver/js/pjs.js"></script> 
+        <script language="javascript">adpds_js('//ds.advg.jp/adpds_deliver', 'adpds_site=alcad0505&adpds_frame=eow_newWtop_right_regtangle_eowteam');</script>
+        <noscript>
+        <a target="_blank" href="//ds.advg.jp/adpds_deliver/p/r?adpds_site=alcad0505&adpds_frame=eow_newWtop_right_regtangle_eowteam"> <img src="//ds.advg.jp/adpds_deliver/p/img?adpds_site=alcad0505&adpds_frame=eow_newWtop_right_regtangle_eowteam" border=0></a>
+        </noscript>
+      </div>
+      <div class="newsright"> 
+        <script language="javascript" src="//ds.advg.jp/adpds_deliver/js/pjs.js"></script> 
+        <script language="javascript">adpds_js('//ds.advg.jp/adpds_deliver', 'adpds_site=alcad0505&adpds_frame=eow_top_pc_clm');</script>
+        <noscript>
+        <a target="_blank" href="//ds.advg.jp/adpds_deliver/p/r?adpds_site=alcad0505&adpds_frame=eow_top_pc_clm"> <img src="//ds.advg.jp/adpds_deliver/p/img?adpds_site=alcad0505&adpds_frame=eow_top_pc_clm" border=0></a>
+        </noscript>
+      </div>
+      <div class="newsright"> 
+        <script language="javascript" src="//ds.advg.jp/adpds_deliver/js/pjs.js"></script> 
+        <script language="javascript">adpds_js('//ds.advg.jp/adpds_deliver', 'adpds_site=alcad0505&adpds_frame=eow_top_pc_clm02');</script>
+        <noscript>
+        <a target="_blank' href='//ds.advg.jp/adpds_deliver/p/r?adpds_site=alcad0505&adpds_frame=eow_top_pc_clm02"> <img src="//ds.advg.jp/adpds_deliver/p/img?adpds_site=alcad0505&adpds_frame=eow_top_pc_clm02" border=0></a>
+        </noscript>
+      </div>
+      <div class="newsright"> 
+        <script language="javascript" src="//ds.advg.jp/adpds_deliver/js/pjs.js"></script> 
+        <script language="javascript">adpds_js('//ds.advg.jp/adpds_deliver', 'adpds_site=alcad0505&adpds_frame=eow_top_pc_clm03');</script>
+        <noscript>
+        <a target="_blank" href="//ds.advg.jp/adpds_deliver/p/r?adpds_site=alcad0505&adpds_frame=eow_top_pc_clm03"> <img src="//ds.advg.jp/adpds_deliver/p/img?adpds_site=alcad0505&adpds_frame=eow_top_pc_clm03" border=0></a>
+        </noscript>
+      </div>
+      <div class="ad_wrap"> 
+        <script language="javascript" src="//ds.advg.jp/adpds_deliver/js/pjs.js"></script> 
+        <script language="javascript">adpds_js('//ds.advg.jp/adpds_deliver', 'adpds_site=alcad0505&adpds_frame=eow_top_pc_2nd_rec');</script>
+        <noscript>
+        <a target="_blank" href="//ds.advg.jp/adpds_deliver/p/r?adpds_site=alcad0505&adpds_frame=eow_top_pc_2nd_rec"> <img src="//ds.advg.jp/adpds_deliver/p/img?adpds_site=alcad0505&adpds_frame=eow_top_pc_2nd_rec" border=0></a>
+        </noscript>
+      </div>
+      <script language='javascript' src='//ds.advg.jp/adpds_deliver/js/pjs.js'></script> 
+      <script language='javascript'>adpds_js('//ds.advg.jp/adpds_deliver', 'adpds_site=alcad0505&adpds_frame=eow_top_sp_overlay');</script>
+      <noscript>
+      <a target='_blank' href='//ds.advg.jp/adpds_deliver/p/r?adpds_site=alcad0505&adpds_frame=eow_top_sp_overlay'> <img src='//ds.advg.jp/adpds_deliver/p/img?adpds_site=alcad0505&adpds_frame=eow_top_sp_overlay' border=0></a>
+      </noscript>
+    </div>
+  </div>
+</div>
+<div class="clear"></div>
+
+<!-- End Main
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+<!-- footer
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="band_footer">
+  <div class="container footer">
+    <div class="footerlogo"> <a href="//eowp.alc.co.jp/info/?utm_source=eow_top&utm_campaign=eowtop_footer_info&utm_medium=text" target="_blank">
+      <svg class="logo logo-lo_eowp">
+        <use xlink:href="#logo-lo_eowp"></use>
+      </svg>
+      </a> </div>
+    <div class="footerlogo"> <a href="http://www.alc.co.jp/index.html?utm_source=EOW&utm_medium=banner&utm_campaign=eow_wwwtop" target="_blank" >
+      <svg class="logo logo-lo_alc">
+        <use xlink:href="#logo-lo_alc"></use>
+      </svg>
+      </a> </div>
+    <div class="footerlogo"> <a href="http://ec.alc.co.jp/index.html?utm_source=EOW&utm_medium=banner&utm_campaign=eow_ectop" target="_blank" >
+      <svg class="logo logo-lo_shop">
+        <use xlink:href="#logo-lo_shop"></use>
+      </svg>
+      </a> </div>
+  </div>
+  <div class="clear"></div>
+  <section id="footer">
+    <div id="footer1">
+      <div class="footerIn">
+        <div class="footermenu mr0">
+          <p class="footermenu_header">アルクグループ</p>
+          <ul id="fnav05">
+            <li><a href="//www.alc.co.jp/" target="_blank">アルクのウェブサイト</a></li>
+            <li><a href="https://ec.alc.co.jp/?utm_source=serp_pc&utm_medium=text&utm_campaign=EOWfooter&_ga=2.208308946.1145960147.1562136578-1021593367.1559700243" target="_blank">アルクショップ</a></li>
+            <li><a href="https://eikaiwa.alc.co.jp/" target="_blank">アルクオンライン英会話</a></li>
+            <li><a href="https://eowp.alc.co.jp/info2/" onclick="tmEvent('eow_pc_top_text')" target="_blank">英辞郎 on the WEB Pro</a></li>
+          </ul>
+        </div>
+        <div class="footermenu">
+          <p class="footermenu_header">インフォメーション</p>
+          <ul id="fnav04">
+            <li><a href="https://www.alc.co.jp/company/">会社案内</a></li>
+            <li><a href="https://www.alc.co.jp/company/saiyou/">採用情報</a></li>
+            <li><a href="https://www.alc.co.jp/company/pressrelease/">プレスリリース</a></li>
+            <li><a href="https://www.alc.co.jp/aff_link/">アフィリエイト＆リンク</a></li>
+            <li><a href="https://www.alc.co.jp/usersupport/">アルク製品サポート</a></li>
+          </ul>
+        </div>
+        <div class="footermenu">
+          <p class="footermenu_header">サイトのご利用について</p>
+          <ul id="fnav01">
+            <li><a href="https://www.alc.co.jp/policy/">利用規約</a></li>
+            <li><a href="https://www.alc.co.jp/policy/other/">「英辞郎 on the WEB」利用規約</a></li>
+            <li><a href="https://www.alc.co.jp/policy/privacy/">プライバシーポリシー</a></li>
+            <li><a href="https://www.alc.co.jp/policy/exoneration/">免責条項</a></li>
+          </ul>
+        </div>
+        <div class="footermenu">
+          <p class="footermenu_header">お客様相談室</p>
+          <ul id="fnav02">
+            <li><a href="https://www.alc.co.jp/policy/copyright/">著作権について</a></li>
+            <li><a href="https://www.alc.co.jp/adv/">広告掲載について</a></li>
+            <li><a href="https://eowp.alc.co.jp/info-business/">法人のお客様</a></li>
+            <li><a href="https://www.alc.co.jp/inquiry/">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div id="copy">
+          <p>&copy; 2000 
+            <script type="text/javascript" language="JavaScript"> 
+<!-- 
+TYnow = new Date();document.write( ' - ' + TYnow.getFullYear() );
+// -->
+</script> 
+            ALC PRESS INC.</p>
+        </div>
+        <!-- /#footerIn --></div>
+      <!-- /#footer1 --></div>
+  </section>
+  <!-- ▲ フッタ ▲ --> 
+  <!-- Google Tag Manager_NEW -->
+  <noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-TKK8PX"height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TKK8PX');</script><!-- End Google Tag Manager_NEW --> 
+  
+</div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

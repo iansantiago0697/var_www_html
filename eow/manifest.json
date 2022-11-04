@@ -1,0 +1,28 @@
+{
+	"name": "英辞郎 on the WEB",
+	"short_name": "EOW",
+	"description": "アルクがお届けする進化するオンライン英和・和英辞書データベース。",
+	"start_url": "/?utm_source=homescreen",
+	"display": "standalone",
+	"theme_color": "#0971ac",
+	"scope": "/",
+    "icons": [{
+        "src": "/alc_logo_192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+        },{
+        "src": "/alc_logo.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }],
+    "related_applications": [
+        {
+            "platform": "play",
+            "url": "https://play.google.com/store/apps/details?id=jp.co.alc.eow",
+            "id": "jp.co.alc.eow"
+        }, {
+            "platform": "itunes",
+            "url": "https://apps.apple.com/jp/app/%E8%8B%B1%E8%BE%9E%E9%83%8E-on-the-web-%E3%82%A2%E3%83%AB%E3%82%AF/id365874160"
+        }
+    ]
+}

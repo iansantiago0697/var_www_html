@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/*reset style
+------------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-decoration: none;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, 
+fieldset, input, textarea, p, blockquote, th, td{
+    margin: 0; 
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-size: 100%; 
+    font-weight: normal;
+}
+ol, ul{
+    list-style:none;
+}
+fieldset, img{
+     border:0;
+}
+table{
+    border-collapse: collapse; 
+    border-spacing:0;
+}
+caption, th{
+    text-align: left;
+}
+address, caption, cite, code, dfn, em, strong, th, var{
+    font-style: normal; 
+    font-weight: normal;
+}
+/*format style
+------------------------------*/
+body{
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "MS PGothic", sans-serif;
+	line-height:1.6em;
+	color:#333;
+	font-size:0.8em;
+}
+.cap {
+	font-size: 0.8em;
+	line-height: 1.5em;
+}
+/*link style
+------------------------------*/
+a img {
+	border-style: none;
+}
+a:link {
+	color: #006AB3;
+	text-decoration: underline;
+}
+a:visited {
+	color: #006AB3;
+	text-decoration: underline;
+}
+a:hover {
+	color: #006AB3;
+	text-decoration: none;
+}
+a:active {
+	color: #006AB3;
+}
+.block {
+	display: block;
+}
+/*basic layout
+------------------------------*/
+#login {
+	background-image: url(/content/img/eowpf_bgimg_gray.gif);
+	margin: 0px;
+	padding: 0px;
+	height: 333px;
+	width: 244px;
+	position: absolute;/*
+	top: 62px;//*70px
+	right: 43px;
+*/
+}
+#login .text {
+	padding-right: 16px;
+	padding-left: 16px;
+	width: 212px;
+	padding-top: 25px;
+}
+#login .chkbox {
+	vertical-align:middle
+}
+#login .login_md {
+	font-size: 13px;
+	line-height: 16px;
+	color: #FF0000;
+	display: block;
+	margin-bottom: 10px;
+}
+#login .textfield {
+	margin-bottom:5px;
+	height: 20px;
+	width: 212px;
+	border: 1px solid #D7D7D7;
+}
+#login .submit {
+	text-align:center;
+	margin:15px auto
+}
+#login .submitbutt {
+	height:28px;
+	width:212px;
+	border:0;
+	background-image: url(/content/img/login_but.gif);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	padding: 0px;
+}
+.memo {
+	font-size: 11px;
+	line-height: 16px;
+}

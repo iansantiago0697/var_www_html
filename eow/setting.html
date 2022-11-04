@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html xmlns="//www.w3.org/1999/xhtml" xml:lang="ja" lang="ja"><head>
+		<meta http-equiv="Content-Language" content="ja" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="cache-control" content="no-cache, must-revalidate" />
+		<META NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW" />
+		<META NAME="ROBOTS" CONTENT="NOARCHIVE" />
+		<meta name="keywords" content="英辞郎 on the WEB,アルク,オンライン英和辞書,オンライン和英辞書" />
+		<meta name="description" content="アルクがお届けする進化するオンライン英和・和英辞書データベース。一般的な単語や連語から、イディオム、専門用語、スラングまで幅広く収録。" />
+
+		<!-- EOW_SHOP-325 -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<!-- End EOW_SHOP-325 -->
+
+		<!-- ▼ Jquery ▼ -->
+		<script type="text/javascript" language="JavaScript" src="/content/js/jquery-3.1.1.min.js" charset="UTF-8"></script>
+		<script type="text/javascript" language="JavaScript" src="/content/js/jquery.exflexfixed-0.3.0.js" charset="UTF-8"></script>
+		<!-- ▼ CSS ▼ -->
+		<link href="/content/css/eow_r.css" rel="stylesheet" type="text/css" />
+		<!-- ▼ Footer ▼ -->
+		<script type="text/javascript" language="JavaScript" src="/content/js/eow_footer.js" charset="UTF-8"></script>
+		<!-- ▼ Infospace ▼ -->
+		<script type="text/javascript" language="JavaScript" src="/content/js/mc.js" charset="UTF-8"></script>
+		<!-- ▼ Alert ▼ -->
+		<script type="text/javascript" language="JavaScript" src="/content/js/alert.js" charset="UTF-8"></script>
+		<!-- ▼ Search Logic ▼ -->
+		<script type="text/javascript" language="JavaScript" src="/content/js/eow_search_r.js" charset="UTF-8"></script>
+		<!-- ▼ Setting ▼ -->
+		<script type="text/javascript" language="JavaScript" src="/content/js/eow_setting.js" charset="UTF-8"></script>
+		<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+
+		<!-- EOW_SHOP-325 -->
+		<link rel="stylesheet" href="/content/css/normalize.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css">
+		<link rel="stylesheet" href="/content/css/header_style.css">
+		<script type="text/javascript" language="JavaScript" src="/content/js/header_action.js" charset="UTF-8"></script>
+		<script type="text/javascript" language="JavaScript" src="/content/js/footer_action.js" charset="UTF-8"></script>
+		<!-- End EOW_SHOP-325 -->
+		<link href="/content/css/skeleton.css" rel="stylesheet" type="text/css" />
+
+		<!-- /21619764421/alc_pc_overlay -->
+		<style type="text/css">
+
+			/** EOWP_SHOP-325 **/
+			form#fm1 input#q{
+				height: 38px;
+				padding: 6px 10px;
+				background-color: #fff;
+				border: 1px solid #D1D1D1;
+				box-shadow: none;
+				box-sizing: border-box;
+				font-weight: 700;
+				padding-top: 6px;
+				color: #222!important;
+				position: relative;
+				display: inline;
+			}
+
+			form#fm1 input#q::placeholder{
+				opacity: .7!important;
+				font-weight: 400;
+			}
+
+			form#fm1 input#search-reset{
+				background-color:#ccc;
+			}
+
+			body div.header{
+				background-color: #FFFFFF!important;
+			}
+
+			body div.header a{
+				text-decoration: none!important;
+			}
+
+			body footer a{
+				text-decoration: none!important;
+			}
+
+			body div.header div.header-search{
+				padding-bottom: 1px!important;
+			}
+
+			body div.header .header-biz-menu-ttl{
+				margin-left: 0.7rem!important;
+    			margin-bottom: -0.6em!important;
+			}
+
+			/* body div.header .header-biz-menu-inner{　 EOW_NEW-1346 【EOW】レスポンシブ対応：設定ページ でコメントアウト
+				padding: 1.0rem 0.8rem 0.6rem 0.74rem!important;
+			} */
+
+			/* body .header .header-biz-menu-inner div{
+				font-size: 1.15em;
+				line-height: 1.6;
+				font-weight: 400;
+			} */
+			
+			/* body div.header div.header-menu ul li p{  EOW_NEW-1346 【EOW】レスポンシブ対応：設定ページ でコメントアウト
+				padding-top:2px;
+			} */
+			/** End EOWP_SHOP-325 **/
+
+			/* EOW_NEW-1346 【EOW】レスポンシブ対応：設定ページ */
+			/* ここからReset Form  まではeow_r.cssの設定と干渉しないようにする用 */
+			body {
+				font-family: 'Noto Sans JP', sans-serif;
+			}
+			h1, h2 {
+				display: block;
+			}
+			#AreaUpperLeft{
+				padding-top: 0px;
+			}
+			#AreaUpperLeftContainer {
+			  max-width: 100%;
+			  margin-right: 0px;
+		    }
+			#resultsArea {
+			  font-family: 'Noto Sans JP', sans-serif;
+			}
+			#resultsArea .tab-01 li a {
+				color: #666;
+			    text-decoration: none;
+			}
+			#resultsArea  a:link {
+				color: #00008B;
+				text-decoration: underline;
+			}
+			#resultsArea th a:link {
+				color: #00008B;
+				text-decoration: none;
+			}
+			#resultsList .list-i02 {
+				margin-bottom: 0px;
+			}
+			#resultsList ul li {
+				padding-top: 0px;
+			}
+			.contents .box-l02 .section-01:nth-of-type(1) {
+			    margin-top: 2em; /* EOW_NEW-1346　各設定の説明部のmargin用　例外なので分けて記述 */
+			}
+
+			#AreaBody form {
+				margin-bottom: 0px;
+			}
+		
+			
+
+			/* =========================================================== */
+			/*  Reset Form                                                 */
+			/* =========================================================== */
+			.contents input[type*='button'], .contents button {
+			  margin: 0;
+			  padding: 0;
+			  background: none;
+			  border: none;
+			  border-radius: 0;
+			  outline: none;
+			  -webkit-appearance: none;
+			  -moz-appearance: none;
+			  appearance: none;
+			  font-size: 1em;
+			}
+			
+			.contents input::-webkit-inner-spin-button {
+			  -webkit-appearance: none;
+			}
+			
+			body {
+			  color: #222;
+			}
+			
+			@media screen and (min-width: 598px) {
+			  body {
+			    font-size: 1.6em;
+			  }
+			}
+			
+			@media screen and (max-width: 598px) {
+			  body {
+			    font-size: 1.4em;
+			  }
+			}
+			
+			.header, .contents, .footer {
+			  font-family: 'Noto Sans JP', sans-serif;
+			}
+			
+			.header *, .contents *, .footer * {
+			  box-sizing: border-box;
+			  letter-spacing: initial;
+			}
+			
+			.header form, .header input, .header button, .header p, .header h1, .header h2, .header h3, .header h4, .header h5, .header h6, .header ul, .header li, .header dl, .header dt, .header dd, .contents form, .contents input, .contents button, .contents p, .contents h1, .contents h2, .contents h3, .contents h4, .contents h5, .contents h6, .contents ul, .contents li, .contents dl, .contents dt, .contents dd, .footer form, .footer input, .footer button, .footer p, .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6, .footer ul, .footer li, .footer dl, .footer dt, .footer dd {
+			  margin: 0;
+			  font-weight: normal;
+			}
+			
+			.header em, .contents em, .footer em {
+			  font-style: normal;
+			}
+			
+			.header ul, .contents ul, .footer ul {
+			  list-style: none;
+			}
+			
+			.header svg, .contents svg, .footer svg {
+			  fill: currentColor;
+			}
+			
+			.header img, .contents img, .footer img {
+			  max-width: 100%;
+			}
+			
+			.header img[src$=".svg"], .contents img[src$=".svg"], .footer img[src$=".svg"] {
+			  width: auto;
+			  height: auto;
+			}
+			
+			/** .header button 削除**/ 
+			.header a, .header input[type*='button'], .contents a, .contents button, .contents input[type*='button'], .footer a, .footer button, .footer input[type*='button'] {
+			  text-decoration: underline;
+			  display: inline-block;
+			  cursor: pointer;
+			  opacity: 1;
+			  transition: 0.4s;
+			}　
+			 
+			.header a:hover, .header button:hover, .header input[type*='button']:hover, .contents a:hover, .contents button:hover, .contents input[type*='button']:hover, .footer a:hover, .footer button:hover, .footer input[type*='button']:hover {
+			  opacity: .6;
+			  transition: 0.4s;
+			}
+			
+			.header table, .header tr, .header th, .header td, .contents table, .contents tr, .contents th, .contents td, .footer table, .footer tr, .footer th, .footer td {
+			  margin: 0;
+			  padding: 0;
+			  border: none;
+			}
+			
+			.header label, .contents label, .footer label {
+			  display: inline;
+			  font-weight: normal;
+			}
+			
+			.header .wrap-inner, .contents .wrap-inner, .footer .wrap-inner {
+			  width: 100%;
+			  max-width: 1098px;
+			  margin: 0 auto;
+			  padding: 12px 24px;
+			}
+			
+			@media screen and (min-width: 1098px) {
+			  .header .wrap-inner + .wrap-inner, .contents .wrap-inner + .wrap-inner, .footer .wrap-inner + .wrap-inner {
+			    margin-top: 40px;
+			  }
+			}
+			
+			@media screen and (max-width: 1098px) {
+			  .header .wrap-inner + .wrap-inner, .contents .wrap-inner + .wrap-inner, .footer .wrap-inner + .wrap-inner {
+			    margin-top: 20px;
+			  }
+			}
+			
+			.contents {
+			  margin-top: 12px;
+			}
+			
+			.contents .contents-wide {
+			  margin-top: 12px;
+			  width: 100%;
+			}
+			
+			@media screen and (min-width: 1098px) {
+			  .contents > .wrap-inner {
+			    display: flex;
+			    justify-content: space-between;
+			  }
+			  .contents .contents-main {
+			    width: 728px;
+			  }
+			  .contents .contents-side {
+			    width: 300px;
+			  }
+			  .contents .contents-side2 {
+			    width: 336px;
+			    margin-right: -36px;
+			  }
+			}
+			
+			@media screen and (max-width: 1098px) {
+			  .contents .contents-main {
+			    max-width: 800px;
+			    margin: 0 auto;
+			  }
+			  .contents .contents-side {
+			    max-width: 800px;
+			    margin: 40px auto 0;
+			  }
+			  .contents .contents-side2 {
+			    display: none;
+			  }
+			}
+			
+			[class*='list-']:not(:nth-child(1)) {
+			  margin-top: 1em;
+			}
+			
+			.list-d01 > li {
+			  position: relative;
+			  padding-left: 1em;
+			}
+			
+			.list-d01 > li:before {
+			  position: absolute;
+			  left: 0;
+			  content: "-";
+			  margin-left: .16em;
+			}
+			
+			.list-a01 > li {
+			  position: relative;
+			  padding-left: 1em;
+			  font-size: 90%;
+			}
+			
+			.list-a01 > li:before {
+			  position: absolute;
+			  left: 0;
+			  content: "※";
+			  margin-top: .16em;
+			  font-size: 90%;
+			}
+			
+			.sidebar-inner ul > li,
+			.list-l01 > li {
+			  margin-bottom: .8em;
+			  padding: 0 .1em .8em;
+			  border-bottom: 1px dotted rgba(34, 34, 34, 0.12);
+			}
+			
+			.sidebar-inner ul > li > a,
+			.list-l01 > li > a {
+			  text-decoration: none;
+			}
+			
+			/* 1 */
+			.list-n01 {
+			  counter-reset: li;
+			}
+			
+			.list-n01 > li {
+			  position: relative;
+			  display: block;
+			  padding-left: 1.2em;
+			}
+			
+			.list-n01 > li:before {
+			  position: absolute;
+			  left: -.8em;
+			  content: counter(li) ".";
+			  counter-increment: li;
+			  margin: .1em 0 0 .8em;
+			  font-size: 90%;
+			}
+			
+			/* （1） */
+			.list-n02 {
+			  counter-reset: li;
+			}
+			
+			.list-n02 > li {
+			  position: relative;
+			  display: block;
+			  padding-left: 2em;
+			}
+			
+			.list-n02 > li:before {
+			  position: absolute;
+			  left: -1em;
+			  content: "（" counter(li) "）";
+			  counter-increment: li;
+			  margin: .2em 0 0 .5em;
+			  font-size: 80%;
+			}
+			
+			/* a */
+			.list-n03 > li {
+			  list-style-type: lower-latin;
+			}
+			
+			/* ア */
+			.list-n04 {
+			  margin-left: 1.6em;
+			}
+			
+			.list-n04 > li {
+			  list-style-type: katakana;
+			}
+			
+			/* インライン */
+			.list-i01 {
+			  display: flex;
+			  flex-wrap: wrap;
+			  justify-content: center;
+			  font-size: 90%;
+			}
+			
+			.list-i01 > li:not(:last-child) {
+			  margin-right: .5em;
+			  padding-right: .5em;
+			  border-right: 1px solid rgba(34, 34, 34, 0.12);
+			}
+			
+			.list-i02 {
+			  display: flex;
+			  flex-wrap: wrap;
+			  font-size: 90%;
+			}
+			
+			.list-i02 > li:not(:last-child) {
+			  margin-right: 1em;
+			}
+			
+			/* 右端に＞ */
+			.list-r01 > li {
+			  border-bottom: 1px solid rgba(34, 34, 34, 0.12);
+			  margin-bottom: .25em;
+			}
+			
+			.list-r01 > li > a {
+			  display: block;
+			  position: relative;
+			  padding: 1.5em .5em;
+			}
+			
+			.list-r01 > li > a:after {
+			  position: absolute;
+			  top: 50%;
+			  right: 1%;
+			  transform: translateY(-50%);
+			  content: "＞";
+			  font-size: 80%;
+			}
+			
+			/* 行頭に＞ */
+			.list-r02 li {
+			  position: relative;
+			  padding-left: 1.4em;
+			}
+			
+			.list-r02 li::before {
+			  position: absolute;
+			  top: .4em;
+			  left: 0;
+			  width: 1em;
+			  height: 1em;
+			  background: url(/content/img/icon-arr.svg) 0 0 no-repeat;
+			  background-size: 100% 100%;
+			  content: '';
+			}
+
+			/* -------------------------------------- */
+			/* module
+			// -------------------------------------- */
+			.header img, .contents img, .footer img {
+			    vertical-align: bottom;
+			}
+			  
+			@media screen and (min-width: 1098px) {
+			    .header img.header-logo, .contents img.header-logo, .footer img.header-logo {
+			      width: 240px;
+			      height: 50px;
+			    }
+			}
+			  
+			@media screen and (max-width: 1098px) {
+			    .header img.header-logo, .contents img.header-logo, .footer img.header-logo {
+			      width: 180px;
+			      height: 36px;
+			    }
+			}
+			  
+			.header img.footer-logo, .contents img.footer-logo, .footer img.footer-logo {
+			    width: 240px;
+			    height: 50px;
+			}
+			  
+			.header .section-01:not(:nth-child(1)), .header .btn-area:not(:nth-child(1)), .contents .section-01:not(:nth-of-type(1)), .contents .btn-area:not(:nth-child(1)), .footer .section-01:not(:nth-child(1)), .footer .btn-area:not(:nth-child(1)) {
+			    margin-top: 2em;
+			}
+			  
+			.header [class*='ttl-']:not(:nth-child(1)),
+			.header [class*='box-']:not(:nth-child(1)), .header .tab-01:not(:nth-child(1)), .contents [class*='ttl-']:not(:nth-child(1)),
+			.contents [class*='box-']:not(:nth-child(1)), .contents .tab-01:not(:nth-child(1)), .footer [class*='ttl-']:not(:nth-child(1)),
+			.footer [class*='box-']:not(:nth-child(1)), .footer .tab-01:not(:nth-child(1)) {
+			    margin-top: 1em;
+			}
+			  
+			.header .ic-book, .contents .ic-book, .footer .ic-book {
+			    vertical-align: 0;
+			    margin-left: 8px;
+			    transition-duration: 0.4s;
+			    cursor: pointer;
+			}
+			  
+			.header .ic-book:nth-child(1), .contents .ic-book:nth-child(1), .footer .ic-book:nth-child(1) {
+			    margin-right: 8px;
+			    margin-left: 0;
+			}
+			  
+			.header .ic-book:hover, .contents .ic-book:hover, .footer .ic-book:hover {
+			    opacity: .4;
+			    transition-duration: 0.4s;
+			}
+			  
+			@media screen and (min-width: 1098px) {
+			    .header .ttl-01, .contents .ttl-01, .footer .ttl-01 {
+			      font-size: 32px;
+			    }
+			}
+			  
+			@media screen and (max-width: 1098px) {
+			    .header .ttl-01, .contents .ttl-01, .footer .ttl-01 {
+			      font-size: 24px;
+			    }
+			}
+			  
+			@media screen and (min-width: 1098px) {
+			    .header .ttl-02, .contents .ttl-02, .footer .ttl-02 {
+			      font-size: 24px;
+			    }
+			}
+			  
+			@media screen and (max-width: 1098px) {
+			    .header .ttl-02, .contents .ttl-02, .footer .ttl-02 {
+			      font-size: 20px;
+			    }
+			}
+			  
+			@media screen and (min-width: 1098px) {
+			    .header .ttl-03, .contents .ttl-03, .footer .ttl-03 {
+			      font-size: 18px;
+			    }
+			}
+			  
+			@media screen and (max-width: 1098px) {
+			    .header .ttl-03, .contents .ttl-03, .footer .ttl-03 {
+			      font-size: 16px;
+			    }
+			}
+			  
+			@media screen and (min-width: 1098px) {
+			    .header .ttl-04, .contents .ttl-04, .footer .ttl-04 {
+			      font-size: 16px;
+			    }
+			}
+			  
+			@media screen and (max-width: 1098px) {
+			    .header .ttl-04, .contents .ttl-04, .footer .ttl-04 {
+			      font-size: 14px;
+			    }
+			}
+			  
+			.header .ttl-01, .header .ttl-02, .header .ttl-03, .header .ttl-04, .contents .ttl-01, .contents .ttl-02, .contents .ttl-03, .contents .ttl-04, .footer .ttl-01, .footer .ttl-02, .footer .ttl-03, .footer .ttl-04 {
+			    margin-bottom: .8em;
+			    font-weight: bold;
+			    line-height: 1.4;
+			}
+			  
+			.header .ttl-01 span, .header .ttl-02 span, .header .ttl-03 span, .header .ttl-04 span, .contents .ttl-01 span, .contents .ttl-02 span, .contents .ttl-03 span, .contents .ttl-04 span, .footer .ttl-01 span, .footer .ttl-02 span, .footer .ttl-03 span, .footer .ttl-04 span {
+			    font-size: .8em;
+			    font-weight: normal;
+			}
+			  
+			.header .pgh-01, .contents .pgh-01, .footer .pgh-01 {
+			    margin-top: 1em;
+			}
+			  
+			.header .pgh-02, .contents .pgh-02, .footer .pgh-02 {
+			    margin-top: 2em;
+			}
+			  
+			.header .em-01, .contents .em-01, .footer .em-01 {
+			    font-weight: bold;
+			}
+			  
+			.header .em-02, .contents .em-02, .footer .em-02 {
+			    text-decoration: underline;
+			}
+			  
+			.header .box-ad, .contents .box-ad, .footer .box-ad {
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    margin: 1.6em 0;
+			}
+			  
+			.header .box-ad:nth-child(1), .contents .box-ad:nth-child(1), .footer .box-ad:nth-child(1) {
+			    margin-top: 0;
+			}
+			  
+			.header .box-p01, .contents .box-p01, .footer .box-p01 {
+			    padding: 1em;
+			    border-radius: 4px;
+			    background-color: rgba(34, 34, 34, 0.08);
+			}
+			  
+			.header .box-p02, .header .contents .search-use-list .attr, .contents .search-use-list .header .attr, .contents .box-p02, .contents .search-use-list .attr, .footer .box-p02, .footer .contents .search-use-list .attr, .contents .search-use-list .footer .attr {
+			    padding: 1em;
+			    border-radius: 4px;
+			    background-color: rgba(150, 29, 34, 0.08);
+			}
+			  
+			.header .box-ex01, .contents .box-ex01, .footer .box-ex01 {
+			    padding: .5em 1em;
+			    background-color: rgba(34, 34, 34, 0.08);
+			    color: #007297;
+			}
+			  
+			.header .box-l01, .contents .box-l01, .footer .box-l01 {
+			    padding: 1em;
+			    border-radius: 4px;
+			    border: 1px solid rgba(34, 34, 34, 0.12);
+			}
+			  
+			.header .box-l02, .contents .box-l02, .footer .box-l02 {
+			    padding: 1em 0;
+			    border-top: 1px solid rgba(34, 34, 34, 0.12);
+			    border-bottom: 1px solid rgba(34, 34, 34, 0.12);
+			}
+			  
+			.header .tbl-01, .contents .tbl-01, .footer .tbl-01 {
+			    border-top: 2px solid rgba(34, 34, 34, 0.12);
+			    border-bottom: 2px solid rgba(34, 34, 34, 0.12);
+			}
+			  
+			.header .tbl-01 tr:not(:first-child), .contents .tbl-01 tr:not(:first-child), .footer .tbl-01 tr:not(:first-child) {
+			    border-top: 1px solid rgba(34, 34, 34, 0.12);
+			}
+			  
+			@media screen and (min-width: 598px) {
+			    .header .tbl-01 th, .header .tbl-01 td, .contents .tbl-01 th, .contents .tbl-01 td, .footer .tbl-01 th, .footer .tbl-01 td {
+			      padding: 1em .5em;
+			    }
+			}
+			  
+			@media screen and (max-width: 598px) {
+			    .header .tbl-01 th, .header .tbl-01 td, .contents .tbl-01 th, .contents .tbl-01 td, .footer .tbl-01 th, .footer .tbl-01 td {
+			      display: block;
+			    }
+			}
+			  
+			@media screen and (max-width: 598px) {
+			    .header .tbl-01 th, .contents .tbl-01 th, .footer .tbl-01 th {
+			      padding: 1em .5em 0;
+			    }
+			    .header .tbl-01 td, .contents .tbl-01 td, .footer .tbl-01 td {
+			      padding: .8em .5em;
+			    }
+			}
+			  
+			.header .tab-01, .contents #resultsList .tab-01, .footer .tab-01 {
+			    display: flex;
+			    border-bottom: 4px solid #173D8A;
+			    margin-bottom: 2em;
+			}
+			  
+			.header .tab-01 a, .header .tab-01 button, .contents .tab-01 a, .contents .tab-01 button, .footer .tab-01 a, .footer .tab-01 button {
+			    text-decoration: none;
+			}
+			  
+			.header .tab-01 li:not(:first-child), .contents .tab-01 li:not(:first-child), .footer .tab-01 li:not(:first-child) {
+			    margin-left: 2px;
+			}
+			  
+			@media screen and (max-width: 598px) {
+			    .header .tab-01 li, .contents .tab-01 li, .footer .tab-01 li {
+			      width: calc(50% - 1px);
+			    }
+			}
+			  
+			.header .tab-01 a, .header .tab-01 p, .contents .tab-01 a, .contents .tab-01 p, .footer .tab-01 a, .footer .tab-01 p {
+			    min-width: 140px;
+			    padding: 1em;
+			    border-radius: 4px 4px 0 0;
+			    background-color: rgba(34, 34, 34, 0.08);
+			    text-align: center;
+			    color: #666;
+			}
+			  
+			@media screen and (max-width: 598px) {
+			    .header .tab-01 a, .header .tab-01 p, .contents .tab-01 a, .contents .tab-01 p, .footer .tab-01 a, .footer .tab-01 p {
+			      width: 100%;
+			    }
+			}
+			  
+			.header .tab-01 .is-current, .contents .tab-01 .is-current, .footer .tab-01 .is-current {
+			    background-color: #173D8A;
+			    font-weight: bold;
+			    color: #fff;
+			}
+			  
+			.header .btn-01, .header .btn-02, .contents .btn-01, .contents .btn-02, .footer .btn-01, .footer .btn-02 {
+			    padding: .4em 1em;
+			    border: 1px solid #007297;
+			    border-radius: 4px;
+			    background-color: #fff;
+			    text-align: center;
+			    color: #007297;
+			}
+			  
+			@media screen and (min-width: 1098px) {
+			    .header .btn-01, .header .btn-02, .contents .btn-01, .contents .btn-02, .footer .btn-01, .footer .btn-02 {
+			      min-width: 120px;
+			    }
+			}
+			  
+			.header .btn-02, .contents .btn-02, .footer .btn-02 {
+			    background-color: #007297;
+			    color: #fff;
+			}
+			  
+			.header .btn-03, .contents .btn-03, .footer .btn-03 {
+			    position: relative;
+			    display: inline-block;
+			    min-width: 160px;
+			    padding: 0.8em calc(2.2rem + 7.5px);
+			    border-radius: 500px;
+			    background-color: #FC5B02;
+			    font-weight: bold;
+			    text-align: center;
+			    color: #fff;
+			}
+			  
+			.header .btn-03:after, .contents .btn-03:after, .footer .btn-03:after {
+			    position: absolute;
+			    top: 50%;
+			    right: 1.2rem;
+			    width: 12px;
+			    height: 7.5px;
+			    transform: translateY(-50%) rotate(90deg);
+			    background: url(../img/icon-arr-2.svg) 0 0 no-repeat;
+			    background-size: 100% 100%;
+			    content: '';
+			}
+			  
+			.header .btn-normal, .header .btn-04, .header .btn-05, .contents .btn-normal, .contents .btn-04, .contents .btn-05, .footer .btn-normal, .footer .btn-04, .footer .btn-05 {
+			    display: inline-flex;
+			    align-items: center;
+			    justify-content: center;
+			    min-width: 200px;
+			    min-height: 48px;
+			    padding: 1.6em 2em;
+			    border-radius: 500px;
+			}
+			  
+			.header .btn-04, .contents .btn-04, .footer .btn-04 {
+			    background-color: #FC5B02;
+			    color: #fff;
+			}
+			  
+			.header .btn-05, .contents .btn-05, .footer .btn-05 {
+			    background-color: rgba(34, 34, 34, 0.08);
+			    color: #222;
+			}
+			  
+			.header [class*='btn-0'], .contents [class*='btn-0'], .footer [class*='btn-0'] {
+			    text-decoration: none;
+			}
+			  
+			.header [class*='btn-0'] img, .header [class*='btn-0'] svg, .contents [class*='btn-0'] img, .contents [class*='btn-0'] svg, .footer [class*='btn-0'] img, .footer [class*='btn-0'] svg {
+			    width: 15px;
+			    height: 15px;
+			}
+			  
+			.header [class*='btn-0'] img:first-child, .header [class*='btn-0'] svg:first-child, .contents [class*='btn-0'] img:first-child, .contents [class*='btn-0'] svg:first-child, .footer [class*='btn-0'] img:first-child, .footer [class*='btn-0'] svg:first-child {
+			    margin-right: .5em;
+			}
+			  
+			.header [class*='btn-0'] img:last-child, .header [class*='btn-0'] svg:last-child, .contents [class*='btn-0'] img:last-child, .contents [class*='btn-0'] svg:last-child, .footer [class*='btn-0'] img:last-child, .footer [class*='btn-0'] svg:last-child {
+			    margin-left: .5em;
+			}
+			  
+			.header .btn-area, .contents .btn-area, .footer .btn-area {
+			    text-align: center;
+			}
+			  
+			@media screen and (max-width: 598px) {
+			    .header .btn-area a, .header .btn-area button, .header .btn-area input, .contents .btn-area a, .contents .btn-area button, .contents .btn-area input, .footer .btn-area a, .footer .btn-area button, .footer .btn-area input {
+			      margin: 8px auto;
+			      min-width: 80%;
+			    }
+			}
+			  
+			@media screen and (min-width: 598px) {
+			    .header .btn-area a:not(:first-child), .header .btn-area button:not(:first-child), .header .btn-area input:not(:first-child), .contents .btn-area a:not(:first-child), .contents .btn-area button:not(:first-of-type), .contents .btn-area input:not(:first-child), .footer .btn-area a:not(:first-child), .footer .btn-area button:not(:first-child), .footer .btn-area input:not(:first-child) {
+			      margin-left: 1em;
+			    }
+			}
+			  
+			@media screen and (max-width: 598px) {
+			    .header .btn-area a:not(:first-child), .header .btn-area button:not(:first-child), .header .btn-area input:not(:first-child), .contents .btn-area a:not(:first-child), .contents .btn-area button:not(:first-of-type), .contents .btn-area input:not(:first-child), .footer .btn-area a:not(:first-child), .footer .btn-area button:not(:first-child), .footer .btn-area input:not(:first-child) {
+			      margin-top: .5em;
+			    }
+			}
+			  
+			.header .btn-store, .contents .btn-store, .footer .btn-store {
+			    display: flex;
+			    justify-content: center;
+			    margin-top: 20px;
+			}
+			  
+			.header .btn-store li, .contents .btn-store li, .footer .btn-store li {
+			    margin: 10px;
+			}
+			  
+			.header .btn-sns, .contents .btn-sns, .footer .btn-sns {
+			    display: flex;
+			}
+			  
+			.header .btn-sns li, .contents .btn-sns li, .footer .btn-sns li {
+			    line-height: 1;
+			}
+			  
+			.header .btn-sns li:not(:first-child), .contents .btn-sns li:not(:first-child), .footer .btn-sns li:not(:first-child) {
+			    margin-left: 24px;
+			}
+			  
+			.header .btn-sns li img, .header .btn-sns li svg, .contents .btn-sns li img, .contents .btn-sns li svg, .footer .btn-sns li img, .footer .btn-sns li svg {
+			    width: 32px;
+			    height: 32px;
+			    vertical-align: bottom;
+			}
+			  
+			.header .page-01, .contents .page-01, .footer .page-01 {
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    margin: 1.6em 0;
+			    line-height: 1;
+			}
+			  
+			.header .page-01 ul, .contents .page-01 ul, .footer .page-01 ul {
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    margin: 0 .5em;
+			}
+			  
+			@media screen and (max-width: 598px) {
+			    .header .page-01 ul li:nth-of-type(n+3), .contents .page-01 ul li:nth-of-type(n+3), .footer .page-01 ul li:nth-of-type(n+3) {
+			      display: none;
+			    }
+			    .header .page-01 ul li:nth-last-child(2), .header .page-01 ul li:last-child, .contents .page-01 ul li:nth-last-child(2), .contents .page-01 ul li:last-child, .footer .page-01 ul li:nth-last-child(2), .footer .page-01 ul li:last-child {
+			      display: block;
+			    }
+			}
+			  
+			.header .page-01 a, .contents .page-01 a, .footer .page-01 a {
+			    position: relative;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    width: 40px;
+			    height: 40px;
+			    font-size: 1.125em;
+			    font-weight: bold;
+			    color: #222;
+			    text-decoration: none;
+			}
+			  
+			.header .page-01 a.is-current::before, .contents .page-01 a.is-current::before, .footer .page-01 a.is-current::before {
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 40px;
+			    height: 40px;
+			    border-radius: 50%;
+			    background-color: rgba(34, 34, 34, 0.08);
+			    content: '';
+			}
+			  
+			.header .page-01 svg, .contents .page-01 svg, .footer .page-01 svg {
+			    width: 32px;
+			    height: 32px;
+			}
+			  
+			.header .page-01 img, .contents .page-01 img, .footer .page-01 img {
+			    vertical-align: bottom;
+			}
+			  
+			.header .page-01 .next, .contents .page-01 .next, .footer .page-01 .next {
+			    transform: rotate(180deg);
+			}
+			  
+			@media screen and (min-width: 598px) {
+			    .header .is-pc, .contents .is-pc, .footer .is-pc {
+			      display: block;
+			    }
+			    .header .is-sp, .contents .is-sp, .footer .is-sp {
+			      display: none;
+			    }
+			}
+			  
+			@media screen and (max-width: 598px) {
+			    .header .is-pc, .contents .is-pc, .footer .is-pc {
+			      display: none;
+			    }
+			    .header .is-sp, .contents .is-sp, .footer .is-sp {
+			      display: block;
+			    }
+			}
+
+			/* -------------------------------------- */
+			/* header(sticky関係のみ)
+			// -------------------------------------- */
+			
+			.header {
+  				position: sticky;
+  				z-index: 10;
+			}
+
+			@media screen and (min-width: 1098px) {
+			  	.header {
+				    top: -100px;
+			  	}
+			}
+
+			@media screen and (min-width: 598px) and (max-width: 1098px) {
+				.header {
+				    top: -90px;
+				}
+			}
+
+			@media screen and (max-width: 598px) {
+  				.header {
+    				top: -60px;
+  				}
+			}
+			
+			/* -------------------------------------- */
+			/* setting
+			// -------------------------------------- */
+			.contents .setting-tbl-01 {
+			  width: 100%;
+			}
+			
+			.contents .setting-tbl-01 tr:not(:last-child) {
+			  border-bottom: 1px solid rgba(34, 34, 34, 0.12);
+			}
+			
+			.contents #resultsList .setting-tbl-01 th, .contents #resultsList .setting-tbl-01 td {
+			  vertical-align: top;
+			}
+			
+			@media screen and (min-width: 598px) {
+			  .contents #resultsList .setting-tbl-01 th, .contents #resultsList .setting-tbl-01 td {
+			    padding: 1.6em .5em;
+			  }
+			}
+			
+			@media screen and (max-width: 598px) {
+			  .contents #resultsList .setting-tbl-01 th, .contents #resultsList .setting-tbl-01 td {
+			    display: block;
+			    padding: 0 .5em;
+			  }
+			}
+			
+			@media screen and (min-width: 598px) {
+			  .contents #resultsList .setting-tbl-01 th {
+			    width: 27%;
+			  }
+			}
+			
+			@media screen and (max-width: 598px) {
+			  .contents #resultsList .setting-tbl-01 th {
+			    padding: 1em .5em 0;
+			  }
+			}
+			
+			.contents #resultsList .setting-tbl-01 th span {
+			  font-size: .8em;
+			  font-weight: normal;
+			}
+			
+			@media screen and (max-width: 598px) {
+			  .contents #resultsList .setting-tbl-01 td {
+			    padding: .5em .5em 1em;
+			  }
+			}
+			
+			@media screen and (min-width: 598px) {
+			  .contents #resultsList .setting-tbl-01 li:not(:first-child) {
+			    padding-top: .5em;
+			  }
+			}
+			
+			@media screen and (max-width: 598px) {
+			  .contents #resultsList .setting-tbl-01 li:not(:first-child) {
+			    padding-top: .25em;
+			  }
+			}
+			
+			.contents .setting-tbl-01 label {
+			  margin-left: .5em;
+			}
+			
+			.contents .setting-tbl-01 input:not(:nth-of-type(1)) {
+			  margin-left: 2em;
+			}
+			
+			.contents .setting-sample-item:not(:first-child) {
+			  margin-top: 1em;
+			}
+			
+			.contents .setting-sample-ttl {
+			  margin-bottom: .5em;
+			  font-size: 16px;
+			  font-weight: bold;
+			}
+			
+			.contents .setting-sample-ttl em:nth-of-type(1) {
+			  color: #961D22;
+			}
+			
+			.contents .setting-sample-ttl em:nth-of-type(2) {
+			  color: #173D8A;
+			}
+			
+			.contents .setting-sample-txt {
+			  font-size: 14px;
+			}
+			
+			.contents .setting-ex-01 {
+			  font-size: 1.25em;
+			}
+			
+			.contents .setting-ex-02 {
+			  letter-spacing: .5em;
+			}
+			
+			.contents .setting-ex-03 {
+			  font-family: 'Noto Serif JP', serif;
+			}
+			/* EOW_NEW-1346 【EOW】レスポンシブ対応：設定ページ */
+		</style>
+
+		<script type="text/javascript" language="JavaScript">
+		<!--
+			/*@cc_on
+				if (@_jscript_version < 9) {
+					var _d = document;
+					eval("var document = _d");
+				}
+			@*/
+			CONTEXT_PATH = '/';
+		// --->
+		</script>
+		<title>機能設定の変更｜英辞郎 on the WEB：アルク</title>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-1590792-9', 'auto');
+			ga('send', 'pageview');
+
+		</script>
+
+		<!-- EOW_NEW-1084編集分 ----------------------------------------------------------------------- -->
+		<!-- FLUX head -->
+		<script async='async' src="https://flux-cdn.com/client/alc/flux_eow-alc_AS_TM_AT.min.js"type="text/javascript">
+		</script>
+		<script type="text/javascript">
+			var pbjs = pbjs || {};
+			pbjs.que = pbjs.que || [];
+		</script>
+		<!-- /FLUX head -->
+
+		<!-- DFP head -->
+		<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+		<script>
+			var googletag = googletag || {};
+			googletag.cmd = googletag.cmd || [];
+		</script>
+		<!-- DFP head -->
+
+ 		<!-- Define callback function -->
+		<script type="text/javascript">
+			var readyBids = {
+				prebid: false,
+				amazon: false,
+				google: false
+			};
+			var failSafeTimeout = 3e3;
+			// when both APS and Prebid have returned, initiate ad request
+			var launchAdServer = function () {
+				if (!readyBids.amazon || !readyBids.prebid) {
+					return;
+				}
+				requestAdServer();
+			};
+			// sends adserver request
+			var requestAdServer = function () {
+				if (!readyBids.google) {
+					readyBids.google = true;
+					googletag.cmd.push(function () {
+						pbjs.que.push(function () {
+							pbjs.setTargetingForGPTAsync();
+						});
+						apstag.setDisplayBids();
+						googletag.pubads().refresh();
+					});
+				}
+			};
+		</script>
+		<!-- /Define callback function -->
+
+		<!-- Define Slot -->
+		<script>
+		googletag.cmd.push(function () {
+			googletag.defineSlot('/21619764421/eijiro_pc_top_01', [[728, 90]], 'div-gpt-ad-1555650352411-0').addService(googletag.pubads());
+			googletag.defineSlot('/21619764421/eijiro_pc_2nd_rec_2', [[300, 250], [336, 280]], 'div-gpt-ad-1555650122224-0').addService(googletag.pubads());
+			googletag.defineSlot('/21619764421/eijiro_pc_2nd_rec', [[300, 250], [336, 280]], 'div-gpt-ad-1555650531882-0').addService(googletag.pubads());
+			googletag.defineSlot('/21619764421/p_alc_eijiro_1st_rec_300x250', [[300, 250], [336, 280]], 'div-gpt-ad-1555650242892-0').addService(googletag.pubads());
+			googletag.defineSlot('/21619764421/alc_pc_overlay', [[728, 90]], 'div-gpt-ad-1584955147936-0').addService(googletag.pubads());
+			googletag.pubads().enableSingleRequest();
+			googletag.pubads().disableInitialLoad();
+			googletag.enableServices();
+		pbjs.que.push(function () {
+			pbFlux.prebidBidder();
+			});
+			});
+		</script>
+		<!-- /Define Slot -->
+
+		<!-- APS head → -->
+		<script>
+		var apstagSlots = [
+			{
+				slotID: 'div-gpt-ad-1555650352411-0',
+				slotName: '/21619764421/eijiro_pc_top_01',
+				sizes: [[728, 90]]
+				},
+			{
+				slotID: 'div-gpt-ad-1555650122224-0',
+				slotName: '/21619764421/eijiro_pc_2nd_rec_2',
+				sizes: [[300, 250], [336, 280]]
+				},
+			{
+				slotID: 'div-gpt-ad-1555650531882-0',
+				slotName: '/21619764421/eijiro_pc_2nd_rec',
+				sizes: [[300, 250], [336, 280]]
+				},
+			{
+				slotID: 'div-gpt-ad-1555650242892-0',
+				slotName: '/21619764421/p_alc_eijiro_1st_rec_300x250',
+				sizes: [[300, 250], [336, 280]]
+				},
+			{
+				slotID: 'div-gpt-ad-1584955147936-0',
+				slotName: '/21619764421/alc_pc_overlay',
+				sizes: [[728, 90]]
+				}
+			];
+		</script>
+		<script>
+		//load the apstag.js library
+		!function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");
+
+		//initialize the apstag.js library on the page to allow bidding
+		apstag.init({
+			pubID: '3862',
+			adServer: 'googletag'
+			});
+		apstag.fetchBids({
+			slots: apstagSlots,
+			timeout: 2e3
+			}, function(bids) {
+				// set apstag targeting on googletag, then trigger the first DFP request in googletag's disableInitialLoad integration
+				googletag.cmd.push(function(){
+				readyBids.amazon = true;
+				launchAdServer(); 
+				});
+			});
+		</script>
+		<!-- APS head → -->
+
+		<script>
+			// set failsafe timeout
+			setTimeout(function () {
+				requestAdServer();
+			}, failSafeTimeout);
+		</script>
+
+		<script type="text/javascript">
+			document.onkeydown = function(e) {
+				var shift, ctrl, alt;
+
+				// Mozilla(Firefox, NN) and Opera
+				if (e != null) {
+					keycode = e.which;
+					ctrl = typeof e.modifiers == 'undefined' ? e.ctrlKey : e.modifiers & Event.CONTROL_MASK;
+					alt = typeof e.modifiers == 'undefined' ? e.altKey : e.modifiers & Event.ALT_MASK;
+					shift = typeof e.modifiers == 'undefined' ? e.shiftKey : e.modifiers & Event.SHIFT_MASK;
+					if (shift && alt && (keycode == 37 || keycode == 39)) {
+						// イベントの上位伝播を防止
+						e.preventDefault();
+						e.stopPropagation();
+					}
+				// Internet Explorer
+				} else {
+					keycode = event.keyCode;
+					ctrl = event.ctrlKey;
+					alt = event.altKey;
+					shift = event.shiftKey;
+					if (shift && alt && (keycode == 37 || keycode == 39)) {
+						// イベントの上位伝播を防止
+						event.returnValue = false;
+						event.cancelBubble = true;
+					}
+				}
+
+				// キーコードの文字を取得
+				keychar = String.fromCharCode(keycode).toUpperCase();
+
+				if (shift && alt) {
+					if (keycode == 39) {
+						changePage('next');
+					} else if (keycode == 37) {
+						changePage('back');
+					}
+				}
+			};
+			PAGE_CNT = 131;
+		</script>
+        <script type="text/javascript" language="JavaScript" src="/content/js/custom_scroll.js" charset="UTF-8"></script>
+	</head>
+	<body bgcolor="#FFFFFF" onLoad="javascript:loadCookie('eow2.alc.co.jp','eow2.alc.co.jp','eowuser','60*60*24*30');">
+
+<!-- EOW_SHOP-325 -->
+<div class="header">
+	<header>
+	  <div class="wrap-inner">
+		<div class="header-1"><a href="/"><img class="header-logo" src="/content/img/lo_eow.svg" alt="英辞郎 on the WEB" title="英辞郎 on the WEB"></a></div>
+		<div class="header-2">
+		  <div class="header-biz-menu">
+			<div class="header-biz-menu-ttl">英辞郎 on the WEB Pro / Pro Lite</div>
+			<div class="header-biz-menu-inner">
+			  <div><a class="btn-01" target="_self" href="https://eowpf.alc.co.jp/login" onclick="ga('send', 'event', 'eowtop_p_login', 'click', 'https://eowp.alc.co.jp/login')" id="eowtop_p_login">ログイン</a></div>
+			  <div><a class="btn-02" target="_self" href="https://eowp-user.alc.co.jp/signup">無料登録</a></div>
+			</div>
+		  </div>
+		  <div class="header-biz-bnr"><a target="_blank" href="https://eowp.alc.co.jp/info-business/"><img src="/content/img/header_bnr-biz.png" alt="法人向け 英辞郎 on WEB Pro"></a></div>
+		  <div class="header-gnav-btn">
+			<span></span><span></span><span></span>
+		  </div>
+		</div>
+	  </div><!-- /.wrap-inner -->
+	  <div class="header-gnav-sp">
+		<ul class="header-gnav-sp-menu">
+		  <li>
+			<a target="_self" href="https://eowpf.alc.co.jp/login" onclick="ga('send', 'event', 'eowtop_p_login_sp', 'click', 'https://eowp.alc.co.jp/login')" id="eowtop_p_login_sp">
+			  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.95 29.95">
+				<path d="M16,1.025A14.975,14.975,0,1,0,30.975,16,14.976,14.976,0,0,0,16,1.025ZM8.048,27.1c1.439-3.636,4.5-5.953,7.952-5.953s6.513,2.317,7.952,5.953a13.579,13.579,0,0,1-15.9,0Zm16.959-.839a10.717,10.717,0,0,0-5.9-5.836,7.15,7.15,0,1,0-6.22,0,10.717,10.717,0,0,0-5.9,5.836,13.675,13.675,0,1,1,18.014,0ZM16,19.85A5.85,5.85,0,1,1,21.85,14,5.856,5.856,0,0,1,16,19.85Z" transform="translate(-1.025 -1.025)"/>
+			  </svg>
+			  <p>ログイン</p>
+			</a>
+		  </li>
+		  <li>
+			<a target="_self" href="https://eowp-user.alc.co.jp/signup">
+			  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.95 29.95">
+				<g transform="translate(-1.025 -1.025)">
+				  <path d="M13.974,20.473,8.013,15.356l-1.1,1.583,7.212,6.192,11.056-12.3-1.27-1.41Z"/>
+				  <path d="M16,1.025A14.975,14.975,0,1,0,30.975,16,14.976,14.976,0,0,0,16,1.025Zm0,28.65A13.675,13.675,0,1,1,29.675,16,13.691,13.691,0,0,1,16,29.675Z"/>
+				</g>
+			  </svg>
+			  <p>無料登録</p>
+			</a>
+		  </li>
+		  <li>
+			<div id="js_s_onsei_sp">
+			  <svg id="icon-i_history" version="1.0" xmlns="http://www.w3.org/2000/svg" width="150.000000pt" height="150.000000pt" viewBox="0 0 150.000000 150.000000" preserveAspectRatio="xMidYMid meet">
+				<g transform="translate(0.000000,150.000000) scale(0.100000,-0.100000)" stroke="none">
+				<path d="M695 1190 c-60 -61 -158 -156 -216 -211 l-107 -99 -116 0 -116 0 0
+				  -180 0 -180 123 0 122 -1 209 -204 c207 -204 208 -205 252 -205 32 0 44 4 44
+				  15 0 8 7 15 15 15 13 0 15 68 13 578 l-3 577 -55 3 -55 2 -110 -110z m173
+				  -482 c-3 -534 -3 -543 -23 -546 -14 -2 -79 55 -230 202 l-210 205 -107 1 -108
+				  0 0 130 0 130 101 0 102 0 51 47 c28 26 126 120 219 210 103 101 175 163 187
+				  163 20 0 20 -5 18 -542z"></path>
+				<path d="M1217 1123 c-12 -11 -8 -40 8 -53 29 -24 84 -118 105 -181 28 -81 31
+				  -200 6 -284 -19 -64 -72 -159 -106 -190 -29 -26 -27 -65 4 -65 54 0 155 173
+				  177 303 24 143 -17 298 -112 424 -36 48 -64 64 -82 46z"></path>
+				<path d="M1106 1015 c-3 -9 11 -37 33 -67 99 -130 93 -309 -14 -436 -29 -34
+				  -25 -62 10 -62 16 0 34 15 58 48 107 146 103 356 -10 497 -29 37 -66 46 -77
+				  20z"></path>
+				<path d="M1029 924 c-10 -12 -10 -19 -1 -32 30 -41 62 -120 62 -152 0 -34 -21
+				  -84 -58 -142 -16 -26 -16 -28 0 -45 17 -16 19 -16 44 8 49 45 69 97 69 179 0
+				  81 -15 121 -63 173 -30 31 -35 33 -53 11z"></path>
+				</g>
+			  </svg>
+			  <p>音声再生</p>
+			</div>
+		  </li>
+		  <li>
+			<div id="js_s_history_sp">
+			  <svg id="icon-i_history" viewBox="0 0 32 32">
+				<title>i_history</title>
+				<path class="path1" d="M20.211 17.347h-5.558v-8.337c0-0.337 0.337-0.674 0.674-0.674s0.674 0.337 0.674 0.674v6.989h4.211c0.337 0 0.674 0.337 0.674 0.674s-0.337 0.674-0.674 0.674z"></path>
+				<path class="path2" d="M28.547 1.347c1.179 0 2.189 0.926 2.189 2.189v25.011c0 1.179-0.926 2.189-2.189 2.189h-25.095c-1.179 0-2.189-0.926-2.189-2.189v-25.095c0-1.179 0.926-2.189 2.189-2.189h25.095zM28.547 0h-25.095c-1.853 0-3.453 1.6-3.453 3.453v25.011c0 1.937 1.6 3.537 3.453 3.537h25.011c1.937 0 3.453-1.6 3.453-3.453v-25.095c0.084-1.853-1.516-3.453-3.368-3.453v0z"></path>
+				<path class="path3" d="M16 5.474c5.811 0 10.526 4.716 10.526 10.526s-4.716 10.526-10.526 10.526-10.526-4.716-10.526-10.526 4.716-10.526 10.526-10.526zM16 4.211c-6.568 0-11.789 5.221-11.789 11.789s5.305 11.789 11.789 11.789c6.568 0 11.789-5.305 11.789-11.789s-5.221-11.789-11.789-11.789v0z"></path>
+			  </svg>
+			  <p>検索履歴</p>
+			</div>
+		  </li>
+		  <li>
+			<div id="js_s_wordbook_sp">
+			  <svg id="icon-i_words" viewBox="0 0 32 32">
+				<title>i_words</title>
+				<path class="path1" d="M30.653 4.8v20.884h-29.305v-20.884h29.305zM32 3.453h-32v23.579h32v-23.579z"></path>
+				<path class="path2" d="M2.863 31.579l-0.253-3.284c0-0.337 0.253-0.674 0.589-0.758 0.337 0 0.674 0.253 0.758 0.589l0.168 1.937 19.284-2.526c0.337-0.084 0.674 0.168 0.758 0.589 0.084 0.337-0.168 0.674-0.589 0.758l-20.716 2.695z"></path>
+				<path class="path3" d="M25.011 18.189c-1.6 0-2.863-1.263-2.863-2.863s1.263-2.863 2.863-2.863 2.863 1.263 2.863 2.863c0 1.6-1.263 2.863-2.863 2.863zM25.011 13.811c-0.842 0-1.516 0.674-1.516 1.516s0.674 1.516 1.516 1.516 1.516-0.674 1.516-1.516c0-0.842-0.674-1.516-1.516-1.516z"></path>
+			  </svg>
+			  <p>単語帳</p>
+			</div>
+		  </li>
+		  <li>
+			<a href="/help/guide/" target="_self">
+			  <svg id="icon-i_guide" viewBox="0 0 32 32">
+				<title>i_guide</title>
+				<path class="path1" d="M16 23.242c-0.842 0-1.432 0.674-1.432 1.432 0 0.842 0.674 1.432 1.432 1.432 0.842 0 1.432-0.674 1.432-1.432s-0.589-1.432-1.432-1.432v0z"></path>
+				<path class="path2" d="M16 1.347c8.084 0 14.653 6.568 14.653 14.653s-6.568 14.653-14.653 14.653-14.653-6.568-14.653-14.653 6.568-14.653 14.653-14.653zM16 0c-8.842 0-16 7.158-16 16s7.158 16 16 16 16-7.158 16-16c0-8.842-7.158-16-16-16v0z"></path>
+				<path class="path3" d="M16 21.726c-0.337 0-0.674-0.337-0.674-0.674v-4.379c0-0.337 0.337-0.674 0.674-0.674 2.021 0 3.705-1.684 3.705-3.705s-1.684-3.705-3.705-3.705-3.705 1.684-3.705 3.705c0 0.337-0.337 0.674-0.674 0.674s-0.674-0.253-0.674-0.589c0-2.779 2.274-5.053 5.053-5.053s5.053 2.274 5.053 5.053c0 2.526-1.937 4.632-4.379 4.968v3.705c0 0.421-0.337 0.674-0.674 0.674z"></path>
+			  </svg>
+			  <p>ガイド</p>
+			</a>
+		  </li>
+		  <li>
+			<a href="/setting.html">
+			  <svg id="icon-i_setting" viewBox="0 0 32 32">
+				<title>i_setting</title>
+				<path class="path1" d="M18.021 32h-4.042c-0.337 0-0.674-0.337-0.674-0.674v-3.789c-1.095-0.253-2.189-0.589-3.116-1.011l-2.695 2.695c-0.253 0.253-0.674 0.253-0.926 0l-3.789-3.789c-0.084-0.084-0.168-0.253-0.168-0.505s0.084-0.337 0.168-0.505l2.695-2.695c-0.421-0.842-0.758-2.021-1.011-3.116h-3.789c-0.337 0-0.674-0.337-0.674-0.674v-4.042c0-0.337 0.337-0.674 0.674-0.674h3.789c0.253-1.095 0.589-2.189 1.011-3.116l-2.695-2.611c-0.084-0.084-0.168-0.253-0.168-0.421s0.084-0.337 0.168-0.505l3.789-3.789c0.253-0.253 0.674-0.253 0.926 0l2.695 2.695c0.926-0.421 2.021-0.758 3.116-1.011v-3.789c0-0.337 0.337-0.674 0.674-0.674h4.042c0.337 0 0.674 0.337 0.674 0.674v3.789c1.011 0.253 2.189 0.589 3.116 1.011l2.695-2.695c0.253-0.253 0.674-0.253 0.926 0l3.789 3.789c0.084 0.084 0.168 0.253 0.168 0.505s-0.084 0.337-0.168 0.505l-2.695 2.695c0.421 0.926 0.758 2.021 1.011 3.116h3.789c0.337 0 0.674 0.337 0.674 0.674v4.042c0 0.337-0.337 0.674-0.674 0.674h-3.789c-0.253 1.095-0.589 2.189-1.011 3.116l2.695 2.695c0.253 0.253 0.253 0.674 0 0.926l-3.789 3.789c-0.253 0.253-0.674 0.253-0.926 0l-2.695-2.695c-0.842 0.421-2.021 0.758-3.116 1.011v3.789c0 0.337-0.337 0.589-0.674 0.589zM14.653 30.653h2.695v-3.705c0-0.337 0.168-0.589 0.505-0.674 0.758-0.168 2.695-0.674 3.705-1.263 0.253-0.168 0.589-0.084 0.842 0.084l2.611 2.611 2.863-2.863-2.611-2.611c-0.253-0.253-0.253-0.589-0.084-0.842 0.589-1.011 1.095-2.947 1.263-3.705 0.084-0.337 0.337-0.505 0.674-0.505h3.705v-2.695h-3.705c-0.337 0-0.589-0.253-0.674-0.505-0.253-1.179-0.758-2.779-1.263-3.705-0.168-0.253-0.084-0.589 0.084-0.842l2.526-2.358-2.863-2.863-2.611 2.611c-0.253 0.253-0.589 0.253-0.842 0.084-0.926-0.505-2.526-1.011-3.705-1.263-0.337-0.084-0.505-0.337-0.505-0.674v-3.621h-2.695v3.705c0 0.337-0.168 0.589-0.505 0.674-1.179 0.253-2.779 0.758-3.705 1.263-0.253 0.168-0.589 0.084-0.842-0.084l-2.442-2.695-2.863 2.863 2.611 2.611c0.253 0.253 0.253 0.589 0.084 0.842-0.589 1.011-1.095 2.947-1.263 3.705-0.084 0.337-0.337 0.505-0.674 0.505h-3.621v2.695h3.621c0.337 0 0.589 0.168 0.674 0.505 0.168 0.758 0.674 2.695 1.263 3.705 0.168 0.253 0.084 0.589-0.084 0.842l-2.611 2.442 2.863 2.863 2.611-2.611c0.253-0.253 0.589-0.253 0.842-0.084 1.011 0.589 2.947 1.095 3.705 1.263 0.337 0.084 0.505 0.337 0.505 0.674v3.621z"></path>
+				<path class="path2" d="M16 22.653c-3.705 0-6.653-3.032-6.653-6.653s3.032-6.653 6.653-6.653c3.705 0 6.653 3.032 6.653 6.653s-2.947 6.653-6.653 6.653zM16 10.695c-2.947 0-5.305 2.358-5.305 5.305s2.358 5.305 5.305 5.305c2.947 0 5.305-2.358 5.305-5.305s-2.358-5.305-5.305-5.305z"></path>
+			  </svg>
+			  <p>環境設定</p>
+			</a>
+		  </li>
+		  <li>
+			<a target="_blank" href="https://eowp.blogspot.com/">
+			  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 32">
+				<g transform="translate(-1)">
+				  <path d="M30,1V31H2V1H30m1-1H1V32H31V0Z"/>
+				  <rect width="8" height="10" transform="translate(19 5)"/>
+				  <rect width="12" height="2" transform="translate(5 5)"/>
+				  <rect width="12" height="2" transform="translate(5 9)"/>
+				  <rect width="12" height="2" transform="translate(5 13)"/>
+				  <rect width="22" height="2" transform="translate(5 17)"/>
+				  <rect width="22" height="2" transform="translate(5 21)"/>
+				  <rect width="22" height="2" transform="translate(5 25)"/>
+				</g>
+			  </svg>
+			  <p>お知らせ</p>
+			</a>
+		  </li>
+		</ul>
+		<div class="header-gnav-sp-app">
+		  <h2 class="header-gnav-sp-app-ttl">英和・和英検索をもっと便利に</h2>
+		  <p>アプリならすべてのサービスを<br>ご利用いただけます。</p>
+		  <ul class="btn-store">
+			<li><a target="_blank" href="https://apps.apple.com/app/apple-store/id365874160?pt=210463&ct=eow_top_app_store_link_2021_02&mt=8"><img src="/content/img/footer_btn-appstore.png" alt="App Store"></a></li>
+			<li><a target="_blank" href="https://play.google.com/store/apps/details?id=jp.co.alc.eow&referrer=utm_source%3Deow_top%26utm_medium%3Dbanner%26utm_campaign%3Dandroid_app"><img src="/content/img/footer_btn-googleplay.png" alt="Google Play"></a></li>
+		  </ul>
+		</div>
+	  </div><!-- /.header-gnav-sp -->
+	</header>
+	<div class="header-search">
+	  <div class="wrap-inner">
+		<div class="header-search-box">
+		  <form id="fm1" name="fm1" action="#" onsubmit="return goF1('fm1')">
+			<input type="search" id="q" name="q" autocomplete="off" class="small_search_field" accesskey="e" maxlength="1000" value="" placeholder="英和・和英検索はココから">
+			<input type="reset" value="×">
+			<button type="image" id="submitMessage" value="">
+			  <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 20 20">
+				<path d="M14.7,12.208A7.966,7.966,0,1,0,12.207,14.7l5.3,5.3L20,17.508Zm-3.116-.624a5.122,5.122,0,1,1,0-7.244A5.127,5.127,0,0,1,11.583,11.584Z" transform="translate(0 -0.001)"/>
+			  </svg>
+			  検索</button>
+		  </form>
+		  <div id="suggest" style="display: none;"></div>
+		  <div class="header-search-box-att">
+			<div>データ提供：EDP ※データの転載は禁じられています。</div>
+			<div>
+				<a class="header-link" target="_blank" href="https://eowp.blogspot.com/2017/12/chrome.html">悪質な拡張機能にご注意ください。</a>
+			</div>
+		  </div>
+		  <form id="f1" name="f1" method="post" action="">
+			<input name="q" type="hidden" value="" />
+			<input name="ie" type="hidden" value="UTF-8" />
+		  </form>
+		</div>
+		<div class="header-menu">
+		  <ul>
+			<li>
+			<div id="js_s_onsei">
+			  <svg id="icon-i_history" version="1.0" xmlns="http://www.w3.org/2000/svg" width="150.000000pt" height="150.000000pt" viewBox="0 0 150.000000 150.000000" preserveAspectRatio="xMidYMid meet">
+				<g transform="translate(0.000000,150.000000) scale(0.100000,-0.100000)" stroke="none">
+				<path d="M695 1190 c-60 -61 -158 -156 -216 -211 l-107 -99 -116 0 -116 0 0
+				  -180 0 -180 123 0 122 -1 209 -204 c207 -204 208 -205 252 -205 32 0 44 4 44
+				  15 0 8 7 15 15 15 13 0 15 68 13 578 l-3 577 -55 3 -55 2 -110 -110z m173
+				  -482 c-3 -534 -3 -543 -23 -546 -14 -2 -79 55 -230 202 l-210 205 -107 1 -108
+				  0 0 130 0 130 101 0 102 0 51 47 c28 26 126 120 219 210 103 101 175 163 187
+				  163 20 0 20 -5 18 -542z"></path>
+				<path d="M1217 1123 c-12 -11 -8 -40 8 -53 29 -24 84 -118 105 -181 28 -81 31
+				  -200 6 -284 -19 -64 -72 -159 -106 -190 -29 -26 -27 -65 4 -65 54 0 155 173
+				  177 303 24 143 -17 298 -112 424 -36 48 -64 64 -82 46z"></path>
+				<path d="M1106 1015 c-3 -9 11 -37 33 -67 99 -130 93 -309 -14 -436 -29 -34
+				  -25 -62 10 -62 16 0 34 15 58 48 107 146 103 356 -10 497 -29 37 -66 46 -77
+				  20z"></path>
+				<path d="M1029 924 c-10 -12 -10 -19 -1 -32 30 -41 62 -120 62 -152 0 -34 -21
+				  -84 -58 -142 -16 -26 -16 -28 0 -45 17 -16 19 -16 44 8 49 45 69 97 69 179 0
+				  81 -15 121 -63 173 -30 31 -35 33 -53 11z"></path>
+				</g>
+			  </svg>
+			  <p>音声再生</p>
+			</div>
+			</li>
+			<li>
+			<div id="js_s_history">
+			  <svg id="icon-i_history" viewBox="0 0 32 32">
+				<title>i_history</title>
+				<path class="path1" d="M20.211 17.347h-5.558v-8.337c0-0.337 0.337-0.674 0.674-0.674s0.674 0.337 0.674 0.674v6.989h4.211c0.337 0 0.674 0.337 0.674 0.674s-0.337 0.674-0.674 0.674z"></path>
+				<path class="path2" d="M28.547 1.347c1.179 0 2.189 0.926 2.189 2.189v25.011c0 1.179-0.926 2.189-2.189 2.189h-25.095c-1.179 0-2.189-0.926-2.189-2.189v-25.095c0-1.179 0.926-2.189 2.189-2.189h25.095zM28.547 0h-25.095c-1.853 0-3.453 1.6-3.453 3.453v25.011c0 1.937 1.6 3.537 3.453 3.537h25.011c1.937 0 3.453-1.6 3.453-3.453v-25.095c0.084-1.853-1.516-3.453-3.368-3.453v0z"></path>
+				<path class="path3" d="M16 5.474c5.811 0 10.526 4.716 10.526 10.526s-4.716 10.526-10.526 10.526-10.526-4.716-10.526-10.526 4.716-10.526 10.526-10.526zM16 4.211c-6.568 0-11.789 5.221-11.789 11.789s5.305 11.789 11.789 11.789c6.568 0 11.789-5.305 11.789-11.789s-5.221-11.789-11.789-11.789v0z"></path>
+			  </svg>
+			  <p>検索履歴</p>
+			</div>
+			</li>
+			<li>
+			<div id="js_s_wordbook">
+			  <svg id="icon-i_words" viewBox="0 0 32 32">
+				<title>i_words</title>
+				<path class="path1" d="M30.653 4.8v20.884h-29.305v-20.884h29.305zM32 3.453h-32v23.579h32v-23.579z"></path>
+				<path class="path2" d="M2.863 31.579l-0.253-3.284c0-0.337 0.253-0.674 0.589-0.758 0.337 0 0.674 0.253 0.758 0.589l0.168 1.937 19.284-2.526c0.337-0.084 0.674 0.168 0.758 0.589 0.084 0.337-0.168 0.674-0.589 0.758l-20.716 2.695z"></path>
+				<path class="path3" d="M25.011 18.189c-1.6 0-2.863-1.263-2.863-2.863s1.263-2.863 2.863-2.863 2.863 1.263 2.863 2.863c0 1.6-1.263 2.863-2.863 2.863zM25.011 13.811c-0.842 0-1.516 0.674-1.516 1.516s0.674 1.516 1.516 1.516 1.516-0.674 1.516-1.516c0-0.842-0.674-1.516-1.516-1.516z"></path>
+			  </svg>
+			  <p>単語帳</p>
+			</div>
+			</li>
+			<li>
+			<a href="/help/guide/" target="_blank">
+			  <svg id="icon-i_guide" viewBox="0 0 32 32">
+				<title>i_guide</title>
+				<path class="path1" d="M16 23.242c-0.842 0-1.432 0.674-1.432 1.432 0 0.842 0.674 1.432 1.432 1.432 0.842 0 1.432-0.674 1.432-1.432s-0.589-1.432-1.432-1.432v0z"></path>
+				<path class="path2" d="M16 1.347c8.084 0 14.653 6.568 14.653 14.653s-6.568 14.653-14.653 14.653-14.653-6.568-14.653-14.653 6.568-14.653 14.653-14.653zM16 0c-8.842 0-16 7.158-16 16s7.158 16 16 16 16-7.158 16-16c0-8.842-7.158-16-16-16v0z"></path>
+				<path class="path3" d="M16 21.726c-0.337 0-0.674-0.337-0.674-0.674v-4.379c0-0.337 0.337-0.674 0.674-0.674 2.021 0 3.705-1.684 3.705-3.705s-1.684-3.705-3.705-3.705-3.705 1.684-3.705 3.705c0 0.337-0.337 0.674-0.674 0.674s-0.674-0.253-0.674-0.589c0-2.779 2.274-5.053 5.053-5.053s5.053 2.274 5.053 5.053c0 2.526-1.937 4.632-4.379 4.968v3.705c0 0.421-0.337 0.674-0.674 0.674z"></path>
+			  </svg>
+			  <p>ガイド</p>
+			  </a>
+			</li>
+			<li>
+			<a href="/setting.html">
+			  <svg id="icon-i_setting" viewBox="0 0 32 32">
+				<title>i_setting</title>
+				<path class="path1" d="M18.021 32h-4.042c-0.337 0-0.674-0.337-0.674-0.674v-3.789c-1.095-0.253-2.189-0.589-3.116-1.011l-2.695 2.695c-0.253 0.253-0.674 0.253-0.926 0l-3.789-3.789c-0.084-0.084-0.168-0.253-0.168-0.505s0.084-0.337 0.168-0.505l2.695-2.695c-0.421-0.842-0.758-2.021-1.011-3.116h-3.789c-0.337 0-0.674-0.337-0.674-0.674v-4.042c0-0.337 0.337-0.674 0.674-0.674h3.789c0.253-1.095 0.589-2.189 1.011-3.116l-2.695-2.611c-0.084-0.084-0.168-0.253-0.168-0.421s0.084-0.337 0.168-0.505l3.789-3.789c0.253-0.253 0.674-0.253 0.926 0l2.695 2.695c0.926-0.421 2.021-0.758 3.116-1.011v-3.789c0-0.337 0.337-0.674 0.674-0.674h4.042c0.337 0 0.674 0.337 0.674 0.674v3.789c1.011 0.253 2.189 0.589 3.116 1.011l2.695-2.695c0.253-0.253 0.674-0.253 0.926 0l3.789 3.789c0.084 0.084 0.168 0.253 0.168 0.505s-0.084 0.337-0.168 0.505l-2.695 2.695c0.421 0.926 0.758 2.021 1.011 3.116h3.789c0.337 0 0.674 0.337 0.674 0.674v4.042c0 0.337-0.337 0.674-0.674 0.674h-3.789c-0.253 1.095-0.589 2.189-1.011 3.116l2.695 2.695c0.253 0.253 0.253 0.674 0 0.926l-3.789 3.789c-0.253 0.253-0.674 0.253-0.926 0l-2.695-2.695c-0.842 0.421-2.021 0.758-3.116 1.011v3.789c0 0.337-0.337 0.589-0.674 0.589zM14.653 30.653h2.695v-3.705c0-0.337 0.168-0.589 0.505-0.674 0.758-0.168 2.695-0.674 3.705-1.263 0.253-0.168 0.589-0.084 0.842 0.084l2.611 2.611 2.863-2.863-2.611-2.611c-0.253-0.253-0.253-0.589-0.084-0.842 0.589-1.011 1.095-2.947 1.263-3.705 0.084-0.337 0.337-0.505 0.674-0.505h3.705v-2.695h-3.705c-0.337 0-0.589-0.253-0.674-0.505-0.253-1.179-0.758-2.779-1.263-3.705-0.168-0.253-0.084-0.589 0.084-0.842l2.526-2.358-2.863-2.863-2.611 2.611c-0.253 0.253-0.589 0.253-0.842 0.084-0.926-0.505-2.526-1.011-3.705-1.263-0.337-0.084-0.505-0.337-0.505-0.674v-3.621h-2.695v3.705c0 0.337-0.168 0.589-0.505 0.674-1.179 0.253-2.779 0.758-3.705 1.263-0.253 0.168-0.589 0.084-0.842-0.084l-2.442-2.695-2.863 2.863 2.611 2.611c0.253 0.253 0.253 0.589 0.084 0.842-0.589 1.011-1.095 2.947-1.263 3.705-0.084 0.337-0.337 0.505-0.674 0.505h-3.621v2.695h3.621c0.337 0 0.589 0.168 0.674 0.505 0.168 0.758 0.674 2.695 1.263 3.705 0.168 0.253 0.084 0.589-0.084 0.842l-2.611 2.442 2.863 2.863 2.611-2.611c0.253-0.253 0.589-0.253 0.842-0.084 1.011 0.589 2.947 1.095 3.705 1.263 0.337 0.084 0.505 0.337 0.505 0.674v3.621z"></path>
+				<path class="path2" d="M16 22.653c-3.705 0-6.653-3.032-6.653-6.653s3.032-6.653 6.653-6.653c3.705 0 6.653 3.032 6.653 6.653s-2.947 6.653-6.653 6.653zM16 10.695c-2.947 0-5.305 2.358-5.305 5.305s2.358 5.305 5.305 5.305c2.947 0 5.305-2.358 5.305-5.305s-2.358-5.305-5.305-5.305z"></path>
+			  </svg>
+			  <p>環境設定</p>
+			</a>
+			</li>
+			<li>
+			<a target="_blank" href="https://eowp.blogspot.com/">
+			  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 32">
+				<g transform="translate(-1)">
+				  <path d="M30,1V31H2V1H30m1-1H1V32H31V0Z"/>
+				  <rect width="8" height="10" transform="translate(19 5)"/>
+				  <rect width="12" height="2" transform="translate(5 5)"/>
+				  <rect width="12" height="2" transform="translate(5 9)"/>
+				  <rect width="12" height="2" transform="translate(5 13)"/>
+				  <rect width="22" height="2" transform="translate(5 17)"/>
+				  <rect width="22" height="2" transform="translate(5 21)"/>
+				  <rect width="22" height="2" transform="translate(5 25)"/>
+				</g>
+			  </svg>
+			  <p>お知らせ</p>
+			</a>
+			</li>
+		  </ul>
+		  </div>
+	  </div><!-- /.wrap-inner -->
+	</div><!-- /.header-search -->
+  </div><!-- /.header -->
+  <!-- End EOW_SHOP-325 -->
+
+
+	<!-- svg読み込み
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="svgArea"></div>
+  <script>
+$(function(){
+	$("#svgArea").load("content/img/symbol-defs.svg", function(){
+		//SVGの処理
+	});
+});
+</script>
+<!-- 2014.10.01 EOWP-684 デザイン改修 広告欄の位置変更の為、移動 pr_text -->
+<!-- ログインドロップダウン
+–––––––––––––––––––––––––––––––––––––––––––––––-->
+<script type="text/javascript">
+$(function(){
+    $('li#log').hover(function(){
+        $("ul.login_menu:not(:animated)", this).slideDown('slow');
+        $('li#log').css('height','69px');
+    }, function(){
+        $("ul.login_menu", this).slideUp('slow');
+        $('li#log').css('height','');
+    });
+});
+</script>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TKK8PX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TKK8PX');</script>
+<!-- End Google Tag Manager -->
+		<div id="AreaBody">
+			<noscript>
+				<div class="alertmsg">
+					ご利用のブラウザは JavaScript が無効に設定されています。<br />
+					お手数ですが、ブラウザの JavaScript を有効にして再度アクセスしてください。
+				</div>
+			</noscript>
+
+			<form id="f1" name="f1" method="" action="">
+				<input name="q" type="hidden" value="" />
+				<input name="ie" type="hidden" value="UTF-8" />
+				<input name="pg" type="hidden" value="1" />
+				<input name="dk" type="hidden" value="EJ" />
+				<input name="fn" type="hidden" value="" />
+			</form>
+
+			<!-- ▲ 英辞郎ヘッダ ▲ -->
+			<main class="contents">
+				<!-- <div class="wrap"> -->
+					<!-- <section id="main"> -->
+						<div id="AreaUpperLeft">
+							<div id="AreaUpperLeftContainer">
+								<div id="AreaUpperLeftInner">
+									<div id="resultsArea">
+										<div id="resultsList"class="mr_0">
+											<div class="wrap-inner">
+											<div class="contents-wide">
+											<h1 class="ttl-01">環境設定</h1>
+											<ul class="tab-01">
+												<li><p class="is-current">機能設定の変更</p></li>
+												<li><a href="./setting2.html">表示設定の変更</a></li>
+											  </ul>
+												<div class="section-01">
+													<div id="beforeSettingMessage">
+														<!-- ▼ 設定変更前 ▼ -->
+														<p class="pgh-01">
+															『英辞郎 on the WEB』の検索結果ページの読みがな表示のオン・オフの設定を変更したり、ダブルクリック検索の参照先のページの表示ウィンドウの変更をするなどの機能面の設定を変更できます。<br />
+														</p>
+														<!-- ▲ 設定変更前▲ -->
+													</div>
+													
+													<p class="pgh-01">
+													お好みの設定をお選びいただき、「変更を保存する」ボタンをクリックしてください。<br />
+													変更の結果は、次回以降のご利用の際に有効となります。<br />
+													</p>
+												</div><!-- /.section-01 -->
+												<div class="section-01">
+												<div class="box-p01">
+												<table class="setting-tbl-01">
+													<form name="fmConfig" action="" method="">
+														<tr>
+															<th>読みがな <a href="#1"><span class="pgh-s01">(1)</span></a></th>
+															<td><input id="ym0" type="radio" name="ym" value="0" checked /><label for="ym0">非表示（OFF）</label>
+																<input id="ym1" type="radio" name="ym" value="1" /><label for="ym1">表示（ON）</label>
+															</td>
+														</tr>
+														<tr>
+															<th>ダブルクリック検索 <a href="#2"><span class="pgh-s01">(2)</span></a></th>
+															<td><input id="wd0" type="radio" name="wd" value="0" /><label for="wd0">無効（OFF）</label>
+																<input id="wd1" type="radio" name="wd" value="1" checked /><label for="wd1">有効（ON）</label>
+															</td>
+														</tr>
+														<tr>
+															<th >参照ページのウィンドウ <a href="#3"><span class="pgh-s01">(3)</span></a></th>
+															<td><ul>
+																<li><input id="lw0" type="radio" name="lw" value="0" /><label for="lw0">同じウィンドウで開く</label></li>
+																<li><input id="lw1" type="radio" name="lw" value="1" checked /><label for="lw1">別のウィンドウで開く</label></li>
+																<li><input id="lw2" type="radio" name="lw" value="2" /><label for="lw2">常に新しいウィンドウで開く</label></li>
+															</ul></td>
+														</tr>
+														<tr >
+															<th >検索キーワード入力欄 <a href="#4"><span class="pgh-s01">(4)</span></a></th>
+															<td><ul>
+																<li><input id="kw0" type="radio" name="kw" value="0" checked /><label for="kw0">キーワードをそのまま残す</label></li>
+																<li><input id="kw1" type="radio" name="kw" value="1" /><label for="kw1">キーワード入力欄を空欄にする</label></li>
+																<li><input id="kw2" type="radio" name="kw" value="2" /><label for="kw2">キーワードが選択された状態にする</label></li>
+															</ul></td>
+														</tr>
+														<tr>
+															<th >キーワード入力補助 <a href="#5"><span class="pgh-s01">(5)</span></a></th>
+															<td>
+																<input id="is0" type="radio" name="is" value="0" checked /><label for="is0">無効（OFF）</label>
+																<input id="is1" type="radio" name="is" value="1" /><label for="is1">有効（ON）</label>
+															</td>
+														</tr>
+												</table>
+												</div><!-- /.box-01 -->
+														<ul class="list-a01">
+															<li>「初期設定を適用する」をクリックすると、各項目の標準設定が適用されます。それぞれの初期設定については、<a href="#descriptions">下記の説明</a>をご参照ください。</li>
+														</ul>
+												</div><!-- /.section-01 -->
+														<div class="btn-area">
+																<form name="" action="" method="">
+																		<input type="hidden" name="ym" value="0" />
+																		<input type="hidden" name="wd" value="1" />
+																		<input type="hidden" name="lw" value="1" />
+																		<input type="hidden" name="kw" value="0" />
+																		<input type="hidden" name="is" value="0" />
+																</form>
+																	<button class="btn-05" onclick="return window.alert('設定を保存しました。\n\n再度設定を変更するには、引き続きこのページで変更をおこない、「変更を保存する」ボタンをクリックしてください。'), defaultSetting() "><img src="/content/img/icon-return.svg" alt="初期設定を適用する"><span>初期設定を適用する</span></button>
+																
+																	<button class="btn-04" onclick="return window.alert('設定を保存しました。\n\n再度設定を変更するには、引き続きこのページで変更をおこない、「変更を保存する」ボタンをクリックしてください。'), saveSetting()"><img src="/content/img/icon-execute.svg" alt="変更を保存する"><span>変更を保存する</span></button>
+														</div><!-- /.btn-area -->
+													</form>
+											</div>
+											</div><!-- /.wrap-inner -->
+											<div class="wrap-inner">
+												<div class="contents-wide">
+													<div id="descriptions" class="section-01">
+														<div class="box-l02">
+															<h2 class="ttl-03">各設定の説明</h2>
+															<div class="section-01">
+																<h3 class="ttl-04"><a id="1"></a>1.読みがな</h3>
+																<p>このオプションが<em class="em-02">「表示」（ON）のとき、語義中の漢字の語彙に<em class="em-01">読みがな</em>が表示されます</em>（読みがなデータのない語彙もあります）。　<br />※ 英和検索時のみ対応</p>
+																<div class="box-ex01">初期設定 = 「非表示」（OFF）</div>
+															</div>
+															<div class="section-01">
+																<h3 class="ttl-04"><a id="2"></a>2.ダブルクリック検索</h3>
+																<p>このオプションが<em class="em-02">「有効」（ON）のとき、検索結果中の<em class="em-01">英単語をダブルクリック</em>すると、その単語で再検索</em>できます。</p>
+																<div class="box-ex01">初期設定 = 「有効」（ON）</div>
+															</div>
+															<div class="section-01">
+																<h3 class="ttl-04"><a id="3"></a>3.参照ページのウィンドウ</h3>
+																<p><em class="em-02">ダブルクリック検索を使ったとき、<em class="em-01">どのウィンドウで参照先のページを表示するか</em>を選択</em>できます。</p>
+																<div class="box-ex01">初期設定 = 「別のウィンドウで開く」</div>
+															</div>
+															<div class="section-01">
+																<h3 class="ttl-04"><a id="4"></a>4.検索キーワード入力欄</h3>
+																<p>初期設定では、検索結果ページ中の検索窓には、お調べになった検索キーワードがそのまま表示されます。この<em class="em-02">検索キーワードをクリアして<em class="em-01">検索キーワード入力欄を空の状態</em>に変更したり、<em class="em-01">検索キーワードを選択した状態</em>に変更できます。</em></p>
+																<div class="box-ex01">初期設定 = 「キーワードをそのまま残す」</div>
+															</div>
+															<div class="section-01">
+																<h3 class="ttl-04" ><a id="5"></a>5.キーワード入力補助</h3>
+																<p>このオプションが<em class="em-02">「有効」（ON）のとき、検索窓に文字を入力するたびにその文字列で始まる見出し語候補が更新されながら表示される機能をご利用いただけます。</em></p>
+																<div class="box-ex01">初期設定 = 「無効」（OFF）</div>
+															</div>
+														</div><!-- /.box -->
+														<ul class="list-i02 list-r02">
+																<li>機能設定の変更</li>
+																<li><a href="/setting2.html">表示設定の変更</a></li>
+														</ul>
+													</div><!-- /descriptions -->
+												</div><!-- /.contents-wide -->
+											</div> <!-- /wrap-inner -->
+										</div> <!-- /resultsList -->
+									</div> <!-- /resultsArea -->
+								</div> <!-- /AreaUpperLeftInnner -->
+							</div> <!-- /AreaUpperLeftContainer -->
+						</div><!-- /AreaUpperLeft -->
+					<!-- </section>/main -->
+				<!-- </div> /wrap -->
+			</main>
+			<!-- ▲ 本体上部（コンテンツ）：左 ▲ -->
+			<!-- ▼ 本体上部（広告）：右 ▼ -->
+			<!-- ▲ 本体上部（広告）：右 ▲ -->
+			<!-- ▼ フッタ ▼ -->
+			<br class="cl_l">
+		</div>
+
+<!-- EOW_SHOP-323 Footer -->
+<footer class="footer">
+    <div class="footer-btn">
+        <div class="wrap-inner">
+            <a href="#"><img src="/content/img/footer_icon-arr-2.svg" alt="ページの先頭に戻る"></a>
+        </div>
+    </div>
+    <div class="footer-top">
+        <div class="wrap-inner">
+            <div class="footer-top-1">
+                <div><a href="/"><img class="footer-logo" src="/content/img/lo_eow.svg" alt="英辞郎 on the WEB" title="英辞郎 on the WEB"></a></div>
+                <ul class="btn-store">
+                    <li><a target="_blank" href="https://apps.apple.com/app/apple-store/id365874160?pt=210463&ct=eow_top_app_store_link_2021_02&mt=8"><img src="/content/img/footer_btn-appstore.png" alt="App Store"></a></li>
+                    <li><a target="_blank" href="https://play.google.com/store/apps/details?id=jp.co.alc.eow&referrer=utm_source%3Deow_top%26utm_medium%3Dbanner%26utm_campaign%3Dandroid_app"><img src="/content/img/footer_btn-googleplay.png" alt="Google Play"></a></li>
+                </ul>
+            </div>
+            <div class="footer-top-2">
+                <div class="footer-menu">
+                    <dl>
+                        <dt>アルクグループ</dt>
+                        <dd>
+                            <a href="https://www.alc.co.jp/index.html?utm_source=EOW&amp;utm_medium=footer&amp;utm_campaign=eow_wwwtop" target="_blank">アルクのウェブサイト</a>
+                            <a href="https://shop.alc.co.jp/?utm_source=serp_pc&utm_medium=text&utm_campaign=EOWfooter">アルク通信講座</a>
+                            <a href="https://eowp.alc.co.jp/info/">英辞郎 on the WEB Pro</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>サイトのご利用について</dt>
+                        <dd>
+                            <a href="https://www.alc.co.jp/policy/other/#eowp" rel="nofollow">英辞郎 on the WEB 利用規約</a>
+                            <a href="https://www.alc.co.jp/policy/privacy/" rel="nofollow">プライバシーポリシー</a>
+                            <a href="https://www.alc.co.jp/policy/exoneration/" rel="nofollow">免責条項</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>お客様相談室</dt>
+                        <dd>
+                            <a href="https://eowp.alc.co.jp/info/business/">法人のお客様</a>
+                            <a href="https://www.alc.co.jp/inquiry/">お問い合わせ</a>
+                        </dd>
+                    </dl>
+                </div>
+                <ul class="btn-store">
+                    <li><a target="_blank" href="https://apps.apple.com/app/apple-store/id365874160?pt=210463&ct=eow_top_app_store_link_2021_02&mt=8"><img src="/content/img/footer_btn-appstore.png" alt="App Store"></a></li>
+                    <li><a target="_blank" href="https://play.google.com/store/apps/details?id=jp.co.alc.eow&referrer=utm_source%3Deow_top%26utm_medium%3Dbanner%26utm_campaign%3Dandroid_app"><img src="/content/img/footer_btn-googleplay.png" alt="Google Play"></a></li>
+                </ul>
+            </div>
+        </div><!-- /.wrap-inner -->
+    </div><!-- /.footer-top -->
+    <div class="footer-btm">
+        <div class="wrap-inner">
+            <ul class="btn-sns">
+                <li><a href="http://eowp.blogspot.jp/" target="_blank"><img src="/content/img/footer_icon-sns-blogspot.svg" alt="Blogspot"></a></li>
+                <li><a href="https://twitter.com/eow_alc" target="_blank"><img src="/content/img/footer_icon-sns-twitter.svg" alt="Twitter"></a></li>
+            </ul>
+            <div class="footer-copyright">Copyright © 2000-<span id="footer-copyright-year">2021</span> ALC PRESS INC. All Rights Reserved.</div>
+        </div><!-- /.wrap-inner -->
+    </div><!-- /.footer-btm -->
+</footer>
+<!-- End EOW_SHOP-323 Footer -->
+
+<!-- パネル 音声再生 -->
+<div id="js_p_onsei" style="display: none;">
+  <div class="bg_box"></div>
+  <div class="bg_box2">
+    <div id="js_p_onsei_modal" class="modal">
+      <div class="js_p_top">
+        <img src="/content/img/icon_eow_02.svg" class="js_p_img"/>
+        <div class="js_p_text" style="float: left;">音声再生は「英辞郎 on the WEB Pro」でご利用いただけます。</div>
+        <div class="js_p_alc">※アルクのIDをお持ちでない方は、下記の新規登録（無料）からお進みください。</div>
+        <div class="js_p_close">
+          <img src="/content/img/close.png">
+        </div>
+      </div>
+      <div class="js_p_bottom">
+        <div class="js_p_b_img">
+          <div class="onsei_btn" style="margin-top: 30px;">
+            <img src="/content/img/onsei_btn.png" style="margin-left: 20px;width: 100px;float: left;"/>
+            <p style="float: left;margin-top: 5px;">から再生できます。</p>
+          </div>
+          <img src="/content/img/onsei.png"/>
+        </div>
+        <div class="js_p_b_login">
+          <div class="js_p_b_text">
+            <span>「英辞郎 on the WEB Pro」「英辞郎 on the WEB Pro Lite」は、アルクのメールアドレスIDでお使いいただけます。</span>
+          </div>
+          <div class="js_p_b_input">
+            <div style="text-align: center;margin: 10px 0;">
+            	<a href="https://eowpf.alc.co.jp/top">
+              	<input id="submit_button" name="login" type="submit" value="ログイン" class="js_btn_login">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- パネル 検索履歴 -->
+<div id="js_p_history" style="display: none;">
+  <div class="bg_box"></div>
+  <div class="bg_box2">
+    <div id="js_p_history_modal" class="modal">
+      <div class="js_p_top">
+        <img src="/content/img/icon_eow_03.svg" class="js_p_img"/>
+        <div class="js_p_text" style="float: left;">検索履歴は「英辞郎 on the WEB Pro」でご利用いただけます。</div>
+        <div class="js_p_alc">※アルクのIDをお持ちでない方は、下記の新規登録（無料）からお進みください。</div>
+        <div class="js_p_close">
+          <img src="/content/img/close.png">
+        </div>
+      </div>
+      <div class="js_p_bottom">
+        <div class="js_p_b_img">
+          <img src="/content/img/rireki.png"/>
+        </div>
+        <div class="js_p_b_login">
+          <div class="js_p_b_text">
+            <span>「英辞郎 on the WEB Pro」「英辞郎 on the WEB Pro Lite」は、アルクのメールアドレスIDでお使いいただけます。</span>
+          </div>
+          <div class="js_p_b_input">
+            <div style="text-align: center;margin: 10px 0;">
+            	<a href="https://eowpf.alc.co.jp/top">
+              	<input id="submit_button" name="login" type="submit" value="ログイン" class="js_btn_login">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- パネル 単語帳 -->
+<div id="js_p_wordbook" style="display: none;">
+  <div class="bg_box"></div>
+  <div class="bg_box2">
+    <div id="js_p_wordbook_modal" class="modal">
+      <div class="js_p_top">
+        <img src="/content/img/icon_eow_01.svg" class="js_p_img"/>
+        <div class="js_p_text" style="float: left;">単語帳は「英辞郎 on the WEB Pro」でご利用いただけます。</div>
+        <div class="js_p_alc">※アルクのIDをお持ちでない方は、下記の新規登録（無料）からお進みください。</div>
+        <div class="js_p_close">
+          <img src="/content/img/close.png">
+        </div>
+      </div>
+      <div class="js_p_bottom">
+        <div class="js_p_b_img">
+          <img src="/content/img/tango.png"/>
+        </div>
+        <div class="js_p_b_login">
+          <div class="js_p_b_text">
+            <span>「英辞郎 on the WEB Pro」「英辞郎 on the WEB Pro Lite」は、アルクのメールアドレスIDでお使いいただけます。</span>
+          </div>
+          <div class="js_p_b_input">
+            <div style="text-align: center;margin: 10px 0;">
+            	<a href="https://eowpf.alc.co.jp/top">
+              	<input id="submit_button" name="login" type="submit" value="ログイン" class="js_btn_login">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+	</body>
+</html>

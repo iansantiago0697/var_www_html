@@ -1,0 +1,121 @@
+@charset "UTF-8";
+//======================================================================================================================
+
+html{
+}
+
+body{
+	font:17px 游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,helvetica, "Yu Gothic", YuGothic,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',メイリオ,Meiryo,serif;
+	color: $Black-1;
+	-webkit-text-size-adjust: 100%;
+}
+
+a{
+	text-decoration: none;
+	&:hover{
+	}
+
+}
+
+
+img{
+	max-width: 100%;
+	height:auto;
+}
+table{
+	max-width: 100%;
+}
+
+
+
+/* = Selected Text
+----------------------------------------------- */
+::selection {
+	background:$colorLink; /* Safari */
+	color:#fff;
+}
+
+::-moz-selection {
+	background:$colorLink; /* Firefox */
+	color:#fff;
+}
+
+img{
+	max-width: 100%;
+	height:auto;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.sp{
+	display: none;
+	@include media(sp) {
+		display: block;
+	}
+}
+@include media(sp) {
+	.pc{
+		display: none !important;
+	}
+}
+
+
+//header-------------------------------------------------------------------------------------
+.header{
+	.headerCont{
+		@extend %contWidth;
+		@extend %cf;
+	}
+	.logo{}
+}
+
+//navi-------------------------------------------------------------------------------------
+.navi{
+}
+
+//contents-------------------------------------------------------------------------------------
+.contents{
+    @extend %contWidth;
+    @extend %cf;
+
+}
+
+
+
+
+//pagetop-------------------------------------------------------------------------------------
+.pagetop{
+}
+
+//footer-------------------------------------------------------------------------------------
+.footer{
+    background:#4B4B4B;
+    text-align: center;
+    color:#fff;
+    padding:60px 0;
+    font-size: 17px;
+    .copy{
+        margin-top: 10px;
+    }
+}
+
+//social-------------------------------------------------------------------------------------
+.social{
+	position: relative;
+	float:right;
+	margin:22px 0 0;
+	ul{
+		li{
+			float: left;
+			width: 100px;
+			*{
+				line-height:1;
+			}
+		}
+	}
+}

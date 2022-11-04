@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="//www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Language" content="ja" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="cache-control" content="no-cache, must-revalidate" />
+<META NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW" />
+<META NAME="ROBOTS" CONTENT="NOARCHIVE" />
+<meta name="keywords" content="英辞郎 on the WEB, Space ALC, スペースアルク, オンライン英和辞書, オンライン和英辞書, えいじろう" />
+<meta name="description" content="語学学習のスペースアルク（Space ALC）がお届けする進化するオンライン英和・和英辞書『英辞郎（えいじろう） on the WEB』。「英次郎」、「英二郎」と綴られることもあります。" />
+<!-- ▼ CSS ▼ -->
+<link href="/content/css/eow.css?1" rel="stylesheet" type="text/css" />
+<!-- ▼ Footer ▼ -->
+<script type="text/javascript" language="JavaScript" src="/content/js/eow_footer.js" charset="UTF-8"></script>
+<!-- ▼ Infospace ▼ -->
+<script type="text/javascript" language="JavaScript" src="/content/js/sa/infospace.js" charset="UTF-8"></script>
+<!-- ▼ Alert ▼ -->
+<script type="text/javascript" language="JavaScript" src="/content/js/alert.js" charset="UTF-8"></script>
+<!-- ▼ Alcom ▼ -->
+<script type="text/javascript" language="JavaScript" src="/content/js/alcom/ad_alcom.js" charset="UTF-8"></script>
+<!-- ▼ Search Logic ▼ -->
+<script type="text/javascript" language="JavaScript" src="/content/js/eow_search.js" charset="UTF-8"></script>
+<!-- ▼ VOA ▼ -->
+<script type="text/javascript" language="JavaScript" src="/content/js/data/voa_content.js" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript" src="/content/js/voa.js" charset="UTF-8"></script>
+<!-- ▼ Hitomedia ▼ -->
+<script type="text/javascript" language="JavaScript" src="//t1.hitomedia.jp/GT/js/cm/ad_js/GTA-2-15/_gt_include.js" charset="shift-JIS"></script>
+<!-- ▼ Sponsor Sites Retrieval ▼ -->
+<script type="text/javascript" language="JavaScript" src="//eowimg.alc.co.jp/js_flat/?source=alc_jp_cat_ctxt&ctxtId=eow&outputCharEnc=utf8&type=eow&maxCount=8&ctxtUrl=http%3A%2F%2Feow.alc.co.jp%2FVoice+of+America%2FUTF-8%2F&ref="></script>
+<!-- ▼ Sponsor Sites Display ▼ -->
+<script type="text/javascript" language="JavaScript" src="/content/js/mc.js" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript">
+<!--
+	/*@cc_on
+		if (@_jscript_version < 9) {
+			var _d = document;
+			eval("var document = _d");
+		}
+	@*/
+	CONTEXT_PATH = '/';
+	_gta = "GTA-2-9";
+	IMG_PATH = "/content/img/";
+	
+	npg = 1;
+	var params = getRequestParameter();
+	if (!!params["npg"]) {
+		if (isNum(params["npg"])) npg = parseInt(params["npg"]);
+	}
+	if (npg <= 0) npg = 1;
+	var exp = 0;
+	if (!!params["exp"]) {
+		exp =params["exp"];
+	}
+	if (exp != 0) {
+		document.write("<script type='text/javascript' language='JavaScript' src='/content/js/data/" + exp + ".js' charset='UTF-8'><\/script>");
+	}
+	css_load('eowimg.alc.co.jp','.alc.co.jp','eowuser','60*60*24*30');
+//-->
+</script>
+
+<title>VOA pick up! ：英辞郎 on the WEB：スペースアルク</title>
+
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+
+			_gaq.push(['_setAccount', 'UA-1590792-9']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+
+</head>
+<body  bgcolor="#FFFFFF" onLoad="javascript:label_icon();">
+<!-- interest_match_relevant_zone_start -->
+<span style="display: none">
+	語学学習のスペースアルク（SPACE ALC）がお届けする進化するオンライン英和・和英辞書『英辞郎 on the WEB』。大学生やビジネスパースンから翻訳家、医療・製薬業関係者の方々まで幅広くお使いいただいております。
+</span>
+<!-- interest_match_relevant_zone_end -->
+	<div id="AreaBody">
+		<noscript>
+			<div class="alertmsg">
+				ご利用のブラウザは JavaScript が無効に設定されています。<br />
+				お手数ですが、ブラウザの JavaScript を有効にして再度アクセスしてください。
+			</div>
+		</noscript>
+		<!-- ▼ 本体ヘッダ ▼ -->
+		<div class="clearfix">
+			<div id="AreaHeaderLeft">
+				<div id="logo">
+					<a href="http://www.alc.co.jp/index.html"><img src="/content/img/alc_logo.gif" width="147" height="43" border="0" alt="スペースアルク～SPACE ALC"></a>
+				</div>
+				<div id="shop">
+					<a href="//home.alc.co.jp/db/owa/sp_sacd_redir_pt?code=c_eow_shop02" target="_blank"><img src="/content/img/online_shop.gif" height="28" width="147" border="0" alt="ALC Online Shop" /></a>
+				</div>
+			</div>
+			<div>
+				<!--north banner表示-->
+				<!-- -------------- Advertising.com ------ SPACE ALC EIJIRO on the WEB - SPACE ALC EIJIRO ATF 728x90 - 862904 - (728x90) ------------ -->
+				<script type='text/javascript'>
+					var ACE_AR = {site: '862904', size: '728090', Region: '3'};
+				</script>
+				<script type='text/javascript' SRC='//uac.advertising.com/wrapper/aceUAC.js'></script>
+				<noscript>
+					<iframe src="//ace.advertising.com/site=862904/size=728090/bnum=52055251/tags=1/rich=0/optn=1/ns=1" scrolling="no" width="728" height="90" frameborder="0" marginheight="0" marginwidth="0" title="Advertisement">
+					</iframe>
+				</noscript>
+				<!-- ---------- Copyright 2009, Advertising.com ---------- -->
+			</div>
+		</div>
+		<!-- ▲ 本体ヘッダ ▲ -->
+		
+		<br class="cl_l">
+		<div class="bg_i"></div>
+
+		<!-- ▼ 本体上部（コンテンツ）：左 ▼ -->
+		<div id="AreaUpperLeft">
+			<div id="rightspace"><!-- --></div>
+			<div id="AreaUpperLeftContainer">
+				<div id="AreaUpperLeftInner">
+
+				<!-- ▼ グローバルナビ ▼ -->
+				<div id="gnav">
+					<!--div id="gnav_main"-->
+						<div class="inner clearfix">
+							<ul>
+								<li><a href="http://www.alc.co.jp/" target="_self">HOME</a></li>
+								<li><a href="//home.alc.co.jp/db/owa/sp_sacd_redir_pt?code=c_eow_taiken" target="_self">通信講座</a></li>
+								<li><a href="//home.alc.co.jp/db/owa/sp_sacd_redir_pt?code=c_eow_publication" target="_self">出版物</a></li>
+								<li class="w110"><a href="http://www.alc.co.jp/mmcenter/index.html" target="_self">メールマガジン</a></li>
+								<li><a href="//home.alc.co.jp/db/owa/ev_lst" target="_self">セミナー</a></li>
+								<li class="no_separator"><a href="http://www.alc.co.jp/member/index.html" target="_blank">会員専用</a></li>
+							</ul>
+						</div>
+					<!--/div-->
+				</div>
+				<!-- ▲ グローバルナビ ▲ -->
+				<form id="f1" name="f1" method="" action="">
+					<input name="q" type="hidden" value="" />
+					<input name="ie" type="hidden" value="UTF-8" />
+				 	<input name="pg" type="hidden" value="1" />
+					<input name="dk" type="hidden" value="EJ" />
+				</form>
+				<!-- ▼ 英辞郎ヘッダ ▼ -->
+				<div id="search_area" class="clearfix">
+					<ul id="tabhead" class="clearfix">
+						<li id="head-tab0" class="on"><a id="anchor-tab0" href="#" onclick="tabDisplay(0); return false">英辞郎 on the WEB</a></li>
+						<li id="head-tab1"><a id="anchor-tab1" href="#" onclick="tabDisplay(1); return false">goo</a></li>
+						<li id="head-tab2"><a id="anchor-tab2" href="#" onclick="tabDisplay(2); return false">ショップ検索</a></li>
+					</ul>
+					<div id="tabbody">
+						<div id="body-tab0" class="current search_box">
+							<div class="inner">
+								<div class="inner2">
+									<form id="fm1" name="fm1" onSubmit="return goF2('fm1')">
+										<input id="q" name="q" autocomplete="off" value="" size="35" class="s_txt" accesskey="e" type="text" />
+										<input value="英和・和英" onclick="return goF1('fm1')" class="btn" type="button" />
+										<input value="クリア" onclick="javascript:wordClear('fm1')" class="btn" type="button" />
+										<a class="link" href="http:http://www.eijiro.jp/" target="_blank">データ提供:EDP</a>
+										<div id="suggest" style='display:none'></div>
+										<!-- RSS / Twitter -->
+										<nobr>
+											<a href="//eowp.blogspot.com/" title="英辞郎 on the WEB Team Blog（更新情報）" target="_blank"><img class="icon" src="/content/img/blogger.png" alt="英辞郎 on the WEB Team Blog（更新情報）" width="18" height="17" border="0"/></a>
+											<a href="https://twitter.com/eow_alc" title="『スペースアルク』のTwitterを見る" target="_blank"><img class="icon" src="/content/img/icon_twitter.png" alt="『スペースアルク』のTwitterを見る" border="0" /></a>
+											<a href="/setting.html" title="機能や表示の設定"><img class="icon" src="/content/img/icon_setting.gif" alt="機能や表示の設定" border="0" /></a>
+											<a href="/content/help/" title="『英辞郎 on the WEB』ヘルプ" target="_blank"><img class="icon" src="/content/img/icon_help.gif" alt="『英辞郎 on the WEB』ヘルプ" border="0" /></a>
+										</nobr>
+									</form>
+								</div>
+							</div>
+							<!--eowp--><div class="pro_btn"><a href="https://eowp.alc.co.jp/login" target="_blank"><img src="/content/img/s_p_eijiro_r_login.jpg" alt="Pro版ログイン" width="88" height="18" border="0" /></a></div>
+						</div>
+						<div id="body-tab1" class="search_box">
+							<div class="inner">
+								<div class="inner2">
+									<form name="WEBSEARCH" method="get" action="//partners.search.goo.ne.jp/alc/web.jsp">
+										<div class="clearfix">
+											<input type="text" name="MT" size=35 maxlength=255 class="s_txt left mr_05" value="" />
+											<div class="left mr_05 mt_05">
+												<input type="radio" name="RD" value="" class="radio" />
+												<span>WWW</span>
+												<input type="radio" name="RD" value="DM" checked="checked" class="radio" />
+												<span>スペースアルク</span>
+											</div>
+											<input type="image" src="/content/img/s_goo_btn_01.jpg" name="btnG" alt="検索" class="left ml_05" />
+										</div>
+										<input type="hidden" name="IE" value="UTF-8" />
+										<input type="hidden" name="from" value="alc" />
+										<input type=hidden name="Domain" value="alc.co.jp" />
+									</form>
+								</div>
+							</div>
+						</div>
+						<div id="body-tab2" class="search_box">
+							<div class="inner">
+								<div class="inner2">
+									<form id="form1" name="fms1" method="post" action="//shop.alc.co.jp/sp" onSubmit="javascript:gofms1()" target="_blank" Accept-charset="UTF-8">
+									<div class="clearfix">
+										<input type="text" name="SEARCHTXT" size=35 maxlength=255 class="s_txt left mr_05" value="" />
+										<input name="p1" type="hidden" value="search" />
+										<input name="p2" type="hidden" value="exec" />
+										<input name="p3" type="hidden" value="-" />
+										<input name="p4" type="hidden" value="-" />
+										<input name="MATERIAL_DISP_NAME" type="hidden" value="" />
+										<input name="AUTH_NAME" type="hidden" value="" />
+										<input name="rfcd" type="hidden" value="SA_c_home_ssearch" />
+										<div class="left mr_05 mt_05">
+											<input type="radio" name="searchkey" value="1" checked="checked" class="radio" />
+											<span>商品名</span>
+											<input type="radio" name="searchkey" value="2" class="radio" />
+											<span>著者名</span>
+										</div>
+										<input value="検索" class="left ml_05" onclick="javascript:gofms1()" type="button" name="btnG" />
+									</div>
+									</form>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- ▲ 英辞郎ヘッダ ▲ -->
+		
+			<div id="resultsArea">
+				<!-- ▼検索文字列 -->
+				<table width="100%" border="0" cellspacing="0" cellpadding="1" class="mt_10">
+					<tr>
+						<td>
+						</td>
+					</tr>
+				</table>
+				<!-- ▼ローカルナビ（上部） -->
+				<table width="550" border="0" cellspacing="0" cellpadding="0" id="naviArea">
+					<tr>
+						<td>
+						<!-- ▼ ページナビ ▼ -->
+						<!-- ▲ ページナビ ▲ -->
+						</td>
+					</tr>
+				</table>
+				<div align="right">
+					<span class="smallredfont">＊ データの転載は禁じられています。&nbsp;&nbsp;</span>
+				</div>
+				<!-- ▲end: ローカルナビ -->
+				<!-- ▼検索補助 -->
+				<div class="sas">
+				</div>
+				<!-- ▲検索補助 -->
+				<div id="resultsList" class="mr_10" ondblclick="seow()">
+					<script type="text/javascript" language="JavaScript">
+					<!--
+						voaText_disp();
+					// --->
+					</script>
+				</div>
+				<div align="right" class="mt_20">
+					<span class="smallredfont">＊ データの転載は禁じられています。&nbsp;&nbsp;</span>
+				</div>
+						<!-- ▼ ページナビ ▼ -->
+						<!-- ▲ ページナビ ▲ -->
+				<br>
+			</div>
+			<br />
+			<!-- ▼ Overture Sponsor Site ▼ -->
+
+			<!-- ▲ Overture Sponsor Site ▲ -->
+			<!-- ▼ Overture Hotspot ▼ -->
+			<script type="text/javascript">
+			<!--
+				hs_disp('l');
+			// -->
+			</script>
+			<!-- ▲ Overture Hotspot ▲ -->
+				</div>
+			</div>			
+		</div>
+		<!-- ▲ 本体上部（コンテンツ）：左 ▲ -->
+		<!-- ▼ 本体上部（広告）：右 ▼ -->
+		<div id="AreaUpperRight">
+
+			<!-- ▼ Infospace ▼ -->
+			<div class="mb_3">
+				<script type="text/javascript">
+				<!--
+					infospace();
+				//-->
+				</script>
+			</div>
+			<!-- ▲ Infospace ▲ -->
+
+			<!-- ▼ Hitomedia（Rectangle） ▼ -->
+			<div class="mb_3">
+				<script type="text/javascript">
+				<!--
+					__gt_ad_banner("rect");
+				//-->
+				</script>
+			</div>
+			<!-- ▲ Hitomedia（Rectangle） ▲ -->
+			
+			<!-- ▼ Overture Hotspot / Hotspot + IM ▼ -->
+			<script type="text/javascript">
+			<!--
+				ov_cmhs();
+			// -->
+			</script>
+			<!-- ▲ Overture Hotspot / Hotspot + IM ▲ -->
+			<!-- ▼ Ad.com 広告（Rectangle） ▼ -->
+			<div class="mb_3">
+			<!-- -------------- Advertising.com ------------------ -->
+			<script type='text/javascript'>
+			var ACE_AR = {site: '782493', size: '300250', Region: '3'};
+			</script>
+			<script type='text/javascript' SRC='//uac.advertising.com/wrapper/aceUAC.js'></script>
+			<noscript>
+			<iframe src="//ace.advertising.com/site=782493/size=300250/bnum=59520896/tags=1/rich=0/optn=1/ns=1" scrolling="no" width="300" height="250" frameborder="0" marginheight="0" marginwidth="0" title="Advertisement">
+			</iframe>
+			</noscript>
+			<!-- ---------- Copyright 2009, Advertising.com ---------- -->
+			</div>
+			<!-- ▲ Ad.com 広告（Rectangle） ▲ -->
+
+			<!-- ▼ mc（Rectangle） ▼ -->
+			<script type="text/javascript">
+			<!--
+				spd_disp_r();
+			// -->
+			</script>
+			<noscript>
+				<a target="_blank" href="//ds.advg.jp/adpds_deliver/p/r?adpds_site=alcad0505&adpds_frame=eow_300_250">
+				<img src="//ds.advg.jp/adpds_deliver/p/img?adpds_site=alcad0505&adpds_frame=eow_300_250" border=0></a>
+			</noscript>
+			<!-- ▲ mc（Rectangle） ▲ -->
+
+		</div>
+		<!-- ▲ 本体上部（広告）：右 ▲ -->
+		<br class="cl_l">
+		
+		<!-- ▼ 本体下部（UI）：左 ▼ -->
+		<div id="AreaLowerLeft">
+			<div id="AreaLowerLeftContainer">
+				<div id="AreaLowerLeftInner">
+				<!--▼検索フォーム（下部）：CSS -->
+					<div id="searchAreaBottom">
+						<div id="searchBodyBottom">
+							<div class="innerBottom1"><div class="doctor"><div class="searchBg">
+								<div class="innerBottom2">
+									<form id="fm2" name="fm2" onSubmit="return goF2('fm2')">
+										<input name="q" value="" size="35" type="text" class="s_txt">
+										<input value="英和・和英" onclick="return goF1('fm2')" type="button" class="btn" />
+										<input value="クリア" onclick="javascript:wordClear('fm2')" type="button" class="btn" />
+										<a class="link" href="http://www.eijiro.jp/" target="_blank">データ提供:EDP</a>
+										<div id="suggest" style='display:none'></div>
+										<!-- RSS / Twitter -->
+										<nobr>
+											<a href="//eowp.blogspot.com/" title="英辞郎 on the WEB Team Blog（更新情報）" target="_blank"><img class="icon" src="/content/img/blogger.png" alt="英辞郎 on the WEB Team Blog（更新情報）" width="18" height="17" border="0"/></a>
+											<a href="https://twitter.com/eow_alc" title="『スペースアルク』のTwitterを見る" target="_blank"><img class="icon" src="/content/img/icon_twitter.png" alt="『スペースアルク』のTwitterを見る" border="0" /></a>
+											<a href="/setting.html" title="機能や表示の設定"><img class="icon" src="/content/img/icon_setting.gif" alt="機能や表示の設定" border="0" /></a>
+											<a href="/content/help/" title="『英辞郎 on the WEB』ヘルプ" target="_blank"><img class="icon" src="/content/img/icon_help.gif" alt="『英辞郎 on the WEB』ヘルプ" border="0" /></a>
+										</nobr>
+									</form>
+								</div>
+							</div></div></div>
+						</div>
+					</div>
+				<!-- ▲ 検索フォーム（下部）：CSS ▲ -->
+				</div>
+			</div>
+
+			<!-- ▼ ALCOM ▼ -->
+			<div id="alcom">
+				<script type="text/javascript">
+					disp_alcom_ad("footer");
+				</script>
+			</div>
+			<!-- ▲ ALCOM ▲ -->
+
+		</div>
+		<!-- ▲ 本体下部（UI）：左 ▲ -->
+			
+		<!-- ▼ フッタ ▼ -->
+		<br class="cl_l">
+		<div id="AreaFooter">
+			<!-- ▼フッタ書き出し▼ -->
+			<script type="text/javascript">
+			<!--
+				document.write(footer);
+			// -->
+			</script>
+			<!-- ▲end: フッタ書き出し▲ -->
+		</div>
+		<!-- ▲ フッタ ▲ -->
+	</div>
+	
+	<script type="text/javascript">
+	<!--
+		__gt_impression();
+	//-->
+	</script>
+</body>
+</html>

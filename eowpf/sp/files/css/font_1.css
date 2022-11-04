@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 大・最大 */
+
+#title, #result {
+	font-size: 125%;
+	line-height: 125%;
+}

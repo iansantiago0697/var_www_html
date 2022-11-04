@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+gotoProm.html
+</title>
+<script>
+var type = location.search.match(/type=([^&]+)/), loc='/';
+if(type) {
+	type = type[1];
+	switch(type) {
+		case 'chrome_extension':
+			loc = 'https://chrome.google.com/webstore/detail/oonalfdoahlmjaoloddjenihohbfodme';
+			break;
+		case 'chrome_application':
+			loc = 'https://chrome.google.com/webstore/detail/odncdkhnnoclkbomkbflglagdibfeede';
+			break;
+		default:
+			break;
+	}
+}
+
+location.href = loc;
+
+document.onload = function() {
+	document.body.innerHTML = '<div>Redirecting to ' + loc + ' ..';
+};
+</script>
+</head>
+<body>
+</body>
+</html>

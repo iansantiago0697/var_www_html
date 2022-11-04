@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="refresh" content="0;URL=https://eowp.alc.co.jp/guide/advanced.html">
+<title>高度な検索：ご利用ガイド：「英辞郎 on the WEB Pro お試し版」</title>
+<link href="/content/css/eowpf.css" rel="stylesheet" type="text/css" />
+<link href="/guide/css/import_help.css" rel="stylesheet" type="text/css" />
+<script charset="utf-8" type="text/javascript" src="/content/js/eowpf_footer.js"></script>
+<script charset="utf-8" type="text/javascript" src="/guide/js/prototype.js"></script>
+<script charset="utf-8" type="text/javascript" src="/guide/js/rollover.js"></script>
+<!--[if lte IE 8]><link href="/content/css/layout_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1590792-63', 'auto');
+  ga('send', 'pageview');
+
+</script></head>
+<body class="js_ej">
+<div id="ie6fix" class="help">
+  <div id="wrapper"><a name="top" id="top" target="_blank"></a>
+    <div id="search" class="inner">
+      <div id="header">
+        <div id="logo" class="logo"><a href="/"><img src="/content/img/logo.png" alt="「英辞郎 on the WEB Pro お試し版」" width="268" title="「英辞郎 on the WEB Pro お試し版」" /></a></div>
+        <h1><a href="/guide/index.html"><img src="/guide/images/h1.gif" alt="「英辞郎 on the WEB Pro お試し版」　ご利用ガイド" width="213" height="34" /></a></h1>
+      </div>
+      <div id="content">
+        <h2><img src="/guide/images/h2_advanced.gif" alt="高度な検索" width="850" height="45" /></h2>
+        <p class="lead large">「英辞郎 on the WEB Pro」では、検索演算子を使って高度な検索ができます。<br />
+「<a href="/guide/detail.html">基本的な検索（詳説）</a>」でご紹介した、複数の検索キーワードをスペースで分割するというのもこのひとつです。</p>
+        <ol id="mokuji">
+          <li><a href="#1">1．AND 検索</a></li>
+          <li><a href="#2">2．OR 検索</a></li>
+          <li><a href="#3">3．NOT 検索</a></li>
+          <li><a href="#4">4．フレーズ検索</a></li>
+          <li><a href="#5">5．優先順位指定検索</a></li>
+          <li><a href="#6">6．単語間数指定検索</a></li>
+          <li><a href="#7">7．変化形検索</a></li>
+        </ol>
+
+        <h3 id="1" name="1">AND 検索：<span style="font-size: 90%;">「◯◯◯」と「△△△」を両方とも見出し語に含むものを検索する</span></h3>
+        <p class="text"><span class="redtext"><strong>◯◯◯ △△△</strong></span> と検索してください（複数の検索キーワードをスペースで区切る）<br /><br />
+		例： 
+		</p>
+		<ul class="sample">
+			<li><a href="/search?q=dog+cat" target="_blank"><span class="redtext" style="font-weight:bold">dog cat</span></a> と検索 ⇒<strong>「dog」と「cat」を両方含む</strong>もの</li>
+			<li><a href="/search?q=dog+%E7%8C%" target="_blank"><span class="redtext" style="font-weight:bold">dog 猫</span></a> と検索 ⇒<strong>英和データの見出し語で「dog」を含み、その定義部（和訳など）に「猫」を含む</strong>もの<br />
+			※ 英語・日本語を混在して指定した場合は、先頭の検索語が英語の場合、英語は見出し語から・日本語は和訳から検索します（英和データからの検索になります）。</li>	
+			<li><a href="/search?q=%E7%8C%+dog" target="_blank"><span class="redtext" style="font-weight:bold">猫 dog</span></a> と検索 ⇒<strong>和英データの見出し語で「猫」を含み、その定義部（英訳など）に「dog」を含む</strong>もの<br />
+			※ 英語・日本語を混在して指定した場合は、先頭の検索語が日本語の場合、日本語は見出し語から・英語は英訳から検索します（和英データからの検索になります）</li>	
+			<div class="memo">
+				<p><strong>Memo：</strong>「英語 日本語」と「日本語 英語」の検索結果の違いは下記の例でご確認いただくとわかりやすくなっています。<br />
+				・「日本語 英語」での検索例　⇒　<strong><a href="/search?q=football+%E9%81%B8%E6%89%8B" target="_blank">football 選手</a></strong><br />
+				・「英語 日本語」での検索例　⇒　<strong><a href="/search?q=%E9%81%B8%E6%89%8B+football" target="_blank">選手 football</a></strong></p>
+			</div>
+		</ul>
+		<dl class="joho_utilities">
+		  <dt>関連情報（英辞郎 on the WEB）</dt>
+		  <dd><a href="https://eow.alc.co.jp/help/tips/tip002.html" target="_blank">【Basic】スペース区切りで AND 検索！ </a></dd>
+		  <dd> <a href="https://eow.alc.co.jp/help/tips/tip003.html" target="_blank">【Advanced】AND 検索大活用！「diet 国会」？</a></dd>
+		  <dd><a href="https://eow.alc.co.jp/help/tips/tip006.html" target="_blank">【Advanced】国際 社会 vs 社会 国際：複数のキーワードでの検索結果の表示順</a></dd>
+		</dl>
+        <div class="totop-help"><a href="#top">▲ページトップへ</a></div>
+
+
+         <h3 id="2" name="2">OR 検索：<span style="font-size: 90%;">「◯◯◯」と「△△△」のどちらかを含む見出し語を検索する</span></h3>
+        <p class="text"><span class="redtext"><strong>◯◯◯ | △△△</strong></span> と検索してください（複数の検索キーワードを「|」［パイプと呼ばれる記号］で区切る）<br />
+        ※「|」の両側にスペースを入れても入れなくても、どちらでも検索できます<br /><br />
+		例： 
+		</p>
+		<ul class="sample">
+			<li><a href="/search?q=dog|cat" target="_blank"><span class="redtext" style="font-weight:bold">dog | cat</span></a> と検索 ⇒<strong>「dog」と「cat」のどちらかを含む</strong>もの</li>
+		</ul>
+		<dl class="joho_utilities">
+		  <dt>関連情報（英辞郎 on the WEB）</dt>
+		  <dd><a href="https://eow.alc.co.jp/help/tips/tip007.html" target="_blank">【Advanced】do (one's | your | his | her | its | our | their) best?</a></dd>
+		</dl>
+        <div class="totop-help"><a href="#top">▲ページトップへ</a></div>
+
+
+         <h3 id="3" name="3">NOT 検索：<span style="font-size: 90%;">「◯◯◯」を含み、「△△△」を含まないものを検索する</span></h3>
+        <p class="text"><span class="redtext"><strong>◯◯◯ -△△△</strong></span> と検索してください（検索条件から除外したい検索キーワードの前に「-」［ハイフン / マイナス記号］をつける）<br /><br />
+		例： 
+		</p>
+		<ul class="sample">
+			<li><a href="/search?q=dog+-cat" target="_blank"><span class="redtext" style="font-weight:bold">dog -cat</span></a> と検索 ⇒<strong>「dog」を含むが、「cat」を含まない</strong>もの</li>
+			<li><a href="/search?q=dog+-%E7%8A%AC" target="_blank"><span class="redtext" style="font-weight:bold">dog -犬</span></a> と検索 ⇒<strong>英和データの見出し語で「dog」を含み、その定義部（和訳など）に「犬」を含まない</strong>もの<br />
+			※ 英語・日本語を混在して指定した場合は、先頭の検索語が英語の場合、英語は見出し語から・日本語は和訳から検索します（英和データからの検索になります）。</li>	
+			<li><a href="/search?q=%E7%8A%AC+-dog" target="_blank"><span class="redtext" style="font-weight:bold">犬 -dog</span></a> と検索 ⇒<strong>和英データの見出し語で「犬」を含み、その定義部（英訳など）に「dog」を含まない</strong>もの<br />
+			※ 英語・日本語を混在して指定した場合は、先頭の検索語が日本語の場合、日本語は見出し語から・英語は英訳から検索します（和英データからの検索になります）</li>	
+		</ul>
+		<dl class="joho_utilities">
+		  <dt>関連情報（英辞郎 on the WEB）</dt>
+		  <dd><a href="https://eow.alc.co.jp/help/tips/tip015.html" target="_blank">【Basic】「◯◯◯を含まない」NOT 検索</a></dd>
+		</dl>
+        <div class="totop-help"><a href="#top">▲ページトップへ</a></div>
+
+
+         <h3 id="4" name="4">フレーズ検索：<span style="font-size: 90%;">「◯◯◯ △△△」を指定した通りの順番で含む見出し語を検索する</span></h3>
+        <p class="text"><span class="redtext"><strong>&ldquo;◯◯◯ △△△&rdquo;</strong></span> と検索してください（スペースで区切られた複数の検索キーワードを「" "」［引用符］で囲む）<br /><br />
+		例： 
+		</p>
+		<ul class="sample">
+			<li><a href="/search?q=%22dog%20house%22" target="_blank"><span class="redtext" style="font-weight:bold">&ldquo;dog house&rdquo;</span></a> と検索 ⇒<strong>「dog house」というフレーズを含む</strong>もの（「house dog」はヒットしない）</li>
+			<li><a href="/search?q=%22dog%20*%20house%22" target="_blank"><span class="redtext" style="font-weight:bold">&ldquo;dog * house&rdquo;</span></a> と検索 ⇒<strong>「dog」と「house」を含み、それらの間に０語以上の単語が含まれている</strong>もの</li>
+		</ul>
+		<dl class="joho_utilities">
+		  <dt>関連情報（英辞郎 on the WEB）</dt>
+		  <dd><a href="https://eow.alc.co.jp/help/tips/tip009.html" target="_blank">【BASIC】 " "（二重引用符）で囲んでフレーズ検索</a></dd>
+		</dl>
+        <div class="totop-help"><a href="#top">▲ページトップへ</a></div>
+
+
+        <h3 id="5" name="5">優先順位指定検索：<span style="font-size: 90%;">複数の検索式においては、( ) で囲まれた検索式を優先的に検索する</span></h3>
+        <p class="text">複数の検索式を組み合わせる場合に、<span class="redtext"><strong>(  )</strong></span> で囲まれた検索式を優先して検索を行います。<br />
+        たとえば、<span class="redtext"><strong>(◯◯◯ | △△△) -◇◇◇</strong></span> という検索式であれば、<strong>「◯◯◯ もしくは △△△ を含む見出し語を検索した結果から、◇◇◇ を含むものを除外する」</strong>という検索になります。<br /><br />
+		例： 
+		</p>
+		<ul class="sample">
+			<li><a href="/search?q=%28dog%20|%20cat%29%20-rain" target="_blank"><span class="redtext" style="font-weight:bold">(dog | cat) -rain</span></a> と検索 ⇒<strong>「dog」または「cat」を含むデータを検索するが、「rain」を含むものを除外</strong>する（ <span class="redtext">dog | cat</span> の OR 検索を優先）</li>
+			<li><a href="/search?q=dog%20|%20%28cat%20-rain%29" target="_blank"><span class="redtext" style="font-weight:bold">dog | (cat -rain)</span></a> と検索 ⇒<strong>「dog」を含むデータ、または「cat」を含むが「rain」を含むものを除外</strong>したデータを検索する（ <span class="redtext">cat -rain</span> の NOT 検索を優先）</li>
+			<div class="memo">
+				<p><strong>Memo：</strong>単純な OR 検索の場合は、( ) を付けても、付けなくても検索結果は同じになります。<br />
+				以下の検索では、すべて同じ結果が表示されます。<br />
+				 ・ <strong><a href="/search?q=%28dog%20|%20cat%29%20-rain" target="_blank">(dog | cat) -rain</a></strong> と検索<br />
+				 ・ <strong><a href="/search?q=dog%20|%20cat%20-rain" target="_blank">dog | cat -rain</a></strong> と検索</p>
+			</div>
+		</ul>
+		<dl class="joho_utilities">
+		  <dt>関連情報（英辞郎 on the WEB）</dt>
+		  <dd><a href="https://eow.alc.co.jp/help/tips/tip007.html" target="_blank">【Advanced】do (one's | your | his | her | its | our | their) best?</a></dd>
+		</dl>
+        <div class="totop-help"><a href="#top">▲ページトップへ</a></div>
+
+
+        <h3 id="6" name="6">単語間数指定検索：<span style="font-size: 90%;">２つ以上の単語に挟まれた単語の数を指定してフレーズ検索する（英和検索時のみ） </span></h3>
+        <ol class="interword">
+        	<li><span class="redtext"><strong>◯◯◯ {n} △△△</strong></span>：単語数を指定して検索（ n には数字が入る）<br />
+        	<strong>２個以上の英単語を入力し、単語数を指定したい箇所に {  }（波括弧）で囲んだ数字を挿入して検索</strong>します。<br /><br />
+        			例：
+        			<ul class="interword_detail">
+        				<li><a href="/search?q=can+%7B1%7D+help" target="_blank"><span class="redtext" style="font-weight:bold">can {1} help</span></a> と検索 ⇒<strong>「can <u>you</u> help」のように、「can」と「help」の間に単語が１個あるデータを検索</strong>する</li>
+        				<li><a href="/search?q=can+%7B1%7D+help" target="_blank"><span class="redtext" style="font-weight:bold">can {2} help</span></a> と検索 ⇒<strong>「can <u>be of</u> help」のように、「can」と「help」の間に単語が２個あるデータを検索</strong>する</li>
+        			</ul>
+        	</li>
+        	
+         	<li><span class="redtext"><strong>◯◯◯ {n,} △△△</strong></span>：単語数を指定して検索（ n には数字が入り、n の後ろにカンマを書き添える）<br /><br />
+        	<strong>２個以上の英単語を入力し、その間に { }（波括弧）で囲んだ数字とそれに続くカンマを挿入して、検索すると、単語の間に <u>n 個以上</u>の単語があるデータを検索</strong>します。<br /><br />
+        			例：
+        			<ul class="interword_detail">
+        				<li><a href="/search?q=can+%7B1,%7D+help" target="_blank"><span class="redtext" style="font-weight:bold">can {1,} help</span></a> と検索 ⇒<strong>「can <u>you</u> help」や「can <u>be of</u> help」のように「can」と「help」の間に単語が<u>１個以上</u>あるデータを検索</strong>する</li>
+        				<li><a href="/search?q=take+%7B1,%7D+apart" target="_blank"><span class="redtext" style="font-weight:bold">take {1,} apart</span></a> と検索 ⇒<strong>「take <u>~</u> apart」や「take <u>a clock</u> apart」のように「take」と「apart」の間に単語が<u>１個以上</u>あるデータを検索</strong>する</li>
+        			</ul>
+        	</li>
+
+         	<li><span class="redtext"><strong>◯◯◯ {m,n} △△△</strong></span>：単語数を指定して検索（ m と n には数字が入り、その間にカンマを書き添える）<br />
+        	<strong>２個以上の英単語を入力し、その間に { }（波括弧）で囲んだ数字 m と n をカンマで区切って挿入し、検索すると、単語の間に <u>m 個以上、n 個以下</u>の単語があるデータを検索</strong>します。<br />
+        	※ カンマの後の数字は、カンマの前の数字以上の数（m ≦ n）を指定してください<br /><br />
+        			例：
+        			<ul class="interword_detail">
+        				<li><a href="/search?q=stand+%7B1%2c3%7D+chance" target="_blank"><span class="redtext" style="font-weight:bold">stand {1,3} chance</span></a> と検索 ⇒<strong>「stand <u>a</u> chance」や「stand <u>a fair</u> chance」、「stand <u>less of a</u> chance」のように、「stand」と「chance」の間に単語が<u>１個以上、３個以下</u>あるデータを検索</strong>する</li>
+        			</ul>
+        	</li>
+<br />
+         	<li><span class="redtext"><strong>◯◯◯ {m} △△△ {n} ◇◇◇</strong></span>：単語数の指定は、２カ所以上指定可能（ m や n には数字が入る）<br />
+        	<strong>３個以上の英単語を入力し、その間に { }（波括弧）で囲んだ数字を挿入して、検索</strong>します。<br />
+        	※「<a href="/guide/basic.html#2">条件を詳細にして検索</a>」の「<a href="/guide/basic.html#2-6">単語間の語数を指定して検索</a>」では、２カ所以上の単語間数指定検索は対応していません。<br /><br />
+        			例：
+        			<ul class="interword_detail">
+        				<li><a href="/search?q=so+%7B1%7D+that+%7B1%7D+can" target="_blank"><span class="redtext" style="font-weight:bold">so {1} that {1} can </span></a> と検索 ⇒ <strong>「so <u>compact</u> that <u>you</u> can」や「so <u>large</u> that <u>they</u> can」 のように、「so」と「that」と「can」の間に単語が１個挟まれているデータを検索</strong>する</li>
+        			</ul>
+        	</li>
+
+        </ol>
+
+		<dl class="joho_utilities">
+		  <dt>関連情報（英辞郎 on the WEB）</dt>
+		  <dd><a href="https://eow.alc.co.jp/help/tips/tip018.html" target="_blank">【Advanced】give ◯◯◯ up：give と up の間に任意の 1 語を挟む見出しを検索</a></dd>
+		</dl>
+		
+			<div class="memo">
+				<p><strong>Memo：</strong>単語間数指定検索については、以下の点にご注意ください。<br />
+				 ・ 単語数指定検索は、<strong>英和検索時のみ</strong>利用できる機能です<br />
+				 ・ 単純に複数の単語を指定する AND 検索とは違い、単語間に挟まれる単語数を指定するので、<strong>自動的にフレーズ検索</strong>になります。<br />
+				 &nbsp;&nbsp;&nbsp;&nbsp;そのため、検索語の表示順は保持されます。<br />
+				 &nbsp;&nbsp;&nbsp;&nbsp;例：<a href="/search?q=can+%7B1%7D+help" target="_blank"><span class="redtext" style="font-weight:bold">can {1} help</span></a> と検索 ⇒ <strong>can が help より先に出現</strong>し、その間に任意の１語を含む見出し語がマッチします
+				 </p>
+			</div>
+			
+        <div class="totop-help"><a href="#top">▲ページトップへ</a></div>
+
+
+         <h3 id="7" name="7">変化形検索：<span style="font-size: 90%;">変化形も含めて検索する（英和検索時のみ）</span></h3>
+        <p class="text">英単語の変化形（動詞の活用形や形容詞・副詞の比較級・最上級、名詞の単数形・複数形）も含めて検索したい場合には、<span class="redtext"><strong>[ ]</strong></span> で英単語を囲んで検索します。<br /><br />
+		例： 
+		</p>
+		<ul class="sample">
+			<li><a href="/search?q=%5Btake%5D" target="_blank"><span class="redtext" style="font-weight:bold">[take]</span></a> と検索 ⇒<strong>take と take の変化形も含めて検索（take, takes, taking, took, taken で検索）</strong>する</li>
+			<li><a href="/search?q=%5Bhave%5D+%5Benjoy%5D" target="_blank"><span class="redtext" style="font-weight:bold">[have] [enjoy]</span></a> と検索 ⇒ <strong>have と have の変化形 ( has, having, had ) と enjoy と enjoy の変化形（ enjoys, enjoying, enjoyed ）を AND 検索</strong> する</li>
+			<li><a href="/search?q=%5Brising%5D" target="_blank"><span class="redtext" style="font-weight:bold">[rising]</span></a> と検索 ⇒ <strong>rising と、その原形である rise およびその変化形（ rises, rose, risen）を含めて検索</strong> する</li>
+			<li><a href="/search?q=you+%5Bgo%5D+away" target="_blank"><span class="redtext" style="font-weight:bold">you [go] away</span></a> と検索 ⇒ <strong>you + go の原形・変化形（ goes, going, went, gone ）+ away で検索</strong> する</li>
+		</ul>
+		<p class="text" style="float:left; width:400px;">検索対象となる変化形の単語は、<strong>検索文字列に表示される変化形検索対象の単語の上にマウスオーバー</strong>することで確認することができます。</p>
+		<p class="imgfl" style="margin-top:20px;"><img src="/guide/images/img_advanced7.gif" alt="" width="400" height="76" /></p>
+        <div class="clear"></div>
+
+			<div class="memo">
+				<p><strong>Memo：</strong>変化形検索については、以下の点にご注意ください。<br />
+				 ・ 変化形検索は、<strong>英和検索時のみ</strong>利用できる機能です<br />
+				 ・ 各変化形の単語に<strong>完全一致</strong>する単語を含むデータのみにマッチします<br />
+				 ・ <strong>原形は異なっていても、同じスペリングの変化形をもつ単語を検索した場合、どちらの変化形も含めて検索</strong>します<br />
+				 &nbsp;&nbsp;&nbsp;&nbsp;例：<a href="/search?q=%5Blay%5D" target="_blank"><span class="redtext" style="font-weight:bold">[lay]</span></a> と検索 ⇒ 他動詞「lay」であり、自動詞「lie」の過去形でもあるケース（「lay」の変化形と「lie」の変化形で検索します）<br />
+				 ・ <strong>変化形のデータが登録されていない場合は、変化形も含めた検索はできません。</strong>（ [ ]で囲まれた単語で通常の検索をします）
+				 </p>
+			</div>
+
+       <div class="for-helpindex"><a href="/guide/index.html"><img src="/guide/images/ico_02.gif" width="26" height="24" alt="" align="absmiddle" class="btn" />ご利用ガイドTOPへ</a></div>
+        <div class="totop-help"><a href="#top">▲ページトップへ</a></div>
+      </div>
+      <!--content end-->
+    </div>
+    <!--search inner end-->
+  </div>
+  <!--wrapper end-->
+  <script type="text/javascript">
+<!--
+footer();
+// -->
+</script>
+</div>
+<!--ie6fix end-->
+</body>
+</html>

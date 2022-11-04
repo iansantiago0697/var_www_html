@@ -1,0 +1,92 @@
+@charset "utf-8";
+body {
+	font-size:80%;
+	height: 95%;
+	background: #FFF;
+	margin: 10px 10px 10px 10px;
+}
+
+.lefttable {
+/*
+	border-top: #666 1px solid;
+	border-left: #666 1px solid;
+	border-bottom: #666 1px solid;
+*/
+	margin-top: 5px;
+}
+table {
+/*
+	border-top: #666 1px solid;
+*/
+	border-left: #666 1px solid;
+	border-bottom: #666 2px solid;
+}
+
+table th {
+	border-top: #666 2px solid;
+	border-bottom: #666 2px solid;
+}
+
+table th, td {
+	border-right: #666 1px solid;
+}
+
+table td {
+	vertical-align: top;
+	padding: 2px 5px;
+	border-top: #ccc 1px dotted;
+}
+
+table .open_desc {
+	background: #FFF;
+	border-bottom: 0;
+}
+table .col01{
+	width: 25%;
+}
+table .col03{
+	width: 40%;
+}
+table .col04{
+	width: 5%;
+}
+
+table td div.word{
+	color: #00008b;
+	font-size: 110%;
+	font-weight: 700;
+}
+
+table td {
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+#printer {
+	cursor: pointer;
+	display: block;
+	width: 120px;
+	height: 21px;
+	text-align: center;
+	background: url(/content/img/word_letterlist_bg.png) repeat-x;
+	margin: 7px 6px 5px 0;
+	color: #000;
+	border: #a6abad 1px solid;
+	text-decoration: none;
+	line-height: 20px;
+}
+
+.kana{
+	display: none;
+}
+
+@media print{
+/*
+	body {
+		font-size: 60%;
+	}
+*/
+	#printer {
+		display: none;
+	}
+}

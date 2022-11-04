@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>英辞郎 on the WEB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="./eow_r.css" />
+    <link rel="apple-touch-icon" href="//cdn2.alc.co.jp/eow/sp/images/icon.png"/>
+    <link rel="canonical" href="/search" >
+    <style type="text/css" id="pronunciation"></style>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+    <script src="//cdn2.alc.co.jp/eow/sp/javascripts/application.js"></script>
+    <script src="./confs.js"></script>
+    <script src="./dict_r.js"></script>
+    <!-- ▼ Infospace ▼ -->
+    <script src="./infospace.js"></script>
+    <!-- ▲ Infospace ▲ -->
+    <!--      Fluct グループ名「SPACE ALC(スマホ)」      -->
+    <script type="text/javascript" src="//sh.adingo.jp/?G=1000004000&guid=ON"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-1590792-32', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+    <!-- Google Code for 2015_&#33521;&#36766;&#37070;&#12506;&#12540;&#12472;&#29992; -->
+    <!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 1001752856;
+    var google_conversion_label = "IFAhCLWS5lgQmJLW3QM";
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+  </head>
+  <body class="search">
+    <script language='javascript'>
+      var queries = window.location.search.substring(1);
+      var qp = queries.split("&");
+      for(x in qp) {
+        if (qp[x].indexOf("=") > -1) {
+          var qn = qp[x].split("=")[0];
+          var qv = qp[x].split("=")[1];
+          
+          if (qn == "q") {
+            var head = null;
+            if (window.document.head) {
+              head = window.document.head;
+            } else {
+              for(i=0;i<document.documentElement.childNodes.length; ++i) {
+                if (document.documentElement.childNodes[i].tagName == "HEAD") {
+                  head = document.documentElement.childNodes[i];
+                  break;
+                }
+              }
+            }
+            if (head != null) {
+              var lks = head.getElementsByTagName("link");
+              for (i=0;i < lks.length; ++i) {
+                if ("canonical" == lks[i]["rel"]) {
+                  lks[i]["href"] = lks[i]["href"] + "?q=" + qv;
+                  break;
+                }
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <header id="search_header">
+      <script>
+        eowApp.fillHeader(document.getElementById('search_header'), {settingsButton: true});
+      </script>
+    </header>
+
+    <noscript>
+      <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1001752856/?value=1.00&amp;currency_code=JPY&amp;label=IFAhCLWS5lgQmJLW3QM&amp;guid=ON&amp;script=0"/>
+      </div>
+    </noscript>
+    
+    <div id="ads">
+      <script language='javascript' src='//ds.advg.jp/adpds_deliver/js/pjs.js'></script>
+      <script language='javascript'>adpds_js('//ds.advg.jp/adpds_deliver', 'adpds_site=alcad0505&adpds_frame=smartphone_320_50');</script>
+      <noscript>
+        <a target='_blank' href='//ds.advg.jp/adpds_deliver/p/r?adpds_site=alcad0505&adpds_frame=smartphone_320_50'>
+        <img src='//ds.advg.jp/adpds_deliver/p/img?adpds_site=alcad0505&adpds_frame=smartphone_320_50' border=0></a>
+      </noscript>
+    </div>
+    
+    <div style="padding: 5px;"><span style="font-size:90%;"><strong>英語の例文も表示する</strong>にはぜひ、無料登録で使える<a href="http://www.alc.co.jp/tg/eowf/">「英辞郎 on the WEB Pro Lite」</a>へ（使用期限なし）。</span></div>
+    
+    <div id="content">
+      <div id="results" class="content slide"></div>
+      <div id="loading">
+        <div class="activity_indicator">&nbsp;</div>
+      </div>
+      <div id="landing"></div>
+    </div>
+    <!-- ▼ Infospace ▼ -->
+    <div id="infospace" style="margin-bottom:10px;">
+      <script type="text/javascript">
+      <!--
+        infospace();
+      //-->
+      </script>
+    </div>
+    <!-- ▲ Infospace ▲ -->
+    <!-- ▼ AdSense ▼ -->
+    <div style="text-align:center">
+      <script language='javascript' src='//ds.advg.jp/adpds_deliver/js/pjs.js'></script>
+      <script language='javascript'>adpds_js('//ds.advg.jp/adpds_deliver', 'adpds_site=alcad0505&adpds_frame=smartphone_250_300');</script>
+      <noscript>
+        <a target='_blank' href='//ds.advg.jp/adpds_deliver/p/r?adpds_site=alcad0505&adpds_frame=smartphone_250_300'>
+        <img src='//ds.advg.jp/adpds_deliver/p/img?adpds_site=alcad0505&adpds_frame=smartphone_250_300' border=0></a>
+      </noscript>
+    </div>
+    <!-- ▲ AdSense ▲ -->
+    <footer>
+      <p class="copyright">Copyright ALC Press Inc. All rights reserved.</p>
+    </footer>
+
+    <script type="text/x-jquery-tmpl" id="word_tmpl">
+      <li class="button"><a href="javascript:void(0)" word="${word}" uid="${uid}">${word}</a></li>
+    </script>
+    <script type="text/x-jquery-tmpl" id="definitions_tmpl">
+      {{each definitions}}
+        <div class="definition_block">
+          {{if $value.gradable}}
+          <div class="henka"><label>変化形</label>{{html $value.gradable}}</div>
+          {{/if}}
+          {{html $value.definition}}
+        </div>
+      {{/each}}
+      {{if next}}
+      <div class="next"><a href="javascript:void(0)">{{if isNext}}次のページ{{else}}この見出語を含む項目を検索{{/if}}</a></div>
+      {{/if}}
+      <div class="tip" style="display:none;">
+        <!--<button class="menu_copy">&nbsp;</button>--><button class="menu_search">&nbsp;</button>
+        <div class="menu_arrow">&nbsp;</div>
+      </div>
+    </script>
+    <script type="text/x-jquery-tmpl" id="not_found_tmpl">
+    <div class="not_found">
+      <h3>${word}&nbsp;に該当する項目は見つかりませんでした。</h3>
+      {{if spell}}
+      <h4>この中にお探しの単語はありますか？</h4>
+      <div class="spell">{{html suggest}}</div>
+      {{/if}}
+      <ul>
+        <li>綴りに間違いはありませんか？　スペルチェッカーの選んだキーワード候補が表示されている場合は、そのキーワードでも検索してみてください。</li>
+        <li>和英検索の場合は、通常カタカナで表記されるものはカタカナで、ひらがなで表記されるものはひらがなで検索してみてください。（例：「ヤゴ」と「やご」）</li>
+        <li>長音記号がない表記が一般的なものは、長音記号を削除して検索してみてください。（例：「コンピュータ」と「コンピューター」）</li>
+        <li>キーワードが複数の場合は、キーワードを減らして検索してみてください。</li>
+      </ul>
+    </div>
+    </script>
+    <script type="text/x-jquery-tmpl" id="count_info_tmpl">
+    <p>登録数 ${count} 件　あと ${remain} 件登録できます。</p>
+    </script>
+    <script type="text/x-jquery-tmpl" id="error_tmpl">
+    <div id="error_generic">
+      <h3>エラーが発生しました</h3>
+      <ul>
+        <li>データ通信が利用可能か確認してください。</li>
+        <li>サーバが混み合っている可能性があります。しばらくたってから再度お試しください。</li>
+        <li>検索文字列を見直してください。</li>
+        <li>ステータス： ${failStr}</li>
+      </ul>
+    </div>
+    </script>
+    <script type="text/x-jquery-tmpl" id="block_tmpl">
+    <div id="error_generic">
+      <h3>過重なアクセスを検出いたしました</h3>
+      <ul>
+        <li>誠に恐れ入りますが、お客さまからのアクセスはブロックされております。</li>
+        <li>お手数をおかけいたしますが、検索サービスを今すぐご利用いただくには、無料の <a href="http://www.alc.co.jp/tg/eowf/">「英辞郎 on the WEB Pro Lite」</a>ををご利用ください。</li><li>お問い合わせは<a href="http://www.alc.co.jp/inquiry/eow/" title="お問い合わせフォームへ">こちら</a></li>
+      </ul>
+    </div>
+    </script>
+  </body>
+</html>

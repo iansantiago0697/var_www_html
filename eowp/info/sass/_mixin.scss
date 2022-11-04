@@ -1,0 +1,422 @@
+﻿@charset "UTF-8";
+/* ### mixin.scss ### */
+//======================================================================================================================
+//----------------------------------------
+//clearfix
+//----------------------------------------
+@mixin clearfix {
+  zoom: 1;
+  &:before,
+  &:after {
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: ".";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+//メディアクエリ
+// @include media(pc) {
+// }
+// @include media(sp) {
+// }
+// @include media(min-width: 569px) {
+// }
+//------------------------------------------------------------------------------
+@mixin media($mode) {
+    @if( $mode == pc ){
+        @media screen and (min-width: 769px) {
+            @content;
+        }
+    } @else if( $mode == sp ) {
+        @media screen and (max-width: 768px) {
+            @content;
+        }
+    } @else {
+        @media screen and ($mode) {
+            @content;
+        }
+    }
+}
+
+// ###ベンダープリフィックス
+//======================================================================================================================
+// gradient
+// (上の色, 下の色)
+// @include gradient();
+//------------------------------------------------------------------------------
+@mixin gradient($from, $to) {
+  background: $from;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $from), color-stop(1, $to));
+  background-image: -webkit-linear-gradient(bottom, $from 0%, $to 100%);
+  background-image: -moz-linear-gradient(bottom, $from 0%, $to 100%);
+  background-image: -ms-linear-gradient(bottom, $from 0%, $to 100%);
+  background-image: linear-gradient(to bottom, $from 0%, $to 100%);
+}
+
+// opacity
+// @include opacity();
+//------------------------------------------------------------------------------
+@mixin opacity($i: 10) {
+  -moz-opacity : $i/100;
+  -khtml-opacity: $i/100;
+  opacity : $i/100;
+  -ms-filter: "alpha(opacity=#{$i})";
+  filter: alpha(opacity=#{$i});
+}
+
+// border-radius
+// @include border-radius();
+//------------------------------------------------------------------------------
+@mixin border-radius($i: 10px) {
+  -webkit-border-radius: $i;
+  -moz-border-radius: $i;
+  -ms-border-radius: $i;
+  border-radius: $i;
+}
+
+// background-size
+// @include background-size();
+//------------------------------------------------------------------------------
+@mixin background-size($i) {
+  -webkit-background-size: $i;
+  -moz-background-size: $i;
+  -ms-background-size: $i;
+  background-size: $i;
+}
+
+// background-size-half
+// @include background-size-half();
+//------------------------------------------------------------------------------
+@mixin background-size-half($width, $height) {
+  -webkit-background-size: ($width/2) ($height/2);
+  -moz-background-size: ($width/2) ($height/2);
+  -ms-background-size: ($width/2) ($height/2);
+  background-size: ($width/2) ($height/2);
+}
+
+// box-shadow
+// @include box-shadow();
+//------------------------------------------------------------------------------
+@mixin box-shadow($i: 1px 1px 1px #000) {
+  -webkit-box-shadow: $i;
+  -moz-box-shadow: $i;
+  -ms-box-shadow: $i;
+  box-shadow: $i;
+}
+
+// border-image
+// ※スマホ限定 zoom0.5を使わないとレティーナ対応できないので、大枠では使用しないこと
+// @include border-image(url("../../hitokoto/img/base/") 15 round);
+//------------------------------------------------------------------------------
+@mixin border-image($i: url("images/bg_dot.png") 15 round) {
+  -webkit-border-image:$i stretch;
+  -moz-border-image: $i;
+  -ms-border-image:$i;
+  border-image:$i fill stretch;
+  border-width: 15px;
+  border-style: solid;
+  zoom: 0.5;
+}
+
+// box-sizing
+// @include box-sizing;
+//------------------------------------------------------------------------------
+@mixin box-sizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// appearance:none;
+// @include appearance();
+//------------------------------------------------------------------------------
+@mixin appearance {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+}
+
+// ###CSSプロパティ
+//======================================================================================================================
+
+// inline-block
+// @include inline_block;
+//------------------------------------------------------------------------------
+@mixin inline_block {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+// ■フォントサイズのパーセンテージ変換
+// ※デフォルトフォントサイズが13でない場合は変更する
+// （pxの場合の数値を単位なしで）
+// @include font_size();
+//------------------------------------------------------------------------------
+@mixin font_size($fontPxSize) {
+  font-size: round(percentage($fontPxSize / 13));
+}
+
+// ■インデント
+// 「※」などのテキストによるアイコン表現でのインデント調整
+// （余白の大きさ pxかemで指定）
+// @include indent();
+//------------------------------------------------------------------------------
+@mixin indent($num) {
+  padding-left: $num;
+  text-indent: -#{$num};
+}
+
+// ■表示範囲に合わせて改行する
+// @include break;
+//------------------------------------------------------------------------------
+@mixin break {
+   -ms-word-break: break-all;
+   word-break: break-all;
+   word-break: break-word;
+   -ms-word-wrap: break-word;
+   word-wrap: break-word;
+}
+
+// ###absolute
+//======================================================================================================================
+
+// absolute_left_top
+// (左からの絶対位置, 上からの絶対位置)
+// @include absolute_left_top();
+//------------------------------------------------------------------------------
+@mixin absolute_left_top($left: 0, $top: 0) {
+  position:absolute;
+  left:$left;
+  top:$top;
+}
+
+// absolute_right_top
+// (右からの絶対位置, 上からの絶対位置)
+// @include absolute_right_top();
+//------------------------------------------------------------------------------
+@mixin absolute_right_top($right: 0, $top: 0) {
+  position:absolute;
+  right:$right;
+  top:$top;
+}
+
+// absolute_left_bottom
+// (左からの絶対位置, 上からの絶対位置)
+// @include absolute_left_bottom();
+//------------------------------------------------------------------------------
+@mixin absolute_left_bottom($left: 0, $bottom: 0) {
+  position:absolute;
+  left:$left;
+  bottom:$bottom;
+}
+
+// absolute_right_bottom
+// (右からの絶対位置, 上からの絶対位置)
+// @include gradient_right_bottom();
+//------------------------------------------------------------------------------
+@mixin absolute_right_bottom($right: 0, $bottom: 0) {
+  position:absolute;
+  right:$right;
+  bottom:$bottom;
+}
+
+// ###汎用要素
+//======================================================================================================================
+
+// ■横並びの画像をfloatで敷き詰める 右の余白なしでボックスピッタリに
+// (要素全体の横幅, 要素間の横の余白, 要素間の縦の余白)
+// @include img_list();
+//------------------------------------------------------------------------------
+@mixin img_list($width: 680px, $margin-right: 10px, $margin-bottom: 0) {
+  overflow: hidden;
+  width: $width + $margin-right;
+  margin: 0 -#{$margin-right} 0 0;
+  padding: 0;
+  list-style: none;
+  li {
+    float: left;
+    margin-right: $margin-right;
+    margin-bottom: $margin-bottom;
+  }
+}
+
+
+
+// ■縦線アイコン:after
+// （縦線の色, 横幅, 上と下の余白, 左の余白）
+// @include after-icon-border();
+//------------------------------------------------------------------------------
+@mixin after-icon-border($color: #fff, $width: 10px, $topBottom: 15%, $left: 10px) {
+  position: relative;
+  padding-right: #{$left + $width + 5px};
+  padding-left: #{$left + $width + 5px};
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: $left;
+    top: $topBottom;
+    bottom: $topBottom;
+    height: 100% - ($topBottom * 2);
+    width: $width;
+    background: $color;
+  }
+}
+
+
+// ###アニメーション
+//======================================================================================================================
+
+// @include transition();
+@mixin transition ($i) {
+  -webkit-transition: $i;
+  -moz-transition:    $i;
+  -ms-transition:     $i;
+  -o-transition:      $i;
+}
+
+// @include transform();
+@mixin transform($i) {
+  -webkit-transform: $i;
+  -moz-transform:    $i;
+  -ms-transform:     $i;
+  -o-transform:      $i;
+}
+
+// @include scale();
+@mixin scale ($i) {
+  -webkit-transform: scale($i);
+  -moz-transform:    scale($i);
+  -ms-transform:     scale($i);
+  -o-transform:      scale($i);
+}
+
+// @include rotate();
+@mixin rotate ($i) {
+  -webkit-transform: rotate($i);
+  -moz-transform:    rotate($i);
+  -ms-transform:     rotate($i);
+  -o-transform:      rotate($i);
+}
+
+// @include skew();
+@mixin skew ($x, $y:0) {
+  -webkit-transform:       skew($x, $y);
+  -moz-transform:    skew($x, $y);
+  -ms-transform:     skew($x, $y);
+  -o-transform:      skew($x, $y);
+}
+
+// @include translate();
+@mixin translate ($x, $y:0) {
+  -webkit-transform:       translate($x, $y);
+  -moz-transform:    translate($x, $y);
+  -ms-transform:     translate($x, $y);
+  -o-transform:      translate($x, $y);
+}
+
+// @include translate3d();
+@mixin translate3d ($x, $y: 0, $z: 0) {
+  -webkit-transform:       translate3d($x, $y, $z);
+  -moz-transform:    translate3d($x, $y, $z);
+  -ms-transform:     translate3d($x, $y, $z);
+  -o-transform:      translate3d($x, $y, $z);
+}
+
+// @include perspective();
+@mixin perspective ($i: 1000) {
+  -webkit-perspective:  $i;
+  -moz-perspective:   $i;
+  -ms-perspective:  $i;
+  perspective:    $i;
+}
+
+//------------------------------------------------------------------------------
+// @include animation-name();
+@mixin animation-name($i: 'none') {
+  -webkit-animation-name: $i;
+  -moz-animation-name: $i;
+  -ms-animation-name: $i;
+  animation-name: $i;
+}
+
+// @include animation-duration();
+@mixin animation-duration($i: '0s') {
+  -webkit-animation-duration: $i;
+  -moz-animation-duration: $i;
+  -ms-animation-duration: $i;
+  animation-duration: $i;
+}
+
+// @include animation-timing-function();
+@mixin animation-timing-function($i: 'ease') {
+  -webkit-animation-timing-function: $i;
+  -moz-animation-timing-function: $i;
+  -ms-animation-timing-function: $i;
+  animation-timing-function: $i;
+}
+
+// @include animation-delay();
+@mixin animation-delay($i: '0s') {
+  -webkit-animation-delay: $i;
+  -moz-animation-delay: $i;
+  -ms-animation-delay: $i;
+  animation-delay: $i;
+}
+
+// @include animation-iteration-count();
+@mixin animation-iteration-count($i: '1') {
+  -webkit-animation-iteration-count: $i;
+  -moz-animation-iteration-count: $i;
+  -ms-animation-iteration-count: $i;
+  animation-iteration-count: $i;
+}
+
+// @include animation-direction();
+@mixin animation-direction($i: 'normal') {
+  -webkit-animation-direction: $i;
+  -moz-animation-direction: $i;
+  -ms-animation-direction: $i;
+  animation-direction: $i;
+}
+
+// @include animation-fill-mode();
+@mixin animation-fill-mode($i: 'none') {
+  -webkit-animation-fill-mode: $i;
+  -moz-animation-fill-mode: $i;
+  -ms-animation-fill-mode: $i;
+  animation-fill-mode: $i;
+}
+
+// @include keyframes() {}
+//------------------------------------------------------------------------------
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+//  @include calc(width, "25% - 1em");
+//------------------------------------------------------------------------------
+
+@mixin calc($property, $expression) { 
+  #{$property}: -moz-calc(#{$expression}); 
+  #{$property}: -o-calc(#{$expression}); 
+  #{$property}: -webkit-calc(#{$expression}); 
+  #{$property}: calc(#{$expression}); 
+}

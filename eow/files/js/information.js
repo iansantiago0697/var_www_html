@@ -1,0 +1,7 @@
+var info_msg = '<div style="margin-left: 1em; text-indent: -1em;">・<a href="https://eowp.blogspot.jp/2018/06/20186.html" target="_blank">データ更新を行いました［Ver.152（2018年6月7日時点）］</a></div><div style="margin-left: 1em; text-indent: -1em;">・<a href="https://eowp.blogspot.jp/2018/05/blog-post.html" target="_blank"><font color="red">アプリで音声が再生できない場合の対処方法はこちらをご覧ください。</font></a></div><!--div style="margin-left: 1em; text-indent: -1em;">・<a href="https://eowf.alc.co.jp/login" target="_blank">「英辞郎 on the WEB Pro Lite」のログインはこちらから>>></a></div--><div style="margin-left: 1em; text-indent: -1em;">・<a href="https://eowp.blogspot.jp/2017/12/on-web-pro-on-web-pro-lite.html" target="_blank">「英辞郎 on the WEB Pro」「英辞郎 on the WEB Pro Lite」をご利用いただくには、各サービスでのログインが必要になりました。詳しくはこちら>>></a></div><!--<div style="margin-left: 1em; text-indent: -1em;">・<a href="https://eowp.blogspot.jp/2017/10/on-web.html" target="_blank">スマホアプリがアップデート。検索結果表示方法のカスタマイズが可能になりました <font color="red">New!</font></a></div><div style="margin-left: 1em; text-indent: -1em;">・<a href="https://eowp.blogspot.jp/2017/10/ios11.html" target="_blank">iPhone、iPadの最新OSでのアポストロフィを含む英語文字列の検索について</a></div>--><!--<div style="margin-left: 1em; text-indent: -1em;">・「英辞郎 on the WEB」は、このページをブックマークしてご利用ください。</div>--><!--div style="margin-left: 1em; text-indent: -1em;">・訳語部に文例がある場合は表示するように変更しました。<font color="red">New!</font></div-->';
+
+var info_box = '';
+
+if (info_msg.length > 0) {
+  info_box = '<div class="info"><p class="info_title">お知らせ</p><div><p>' + info_msg + '</p></div></div>';
+};

@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document
+eow_ff1.css　…　フォント：明朝系のクラス　のスタイル
+eow_lh1.css　…　行間：広い　のスタイル
+eow_sz1.css、eow_sz2.css　…　文字の大きさ：大、文字の大きさ：最大のスタイル
+*/
+#maincontent, #maincontentsmall {
+	line-height: 1.6em;
+}

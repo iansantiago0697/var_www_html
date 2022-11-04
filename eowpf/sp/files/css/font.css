@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 標準 */
+#title, #result {
+	font-size: 110%;
+	line-height: 110%;
+}
+
+/* 大・最大 */
+/*
+#title, #result {
+	font-size: 120%;
+	line-height: 120%;
+}
+*/
+
+/* 発音記号が表示されない問題に対処 */
+span.pron {
+	font-family: 'Noto Serif', 'Times New Roman', serif;
+	/*font-size: 12pt;*/ /* EOW では指定されてる */
+}
+span.proni {
+	font-style: Italic
+}

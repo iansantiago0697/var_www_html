@@ -1,0 +1,168 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+	デフォルトスタイル
+------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	border: 0;
+	outline: 0;
+
+	font-size: 1em;
+}
+
+body {
+	font-size: 62.5%;
+}
+
+body,
+table,
+input, textarea, select, option {
+	font-family: Meiryo, "小塚ゴシック Pr6N", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+img {
+	vertical-align: top;
+}
+
+a:link {
+	color: #0085ff;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #0085ff;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #0085ff;
+	text-decoration: none;
+}
+
+a:active {
+	color: #0085ff;
+	text-decoration: none;
+}
+
+/*------------------------------------------------------------
+	レイアウト
+------------------------------------------------------------*/
+body {
+	min-width: 1080px;
+	color: #333;
+	text-align: center;
+	font-size: 20px;
+	line-height: 1.5;
+	background-color: #FFF;
+	-webkit-text-size-adjust: none;
+}
+
+#container {
+	margin: 0 auto;
+	text-align: left;
+	width: 1080px;
+}
+
+#main {
+	margin: 0 auto 33px;
+	width: 1008px;
+}
+
+	* html #main {
+		zoom: 1;
+	}
+
+	*+html #main {
+		zoom: 1;
+	}
+
+#main:after {
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	display: block;
+	clear: both;
+}
+
+/*------------------------------------------------------------
+	フッター
+------------------------------------------------------------*/
+#footer {
+	text-align: center;
+}
+
+#footer p {
+	font-size: 15px;
+	line-height: 1.45;
+}
+
+#footer p span {
+	margin: 5px 0;
+	font-size: 17px;
+	display: block;
+}
+
+.sp {
+	display: none !important;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+	.sp {
+		display: block !important;
+	}
+	
+	.pc {
+		display: none !important;
+	}
+
+	body {
+		font-size: 9px;
+		line-height: 1.4;
+		min-width: inherit;
+	}
+	
+	#container {
+		width: auto;
+	}
+	
+	#main {
+		margin: 0 10px 15px;
+		width: auto;
+	}
+
+	#footer p {
+		font-size: 7px;
+		line-height: 1.4;
+	}
+
+}

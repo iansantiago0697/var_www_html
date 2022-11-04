@@ -1,0 +1,280 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+	トープページ
+------------------------------------------------------------*/
+#main .inner {
+	margin: 0 45px 64px;
+}
+
+#main .inner p {
+	margin-bottom: 35px;
+	font-size: 25px;
+	line-height: 1.4;
+}
+
+#main .blue {
+	color: #21a6e8;
+}
+
+#main .link {
+	margin: 0 0 65px 28px;
+}
+
+#main .link a:hover img {
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+}
+
+#main .area {
+	margin: 0 36px 10px;
+	padding: 25px 24px 49px 32px;
+	background-color: #f9f9b2;
+}
+
+#main .area .title {
+	margin: 0 0 10px -15px;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+#main .area .infoDl {
+	margin-bottom: 33px;
+}
+
+#main .area .infoDl dt {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#main .area .infoDl dd {
+	margin-bottom: 20px;
+	font-size: 22px;
+	line-height: 1.4;
+}
+
+
+#main .area .infoDl dd ul {
+	padding: 3px 0 3px;
+}
+
+#main .area .infoDl dd li {
+	padding: 2px 0 0;
+	font-size: 18px;
+	letter-spacing: -1px;
+	text-indent: -1em;
+	padding-left: 1em;
+}
+
+#main .red {
+	color: #ff0000;
+}
+
+#main .linkUl li {
+	margin-bottom: 3px;
+	padding-bottom: 43px;
+	text-align: center;
+	background: url(../img/index/arrow.gif) no-repeat center bottom;
+}
+
+#main .linkUl li.none {
+	margin-bottom: 0;
+	padding-bottom: 15px;
+	background-image: inherit;
+}
+
+#main .area .noteDl {
+	margin: 0 0 60px 130px;
+	font-size: 18px;
+}
+
+#main .area .noteDl dt {
+	float: left;
+}
+
+#main .area .noteDl dd {
+	padding-left: 8.5em;
+}
+
+#main .section {
+	margin: 0 55px;
+}
+
+#main .section h2 {
+	margin-bottom: -2px;
+	font-size: 28px;
+	color: #a60000;
+}
+
+#main .section h3 {
+	padding: 15px 0 0 28px;
+	font-size: 25px;
+	color: #ff6900;
+	background: url(../img/index/icon01.gif) no-repeat left 21px;
+}
+
+#main .section p {
+	font-size: 23px;
+	color: #005b76;
+	line-height: 1.56;
+}
+
+#main .section p .block {
+	display: block;
+	margin-bottom: -10px;
+}
+
+#main .section ul.note {
+	margin: 73px 0 19px;
+	font-size: 18px;
+	color: #000;
+	line-height: 1.5;
+}
+
+#main .section ul.note li {
+	text-indent: -1em;
+	padding-left: 1em;
+}
+
+#main .section ul.note a {
+	color: #21a6e8;
+}
+
+#main .section ul.note a:hover {
+	text-decoration: underline;
+}
+
+#main .section  p.notes {
+	margin-bottom: 0;
+	font-size: 17px;
+	text-indent: -1em;
+	padding-left: 1em;
+	line-height: 1.35;
+	color: #000;
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+}
+
+
+
+@media all and (min-width: 0) and (max-width: 767px) {
+		
+	#main .inner {
+		margin: 0 10px 21px;
+	}
+	
+	#main .inner p {
+		margin-bottom: 18px;
+		font-size: 12px;
+		letter-spacing: -0.2px;
+		word-break: break-all;
+	}
+	
+	#main .link {
+		margin: 0 8px 20px;
+	}
+		
+	#main .link img {
+		width: 100%;
+		height: auto;
+	}
+		
+	#main .area {
+		margin: 0 8px 5px;
+		padding: 12px 8px 15px;
+	}
+
+	#main .area .title {
+		font-size: 14px;
+		margin: 0 0 5px -5px;
+	}
+		
+	#main .area .infoDl {
+		margin-bottom: 23px;
+	}
+	
+	#main .area .infoDl dt {
+		font-size: 12px;
+	}
+	
+	#main .area .infoDl dd {
+		margin-bottom: 10px;
+		font-size: 11px;
+	}
+
+	#main .area .infoDl dd ul {
+		padding: 1px 0 2px;
+	}
+	
+	#main .area .infoDl dd li {
+		padding: 1px 0 0;
+		font-size: 9px;
+		letter-spacing: -1px;
+	}
+	
+	#main .linkUl {
+		margin: 0 7px;
+	}
+	
+	#main .linkUl li {
+		margin: 0 0 1px;
+		padding-bottom: 18px;
+		background: url(../img/index/arrow.gif) no-repeat center bottom;
+		background-size: 35px auto;
+	}
+	
+	#main .linkUl li.none {
+		padding-bottom: 7px;
+	}
+	
+	#main .linkUl li img {
+		width: 100%;
+		height: auto;
+	}
+		
+	#main .area .noteDl {
+		margin: 0 0 25px 5px;
+		font-size: 9px;
+	}
+
+	#main .section {
+		margin: 0 5px;
+	}	
+	
+	#main .section h2 {
+		margin-bottom: -2px;
+		font-size: 14px;
+	}
+
+	#main .section h3 {
+		padding: 8px 10px 2px 15px;
+		font-size: 12px;
+		background: url(../img/index/icon01.gif) no-repeat left 12px;
+		background-size: 12px auto;
+	}
+	
+	#main .section p {
+		font-size: 12px;
+		line-height: 1.28;
+		letter-spacing: -0.7px;
+		margin-bottom: 2px;
+	}
+	
+	#main .section ul.note {
+		margin: 40px 0 5px;
+		font-size: 10px;
+		letter-spacing: -0.5px;
+		line-height: 1.42;
+	}
+		
+	#main .section p .block {
+		margin-bottom: 0;
+	}
+	
+	#main .section p.notes {
+		font-size: 10px;
+		line-height: 1.35;
+	}
+	
+}
+

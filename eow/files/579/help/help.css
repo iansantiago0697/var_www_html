@@ -1,0 +1,611 @@
+@charset "UTF-8";
+
+/* layout
+---------------------------------------------------- */
+/* added 081126 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* added 081126 */
+body {
+	background-color: #FFFFFF;
+	width: 100%;
+	color: #333333;
+	font-size: 80%;
+	line-height: 165%;
+}
+
+/* ブロック格納用ボディ：added 081126 */
+#AreaBody {
+	margin: 0 auto;
+	padding-top: 2px;
+	width: 750px;
+	background-color: #FFFFFF;
+}
+
+/* ヘッダ：左 */
+#AreaHeaderLeft {
+	float: left;
+	width: 152px;
+	margin: 0px 3px 0px 0px;
+	background-color: #FFFFFF;
+}
+
+/* ヘッダ：中央 */
+#AreaHeaderCenter {
+	float: left;
+	width: 471px;
+	margin: 0px 2px 0px 0px;
+	background-color: #FFFFFF;
+}
+
+/* ヘッダ：右 */
+#AreaHeaderRight {
+	float: left;
+	margin: 0px 2px 0px 0px;
+	font-size: 8px;
+	background-color: #FFFFFF;
+}
+
+/* グローバルナビゲーション：added 090129 */
+#AreaGnavi {
+	width: 750px;
+	margin: 0px 0px 5px 0px;
+	font-size: 11px;
+	font-family: "Verdana", "Arial", "Arial New", "ＭＳ Ｐ ゴシック", Sans-Serif;
+	background-color: #FFFFFF;
+}
+
+/* 本体上部（コンテンツ）：左：added 081126 */
+#AreaUpperLeft {
+	width: 100%;
+	clear: both;
+	font-family: "Arial", "Arial New", "ＭＳ Ｐ ゴシック", Sans-Serif;
+	background-color: #FFFFFF;
+}
+
+/* フッタ：added 081126 */
+#AreaFooter {
+	width: 100%;
+	clear: both;
+	border-top: 2px solid #fff;
+	text-align: center;
+	padding: 1em 0;
+	font-size: 11px;
+	font-family: "Verdana", "Arial", "Arial New", "ＭＳ Ｐ ゴシック", Sans-Serif;
+	background-color: #FFFFFF;
+}
+
+/* フロート制御：added 081126 */
+br.cl_l {
+	clear: left;
+}
+
+/* 点線：：added 081126 */
+div.bg_i {
+	background-image: url(//eowimg.alc.co.jp/content/js/sa/img/dot.gif);
+	margin-top: 5px;
+}
+
+/* new 081127 - divider */
+hr.dvd {
+	color: #CCCCCC;
+	margin: 5px 0px 5px 0px;
+}
+
+/* 検索補助：added 081126 */
+div.sas {
+	margin: 3px 0px 10px 0px;
+}
+
+/* マージン設定：：added 081126 */
+.mt_10 {
+	margin-top: 10px;
+}
+
+.mt_20 {
+	margin-top: 20px;
+}
+
+.mr_10 {
+	margin-right: 10px;
+}
+
+.ml_10 {
+	margin-left: 10px;
+}
+
+.mb_3 {
+	margin-bottom: 3px;
+}
+
+.mb_10 {
+	margin-bottom: 10px;
+}
+.mb_40 {
+	margin-bottom: 40px;
+}
+
+/* インフォスペース：added 081126 */
+div.eli {
+	border: 1px solid #333333;
+}
+
+
+/* search ui
+---------------------------------------------------- */
+
+.searchForm{
+	margin: 3px 2px 2px 2px;
+}
+
+.tabArea{
+	background-image: url(//eowimg2.alc.co.jp/content/img/tab_bg.gif);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-color: #F1F1F1;
+}
+
+#searchWord{
+	font-size: medium;
+	color: #DC143C;
+}
+
+#itemsNumber{
+	font-size: small;
+}
+
+/* 入力フォーム：added 081126 */
+input.qry {
+	width: 180px;
+	height: 20px;
+	border: 1px #666666 solid;
+	font-family: "Verdana", "Arial", "Arial New", "ＭＳ Ｐ ゴシック", Sans-Serif;
+	font-size: 14px;
+	vertical-align: middle;
+	margin-left: 1px;
+	padding-left: 2px;
+}
+
+/* ボタン：added 081126 */
+input.btn_20 {
+	height: 20px;
+	vertical-align: middle;
+}
+
+/* ワードリンク履歴：added 081126 */
+div.wl_0 {
+	border: 1px solid #B8BDDC;
+	width: 540px;
+	background-color: #E6E9F5;
+}
+
+div.wl_1 {
+	text-align: right;
+	font-size: 9pt;
+	height: 28px;
+	padding-top: 7px;
+}
+
+div.wl_2 {
+	background-color: #FFFFFF;
+	padding: 10px;
+}
+
+
+/* links
+---------------------------------------------------- */
+
+#resultArea a:link, 
+#resultArea strong a:link {
+	color: #000088;
+	text-decoration: none;
+}
+
+#resultArea a:visited, 
+#resultArea strong a:visited {
+	color: #00008B;
+	text-decoration: none;
+}
+
+#resultArea a:hover,
+#resultArea strong a:hover{
+	color: #0000FF;
+	text-decoration: underline;
+}
+
+#resultArea a:active,
+#resultArea strong a:active{
+	color: #0000FF;
+	text-decoration: underline;
+}
+
+
+/* ローカルナビ
+---------------------------------------------------- */
+
+.left{
+	float: left;
+	width: 255px;
+}
+
+.right{
+	float: right;
+	width: 295px;
+}
+
+.pageNavi{
+	margin-top: 5px;
+}
+
+.pageNavi td{
+	padding: 2px 1px;
+	border: 1px solid #CCCCCC;
+	line-height: 1.2em;
+	font-size: 80%;
+}
+
+.pageNavi td.active{
+	background-color: #4D4D4D;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+
+/* 検索結果
+---------------------------------------------------- */
+#resultList ul{
+	margin-left: 1.3em;
+	padding-left: 0;
+}
+
+#resultList ol{
+	margin-left: 2em;
+	margin-bottom: 10px;
+	padding-left: 0;
+}
+
+#resultList li div{
+	margin-bottom: 5px;
+}
+
+#resultList td {
+	line-height: 160%;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+
+/* 文字装飾
+---------------------------------------------------- */
+
+h2 {
+	margin: 20px 0 10px 0;
+	padding: 1px 0 1px 12px;
+	background: url(//eowimg.alc.co.jp/content/help/img/listmark.gif) 0 center no-repeat;
+	font-size: 120%;
+}
+
+.lnavi {
+	font-size: 9pt;
+}
+
+.midashi{
+	color: #00008B;
+	font-size: 110%;
+	font-weight: bold;
+}
+
+.searchwordfont{
+	color: #DC143C;
+/*	font-size: 110%; */
+	font-weight: bold;
+}
+
+.expmidashi{
+	color: #DC143C;
+	font-size: 110%;
+	font-weight: bold;
+}
+
+.expwordfont{
+	color: #DC143C;
+/*	font-size: 110%; */
+	font-weight: bold;
+}
+
+.smallfont{
+	font-size: 8pt;
+}
+
+.smallredfont{
+	color: #DC143C;
+	font-size: 7pt;
+}
+
+.wordclass{
+	color: #34429C;
+}
+
+.kana{
+	color: #808080;
+}
+
+.hklabel{
+	color: #008000;
+}
+
+.idmlabel{
+	color: #008000;
+}
+
+/* ラベル（通常）：added 090728 */
+.key{
+	background-color:#DDDDDD;
+	padding: 4px;
+	font-family:monospace;
+	border-bottom: 2px solid #888888;
+	border-right: 2px solid #888888;
+}
+
+
+/* ラベル（通常）：added 081126 */
+span.ls_normal {
+	font-family: Verdana, Sans-Serif;
+	font-size: 9pt;
+	color: #444444;
+	background-color: #EEEEFF;
+	border: solid #BBBBBB 1px;
+	padding: 2px 2px 2px 2px;
+	margin: 0px 5px 0px 5px;
+	white-space: nowrap;
+}
+
+/* ラベル（注意）：added 081126 */
+span.ls_alert {
+	font-family: Verdana, Sans-Serif;
+	font-size: 9pt;
+	color: #444444;
+	background-color: #FFCC66;
+	border: solid #BBBBBB 1px;
+	padding: 2px 2px 2px 2px;
+	margin: 0px 5px 0px 5px;
+	white-space: nowrap;
+}
+
+/* 全文表示：added 081126 */
+span.vat {
+	white-space: nowrap;
+}
+
+/* suggest
+---------------------------------------------------- */
+
+#suggest {
+	position: absolute;
+	background-color: #FFFFFF;
+	border: 2px solid #AAAAAA;
+	padding: 2px;
+	font-size: 9pt;
+	width: 400px;
+}
+
+#suggest div {
+	display: block;
+	width: 400px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#suggest div.over {
+	background-color: #AACCFF;
+}
+
+#suggest div.select{
+	color: #FFFFFF;
+	background-color: #3366FF;
+}
+
+#suggestclose {
+	cursor: pointer;
+	color: blue;
+	text-decoration: underline;
+}
+
+/* icon page title
+---------------------------------------------------- */
+
+.iconPageTitle{
+	padding: 5px;
+	background-color: #E6E7EF;
+	vertical-align: sub;
+}
+
+.iconPageTitleText{
+	color: #483d8b;
+	font-size: 13pt;
+	font-weight: bold;
+}
+
+.iconPageTitleS{
+	padding: 3px;
+	background-color: #EDEFFF;
+	border-bottom: 2px #9CA5ED solid;
+	vertical-align: sub;
+}
+
+.iconPageTitleTextS{
+	color: #483d8b;
+}
+
+/* misc
+---------------------------------------------------- */
+
+.alertmsg {
+	margin: 0px 0px 5px 0px;
+	padding:5px;
+	border: 3px #DC143C dotted;
+}
+
+/* 発音記号：added 090630 */
+span.pron {
+	font-family: "Lucida Sans Unicode","Times New Roman", Times, Serif;
+	font-size: 12pt;
+}
+span.proni {
+	font-style: Italic;
+}
+
+
+/* sponsor site
+---------------------------------------------------- */
+#ss_head {
+border-bottom: 1px solid #999999;
+padding: 1px;
+font-family: Sans-Serif;
+font-size: 12px;
+color: #999999;
+}
+
+#ss_unit {
+/*	border-right: 1px #999999 solid; */
+/*	border-left: 1px #999999 solid; */
+	border-bottom: 1px #999999 solid;
+	padding: 3px;
+	font-family: Sans-Serif;
+	font-size: 11px;
+	line-height: 160%;
+}
+
+#AreaSponsorSite .title {
+	margin-bottom: 3px;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#AreaSponsorSite .description,
+#AreaSponsorSite .description a:link,
+#AreaSponsorSite .description a:visited {
+	margin-bottom: 2px;
+	text-decoration: none;
+	color: #222222;
+}
+
+#AreaSponsorSite .url_d {
+	color: #008000;
+}
+
+#AreaSponsorSite .url_d a:link,
+#AreaSponsorSite .url_d a:visited {
+	text-decoration: none;
+	color: #008000;
+}
+
+a.hlt {
+	background-color: #FFFFFF;
+	display: block;
+	text-decoration: none;
+}
+
+a:hover.hlt {
+	background-color: #EEEEFF;
+	text-decoration: none;
+}
+
+a:active.hlt {
+	background-color: #EEEEFF;
+	text-decoration: none;
+}
+
+/* ranking
+---------------------------------------------------- */
+/* added 091216 */
+
+div#top50{
+margin: 15px 0;
+}
+
+div#top50 td{
+margin:0;
+padding:0.1em 0;
+}
+
+div#top50 td.item{
+background-color: #EEEEFF;
+text-align: center;
+}
+
+div#top50 td.content{
+padding-left:0.5em;
+}
+
+div.ranking_eiwa{
+float:left;
+margin-right:10px;
+}
+
+.type{
+font-size: 14px;
+color:#990033;
+font-weight: bold;
+}
+
+div#eow_book{
+
+}
+
+div.shop {
+width: 300px;
+height: 430px;
+display: inline-block;
+_display:inline;
+_zoom:1; /* hasLayout を true にする */
+*display:inline;
+*zoom:1; /* hasLayout を true にする */
+vertical-align: top;
+text-align: center;
+
+}
+
+div.shop p.link{
+text-align: right;
+}
+
+div.shop p.img{
+text-align: center;
+}
+
+div#eow_eiwa{
+background-color: #EEEEFF;
+margin:15px 5px 15px 10px;
+padding:10px;
+text-align: left;
+}
+
+div#eow_eiwa p a img{
+vertical-align: middle;
+}
+
+div#eow_waei{
+background-color: #EEEEFF;
+margin:15px 10px 15px 5px;
+padding:10px;
+text-align: left;
+}
+
+div#eow_waei p a img{
+vertical-align: middle;
+}
+
+div.shop strong.title{
+font-size: 14px;
+font-weight: bold;
+}
+
+div.shop img{
+margin:0 0 10px 0;
+border :none;
+}

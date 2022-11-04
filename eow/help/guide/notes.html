@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta charset="utf-8">
+<title>凡例：ご利用ガイド：英辞郎 on the WEB</title>
+
+<!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta http-equiv="Content-Language" content="ja">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache, must-revalidate">
+<meta name="format-detection" content="telephone=no">
+
+<!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="/help/guide/content/css/normalize.css">
+<link rel="stylesheet" href="/help/guide/content/css/guide_skeleton.css">
+<link rel="stylesheet" href="/help/guide/content/css/guide_custom.css">
+<link rel="stylesheet" href="/help/guide/content/css/lightbox.css">
+<!--link rel="stylesheet" href="/content/css/layout.css"-->
+
+<script type="text/javascript" language="JavaScript" src="/help/guide/content/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" language="JavaScript" src="/help/guide/content/js/eow_top.js" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript" src="/help/guide/content/js/touchdevice.js" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript" src="/content/js/eow_footer_new.js" charset="UTF-8"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1590792-9', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- 開始パーレンのアキを詰める
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script>
+$(function(){
+	var tgElm = $('.kakko h1,h2,h3'), //対象となる要素をここで指定
+		tagType = "span"; //括弧を囲うタグ名をここで指定
+	tgElm.each(function(){
+		var tgText = $(this).html();
+		tgText = tgText.replace(/[「『（【｛［〔〈《]/g, '<' + tagType + ' style="margin-left: -0.6rem;">$&</' + tagType + '>');
+		tgText = tgText.replace(/[」』）】｝］〕〉》]/g, '<' + tagType + ' style="margin-right: -0.6rem;">$&</' + tagType + '>');
+		$(this).html(tgText);
+	});
+});
+</script>
+
+</head>
+
+<body>
+
+<!-- svg読み込み
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="svgArea"></div>
+  <script>
+$(function(){
+	$("#svgArea").load("/help/guide/content/img/symbol-defs.svg", function(){
+
+		//SVGの処理
+
+	});
+});
+</script>
+
+
+
+<!-- ヘッダー・タイトル ・インデックス-->
+<div class="header_title">
+   <div class="container">
+    <div class="headerlogo">
+       <img src="/help/guide/content/img/lo_eow.svg" alt="英辞郎 on the WEB" title=""  />
+      <div class="headerlogo_title">ヘルプ&nbsp;ご利用ガイド
+    </div>
+    </div>
+</div>
+</div>
+
+<div class="container kakko">
+  <div class="row">
+    <div class="twelve columns">
+    
+    <div class="header_info">
+    <!--a href="/help/">ヘルプ TOP へ</a>&nbsp;>>&nbsp;--><a href="/help/guide/">ご利用ガイド TOP へ</a>&nbsp;>>&nbsp;凡例</div>
+  
+   <div class="page_title">
+       <img src="/help/guide/content/img/book.svg" alt="凡例" title=""  />
+   <h1>凡例</h1>
+   <p>使用されている記号などの意味をご説明します。</p> 
+  </div>
+   <ul class="guide_index">
+   <li><a href="#1">&nbsp;&nbsp;1.&nbsp;◆：訳語部と補足説明の境界を示す</a></li>
+   <li><a href="#2">&nbsp;&nbsp;2.&nbsp;｛　｝：漢字の読み仮名を示す</a></li>
+   <li><a href="#3">&nbsp;&nbsp;3.&nbsp;［　］：訳語部において、置き換えて使える語を示す</a></li>
+   <li><a href="#4">&nbsp;&nbsp;4.&nbsp;（　）：訳語部において、省略して使える語を示す</a></li>
+   <li><a href="#5">&nbsp;&nbsp;5.&nbsp;~：英和の見出語部において、その位置に目的語が来ることを示す</a></li>
+   <li><a href="#6">&nbsp;&nbsp;6.&nbsp;〜：英和の見出語部において英語が何らかの目的語を取る場合、訳語部におけるその目的語に相当する部分に用いる</a></li>
+   <li><a href="#7">&nbsp;&nbsp;7.&nbsp;…：目的語が２つある場合、２つめの目的語を示す</a></li>
+   <li><a href="#8">&nbsp;&nbsp;8.&nbsp;__：置き換え可能な数字が入ることを示す</a></li>
+   <li><a href="#9">&nbsp;&nbsp;9.&nbsp;<span class="ls_normal" style="font-weight:normal">発音</span>：見出し語の発音記号での表記</a></li>
+   <li><a href="#10">10.&nbsp;<span class="ls_alert" style="font-weight:normal">発音</span>：「発音に注意！」という意味</a></li>
+   <li><a href="#11">11.&nbsp;<span class="ls_normal" style="font-weight:normal">カナ</span>：見出し語の発音をあえてカタカナ表記したもの</a></li>
+   <li><a href="#12">12.&nbsp;<span class="ls_normal" style="font-weight:normal">分節</span>：単語の区切り位置を「・」で示す</a></li>
+   <li><a href="#13">13.&nbsp;<span class="ls_normal" style="font-weight:normal">レベル</span>：語彙の使用頻度などを元に分類したアルクの SVL（Standard Vocabulary List）に準じるレベル</a></li>
+   <li><a href="#14">14.&nbsp;<span class="ls_normal" style="font-weight:normal">変化</span>：変化形（複数形・活用形・比較級）のスペリングを示す</a></li>
+   <li><a href="#15">15.&nbsp;品詞ラベル、スピーチレベル、分野ラベルなど</a></li>
+   <li><a href="#16">16.&nbsp;<span class="ls_normal" style="font-weight:normal">表現パターン</span>：見出し語に関する表現のバリエーション</a></li>
+   <li><a href="#17">17.&nbsp;<span class="ls_normal" style="font-weight:normal">URL</span>：見出し語に関連するウェブサイトのURL</a></li>
+   <li><a href="#18">18.&nbsp;<span class="ls_normal" style="font-weight:normal">音声を聞く</span>：音声が収録されている英単語に表示されます</a></li>
+   </ul>
+   <!-- ヘッダー・タイトル ・インデックス　終わり-->
+   
+   <div class="guide_text"> <!-- guide_text 本文開始 -->
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns">  
+   <div id="1"><!-- indexからのリンク -->
+   <h2>1.&nbsp;◆：訳語部と補足説明の境界を示す</h2>
+   </div>
+    <h3>訳語部と補足説明の境界を示す。</h3><br />
+例：
+<ul class="notes_sample">
+			<li><span style="font-weight:bold"><a href="/search?q=Wizard+of+Oz" target="_blank">Wizard of Oz</a></span>：【映画】《The 〜》オズの魔法使い<font color="red" style="font-weight:bold">◆</font>米1939《監督》ヴィクター・フレミング《出演》ジュディ・ガーランド、フランク・モーガン《受賞》アカデミー音楽賞、歌曲賞</span></li>
+			</ul>
+    </div>
+    </div><!-- end 12 columns-->
+    <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns">  
+   <div id="2"><!-- indexからのリンク -->
+   <h2>2.&nbsp;｛　｝：漢字の読み仮名を示す</h2>
+   </div>
+    <h3>漢字の読みがなを示す（すべての漢字に読み仮名が付けられているわけではない）。</h3>
+<ul>
+<li class="asterisk">実際の検索結果ページ上では、薄いグレーの文字色で表示される。また、環境設定ページの「読みがな」の項目で「表示（ON）」を選択していると表示され、「非表示（OFF）」をクリックすると非表示となる（初期設定：非表示（OFF））。</li></ul>
+例：
+<ul class="notes_sample">
+			<li><span style="font-weight:bold"><a href="/search?q=wizard" target="_blank">wizard</a></span>：【名】1. 男の魔法使い<font color="red" style="font-weight:bold">｛まほうつかい｝</font>、魔術師<font color="red" style="font-weight:bold">｛まじゅつし｝</font></li>
+			</ul>
+    </div>
+    </div><!-- end 12 columns-->
+    <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns">  
+   <div id="3"><!-- indexからのリンク -->
+   <h2>3.&nbsp;［　］：訳語部において、置き換えて使える語を示す</h2>
+   </div>
+    <h3>訳語部において、置き換えて使える語を示す。置き換えて使える語が２つ以上ある場合、［　］内において「・」で区切る。</h3>
+<br />
+例：
+<ul class="notes_sample">
+			<li><span style="font-weight:bold"><a href="/search?q=gather+intelligence" target="_blank">gather intelligence</a></span>：情報を集める<font color="red" style="font-weight:bold">［収集する］</font></li>
+			<li><span style="font-weight:bold"><a href="/search?q=gauge" target="_blank">gauge</a></span>：【他動】大きさ<font color="red" style="font-weight:bold">［太さ・容量］</font>を測定する</li>
+			</ul>
+    </div>
+    </div><!-- end 12 columns-->
+    <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns">  
+   <div id="4"><!-- indexからのリンク -->
+   <h2>4.&nbsp;（　）：訳語部において、省略して使える語を示す</h2>
+   </div>
+    <h3>訳語部において、省略して使える語を示す。省略して使える語が２つ以上ある場合、（　）内において「・」で区切る。</h3><br />
+例：
+<ul class="notes_sample">
+			<li><span style="font-weight:bold"><a href="/search?q=flip" target="_blank">flip</a></span>：【1他動】 : 〜をはじく、〜を<font color="red" style="font-weight:bold">（ポンと・ヒョイと・パッと）</font>投げる</li>
+			</ul>
+    </div>
+    </div><!-- end 12 columns-->
+    <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns">  
+   <div id="5"><!-- indexからのリンク -->
+   <h2>5.&nbsp;~：英和の見出語部において、その位置に目的語が来ることを示す</h2>
+   </div>
+    <h3>半角の波形記号（ウェーブダッシュ）は、英和の見出し語のその位置に目的語が来ることを示す。ただし、見出し語部の末尾に目的語が来る場合には、「~」は省略されている。</h3><br />
+例：
+<ul class="notes_sample">
+			<li><span style="font-weight:bold"><a href="/search?q=send+~+as+an+attached+file" target="_blank">send <font color="red" style="font-weight:bold">~</font> as an attached file</a></span>：添付ファイルで〜を送る</li>
+			<li><span style="font-weight:bold"><a href="/search?q=get+information+on" target="_blank">get information on</a></span>：〜に関する情報を得る<i>（見出語部の末尾に目的語の「~」が省略されている例）</i></li>
+			</ul>
+目的語が人間に限定される場合は someone と記載。
+<ul class="notes_sample">
+			<li><span style="font-weight:bold"><a href="/search?q=give+someone+a+ride" target="_blank">give <font color="red" style="font-weight:bold">someone</font> a ride</a></span>：〔乗り物などに〕（人）を乗せてあげる</li>
+			</ul>
+    </div>
+    </div><!-- end 12 columns-->
+    <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns">  
+   <div id="6"><!-- indexからのリンク -->
+   <h2>6.&nbsp;〜：英和の見出語部において英語が何らかの目的語を取る場合、訳語部におけるその目的語に相当する部分に用いる</h2>
+   </div>
+    <h3>全角の波形記号は、見出し語部の英語が何らかの目的語を取る場合、訳語部においてその目的語に相当する部分に用いる。</h3><br />
+例：
+<ul class="notes_sample">
+			<li><span style="font-weight:bold"><a href="/search?q=send+~+as+an+attached+file" target="_blank">send ~ as an attached file</a></span>：添付ファイルで<font color="red" style="font-weight:bold">〜</font>を送る</li>
+			</ul>
+    </div>
+    </div><!-- end 12 columns-->
+    <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+
+  <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns">  
+   <div id="7"><!-- indexからのリンク -->
+   <h2>7.&nbsp;…：目的語が２つある場合、２つめの目的語を示す</h2>
+   </div>
+    <h3>目的語が２つある場合、２つめの目的語は、訳語部においてのみ三点リーダで示される（見出し語部では使用されない）。</h3><br />
+例：
+<ul class="notes_sample">
+			<li><span style="font-weight:bold"><a href="/search?q=define+~+as" target="_blank">define ~ as</a></span>：〜を<font color="red" style="font-weight:bold">…</font>と定義する、〜を<font color="red" style="font-weight:bold">…</font>だと考える</li>
+			</ul>
+    </div>
+    </div><!-- end 12 columns-->
+    <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+
+  <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns">  
+   <div id="8"><!-- indexからのリンク -->
+   <h2>8.&nbsp;__：置き換え可能な数字が入ることを示す</h2>
+   </div>
+    <h3>アンダースコアは、その部分に置き換え可能な数字が入ることを示す。</h3><br />
+例：
+<ul class="notes_sample">
+			<li><span style="font-weight:bold"><a href="/search?q=increase+__%25+to+%24__" target="_blank">increase __% to $__</a></span>：〔売上高などが〕<font color="red" style="font-weight:bold">＿</font>％増の［増加して］<font color="red" style="font-weight:bold">＿</font>ドルになる</li>
+			</ul>
+    </div>
+    </div><!-- end 12 columns-->
+    <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns">  
+   <div id="9"><!-- indexからのリンク -->
+   <h2>9.&nbsp;<span class="ls_normal" style="font-weight:normal">発音</span>：見出し語の発音記号での表記</h2>
+   </div>
+    <h3>見出し語を発音記号で表記したもの。アクセントは母音の上に、“ ´ ”（第１強勢）と、“ ` ”（第２強勢）で表示。発音が２通り以上ある場合は、「 | 」で区切られてリストされている。</h3>
+<br />
+例：
+<ul class="notes_sample">
+			<li><span style="font-weight:bold"><a href="/search?q=adopt" target="_blank">adopt</a></span>：<span class="ls_normal">レベル</span>3、<span class="ls_normal">発音</span><font color="red" style="font-weight:bold">ədɑ́pt | ədópt</font>、<span class="ls_normal">カナ</span>アダプト、アドプト、<span class="ls_normal">変化</span>《動》adopts | adopting | adopted、<span class="ls_normal">分節</span>a・dopt</li>
+			<li><a href="/search?q=international" target="_blank"><span style="font-weight:bold;">international</span></a>：<span class="ls_normal">レベル</span>2、<span class="ls_normal">発音</span><font color="red" style="font-weight:bold;">ìntə<span class="proni">r</span>nǽʃənl</font>、<span class="ls_normal">カナ</span>インターナショナル、インタナショナル、<span class="ls_normal">変化</span>《複》internationals、<span class="ls_normal">分節</span>in・ter・na・tion・al</li>
+			</ul>
+
+			<div class="p_symbol">
+				<div  >主な発音記号：</div>
+				<table>
+				<tr><td colspan="3">母音</td></tr>
+					<tr><td class="t_first">æ</td><td class="t_second"><a href="/search?q=glad" target="_blank">gl<i>a</i>d</a></td><td class="t_third">glǽd</td></tr>
+					<tr><td class="t_first">ʌ</td><td class="t_second"><a href="/search?q=butter" target="_blank">b<i>u</i>tter</a></td><td class="t_third">bʌ́tə<span>r</span></td></tr>
+					<tr><td class="t_first">ə</td><td class="t_second"><a href="/search?q=sofa" target="_blank">sof<i>a</i></a></td><td class="t_third">sóufə</td></tr>
+					<tr><td class="t_first">ə<span>r</span></td><td class="t_second"><a href="/search?q=brother" target="_blank">broth<i>er</i></a></td><td class="t_third">brʌ́ðə<span>r</span></td></tr>
+					<tr><td class="t_first">ɑː</td><td class="t_second"><a href="/search?q=father" target="_blank">f<i>a</i>ther</a></td><td class="t_third">fɑ́ːðə<span>r</span></td></tr>
+					  <tr><td class="t_first">ɑː<span>r</span></td><td class="t_second"><a href="/search?q=arm" target="_blank"><i>ar</i>m</a></td><td class="t_third">ɑ́ː<span>r</span>m</td></tr>
+					 <tr><td class="t_first">ɑ</td><td class="t_second"><a href="/search?q=body" target="_blank">b<i>o</i>dy</a></td><td class="t_third">bɑ́di</td></tr>
+					<tr><td class="t_first">ai</td><td class="t_second"><a href="/search?q=rice" target="_blank">r<i>i</i>ce</a></td><td class="t_third">ráis</td></tr>
+					<tr><td class="t_first">auə<span>r</span></td><td class="t_second"><a href="/search?q=power" target="_blank">p<i>ower</i></a></td><td class="t_third">páuə<span>r</span></td></tr>
+					<tr><td class="t_first">əːr</td><td class="t_second"><a href="/search?q=current" target="_blank">c<i>ur</i>rent</a></td><td class="t_third">kə́ːr<span>ə</span>nt</td></tr>
+					<tr><td class="t_first">i</td><td class="t_second"><a href="/search?q=lip" target="_blank">l<i>i</i>p</a></td><td class="t_third">líp</td></tr>
+					<tr><td class="t_first">iː</td><td class="t_second"><a href="/search?q=magazine" target="_blank">magaz<i>i</i>ne</a></td><td class="t_third">mæ̀ːgəzíːn</td></tr>
+					<tr><td class="t_first">iːə</td><td class="t_second"><a href="/search?q=idea" target="_blank">id<i>ea</i></a></td><td class="t_third">aidíːə</td></tr>
+					<tr><td class="t_first">iə<span>r</span></td><td class="t_second"><a href="/search?q=ear" target="_blank"><i>ear</i></a></td><td class="t_third">íə<span>r</span></td></tr>
+					<tr><td class="t_first">i<span>ə</span>r</td><td class="t_second"><a href="/search?q=serial" target="_blank">s<i>er</i>ial</a></td><td class="t_third">sí<span>ə</span>riəl</td></tr>
+					<tr><td class="t_first">u</td><td class="t_second"><a href="/search?q=cookie" target="_blank">c<i>oo</i>kie</a></td><td class="t_third">kúki</td></tr>
+					<tr><td class="t_first">uː</td><td class="t_second"><a href="/search?q=soup" target="_blank">s<i>ou</i>p</a></td><td class="t_third">súːp</td></tr>
+					<tr><td class="t_first">juː</td><td class="t_second"><a href="/search?q=argue" target="_blank">arg<i>ue</i></a></td><td class="t_third">ɑ́ː<span>r</span>gjuː</td></tr>
+					<tr><td class="t_first">e</td><td class="t_second"><a href="/search?q=head" target="_blank">h<i>ea</i>d</a></td><td class="t_third">héd</td></tr>
+				</table>
+				
+				<table>
+					<tr><td class="t_first">ei</td><td class="t_second"><a href="/search?q=cake" target="_blank">c<i>a</i>ke</a></td><td class="t_third">kéik</td></tr>
+					<tr><td class="t_first">ɛə<span>r</span></td><td class="t_second"><a href="/search?q=hair" target="_blank">h<i>air</i></a></td><td class="t_third">hέə<span>r</span></td></tr>
+					<tr><td class="t_first">ɛ<span>ə</span>r</td><td class="t_second"><a href="/search?q=daring" target="_blank">d<i>ar</i>ing</a></td><td class="t_third">dέ<span>ə</span>riŋ</td></tr>
+					<tr><td class="t_first">ɔː</td><td class="t_second"><a href="/search?q=already" target="_blank"><i>a</i>lready</a></td><td class="t_third">ɔːlrédi</td></tr>
+					<tr><td class="t_first">ɔi</td><td class="t_second"><a href="/search?q=voice" target="_blank">v<i>oi</i>ce</a></td><td class="t_third">vɔ́is</td></tr>
+					<tr><td class="t_first">ɔː<span>r</span></td><td class="t_second"><a href="/search?q=door" target="_blank">d<i>oor</i></a></td><td class="t_third">dɔ́ː<span>r</span></td></tr>
+					<tr><td class="t_first">ou</td><td class="t_second"><a href="/search?q=soda" target="_blank">s<i>o</i>da</a></td><td class="t_third">sóudə</td></tr>
+					<tr><td class="t_first">uə<span>r</span></td><td class="t_second"><a href="/search?q=tour" target="_blank">t<i>our</i></a></td><td class="t_third">túə<span>r</span></td></tr>
+					<tr><td class="t_first">juə<span>r</span></td><td class="t_second"><a href="/search?q=pure" target="_blank">p<i>ure</i></a></td><td class="t_third">pjúə<span>r</span></td></tr>
+					<tr><td class="t_first">u<span>ə</span>r</td><td class="t_second"><a href="/search?q=tourist" target="_blank">t<i>our</i>ist</a></td><td class="t_third">tú<span>ə</span>rist</td></tr>
+					<tr><td class="t_first">ju<span>ə</span>r</td><td class="t_second"><a href="/search?q=Europe" target="_blank"><i>Eur</i>ope</a></td><td class="t_third">jú<span>ə</span>rəp</td></tr>
+					<tr><td colspan="3" style="padding-top:24px;">子音</td></tr>
+						<tr><td class="t_first">ʃ</td><td class="t_second"><a href="/search?q=dish" target="_blank">di<i>sh</i></a></td><td class="t_third">díʃ</td></tr>
+						<tr><td class="t_first">tʃ</td><td class="t_second"><a href="/search?q=choke" target="_blank"><i>ch</i>oke</a></td><td class="t_third">tʃóuk</td></tr>
+						<tr><td class="t_first">ʒ</td><td class="t_second"><a href="/search?q=measure" target="_blank">mea<i>s</i>ure</a></td><td class="t_third">méʒə<span>r</span></td></tr>
+						<tr><td class="t_first">ʤ</td><td class="t_second"><a href="/search?q=joke" target="_blank"><i>j</i>oke</a></td><td class="t_third">ʤóuk</td></tr>
+						<tr><td class="t_first">θ</td><td class="t_second"><a href="/search?q=breath" target="_blank">brea<i>th</i></a></td><td class="t_third">bréθ</td></tr>
+						<tr><td class="t_first">ð</td><td class="t_second"><a href="/search?q=breathe" target="_blank">brea<i>th</i>e</a></td><td class="t_third">bríːð</td></tr>
+						<tr><td class="t_first">ŋ</td><td class="t_second"><a href="/search?q=sing" target="_blank">si<i>ng</i></a></td><td class="t_third">síŋ</td></tr>
+ 				</table>
+ 				</div>
+    </div>
+    </div><!-- end 12 columns-->
+    <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns">  
+   <div id="10"><!-- indexからのリンク -->
+   <h2>10.&nbsp;<span class="ls_alert" style="font-weight:normal">発音</span>：「発音に注意！」という意味</h2>
+   </div>
+    <h3>「発音に注意！」という意味。</h3>
+<br />
+例：
+<ul class="notes_sample">
+			<li><span style="font-weight:bold"><a href="/search?q=ache" target="_blank">ache</a></span>：<span class="ls_normal">レベル</span>4、<span class="ls_alert">発音</span><font color="red" style="font-weight:bold">éik</font>、<span class="ls_normal">カナ</span>エイク、<span class="ls_normal">変化</span>《動》 aches | aching | ached</li>
+			<li><span style="font-weight:bold"><a href="/search?q=anxious" target="_blank">anxious</a></span>：<span class="ls_normal">レベル</span>2、<span class="ls_alert">発音</span><font color="red" style="font-weight:bold">ǽŋkʃəs</font>、<span class="ls_normal">カナ</span>アンクシャス、<span class="ls_normal">分節</span>anx・ious</li>
+			</ul>
+    </div>
+    </div><!-- end 12 columns-->
+    <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns">  
+   <div id="11"><!-- indexからのリンク -->
+   <h2>11.&nbsp;<span class="ls_normal" style="font-weight:normal">カナ</span>：見出し語の発音をあえてカタカナ表記したもの</h2>
+   </div>
+    <h3>見出し語の発音をあえてカタカナ表記したもの。カタカナ表記では正しい発音の習得への貢献は期待できないが、「発音記号が読めないのでカタカナで示してほしい」というリクエストに応じて、可能な限りカタカナ表記での発音を記載。</h3>
+<br />
+例：
+<ul class="notes_sample">
+			<li><span style="font-weight:bold"><a href="/search?q=take" target="_blank">take</a></span>：<span class="ls_normal">レベル</span>1、<span class="ls_normal">発音</span><span class="pron">téik</span>、<span class="ls_normal">カナ</span><font color="red" style="font-weight:bold">テイク</font>、<span class="ls_normal">変化</span>《動》 takes | taking | took | taken</li>
+			<li><span style="font-weight:bold"><a href="/search?q=anxious" target="_blank">anxious</a></span>：<span class="ls_normal">レベル</span>2、<span class="ls_alert">発音</span><span class="pron">ǽŋkʃəs</span>、<span class="ls_normal">カナ</span><font color="red" style="font-weight:bold">アンクシャス</font>、<span class="ls_normal">分節</span>anx・ious</li>
+			</ul>
+    </div>
+    </div><!-- end 12 columns-->
+    <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns">  
+   <div id="12"><!-- indexからのリンク -->
+   <h2>12.&nbsp;<span class="ls_normal" style="font-weight:normal">分節</span>：単語の区切り位置を「・」で示す</h2>
+   </div>
+    <h3>単語の区切り位置を「・」で示す。</h3>
+<br />
+例：
+<ul class="notes_sample">
+			<li><span style="font-weight:bold"><a href="/search?q=anxious" target="_blank">anxious</a></span>：<span class="ls_normal">レベル</span>2、<span class="ls_alert">発音</span><span class="pron">ǽŋkʃəs</span>、<span class="ls_normal">カナ</span>アンクシャス、<span class="ls_normal">分節</span><font color="red" style="font-weight:bold">anx・ious</font></li>
+			</ul>
+    </div>
+    </div><!-- end 12 columns-->
+    <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns">  
+   <div id="13"><!-- indexからのリンク -->
+   <h2>13.&nbsp;<span class="ls_normal" style="font-weight:normal">レベル</span>：語彙の使用頻度などを元に分類したアルクの SVL（Standard Vocabulary List）に準じるレベル</h2>
+   </div>
+    <h3>語彙の使用頻度などを基に分類したアルクの <a href="//www.alc.co.jp/vocgram/article/svl/" target="_blank">SVL（Standard Vocabulary List）</a>に準じるレベル。12,000 の語彙が 12 のレベルに分類されている（SVL の詳細情報は<a href="//www.alc.co.jp/vocgram/article/svl/" target="_blank">こちら</a>）。</h3>
+<br />
+例：
+<ul class="notes_sample">
+			<li><span style="font-weight:bold"><a href="/search?q=ache" target="_blank">ache</a></span>：<span class="ls_normal">レベル</span><font color="red" style="font-weight:bold">4</font>、<span class="ls_alert">発音</span><span class="pron">éik</span>、<span class="ls_normal">カナ</span>エイク、<span class="ls_normal">変化</span>《動》 aches | aching | ached</li>
+			<li><span style="font-weight:bold"><a href="/search?q=managerial" target="_blank">managerial</a></span>：<span class="ls_normal">レベル</span><font color="red" style="font-weight:bold">10</font>、<span class="ls_normal">発音</span><span class="pron">mæ̀nədʒí<span class="proni">ə</span>riəl</span>、<span class="ls_normal">分節</span>man・a・ge・ri・al</li>
+			</ul>
+    <div class="img_wrap_center">
+     <p class="img_title">SVLレベル一覧</p><br />
+  <img src="/help/guide/content/img/vocab-levels.png" alt="SVLレベル一覧表" title="SVLレベル一覧表" width="70%" /><!--/a-->
+  </div>
+    </div>
+    </div><!-- end 12 columns-->
+    <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns">  
+   <div id="14"><!-- indexからのリンク -->
+   <h2>14.&nbsp;<span class="ls_normal" style="font-weight:normal">変化</span>：変化形（複数形・活用形・比較級）のスペリングを示す</h2>
+   </div>
+    <h3>見出し語の変化形（動詞：三人称単数現在形・現在進行形・過去形・過去分詞形、形容詞・副詞：比較級・最上級、名詞：複数形）のスペリングを示す。</h3>
+<br />
+例：
+<ul class="notes_sample">
+			<li><span style="font-weight:bold"><a href="/search?q=get" target="_blank">get</a></span>：<span class="ls_normal">レベル</span>1、<span class="ls_normal">発音</span><span class="pron">gét</span>、<span class="ls_normal">カナ</span>ゲット、<span class="ls_normal">変化</span><font color="red" style="font-weight:bold">《動》gets | getting | got | gotten</font></li>
+			<li><span style="font-weight:bold"><a href="/search?q=bright" target="_blank">bright</a></span>：<span class="ls_normal">レベル</span>2、<span class="ls_normal">発音</span><span class="pron">bráit</span>、<span class="ls_normal">カナ</span>ブライト、<span class="ls_normal">変化</span><font color="red" style="font-weight:bold">《形》brighter | brightest</font></li>
+			<li><span style="font-weight:bold"><a href="/search?q=bird" target="_blank">bird</a></span>：<span class="ls_normal">レベル</span>1、<span class="ls_normal">発音</span><span class="pron">bə́ː<span class="proni">r</span>d</span>、<span class="ls_normal">カナ</span>バード、<span class="ls_normal">変化</span><font color="red" style="font-weight:bold">《複》birds</font></li>
+			</ul>
+    </div>
+    </div><!-- end 12 columns-->
+    <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+
+   <div class="twelve columns"> <!-- 12 columns -->
+<div class="ten columns">  
+   <div id="15"><!-- indexからのリンク -->
+   <h2>15.&nbsp;品詞ラベル、スピーチレベル、分野ラベルなど</h2>
+   </div>
+    <h3>「英辞郎」収録語彙に付与されている代表的な品詞ラベル、スピーチレベル、分野ラベルなど。</h3>
+    <br />
+    ※【1形】【2名】のように、品詞情報の前に数字が付いているときは、同一綴りでも語源が異なることを表しています。 
+				<div class="label ">
+				<table>
+					<tr><td class="t_first">【名】</td><td class="t_second">名詞</td></tr>
+					<tr><td class="t_first">【代】</td><td class="t_second">代名詞</td></tr>
+					<tr><td class="t_first">【形】</td><td class="t_second">形容詞</td></tr>
+					<tr>
+					  <td class="t_first">【動】</td><td class="t_second">動詞</td></tr>
+					<tr>
+					  <td class="t_first">【他動】</td><td class="t_second">他動詞</td></tr>
+					<tr>
+					  <td class="t_first">【自動】</td><td class="t_second">自動詞</td></tr>
+					<tr>
+					  <td class="t_first">【句動】</td><td class="t_second">句動詞</td></tr>
+					<tr>
+					  <td class="t_first">【助】</td><td class="t_second">助動詞</td></tr>
+					<tr>
+					  <td class="t_first">【副】</td><td class="t_second">副詞</td></tr>
+					<tr>
+					  <td class="t_first">【接】</td><td class="t_second">接続詞</td></tr>
+					<tr>
+					  <td class="t_first">【間】</td><td class="t_second">間投詞</td></tr>
+					<tr>
+					  <td class="t_first">【前】</td><td class="t_second">前置詞</td></tr>
+					<tr>
+					  <td class="t_first">【定】</td><td class="t_second">定冠詞</td></tr>
+					<tr>
+					  <td class="t_first">【不】</td><td class="t_second">不定冠詞</td></tr>
+					<tr>
+					  <td class="t_first">【組織】</td><td class="t_second">組織名<br>
+                   <span class="t_small">（会社名、団体名など）</span></td></tr>
+					  <tr>
+					  <td class="t_first">【略】</td><td class="t_second">略語</td></tr>
+					<tr>
+					  <td class="t_first">【同】</td><td class="t_second">同意語</td></tr>
+					<tr>
+					  <td class="t_first">【反】</td><td class="t_second">反意語</td></tr>
+					<tr>
+					  <td class="t_first">【類】</td><td class="t_second">類語</td></tr>
+					<tr>
+					  <td class="t_first">【対】</td><td class="t_second">対語</td></tr>
+					<!--tr>
+					  <td class="t_first">【SNS略】</td><td class="t_second">SNSなどで使われる略語</td></tr-->
+				</table>
+				
+				<table>
+					<tr><td class="t_first">《イ》</td><td class="t_second">インターネット</td></tr>
+					<tr><td class="t_first">《コ》</td><td class="t_second">コンピューター</td></tr>
+					<tr><td class="t_first">《レ》</td><td class="t_second">レターや E メールの文例</td></tr>
+					<tr>
+					  <td class="t_first">《医》</td><td class="t_second">医学</td></tr>
+					<tr>
+					  <td class="t_first">《薬学》</td><td class="t_second">薬学</td></tr>
+					<tr>
+					  <td class="t_first">《化学》</td><td class="t_second">化学</td></tr>
+					<tr>
+					  <td class="t_first">〈米〉</td><td class="t_second">アメリカ英語</td></tr>
+					<tr>
+					  <td class="t_first">〈英〉</td><td class="t_second">イギリス英語</td></tr>
+					<tr>
+					  <td class="t_first">〈豪〉</td><td class="t_second">オーストラリア英語</td></tr>
+					<tr>
+					  <td class="t_first">〈NZ〉</td><td class="t_second">ニュージーランド英語</td></tr>
+					<tr>
+					  <td class="t_first">〈アイル〉</td><td class="t_second">アイルランド方言</td></tr>
+					<tr>
+					  <td class="t_first">〈スコ〉</td><td class="t_second">スコットランド方言</td></tr>
+					  <tr>
+					  <td class="t_first">〈俗〉</td><td class="t_second">俗語</td></tr>
+					<tr>
+					  <td class="t_first">〈米俗〉</td><td class="t_second">アメリカの俗語</td></tr>
+					<tr>
+					  <td class="t_first">〈話〉</td><td class="t_second">話し言葉<span class="t_small">（口語表現）</span></td></tr>
+					<tr>
+					  <td class="t_first">〈文〉</td><td class="t_second">文語<span class="t_small">（書き言葉）</span></td></tr>
+					  <tr>
+					  <td class="t_first">〈米話〉</td><td class="t_second">アメリカの話し言葉</td></tr>
+					<tr>
+					  <td class="t_first">〈野球俗〉</td><td class="t_second">野球で使われる俗語</td></tr>
+					<tr>
+					  <td class="t_first">〈米軍俗〉</td><td class="t_second">米軍で使われる俗語</td></tr>
+ 				</table>
+ 				</div>
+<p>※上記がすべてではありません。<a href="/" target="_blank">品詞別索引・分野別索引</a>もご参照ください。</p>
+             </div>
+          </div><!-- end 12 columns-->
+    <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns">  
+   <div id="16"><!-- indexからのリンク -->
+   <h2>16.&nbsp;<span class="ls_normal" style="font-weight:normal">表現パターン</span>：見出し語に関する表現のバリエーション</h2>
+   </div>
+    <h3>見出し語に関する表現のバリエーション。<a href="#3">置き換え記号</a>や<a href="#4">省略記号</a>を用いることで、表現の組み合わせを提示するもの。</h3>
+<br />
+例：
+<ul class="notes_sample">
+			<li><span style="font-weight:bold"><a href="/search?q=meeting+of+shareholders" target="_blank">meeting of shareholders</a></span>：<span class="ls_normal">表現パターン</span><font color="red" style="font-weight:bold">(general) meeting of shareholders [stockholders]</font><br />
+			例えば上記の場合は、以下の表現パターンがあるということ。<br />
+general meeting of shareholders<br />
+meeting of shareholders<br />
+general meeting of stockholders<br />
+meeting of stockholders <br />
+			</li>
+			</ul>
+    </div>
+    </div><!-- end 12 columns-->
+    <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns">  
+   <div id="17"><!-- indexからのリンク -->
+   <h2>17.&nbsp;<span class="ls_normal" style="font-weight:normal">URL</span>：見出し語に関連するウェブサイトのURL</h2>
+   </div>
+    <h3>見出し語に関連したウェブサイトの URL（アドレス）。URL はリンクになっているので、クリックしてリンク先の内容を参照可能</h3>
+<ul>
+<li class="asterisk">リンク先の URL の変更などの事情により、ウェブサイトを表示できない場合もあります。あらかじめご了承ください。</li></ul>
+例：
+<ul class="notes_sample">
+			<li><span style="font-weight:bold"><a href="/search?q=UNICEF" target="_blank">UNICEF</a></span>：<span class="ls_normal">URL</span><a href="https://www.unicef.org/" target="_blank"><font color="red" style="font-weight:bold">https://www.unicef.org/</font></a></li>
+			</ul>
+    </div>
+    </div><!-- end 12 columns-->
+    <div class="pagetop_right"><a href="#top">▲ページトップへ</a></div>
+
+   <div class="twelve columns"> <!-- 12 columns -->
+   <div class="ten columns">  
+   <div id="18"><!-- indexからのリンク -->
+   <h2>18.&nbsp;<span class="ls_normal" style="font-weight:normal">音声を聞く</span>：音声が収録されている英単語に表示されます</h2>
+   <a href="https://eowp.alc.co.jp/"><div class="logo_pro"></div></a><a href="https://eowf.alc.co.jp/"><div class="logo_prolite"></div></a></div>
+    <h3>音声が収録されている英単語に表示されます。右にある<img src="https://eowp.alc.co.jp/content/img/play.png" alt="音声を聞く" align="top" />をクリックすると、音声が再生され、その英単語の発音が確認できます。</h3>
+<br />
+例：
+<ul class="notes_sample">
+			<li><span style="font-weight:bold"><a href="https://eowp.alc.co.jp/search?q=ache" target="_blank">ache</a></span>：<span class="ls_normal" style="font-weight:normal">音声を聞く</span><img src="https://eowp.alc.co.jp/content/img/play.png" alt="音声を聞く" align="top" /> <span class="ls_normal">レベル</span>4、<span class="ls_alert">発音</span><font color="red" style="font-weight:bold">éik</font>、<span class="ls_normal">カナ</span>エイク、<span class="ls_normal">変化</span>《動》 aches | aching | ached</li>
+			</ul>
+    </div>
+    </div><!-- end 12 columns-->
+
+
+  </div><!-- end guide_text -->
+  
+</div><!-- end 12 columns -->
+</div><!-- end row-->
+</div><!-- end  container -->
+
+<!--パンくず
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<div class="container footer_wrap">
+        <div class="footer_guidetop"><a href="/">「英辞郎&nbsp;on&nbsp;the&nbsp;WEB」TOP</a></div>
+           <div class="pagetop_right_bottom"><a href="#top">▲ページトップへ</a></div>
+            </div>
+
+
+<!-- footer
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="band_footer">
+
+<!-- ▼フッタ書き出し▼ -->
+<script type="text/javascript">
+<!--
+document.write(footer);
+// -->
+</script>
+<!-- ▲end: フッタ書き出し▲ -->
+
+
+  <!-- Google Tag Manager_NEW -->
+  <noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-TKK8PX"height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TKK8PX');</script><!-- End Google Tag Manager_NEW -->
+
+</div>
+  
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <!-- ページ内リンクスムーズスクロール
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script type="text/javascript">
+  $('a[href^="#"]').click(function(){
+    var speed = 800;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+</script>
+
+<!-- lightbox --> 
+<script src="/help/guide/content/js/lightbox.js"></script>
+  
+
+  <!-- Google Tag Manager_NEW -->
+  <noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-TKK8PX"height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TKK8PX');</script><!-- End Google Tag Manager_NEW -->
+
+</div>
+
+
+ 
+
+ 
+</body>
+</html>

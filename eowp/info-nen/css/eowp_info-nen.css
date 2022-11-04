@@ -1,0 +1,373 @@
+
+@charset "shift-jis";
+/*reset style
+------------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-decoration: none;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, 
+fieldset, input, textarea, p, blockquote, th, td{
+    margin: 0; 
+    padding: 0;
+}
+html{
+    overflow-y: scroll;
+}
+h1, h2, h3, h4, h5, h6{
+    font-size: 100%; 
+    font-weight: normal;
+}
+ol, ul{
+    list-style:none;
+}
+fieldset{
+     border:0;
+}
+img{
+     border:0;
+	 vertical-align:bottom
+}
+table{
+    border-collapse: collapse; 
+    border-spacing:0;
+}
+caption, th{
+    text-align: left;
+}
+address, caption, cite, code, dfn, em, strong, th, var{
+    font-style: normal; 
+    font-weight: normal;
+}
+/*format style
+------------------------------*/
+body{
+	font-family: "ÉÅÉCÉäÉI", Meiryo, Osaka, "ÇlÇr ÇoÉSÉVÉbÉN", "MS PGothic", "ÉqÉâÉMÉmäpÉS Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+	line-height:1.6em;
+	color:#000;
+	font-size:0.8em;
+	background-color: #FF8000;
+}
+.cap {
+	font-size: 0.8em;
+	line-height: 1.5em;
+}
+.clear {
+	clear: both;
+}
+/*link style
+------------------------------*/
+a img {
+	border-style: none;
+}
+a:link {
+	color: #006AB3;
+	text-decoration: underline;
+}
+a:visited {
+	color: #006AB3;
+	text-decoration: underline;
+}
+a:hover {
+	color: #006AB3;
+	text-decoration: none;
+}
+a:active {
+	color: #006AB3;
+}
+.block {
+	display: block;
+}
+/*basic layout
+------------------------------*/
+
+#login {
+	background-image: url(../images/head_back.gif);
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding: 0px;
+	height: 333px;
+	width: 244px;
+	position: absolute;
+	top: 70px;
+	right: 43px;
+}
+#login .text {
+	padding-right: 16px;
+	padding-left: 16px;
+	width: 212px;
+	padding-top: 25px;
+}
+#login .chkbox {
+	vertical-align:middle
+}
+.login_md {
+	font-size: 10px;
+	line-height: 13px;
+	display: block;
+	margin-bottom: 10px;
+}
+#login .textfield {
+	margin-bottom:5px;
+	height: 20px;
+	width: 212px;
+	border: 1px solid #D7D7D7;
+}
+#login .submit {
+	text-align:center;
+	margin:15px auto
+}
+#login .submitbutt {
+	height:28px;
+	width:212px;
+	border:0;
+	background-image: url(../images/login_but.gif);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	padding: 0px;
+}#nw_wrapper {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.nw_main {
+	margin: 0px;
+	width: 859px;
+	padding-right: 51px;
+	padding-left: 50px;
+	background-color: #FFF;
+}
+#nw_topread {
+	margin: 0px;
+	padding: 0px;
+	width: 859px;
+	position: relative;
+}
+
+#nw_topread p {
+
+	position: absolute;
+	padding:10px;
+	top: 10px;
+	right: 10px;
+	font-size: 13px;
+	line-height: 25px;
+	float:left;
+}
+#nw_topread2 {
+	margin: 0px;
+	padding: 0px;
+    width: 485px;
+
+}
+
+#nw_topread2 p {
+	width: 485px;
+	font-size: 13px;
+	line-height: 25px;
+	margin-top:10px;
+}
+.regbtn a {
+	background-image: url(../images/nw_regbtn.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	text-indent: -9999px;
+	display: block;
+	height: 110px;
+	width: 859px;
+}
+.regbtn a:hover {
+	background-image: url(../images/nw_regbtn.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	text-indent: -9999px;
+	display: block;
+	height: 110px;
+	width: 859px;
+}
+.tokka {
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+	font-weight: bold;
+	color: #FF4000;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.caption {
+	font-size: 11px;
+	line-height: 18px;
+}
+.caption_important {
+	font-size: 14px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #FF0000;
+	color: #FF0000;
+	padding: 0px 4px;
+	margin-right: 5px;
+	line-height: 18px;
+	display: inline;
+}
+.dousa_login p {
+	float: right;
+	font-size: 11px;
+	margin-bottom: 5px;
+}
+#goeowp p {
+	float: right;
+	background-image: url(../images/arw_or.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 15px;
+}
+#nw_prbox_left {
+	padding: 0px;
+	height: 435px;
+	width: 412px;
+	float: left;
+	position: relative;
+	margin-right: 35px;
+}
+#nw_prbox_right {
+	padding: 0px;
+	height: 435px;
+	width: 412px;
+	float: left;
+	position: relative;
+}
+.nw_prboxiner {
+	width: 354px;
+}
+.nw_prboxiner p {
+	position: absolute;
+	top: 340px;
+	right: 0px;
+	width: 354px;
+	left: 30px;
+}
+#nw_point img {
+	float: left;
+	display: block;
+}
+#nw_point {
+	padding: 0px;
+	height: 457px;
+	width: 859px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+#goeowp_btn {
+	width: 859px;
+	margin-top: 20px;
+}
+#goeowp_btn a {
+	background-image: url(../images/goeowpbtn.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	text-indent: -9999px;
+	display: block;
+	height: 42px;
+	width: 428px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#goeowp_btn a:hover {
+	background-image: url(../images/goeowpbtn.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	text-indent: -9999px;
+	display: block;
+	height: 42px;
+	width: 428px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.pagetop  {
+	background-image: url(../images/arw_or.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 15px;
+	display: block;
+	float: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 13px;
+}#eowp12_foot {
+	width: 860px;
+	background-image: url(../images/loginback.gif);
+	text-align: center;
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 12px;
+	line-height: 25px;
+}
+.sbm_top_nw {
+	width: 350px;
+	position: absolute;
+	left: 0px;
+	top: -105px;
+}
+.sbm {
+	text-align: right;
+	width: 350px;
+	float: right;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}#nenwari_qa {
+	margin: 0px;
+	padding: 0px;
+	width: 859px;
+}
+#nenwari_qa dl {
+	margin: 0px;
+	padding: 0px;
+}
+#nenwari_qa dl dt {
+	margin: 0px;
+	padding: 0px;
+}
+#nenwari_qa dl dd {
+	font-size: 13px;
+	line-height: 22px;
+	background-image: url(../images/answer.gif);
+	background-repeat: no-repeat;
+	background-position: 20px 3px;
+	margin-top: 13px;
+	margin-bottom: 25px;
+	padding-left: 80px;
+}
+.new_campain_05_22{
+	width:835px;
+	height:714px;
+	background-image:url(../images/info-nen_syusei_001.jpg);
+	background-repeat: no-repeat;
+position:absolute;
+margin-bottom:50px;
+margin-left:20px;
+margin-top:20px;
+
+}
+#new_campain_05_22_in{
+	margin-top:330px;
+	width:800px;
+	font-size:14px;
+	clear:both;
+	position:relative;
+	margin-left:30px;
+
+}
+#new_campain_05_22_in01{
+	margin-top:15px;
+	width:800px;
+	font-size:14px;
+	margin-left:30px;
+position:relative;
+}
+	
