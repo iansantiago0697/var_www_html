@@ -1,10 +1,10 @@
 var eowConfig = {
-  homeUrl: "https://eow2.alc.co.jp/",
+  homeUrl: "http://eow.testserver.jp/",
   resourceUrl: "//cdn2.alc.co.jp/eow/sp/",
   cdnUrl: "//cdn2.alc.co.jp/eow/sp/",
-  apiBaseUrl: "//eow2.alc.co.jp/",
+  apiBaseUrl: "//eow.testserver.jp/",
   rootUrl: "/sp/",
-  eowpUrl: "//eowpf2.alc.co.jp/?utm_source=eow_serp_sp&utm_medium=button&utm_campaign=eow_sp_serp_login",
+  eowpUrl: "//eowpf.alc.co.jp/?utm_source=eow_serp_sp&utm_medium=button&utm_campaign=eow_sp_serp_login",
   contextMenu: false,
   loggable: false,
   searchPage: true,
