@@ -2,7 +2,12 @@
 
 /* 検索結果
 ---------------------------------------------------- */
-#resultsList ul div {
+#resultsList ul div,
+#resultsArea_je #resultsList ul > li {
 	line-height: 220%;
 	margin:5px 0;
+}
+
+#resultsList .fukidashi {
+	line-height: 100%;
 }

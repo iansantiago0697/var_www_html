@@ -2,6 +2,6 @@
 
 /* 検索結果
 ---------------------------------------------------- */
-#resultsList ul {
+.contents section#main #resultsArea, #resultsList ul {
 	font-family: 'Noto Serif JP', serif;
 }

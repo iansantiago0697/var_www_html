@@ -948,12 +948,10 @@ body #body-tab0 div.pro_btn a:hover{
 	/* margin-top: 12px; */
 }
 
-#inner_paging{
-	/* font-size: 1.4em; */
-}
-
-#inner_paging #paging{
-	/* width: 745px */
+@media screen and (max-width: 598px) {
+	#top_paging {
+		display: none;
+	}
 }
 
 #paging a {
@@ -1014,10 +1012,12 @@ body #body-tab0 div.pro_btn a:hover{
 
 /* 20190227 デザイン修正追加 */
 #resultsArea_je {
-	font-family: "Arial", "Arial New", "ＭＳ Ｐ ゴシック", Sans-Serif;
+	/* EOWP_SHOP-397 - utilized new font-family */
+	/* font-family: "Arial", "Arial New", "ＭＳ Ｐ ゴシック", Sans-Serif; */
 }
 
-#resultsList ul{
+#resultsList ul,
+#resultsArea_je ul{
 	padding-left: 0;
 	margin-bottom:20px;
 	/*	font-size: 1.2em; */
@@ -1077,6 +1077,7 @@ line-height: 1.5em;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-top:-25px;
+	cursor: default;
 }
 
 #resultsList td {
@@ -1087,7 +1088,6 @@ line-height: 1.5em;
 
 #resultsList li div .ul_je{
 	font-size:100%;
-	list-style-type:square;
 }
 
 /* 0件メッセージ
@@ -1132,9 +1132,7 @@ line-height: 1.5em;
 #resultsArea_je .midashi_je{
 	color: #004294;
 	display: inline-block;
-	font-size: 130%;
 	font-weight: bold;
-	padding-left: 40px;
 }
 
 .searchwordfont{
@@ -1239,7 +1237,6 @@ span.vat {
 /* 発音記号：added 090630 modified 130417 */
 span.pron {
 	font-family: "Arial Unicode MS", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-	font-size: 12pt;
 }
 span.proni {
 	font-style: Italic;
@@ -1504,6 +1501,36 @@ p.pr_text a {
 	z-index: 1000;
 	display: none;
 }
+
+@media screen and (max-width: 598px) {
+	.fukidashi {
+		width: 275px;
+		left: 45px;
+	}
+
+	#resultsList .fukidashi {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.fukidashi .closeBtn {
+		margin-right: 5px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.fukidashi {
+		width: 275px;
+		left: 10px;
+		top: 30%;
+		left: -20%;
+	}
+
+	.fukidashi:after {
+		display: none;
+	}
+}
+
 .ex_sentence .fukidashi {
 	margin-top: 13px !important;
 	top: auto;
@@ -1536,7 +1563,7 @@ p.pr_text a {
 .fukidashi .closeBtn {
 	float: right;
 	margin-top: 6px;
-	margin-right: 18px;
+	margin-right: 5px;
 }
 
 .fukidashi div {
@@ -1548,15 +1575,16 @@ p.pr_text a {
 	margin-top: 28px;
 	margin-bottom: 20px;
 	margin-left: 13px;
-	margin-right:7px;
+	margin-right: 13px;
+    font-size: 13px;
 	line-height: 20px;
+	text-align: initial;
 }
 
 .fukidashi .btn {
 	text-align: center;
-	margin-bottom:45px;
-	margin-left: -126px;
 }
+
 #resultsList ul .ex_sentence {
 	width: 32px;
 	position: relative;
@@ -1740,16 +1768,16 @@ float:left;
 	border-bottom: none;
 	color: #00418e;
 }
-#resultsArea_je div a {
-	text-decoration: none;
+#resultsArea_je li div a {
+	text-decoration: underline;
 	color: #000000;
-	border-bottom:solid 1px #BEBEBE ;
+	/* border-bottom:solid 1px #BEBEBE ; */
 	cursor: pointer;
 }
-#resultsArea_je div a:hover {
-	text-decoration: none;
+#resultsArea_je li div a:hover {
+	text-decoration: underline;
 	color: #888888;
-	border-bottom:solid 1px #004294 ;
+	/* border-bottom:solid 1px #004294 ; */
 	cursor: pointer;
 }
 #resultsArea_je #paging a {
@@ -2604,101 +2632,22 @@ p.pr_text a {
 }
 
 /*======== ↓EOW_SHOP-397 Responsive SERP design changes ========*/
+html {
+	scroll-behavior: smooth;
+}
+
 .search-word-ttl {
 	display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-@media screen and (min-width: 1098px) {
-	.wrap-inner a {
-		display: inline-block;
-    	cursor: pointer;
-	}
+a:hover {
+	color: #999999;
+}
 
-	.wrap-inner a:hover{
-		color: #999999;
-		opacity: .6;
-    	transition: 0.4s;
-	}
-
-	.ttl-01 {
-		font-weight: bold;
-		font-size: 32px;
-	}
-	.ttl-01 span {
-		font-size: .8em;
-		font-weight: normal;
-	}
-	
-	.search-word-table {
-		margin-top: 1.2em;
-		margin-bottom: 3.2em;
-		width: 100%;
-	}
-
-	.tbl-01 {
-		border-top: 2px solid rgba(34, 34, 34, 0.12);
-    	border-bottom: 2px solid rgba(34, 34, 34, 0.12);
-		border-collapse: collapse;
-	}
-
-	.tbl-01 tr {
-		margin: 0;
-		padding: 0;
-		border: none;
-	}
-
-	.search-word-table th {
-		font-weight: normal;
-	}
-
-	.search-word-table em {
-		font-style: normal;
-	}
-
-	.search-word-table th em {
-		margin-right: 0.25em;
-		font-weight: bold;
-	}
-
-	.search-word-table h2 {
-		font-size: 16px;
-	}
-
-	.search-word-table h2 span {
-		font-weight: normal;
-	}
-
-	.tbl-01 th {
-		min-width: 200px;
-	}
-
-	.tbl-01 th, .tbl-01 td  {
-		padding: 1em 0.5em;
-		text-align: left;
-		border: none;
-	}
-
-	.tbl-01 td em {
-		margin-right: 2em;
-		font-size: 1.125em;
-		font-weight: bold;
-	}
-
-	.row1 td span {
-		margin-left: 0.25em;
-		font-size: .8em;
-	}
-
-	.tbl-01 tr:not(:first-child) {
-		border-top: 1px solid rgba(34, 34, 34, 0.12);
-	}
-
-
-	.tbl-01 td.sGradableWord, .tbl-01 td.sIdiom {
-		font-weight: bold;
-	}
+.contents .tbl-01 th {
+	min-width: 200px;
 }
 
 /* =========================================================== */
@@ -2781,7 +2730,9 @@ body {
 	transition: 0.4s;
 }　
 	
-.header a:hover, .header button:hover, .header input[type*='button']:hover, .contents a:hover, .contents button:hover, .contents input[type*='button']:hover, .footer a:hover, .footer button:hover, .footer input[type*='button']:hover {
+.header a:hover, .header button:hover, .header input[type*='button']:hover, 
+.contents a:hover, .contents button:hover, .contents input[type*='button']:hover, 
+.footer a:hover, .footer button:hover, .footer input[type*='button']:hover {
 	opacity: .6;
 	transition: 0.4s;
 }
@@ -3086,37 +3037,50 @@ body div.header .header-biz-menu-ttl {
 	
 @media screen and (min-width: 1098px) {
 	.header .ttl-01, .contents .ttl-01, .footer .ttl-01 {
-		font-size: 32px;
+		font-size: 2em;
 	}
 }
 	
 @media screen and (max-width: 1098px) {
 	.header .ttl-01, .contents .ttl-01, .footer .ttl-01 {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 598px) {
+	.header .ttl-01, .contents .ttl-01, .footer .ttl-01 {
 		font-size: 24px;
 	}
 }
+
 	
 @media screen and (min-width: 1098px) {
 	.header .ttl-02, .contents .ttl-02, .footer .ttl-02 {
-		font-size: 24px;
+		font-size: 1.5em;
 	}
 }
 	
 @media screen and (max-width: 1098px) {
 	.header .ttl-02, .contents .ttl-02, .footer .ttl-02 {
-		font-size: 20px;
+		font-size: 1.25em;
+	}
+}
+
+@media screen and (max-width: 598px) {
+	.header .ttl-02, .contents .ttl-02, .footer .ttl-02 {
+		font-size: 20px
 	}
 }
 	
 @media screen and (min-width: 1098px) {
 	.header .ttl-03, .contents .ttl-03, .footer .ttl-03 {
-		font-size: 18px;
+		font-size: 1.125em;
 	}
 }
 	
 @media screen and (max-width: 1098px) {
 	.header .ttl-03, .contents .ttl-03, .footer .ttl-03 {
-		font-size: 16px;
+		font-size: 1em;
 	}
 }
 	
@@ -3429,10 +3393,20 @@ body div.header .header-biz-menu-ttl {
 	#paging span:nth-last-child(2), #paging span:nth-last-child(3), #paging span:last-child, #paging span.cur, #paging span.cur + span{
 		display: flex;
 	}
+
+	#paging span.ellipsis-sp {
+		display: flex;
+	}
+}
+
+@media screen and (min-width: 598px) {
+	#paging span.ellipsis-sp { 
+		display: none;
+	}
 }
 	
 .header .page-01 a, .contents .page-01 a, .footer .page-01 a, 
-#paging .blk, #paging .blk a, #paging .cur, #paging .cur a {
+#paging .blk a, #paging .cur a, #paging .ellipsis, #paging .ellipsis-sp {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -3443,6 +3417,10 @@ body div.header .header-biz-menu-ttl {
 	font-weight: bold;
 	color: #222;
 	text-decoration: none;
+}
+
+#paging .cur {
+	position: relative;
 }
 	
 .header .page-01 a.is-current::before, .contents .page-01 a.is-current::before, .footer .page-01 a.is-current::before,
@@ -3492,7 +3470,9 @@ body div.header .header-biz-menu-ttl {
 	}
 }
 
+@media screen and (min-width: 598px) {
 
+}
 
 /* -------------------------------------- */
 /* EOWP_SHOP-397 - Results List
@@ -3530,15 +3510,10 @@ body div.header .header-biz-menu-ttl {
 
 @media screen and (min-width: 1098px) {
     .contents .search-word-table h2 {
-        font-size: 16px;
+        font-size: 1em;
     }
 }
 
-@media screen and (max-width: 1098px) {
-    .contents .search-word-table h2 {
-        font-size: 14px;
-    }
-}
 
 .contents .search-word-table th {
     font-weight: normal;
@@ -3549,13 +3524,13 @@ body div.header .header-biz-menu-ttl {
     font-weight: bold;
 }
 
-.contents .search-word-table .example td em {
+.contents .search-word-table td em {
     margin-right: 2em;
     font-size: 1.125em;
     font-weight: bold;
 }
 
-.contents .search-word-table .example td span {
+.contents .search-word-table td span:not(#idiom1):not(#idiom2) {
     margin-left: .25em;
     font-size: .8em;
 }
@@ -3582,7 +3557,9 @@ body div.header .header-biz-menu-ttl {
 		display: block;
     }
 
-	
+	.contents .search-word-table .idiom th h2 br{
+		display: none;
+	}
 }
 
 .contents .search-use-word {
@@ -3622,9 +3599,7 @@ body div.header .header-biz-menu-ttl {
     color: #961D22;
 }
 
-.contents .search-use-list .kana,
 .contents .search-use-list .fukidashi,
-.contents .search-sentence-list .kana,
 .contents .search-sentence-list .fukidashi {
     display: none;
 }
@@ -3639,12 +3614,18 @@ body div.header .header-biz-menu-ttl {
 
     .contents .search-use-list ol,
     .contents .search-sentence-list ol {
-        font-size: 16px;
+        font-size: 1em;
     }
 }
 
 @media screen and (max-width: 1098px) {
+    .contents .search-use-list ol,
+    .contents .search-sentence-list ol {
+        font-size: 0.875em;
+    }
+}
 
+@media screen and (max-width: 598px) {
     .contents .search-use-list ol,
     .contents .search-sentence-list ol {
         font-size: 14px;
@@ -3677,10 +3658,10 @@ body div.header .header-biz-menu-ttl {
     counter-increment: li;
     margin: .1em 0 0 0;
     font-weight: bold;
+	padding-right: .3em;
 }
 
-.contents .search-use-list ol>li:not(:first-child),
-.contents .search-sentence-list ol>li:not(:first-child) {
+.contents .search-use-list ol>li:not(:first-child) {
     border-top: 1px solid rgba(34, 34, 34, 0.12);
 }
 
@@ -3698,7 +3679,7 @@ body div.header .header-biz-menu-ttl {
 .contents .search-sentence-list .tango {
     display: block;
     position: absolute;
-    top: .1em;
+    top: .4em;
     left: 0;
     width: 1em;
     height: 1em;
@@ -3710,7 +3691,7 @@ body div.header .header-biz-menu-ttl {
 
     .contents .search-use-list .tango,
     .contents .search-sentence-list .tango {
-        font-size: 32px;
+        font-size: 2em;
     }
 }
 
@@ -3718,7 +3699,7 @@ body div.header .header-biz-menu-ttl {
 
     .contents .search-use-list .tango,
     .contents .search-sentence-list .tango {
-        font-size: 24px;
+        font-size: 1.5em;
     }
 }
 
@@ -3727,11 +3708,22 @@ body div.header .header-biz-menu-ttl {
     vertical-align: text-top;
 }
 
+.contents .tango .tango_btn {
+	opacity: 1;
+	transition: 0.4s;
+}
+
+.contents .search-use-list .tango img.active,
+.contents .search-sentence-list .tango img.active {
+	opacity: 0.4;
+} 
+
 .contents .search-use-list {
     position: relative;
 }
 
-.contents .search-use-list .midashi h2 {
+.contents .search-use-list .midashi h2,
+.contents .search-use-list .midashi_je h2 {
     margin-bottom: 1em;
     margin-left: 1.25em;
     font-weight: bold;
@@ -3739,13 +3731,22 @@ body div.header .header-biz-menu-ttl {
 }
 
 @media screen and (min-width: 1098px) {
-    .contents .search-use-list .midashi h2 {
-        font-size: 32px;
+    .contents .search-use-list .midashi h2,
+	.contents .search-use-list .midashi_je h2  {
+        font-size: 2em;
     }
 }
 
 @media screen and (max-width: 1098px) {
-    .contents .search-use-list .midashi h2 {
+    .contents .search-use-list .midashi h2,
+	.contents .search-use-list .midashi_je h2  {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 598px) {
+    .contents .search-use-list .midashi h2,
+	.contents .search-use-list .midashi_je h2  {
         font-size: 24px;
     }
 }
@@ -3801,12 +3802,17 @@ body div.header .header-biz-menu-ttl {
   	border-top: 2px solid rgba(34, 34, 34, 0.12);
 } 
 
+.contents .search-sentence-list > ul li ul.ul_je li {
+	position: initial;
+	padding: 0;
+}
+
 .contents .search-sentence-list > ul li {
 	position: relative;
 	padding: 1em .5em;
 }
 
-.contents .search-sentence-list > ul li:not(:first-child) {
+.contents .search-sentence-list > ul > li:not(:first-child) {
   	border-top: 1px solid rgba(34, 34, 34, 0.12);
 }
 
@@ -3823,7 +3829,6 @@ body div.header .header-biz-menu-ttl {
 	line-height: 1.4;
 	font-size: 1.125em;
 	font-weight: bold;
-	color: #961D22;
 }
 
 .contents .search-sentence-list > ul h2 a {
@@ -3853,18 +3858,26 @@ body div.header .header-biz-menu-ttl {
 }
 
 .contents .search-sentence-list > ul .tango {
-	/* top: .3em; */
 	left: .4em;
 	font-size: 1.75em;
 }
 
-.contents section#main div#resultsArea div#resultsList .search-sentence-list > ul .tango {
-	width: auto!important;
+.contents #resultsList .search-sentence-list > ul .tango {
+	top: .5em;
 }
 
-.contents section#main div#resultsArea div#resultsList .search-sentence-list > ul .midashi {
+.contents #resultsArea_je .search-sentence-list > ul .tango {
+	top: .4em;
+}
+
+.contents section#main div#resultsArea div#resultsList .search-sentence-list > ul .tango {
+	width: 1em;
+}
+
+.contents section#main div#resultsArea div#resultsList .search-sentence-list > ul .midashi,
+.contents section#main div#resultsArea_je div#resultsList .search-sentence-list > ul .midashi_je {
 	display: flex;
-	margin-left: 5px!important;
+	margin-left: 3px!important;
 }
 
 .contents section#main div#resultsArea div#resultsList .search-use-list > ul ol span > a {
@@ -3874,7 +3887,7 @@ body div.header .header-biz-menu-ttl {
 @media screen and (max-width: 598px) {
 	.contents section#main div#resultsArea div#resultsList .search-sentence-list > ul .midashi {
 		display: flex;
-		margin-left: 8px!important;
+		margin-left: 5px!important;
 	}
 }
 
@@ -3911,7 +3924,7 @@ body div.header .header-biz-menu-ttl {
     .contents .ad-item,
     .contents .ad-item2 {
         width: 336px;
-        height: 260px;
+        min-height: 260px;
     }
 }
 
