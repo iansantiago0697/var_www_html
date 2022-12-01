@@ -3705,6 +3705,7 @@ body div.header .header-biz-menu-ttl {
 
 .contents .search-use-list .tango img,
 .contents .search-sentence-list .tango img {
+	display: block;
     vertical-align: text-top;
 }
 
@@ -3862,12 +3863,9 @@ body div.header .header-biz-menu-ttl {
 	font-size: 1.75em;
 }
 
-.contents #resultsList .search-sentence-list > ul .tango {
-	top: .5em;
-}
-
+.contents #resultsList .search-sentence-list > ul .tango,
 .contents #resultsArea_je .search-sentence-list > ul .tango {
-	top: .4em;
+	top: .6em;
 }
 
 .contents section#main div#resultsArea div#resultsList .search-sentence-list > ul .tango {
