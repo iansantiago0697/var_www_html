@@ -2,6 +2,8 @@
 
 /* 検索結果
 ---------------------------------------------------- */
+.contents .search-use-list li,
+#resultsList ul li:last-of-type,
 #resultsList ul div,
 #resultsArea_je #resultsList ul > li {
 	line-height: 220%;

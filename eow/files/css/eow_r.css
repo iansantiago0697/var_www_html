@@ -3641,7 +3641,14 @@ body div.header .header-biz-menu-ttl {
 .contents .search-sentence-list ol>li {
     position: relative;
     display: block;
+}
+
+.contents .search-use-list ol>li {
     padding: 1em .5em 1em 2.5em;
+}
+
+.contents .search-sentence-list ol>li {
+	padding: 0.5em;
 }
 
 .contents .search-use-list ol>li:before {
@@ -3808,7 +3815,7 @@ body div.header .header-biz-menu-ttl {
 	padding: 0;
 }
 
-.contents .search-sentence-list > ul li {
+.contents .search-sentence-list > ul > li {
 	position: relative;
 	padding: 1em .5em;
 }
@@ -3901,7 +3908,7 @@ body div.header .header-biz-menu-ttl {
 }
 
 .contents .search-sentence-list > ul ol {
-	margin-left: 1.6em;
+	margin-left: 1em;
 	padding-top: .6em;
 	padding-bottom: .5em;
 	border-top: none;
