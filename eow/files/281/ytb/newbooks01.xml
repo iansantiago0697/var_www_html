@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+
+　<channel>
+	<title><![CDATA[アルク新刊情報]]></title>
+	<link><![CDATA[//home.alc.co.jp/db/owa/sa_newbooks?utm_source=ytb&utm_medium=eowbtn&utm_content=newbooks]]></link>
+	<description><![CDATA[アルクの新刊情報 ]]></description>
+	<language>ja</language>
+	
+		<lastBuildDate>Sat, 6 Mar 2010 09:00:00 +0900</lastBuildDate>
+		<generator>-</generator>
+		<docs>//blogs.law.harvard.edu/tech/rss</docs> 
+
+	<item>
+		<title>
+		<![CDATA[ENGLISH JOURNAL 最新号]]>
+		</title>
+		<link>
+		<![CDATA[http://www.alc.co.jp/ej/index.html?utm_source=ytb&utm_medium=eowbtn&utm_content=ej]]>
+		</link>
+		<enclosure url="http://www.alc.co.jp/ej/img/jacket_b.jpg" type="image/jpg" />
+		<description><![CDATA[ ENGLISH JOURNAL 最新号]]></description>
+		<pubDate>Sat, 6 Mar 2010 09:00:00 +0900</pubDate> 
+	</item>
+	
+	</channel>
+</rss>

@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-  <g id="グループ_63" data-name="グループ 63" transform="translate(240 771) rotate(180)" opacity="0.5">
-    <path id="パス_10" data-name="パス 10" d="M6,0A6,6,0,1,1,0,6,6,6,0,0,1,6,0Z" transform="translate(228 759)" fill="#666"/>
-    <g id="ic_chevron_left_24px" transform="translate(231.795 762)">
-      <path id="ic_chevron_left_24px-2" data-name="ic_chevron_left_24px" d="M11.7,6.7,11,6,8,9l3,3,.7-.7L9.415,9Z" transform="translate(-8 -6)" fill="#fff"/>
-    </g>
-  </g>
-</svg>

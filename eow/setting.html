@@ -16,22 +16,24 @@
 		<!-- End EOW_SHOP-325 -->
 
 		<!-- ▼ Jquery ▼ -->
-		<script type="text/javascript" language="JavaScript" src="/content/js/jquery-3.1.1.min.js" charset="UTF-8"></script>
-		<script type="text/javascript" language="JavaScript" src="/content/js/jquery.exflexfixed-0.3.0.js" charset="UTF-8"></script>
+		<script type="text/javascript" language="JavaScript" src="/content/579/js/jquery-3.1.1.min.js" charset="UTF-8"></script>
+		<script type="text/javascript" language="JavaScript" src="/content/579/js/jquery.exflexfixed-0.3.0.js" charset="UTF-8"></script>
+		<!-- ▼ CSS ▼ -->
+		<link href="/content/579/css/eow_r.css?20170309" rel="stylesheet" type="text/css" />
 		<!-- ▼ Footer ▼ -->
-		<script type="text/javascript" language="JavaScript" src="/content/js/eow_footer.js" charset="UTF-8"></script>
+		<script type="text/javascript" language="JavaScript" src="/content/579/js/eow_footer.js?1" charset="UTF-8"></script>
 		<!-- ▼ Infospace ▼ -->
-		<script type="text/javascript" language="JavaScript" src="/content/js/mc.js" charset="UTF-8"></script>
+		<script type="text/javascript" language="JavaScript" src="/content/579/js/mc.js?1" charset="UTF-8"></script>
 		<!-- ▼ Alert ▼ -->
-		<script type="text/javascript" language="JavaScript" src="/content/js/alert.js" charset="UTF-8"></script>
+		<script type="text/javascript" language="JavaScript" src="/content/579/js/alert.js?1" charset="UTF-8"></script>
 		<!-- ▼ Search Logic ▼ -->
-		<script type="text/javascript" language="JavaScript" src="/content/js/eow_search_r.js" charset="UTF-8"></script>
+		<script type="text/javascript" language="JavaScript" src="/content/579/js/eow_search_r.js?1" charset="UTF-8"></script>
 		<!-- ▼ Setting ▼ -->
-		<script type="text/javascript" language="JavaScript" src="/content/js/eow_setting.js" charset="UTF-8"></script>
+		<script type="text/javascript" language="JavaScript" src="/content/579/js/eow_setting.js?1" charset="UTF-8"></script>
 		<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
 
 		<!-- EOW_SHOP-325 -->
-		<link rel="stylesheet" href="/content/css/normalize.css">
+		<link rel="stylesheet" href="/content/css/normalize.css?20161024">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
@@ -40,9 +42,6 @@
 		<script type="text/javascript" language="JavaScript" src="/content/js/header_action.js" charset="UTF-8"></script>
 		<script type="text/javascript" language="JavaScript" src="/content/js/footer_action.js" charset="UTF-8"></script>
 		<!-- End EOW_SHOP-325 -->
-		<link href="/content/css/skeleton.css" rel="stylesheet" type="text/css" />
-		<!-- ▼ CSS ▼ -->
-		<link href="/content/css/eow_r.css" rel="stylesheet" type="text/css" />
 
 		<!-- /21619764421/alc_pc_overlay -->
 		<style type="text/css">
@@ -56,6 +55,7 @@
 				box-shadow: none;
 				box-sizing: border-box;
 				font-weight: 700;
+    			font-size: 1.15rem;
 				padding-top: 6px;
 				color: #222!important;
 				position: relative;
@@ -64,6 +64,7 @@
 
 			form#fm1 input#q::placeholder{
 				opacity: .7!important;
+				font-size: 17px!important;
 				font-weight: 400;
 			}
 
@@ -92,969 +93,20 @@
     			margin-bottom: -0.6em!important;
 			}
 
-			/* body div.header .header-biz-menu-inner{　 EOW_NEW-1346 【EOW】レスポンシブ対応：設定ページ でコメントアウト
+			body div.header .header-biz-menu-inner{
 				padding: 1.0rem 0.8rem 0.6rem 0.74rem!important;
-			} */
+			}
 
-			/* body .header .header-biz-menu-inner div{
+			body .header .header-biz-menu-inner div{
 				font-size: 1.15em;
 				line-height: 1.6;
 				font-weight: 400;
-			} */
+			}
 			
-			/* body div.header div.header-menu ul li p{  EOW_NEW-1346 【EOW】レスポンシブ対応：設定ページ でコメントアウト
+			body div.header div.header-menu ul li p{
 				padding-top:2px;
-			} */
+			}
 			/** End EOWP_SHOP-325 **/
-
-			/* EOW_NEW-1346 【EOW】レスポンシブ対応：設定ページ */
-			/* ここからReset Form  まではeow_r.cssの設定と干渉しないようにする用 */
-			body {
-				font-family: 'Noto Sans JP', sans-serif;
-			}
-			h1, h2 {
-				display: block;
-			}
-			#AreaUpperLeft{
-				padding-top: 0px;
-				float: left;
-			}
-			#AreaUpperLeftContainer {
-			  max-width: 100%;
-			  margin-right: 0px;
-		    }
-			#resultsArea {
-			  font-family: 'Noto Sans JP', sans-serif;
-			}
-			#resultsArea .tab-01 li a {
-				color: #666;
-			    text-decoration: none;
-			}
-			#resultsArea  a:link {
-				color: #00008B;
-				text-decoration: underline;
-			}
-			#resultsArea  a:visited {
-				color: #00008B;
-				text-decoration: underline;
-			}
-			#resultsArea th a:link {
-				color: #00008B;
-				text-decoration: none;
-			}
-			#resultsList .list-i02 {
-				margin-bottom: 0px;
-			}
-			#resultsList ul li {
-				padding-top: 0px;
-			}
-			.contents .box-l02 .section-01:nth-of-type(1) {
-			    margin-top: 2em; /* EOW_NEW-1346　各設定の説明部のmargin用　例外なので分けて記述 */
-			}
-
-			#AreaBody form {
-				margin-bottom: 0px;
-			}
-		
-			
-
-			/* =========================================================== */
-			/*  Reset Form                                                 */
-			/* =========================================================== */
-			.contents input[type*='button'], .contents button {
-			  margin: 0;
-			  padding: 0;
-			  background: none;
-			  border: none;
-			  border-radius: 0;
-			  outline: none;
-			  -webkit-appearance: none;
-			  -moz-appearance: none;
-			  appearance: none;
-			  font-size: 1em;
-			}
-			
-			.contents input::-webkit-inner-spin-button {
-			  -webkit-appearance: none;
-			}
-			
-			body {
-			  color: #222;
-			}
-			
-			@media screen and (min-width: 598px) {
-			  body {
-			    font-size: 1.6em;
-			  }
-			}
-			
-			@media screen and (max-width: 598px) {
-			  body {
-			    font-size: 1.4em;
-			  }
-			}
-			
-			.header, .contents, .footer {
-			  font-family: 'Noto Sans JP', sans-serif;
-			}
-			
-			.header *, .contents *, .footer * {
-			  box-sizing: border-box;
-			  letter-spacing: initial;
-			}
-			
-			.header form, .header input, .header button, .header p, .header h1, .header h2, .header h3, .header h4, .header h5, .header h6, .header ul, .header li, .header dl, .header dt, .header dd, .contents form, .contents input, .contents button, .contents p, .contents h1, .contents h2, .contents h3, .contents h4, .contents h5, .contents h6, .contents ul, .contents li, .contents dl, .contents dt, .contents dd, .footer form, .footer input, .footer button, .footer p, .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6, .footer ul, .footer li, .footer dl, .footer dt, .footer dd {
-			  margin: 0;
-			  font-weight: normal;
-			}
-			
-			.header em, .contents em, .footer em {
-			  font-style: normal;
-			}
-			
-			.header ul, .contents ul, .footer ul {
-			  list-style: none;
-			}
-			
-			.header svg, .contents svg, .footer svg {
-			  fill: currentColor;
-			}
-			
-			.header img, .contents img, .footer img {
-			  max-width: 100%;
-			}
-			
-			.header img[src$=".svg"], .contents img[src$=".svg"], .footer img[src$=".svg"] {
-			  width: auto;
-			  height: auto;
-			}
-			
-			/** .header button 削除**/ 
-			.header a, .header input[type*='button'], .contents a, .contents button, .contents input[type*='button'], .footer a, .footer button, .footer input[type*='button'] {
-			  text-decoration: underline;
-			  display: inline-block;
-			  cursor: pointer;
-			  opacity: 1;
-			  transition: 0.4s;
-			}　
-			 
-			.header a:hover, .header button:hover, .header input[type*='button']:hover, .contents a:hover, .contents button:hover, .contents input[type*='button']:hover, .footer a:hover, .footer button:hover, .footer input[type*='button']:hover {
-			  opacity: .6;
-			  transition: 0.4s;
-			}
-			
-			.header table, .header tr, .header th, .header td, .contents table, .contents tr, .contents th, .contents td, .footer table, .footer tr, .footer th, .footer td {
-			  margin: 0;
-			  padding: 0;
-			  border: none;
-			}
-			
-			.header label, .contents label, .footer label {
-			  display: inline;
-			  font-weight: normal;
-			}
-			
-			.header .wrap-inner, .contents .wrap-inner, .footer .wrap-inner {
-			  width: 100%;
-			  max-width: 1098px;
-			  margin: 0 auto;
-			  padding: 12px 24px;
-			}
-			
-			@media screen and (min-width: 1098px) {
-			  .header .wrap-inner + .wrap-inner, .contents .wrap-inner + .wrap-inner, .footer .wrap-inner + .wrap-inner {
-			    margin-top: 40px;
-			  }
-			}
-			
-			@media screen and (max-width: 1098px) {
-			  .header .wrap-inner + .wrap-inner, .contents .wrap-inner + .wrap-inner, .footer .wrap-inner + .wrap-inner {
-			    margin-top: 20px;
-			  }
-			}
-			
-			.contents {
-			  margin-top: 12px;
-			}
-			
-			.contents .contents-wide {
-			  margin-top: 12px;
-			  width: 100%;
-			}
-			
-			@media screen and (min-width: 1098px) {
-			  .contents > .wrap-inner {
-			    display: flex;
-			    justify-content: space-between;
-			  }
-			  .contents .contents-main {
-			    width: 728px;
-			  }
-			  .contents .contents-side {
-			    width: 300px;
-			  }
-			  .contents .contents-side2 {
-			    width: 336px;
-			    margin-right: -36px;
-			  }
-			}
-			
-			@media screen and (max-width: 1098px) {
-			  .contents .contents-main {
-			    max-width: 800px;
-			    margin: 0 auto;
-			  }
-			  .contents .contents-side {
-			    max-width: 800px;
-			    margin: 40px auto 0;
-			  }
-			  .contents .contents-side2 {
-			    display: none;
-			  }
-			}
-			
-			[class*='list-']:not(:nth-child(1)) {
-			  margin-top: 1em;
-			}
-			
-			.list-d01 > li {
-			  position: relative;
-			  padding-left: 1em;
-			}
-			
-			.list-d01 > li:before {
-			  position: absolute;
-			  left: 0;
-			  content: "-";
-			  margin-left: .16em;
-			}
-			
-			.list-a01 > li {
-			  position: relative;
-			  padding-left: 1em;
-			  font-size: 90%;
-			}
-			
-			.list-a01 > li:before {
-			  position: absolute;
-			  left: 0;
-			  content: "※";
-			  margin-top: .16em;
-			  font-size: 90%;
-			}
-			
-			.sidebar-inner ul > li,
-			.list-l01 > li {
-			  margin-bottom: .8em;
-			  padding: 0 .1em .8em;
-			  border-bottom: 1px dotted rgba(34, 34, 34, 0.12);
-			}
-			
-			.sidebar-inner ul > li > a,
-			.list-l01 > li > a {
-			  text-decoration: none;
-			}
-			
-			/* 1 */
-			.list-n01 {
-			  counter-reset: li;
-			}
-			
-			.list-n01 > li {
-			  position: relative;
-			  display: block;
-			  padding-left: 1.2em;
-			}
-			
-			.list-n01 > li:before {
-			  position: absolute;
-			  left: -.8em;
-			  content: counter(li) ".";
-			  counter-increment: li;
-			  margin: .1em 0 0 .8em;
-			  font-size: 90%;
-			}
-			
-			/* （1） */
-			.list-n02 {
-			  counter-reset: li;
-			}
-			
-			.list-n02 > li {
-			  position: relative;
-			  display: block;
-			  padding-left: 2em;
-			}
-			
-			.list-n02 > li:before {
-			  position: absolute;
-			  left: -1em;
-			  content: "（" counter(li) "）";
-			  counter-increment: li;
-			  margin: .2em 0 0 .5em;
-			  font-size: 80%;
-			}
-			
-			/* a */
-			.list-n03 > li {
-			  list-style-type: lower-latin;
-			}
-			
-			/* ア */
-			.list-n04 {
-			  margin-left: 1.6em;
-			}
-			
-			.list-n04 > li {
-			  list-style-type: katakana;
-			}
-			
-			/* インライン */
-			.list-i01 {
-			  display: flex;
-			  flex-wrap: wrap;
-			  justify-content: center;
-			  font-size: 90%;
-			}
-			
-			.list-i01 > li:not(:last-child) {
-			  margin-right: .5em;
-			  padding-right: .5em;
-			  border-right: 1px solid rgba(34, 34, 34, 0.12);
-			}
-			
-			.list-i02 {
-			  display: flex;
-			  flex-wrap: wrap;
-			  font-size: 90%;
-			}
-			
-			.list-i02 > li:not(:last-child) {
-			  margin-right: 1em;
-			}
-			
-			/* 右端に＞ */
-			.list-r01 > li {
-			  border-bottom: 1px solid rgba(34, 34, 34, 0.12);
-			  margin-bottom: .25em;
-			}
-			
-			.list-r01 > li > a {
-			  display: block;
-			  position: relative;
-			  padding: 1.5em .5em;
-			}
-			
-			.list-r01 > li > a:after {
-			  position: absolute;
-			  top: 50%;
-			  right: 1%;
-			  transform: translateY(-50%);
-			  content: "＞";
-			  font-size: 80%;
-			}
-			
-			/* 行頭に＞ */
-			.list-r02 li {
-			  position: relative;
-			  padding-left: 1.4em;
-			}
-			
-			.list-r02 li::before {
-			  position: absolute;
-			  top: .4em;
-			  left: 0;
-			  width: 1em;
-			  height: 1em;
-			  background: url(/content/img/icon-arr.svg) 0 0 no-repeat;
-			  background-size: 100% 100%;
-			  content: '';
-			}
-
-			/* -------------------------------------- */
-			/* module
-			// -------------------------------------- */
-			.header img, .contents img, .footer img {
-			    vertical-align: bottom;
-			}
-			  
-			@media screen and (min-width: 1098px) {
-			    .header img.header-logo, .contents img.header-logo, .footer img.header-logo {
-			      width: 240px;
-			      height: 50px;
-			    }
-			}
-			  
-			@media screen and (max-width: 1098px) {
-			    .header img.header-logo, .contents img.header-logo, .footer img.header-logo {
-			      width: 180px;
-			      height: 36px;
-			    }
-			}
-			  
-			.header img.footer-logo, .contents img.footer-logo, .footer img.footer-logo {
-			    width: 240px;
-			    height: 50px;
-			}
-			  
-			.header .section-01:not(:nth-child(1)), .header .btn-area:not(:nth-child(1)), .contents .section-01:not(:nth-of-type(1)), .contents .btn-area:not(:nth-child(1)), .footer .section-01:not(:nth-child(1)), .footer .btn-area:not(:nth-child(1)) {
-			    margin-top: 2em;
-			}
-			  
-			.header [class*='ttl-']:not(:nth-child(1)),
-			.header [class*='box-']:not(:nth-child(1)), .header .tab-01:not(:nth-child(1)), .contents [class*='ttl-']:not(:nth-child(1)),
-			.contents [class*='box-']:not(:nth-child(1)), .contents .tab-01:not(:nth-child(1)), .footer [class*='ttl-']:not(:nth-child(1)),
-			.footer [class*='box-']:not(:nth-child(1)), .footer .tab-01:not(:nth-child(1)) {
-			    margin-top: 1em;
-			}
-			  
-			.header .ic-book, .contents .ic-book, .footer .ic-book {
-			    vertical-align: 0;
-			    margin-left: 8px;
-			    transition-duration: 0.4s;
-			    cursor: pointer;
-			}
-			  
-			.header .ic-book:nth-child(1), .contents .ic-book:nth-child(1), .footer .ic-book:nth-child(1) {
-			    margin-right: 8px;
-			    margin-left: 0;
-			}
-			  
-			.header .ic-book:hover, .contents .ic-book:hover, .footer .ic-book:hover {
-			    opacity: .4;
-			    transition-duration: 0.4s;
-			}
-			  
-			@media screen and (min-width: 1098px) {
-			    .header .ttl-01, .contents .ttl-01, .footer .ttl-01 {
-			      font-size: 32px;
-			    }
-			}
-			  
-			@media screen and (max-width: 1098px) {
-			    .header .ttl-01, .contents .ttl-01, .footer .ttl-01 {
-			      font-size: 24px;
-			    }
-			}
-			  
-			@media screen and (min-width: 1098px) {
-			    .header .ttl-02, .contents .ttl-02, .footer .ttl-02 {
-			      font-size: 24px;
-			    }
-			}
-			  
-			@media screen and (max-width: 1098px) {
-			    .header .ttl-02, .contents .ttl-02, .footer .ttl-02 {
-			      font-size: 20px;
-			    }
-			}
-			  
-			@media screen and (min-width: 1098px) {
-			    .header .ttl-03, .contents .ttl-03, .footer .ttl-03 {
-			      font-size: 18px;
-			    }
-			}
-			  
-			@media screen and (max-width: 1098px) {
-			    .header .ttl-03, .contents .ttl-03, .footer .ttl-03 {
-			      font-size: 16px;
-			    }
-			}
-			  
-			@media screen and (min-width: 1098px) {
-			    .header .ttl-04, .contents .ttl-04, .footer .ttl-04 {
-			      font-size: 16px;
-			    }
-			}
-			  
-			@media screen and (max-width: 1098px) {
-			    .header .ttl-04, .contents .ttl-04, .footer .ttl-04 {
-			      font-size: 14px;
-			    }
-			}
-			  
-			.header .ttl-01, .header .ttl-02, .header .ttl-03, .header .ttl-04, .contents .ttl-01, .contents .ttl-02, .contents .ttl-03, .contents .ttl-04, .footer .ttl-01, .footer .ttl-02, .footer .ttl-03, .footer .ttl-04 {
-			    margin-bottom: .8em;
-			    font-weight: bold;
-			    line-height: 1.4;
-			}
-			  
-			.header .ttl-01 span, .header .ttl-02 span, .header .ttl-03 span, .header .ttl-04 span, .contents .ttl-01 span, .contents .ttl-02 span, .contents .ttl-03 span, .contents .ttl-04 span, .footer .ttl-01 span, .footer .ttl-02 span, .footer .ttl-03 span, .footer .ttl-04 span {
-			    font-size: .8em;
-			    font-weight: normal;
-			}
-			  
-			.header .pgh-01, .contents .pgh-01, .footer .pgh-01 {
-			    margin-top: 1em;
-			}
-			  
-			.header .pgh-02, .contents .pgh-02, .footer .pgh-02 {
-			    margin-top: 2em;
-			}
-			  
-			.header .em-01, .contents .em-01, .footer .em-01 {
-			    font-weight: bold;
-			}
-			  
-			.header .em-02, .contents .em-02, .footer .em-02 {
-			    text-decoration: underline;
-			}
-			  
-			.header .box-ad, .contents .box-ad, .footer .box-ad {
-			    display: flex;
-			    justify-content: center;
-			    align-items: center;
-			    margin: 1.6em 0;
-			}
-			  
-			.header .box-ad:nth-child(1), .contents .box-ad:nth-child(1), .footer .box-ad:nth-child(1) {
-			    margin-top: 0;
-			}
-			  
-			.header .box-p01, .contents .box-p01, .footer .box-p01 {
-			    padding: 1em;
-			    border-radius: 4px;
-			    background-color: rgba(34, 34, 34, 0.08);
-			}
-			  
-			.header .box-p02, .header .contents .search-use-list .attr, .contents .search-use-list .header .attr, .contents .box-p02, .contents .search-use-list .attr, .footer .box-p02, .footer .contents .search-use-list .attr, .contents .search-use-list .footer .attr {
-			    padding: 1em;
-			    border-radius: 4px;
-			    background-color: rgba(150, 29, 34, 0.08);
-			}
-			  
-			.header .box-ex01, .contents .box-ex01, .footer .box-ex01 {
-			    padding: .5em 1em;
-			    background-color: rgba(34, 34, 34, 0.08);
-			    color: #007297;
-			}
-			  
-			.header .box-l01, .contents .box-l01, .footer .box-l01 {
-			    padding: 1em;
-			    border-radius: 4px;
-			    border: 1px solid rgba(34, 34, 34, 0.12);
-			}
-			  
-			.header .box-l02, .contents .box-l02, .footer .box-l02 {
-			    padding: 1em 0;
-			    border-top: 1px solid rgba(34, 34, 34, 0.12);
-			    border-bottom: 1px solid rgba(34, 34, 34, 0.12);
-			}
-			  
-			.header .tbl-01, .contents .tbl-01, .footer .tbl-01 {
-			    border-top: 2px solid rgba(34, 34, 34, 0.12);
-			    border-bottom: 2px solid rgba(34, 34, 34, 0.12);
-			}
-			  
-			.header .tbl-01 tr:not(:first-child), .contents .tbl-01 tr:not(:first-child), .footer .tbl-01 tr:not(:first-child) {
-			    border-top: 1px solid rgba(34, 34, 34, 0.12);
-			}
-			  
-			@media screen and (min-width: 598px) {
-			    .header .tbl-01 th, .header .tbl-01 td, .contents .tbl-01 th, .contents .tbl-01 td, .footer .tbl-01 th, .footer .tbl-01 td {
-			      padding: 1em .5em;
-			    }
-			}
-			  
-			@media screen and (max-width: 598px) {
-			    .header .tbl-01 th, .header .tbl-01 td, .contents .tbl-01 th, .contents .tbl-01 td, .footer .tbl-01 th, .footer .tbl-01 td {
-			      display: block;
-			    }
-			}
-			  
-			@media screen and (max-width: 598px) {
-			    .header .tbl-01 th, .contents .tbl-01 th, .footer .tbl-01 th {
-			      padding: 1em .5em 0;
-			    }
-			    .header .tbl-01 td, .contents .tbl-01 td, .footer .tbl-01 td {
-			      padding: .8em .5em;
-			    }
-			}
-			  
-			.header .tab-01, .contents #resultsList .tab-01, .footer .tab-01 {
-			    display: flex;
-			    border-bottom: 4px solid #173D8A;
-			    margin-bottom: 2em;
-			}
-			  
-			.header .tab-01 a, .header .tab-01 button, .contents .tab-01 a, .contents .tab-01 button, .footer .tab-01 a, .footer .tab-01 button {
-			    text-decoration: none;
-			}
-			  
-			.header .tab-01 li:not(:first-child), .contents .tab-01 li:not(:first-child), .footer .tab-01 li:not(:first-child) {
-			    margin-left: 2px;
-			}
-			  
-			@media screen and (max-width: 598px) {
-			    .header .tab-01 li, .contents .tab-01 li, .footer .tab-01 li {
-			      width: calc(50% - 1px);
-			    }
-			}
-			  
-			.header .tab-01 a, .header .tab-01 p, .contents .tab-01 a, .contents .tab-01 p, .footer .tab-01 a, .footer .tab-01 p {
-			    min-width: 140px;
-			    padding: 1em;
-			    border-radius: 4px 4px 0 0;
-			    background-color: rgba(34, 34, 34, 0.08);
-			    text-align: center;
-			    color: #666;
-			}
-			  
-			@media screen and (max-width: 598px) {
-			    .header .tab-01 a, .header .tab-01 p, .contents .tab-01 a, .contents .tab-01 p, .footer .tab-01 a, .footer .tab-01 p {
-			      width: 100%;
-			    }
-			}
-			  
-			.header .tab-01 .is-current, .contents .tab-01 .is-current, .footer .tab-01 .is-current {
-			    background-color: #173D8A;
-			    font-weight: bold;
-			    color: #fff;
-			}
-			  
-			.header .btn-01, .header .btn-02, .contents .btn-01, .contents .btn-02, .footer .btn-01, .footer .btn-02 {
-			    padding: .4em 1em;
-			    border: 1px solid #007297;
-			    border-radius: 4px;
-			    background-color: #fff;
-			    text-align: center;
-			    color: #007297;
-			}
-			  
-			@media screen and (min-width: 1098px) {
-			    .header .btn-01, .header .btn-02, .contents .btn-01, .contents .btn-02, .footer .btn-01, .footer .btn-02 {
-			      min-width: 120px;
-			    }
-			}
-			  
-			.header .btn-02, .contents .btn-02, .footer .btn-02 {
-			    background-color: #007297;
-			    color: #fff;
-			}
-			  
-			.header .btn-03, .contents .btn-03, .footer .btn-03 {
-			    position: relative;
-			    display: inline-block;
-			    min-width: 160px;
-			    padding: 0.8em calc(2.2rem + 7.5px);
-			    border-radius: 500px;
-			    background-color: #FC5B02;
-			    font-weight: bold;
-			    text-align: center;
-			    color: #fff;
-			}
-			  
-			.header .btn-03:after, .contents .btn-03:after, .footer .btn-03:after {
-			    position: absolute;
-			    top: 50%;
-			    right: 1.2rem;
-			    width: 12px;
-			    height: 7.5px;
-			    transform: translateY(-50%) rotate(90deg);
-			    background: url(../img/icon-arr-2.svg) 0 0 no-repeat;
-			    background-size: 100% 100%;
-			    content: '';
-			}
-			  
-			.header .btn-normal, .header .btn-04, .header .btn-05, .contents .btn-normal, .contents .btn-04, .contents .btn-05, .footer .btn-normal, .footer .btn-04, .footer .btn-05 {
-			    display: inline-flex;
-			    align-items: center;
-			    justify-content: center;
-			    min-width: 200px;
-			    min-height: 48px;
-			    padding: 1.6em 2em;
-			    border-radius: 500px;
-			}
-			  
-			.header .btn-04, .contents .btn-04, .footer .btn-04 {
-			    background-color: #FC5B02;
-			    color: #fff;
-			}
-			  
-			.header .btn-05, .contents .btn-05, .footer .btn-05 {
-			    background-color: rgba(34, 34, 34, 0.08);
-			    color: #222;
-			}
-			  
-			.header [class*='btn-0'], .contents [class*='btn-0'], .footer [class*='btn-0'] {
-			    text-decoration: none;
-			}
-			  
-			.header [class*='btn-0'] img, .header [class*='btn-0'] svg, .contents [class*='btn-0'] img, .contents [class*='btn-0'] svg, .footer [class*='btn-0'] img, .footer [class*='btn-0'] svg {
-			    width: 15px;
-			    height: 15px;
-			}
-			  
-			.header [class*='btn-0'] img:first-child, .header [class*='btn-0'] svg:first-child, .contents [class*='btn-0'] img:first-child, .contents [class*='btn-0'] svg:first-child, .footer [class*='btn-0'] img:first-child, .footer [class*='btn-0'] svg:first-child {
-			    margin-right: .5em;
-			}
-			  
-			.header [class*='btn-0'] img:last-child, .header [class*='btn-0'] svg:last-child, .contents [class*='btn-0'] img:last-child, .contents [class*='btn-0'] svg:last-child, .footer [class*='btn-0'] img:last-child, .footer [class*='btn-0'] svg:last-child {
-			    margin-left: .5em;
-			}
-			  
-			.header .btn-area, .contents .btn-area, .footer .btn-area {
-			    text-align: center;
-			}
-			  
-			@media screen and (max-width: 598px) {
-			    .header .btn-area a, .header .btn-area button, .header .btn-area input, .contents .btn-area a, .contents .btn-area button, .contents .btn-area input, .footer .btn-area a, .footer .btn-area button, .footer .btn-area input {
-			      margin: 8px auto;
-			      min-width: 80%;
-			    }
-			}
-			  
-			@media screen and (min-width: 598px) {
-			    .header .btn-area a:not(:first-child), .header .btn-area button:not(:first-child), .header .btn-area input:not(:first-child), .contents .btn-area a:not(:first-child), .contents .btn-area button:not(:first-of-type), .contents .btn-area input:not(:first-child), .footer .btn-area a:not(:first-child), .footer .btn-area button:not(:first-child), .footer .btn-area input:not(:first-child) {
-			      margin-left: 1em;
-			    }
-			}
-			  
-			@media screen and (max-width: 598px) {
-			    .header .btn-area a:not(:first-child), .header .btn-area button:not(:first-child), .header .btn-area input:not(:first-child), .contents .btn-area a:not(:first-child), .contents .btn-area button:not(:first-of-type), .contents .btn-area input:not(:first-child), .footer .btn-area a:not(:first-child), .footer .btn-area button:not(:first-child), .footer .btn-area input:not(:first-child) {
-			      margin-top: .5em;
-			    }
-			}
-			  
-			.header .btn-store, .contents .btn-store, .footer .btn-store {
-			    display: flex;
-			    justify-content: center;
-			    margin-top: 20px;
-			}
-			  
-			.header .btn-store li, .contents .btn-store li, .footer .btn-store li {
-			    margin: 10px;
-			}
-			  
-			.header .btn-sns, .contents .btn-sns, .footer .btn-sns {
-			    display: flex;
-			}
-			  
-			.header .btn-sns li, .contents .btn-sns li, .footer .btn-sns li {
-			    line-height: 1;
-			}
-			  
-			.header .btn-sns li:not(:first-child), .contents .btn-sns li:not(:first-child), .footer .btn-sns li:not(:first-child) {
-			    margin-left: 24px;
-			}
-			  
-			.header .btn-sns li img, .header .btn-sns li svg, .contents .btn-sns li img, .contents .btn-sns li svg, .footer .btn-sns li img, .footer .btn-sns li svg {
-			    width: 32px;
-			    height: 32px;
-			    vertical-align: bottom;
-			}
-			  
-			.header .page-01, .contents .page-01, .footer .page-01 {
-			    display: flex;
-			    justify-content: center;
-			    align-items: center;
-			    margin: 1.6em 0;
-			    line-height: 1;
-			}
-			  
-			.header .page-01 ul, .contents .page-01 ul, .footer .page-01 ul {
-			    display: flex;
-			    justify-content: center;
-			    align-items: center;
-			    margin: 0 .5em;
-			}
-			  
-			@media screen and (max-width: 598px) {
-			    .header .page-01 ul li:nth-of-type(n+3), .contents .page-01 ul li:nth-of-type(n+3), .footer .page-01 ul li:nth-of-type(n+3) {
-			      display: none;
-			    }
-			    .header .page-01 ul li:nth-last-child(2), .header .page-01 ul li:last-child, .contents .page-01 ul li:nth-last-child(2), .contents .page-01 ul li:last-child, .footer .page-01 ul li:nth-last-child(2), .footer .page-01 ul li:last-child {
-			      display: block;
-			    }
-			}
-			  
-			.header .page-01 a, .contents .page-01 a, .footer .page-01 a {
-			    position: relative;
-			    display: flex;
-			    justify-content: center;
-			    align-items: center;
-			    width: 40px;
-			    height: 40px;
-			    font-size: 1.125em;
-			    font-weight: bold;
-			    color: #222;
-			    text-decoration: none;
-			}
-			  
-			.header .page-01 a.is-current::before, .contents .page-01 a.is-current::before, .footer .page-01 a.is-current::before {
-			    position: absolute;
-			    top: 0;
-			    left: 0;
-			    width: 40px;
-			    height: 40px;
-			    border-radius: 50%;
-			    background-color: rgba(34, 34, 34, 0.08);
-			    content: '';
-			}
-			  
-			.header .page-01 svg, .contents .page-01 svg, .footer .page-01 svg {
-			    width: 32px;
-			    height: 32px;
-			}
-			  
-			.header .page-01 img, .contents .page-01 img, .footer .page-01 img {
-			    vertical-align: bottom;
-			}
-			  
-			.header .page-01 .next, .contents .page-01 .next, .footer .page-01 .next {
-			    transform: rotate(180deg);
-			}
-			  
-			@media screen and (min-width: 598px) {
-			    .header .is-pc, .contents .is-pc, .footer .is-pc {
-			      display: block;
-			    }
-			    .header .is-sp, .contents .is-sp, .footer .is-sp {
-			      display: none;
-			    }
-			}
-			  
-			@media screen and (max-width: 598px) {
-			    .header .is-pc, .contents .is-pc, .footer .is-pc {
-			      display: none;
-			    }
-			    .header .is-sp, .contents .is-sp, .footer .is-sp {
-			      display: block;
-			    }
-			}
-
-			/* -------------------------------------- */
-			/* header(sticky関係のみ)
-			// -------------------------------------- */
-			
-			.header {
-  				position: sticky;
-  				z-index: 10;
-			}
-
-			@media screen and (min-width: 1098px) {
-			  	.header {
-				    top: -100px;
-			  	}
-			}
-
-			@media screen and (min-width: 598px) and (max-width: 1098px) {
-				.header {
-				    top: -90px;
-				}
-			}
-
-			@media screen and (max-width: 598px) {
-  				.header {
-    				top: -60px;
-  				}
-			}
-			
-			/* -------------------------------------- */
-			/* setting
-			// -------------------------------------- */
-			.contents .setting-tbl-01 {
-			  width: 100%;
-			}
-			
-			.contents .setting-tbl-01 tr:not(:last-child) {
-			  border-bottom: 1px solid rgba(34, 34, 34, 0.12);
-			}
-			
-			.contents #resultsList .setting-tbl-01 th, .contents #resultsList .setting-tbl-01 td {
-			  vertical-align: top;
-			}
-			
-			@media screen and (min-width: 598px) {
-			  .contents #resultsList .setting-tbl-01 th, .contents #resultsList .setting-tbl-01 td {
-			    padding: 1.6em .5em;
-			  }
-			}
-			
-			@media screen and (max-width: 598px) {
-			  .contents #resultsList .setting-tbl-01 th, .contents #resultsList .setting-tbl-01 td {
-			    display: block;
-			    padding: 0 .5em;
-			  }
-			}
-			
-			@media screen and (min-width: 598px) {
-			  .contents #resultsList .setting-tbl-01 th {
-			    width: 27%;
-			  }
-			}
-			
-			@media screen and (max-width: 598px) {
-			  .contents #resultsList .setting-tbl-01 th {
-			    padding: 1em .5em 0;
-			  }
-			}
-			
-			.contents #resultsList .setting-tbl-01 th span {
-			  font-size: .8em;
-			  font-weight: normal;
-			}
-			
-			@media screen and (max-width: 598px) {
-			  .contents #resultsList .setting-tbl-01 td {
-			    padding: .5em .5em 1em;
-			  }
-			}
-			
-			@media screen and (min-width: 598px) {
-			  .contents #resultsList .setting-tbl-01 li:not(:first-child) {
-			    padding-top: .5em;
-			  }
-			}
-			
-			@media screen and (max-width: 598px) {
-			  .contents #resultsList .setting-tbl-01 li:not(:first-child) {
-			    padding-top: .25em;
-			  }
-			}
-			
-			.contents .setting-tbl-01 label {
-			  margin-left: .5em;
-			}
-			
-			.contents .setting-tbl-01 input:not(:nth-of-type(1)) {
-			  margin-left: 2em;
-			}
-			
-			.contents .setting-sample-item:not(:first-child) {
-			  margin-top: 1em;
-			}
-			
-			.contents .setting-sample-ttl {
-			  margin-bottom: .5em;
-			  font-size: 16px;
-			  font-weight: bold;
-			}
-			
-			.contents .setting-sample-ttl em:nth-of-type(1) {
-			  color: #961D22;
-			}
-			
-			.contents .setting-sample-ttl em:nth-of-type(2) {
-			  color: #173D8A;
-			}
-			
-			.contents .setting-sample-txt {
-			  font-size: 14px;
-			}
-			
-			.contents .setting-ex-01 {
-			  font-size: 1.25em;
-			}
-			
-			.contents .setting-ex-02 {
-			  letter-spacing: .5em;
-			}
-			
-			.contents .setting-ex-03 {
-			  font-family: 'Noto Serif JP', serif;
-			}
-			/* EOW_NEW-1346 【EOW】レスポンシブ対応：設定ページ */
 		</style>
 
 		<script type="text/javascript" language="JavaScript">
@@ -1069,16 +121,6 @@
 		// --->
 		</script>
 		<title>機能設定の変更｜英辞郎 on the WEB：アルク</title>
-
-		<!-- EOW_NEW-1394 -->
-		<!-- Google Tag Manager -->
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-MLCGVST');</script>
-		<!-- End Google Tag Manager -->
-		<!-- End EOW_NEW-1394 -->
 
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -1260,15 +302,7 @@
 		</script>
         <script type="text/javascript" language="JavaScript" src="/content/js/custom_scroll.js" charset="UTF-8"></script>
 	</head>
-	<body bgcolor="#FFFFFF" onLoad="javascript:loadCookie('eow2.alc.co.jp','eow2.alc.co.jp','eowuser','60*60*24*30');">
-
-
-	<!-- EOW_NEW-1394 -->
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLCGVST"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-	<!-- END EOW_NEW-1394 -->
+	<body bgcolor="#FFFFFF" onLoad="javascript:loadCookie('eow.alc.co.jp','eow.alc.co.jp','eowuser','60*60*24*30');">
 
 <!-- EOW_SHOP-325 -->
 <div class="header">
@@ -1292,7 +326,7 @@
 	  <div class="header-gnav-sp">
 		<ul class="header-gnav-sp-menu">
 		  <li>
-			<a target="_self" href="https://eowpf.alc.co.jp/login" onclick="ga('send', 'event', 'eowtop_p_login_sp', 'click', 'https://eowp.alc.co.jp/login')" id="eowtop_p_login_sp">
+			<a target="_self" href="https://eowpf.alc.co.jp/login" onclick="ga('send', 'event', 'eowtop_p_login_sp', 'click', 'https://eowpf.alc.co.jp/login')" id="eowtop_p_login_sp">
 			  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.95 29.95">
 				<path d="M16,1.025A14.975,14.975,0,1,0,30.975,16,14.976,14.976,0,0,0,16,1.025ZM8.048,27.1c1.439-3.636,4.5-5.953,7.952-5.953s6.513,2.317,7.952,5.953a13.579,13.579,0,0,1-15.9,0Zm16.959-.839a10.717,10.717,0,0,0-5.9-5.836,7.15,7.15,0,1,0-6.22,0,10.717,10.717,0,0,0-5.9,5.836,13.675,13.675,0,1,1,18.014,0ZM16,19.85A5.85,5.85,0,1,1,21.85,14,5.856,5.856,0,0,1,16,19.85Z" transform="translate(-1.025 -1.025)"/>
 			  </svg>
@@ -1522,13 +556,41 @@
   </div><!-- /.header -->
   <!-- End EOW_SHOP-325 -->
 
+		<div id="fluct-pc-sticky-ad" style="display: none;">
+			<div id="div-gpt-ad-1584955147936-0" style="height:90px; width:728px;"></div>
+			<div id="fluct-pc-sticky-ad-close-button"></div>
+			<script>
+				googletag.cmd.push(function() {
+					googletag.pubads().addEventListener('slotRenderEnded', function(e) {
+						var stickyGptDivId = 'div-gpt-ad-1584955147936-0'
+						var fluctStickyAdDivId = 'fluct-pc-sticky-ad';
+						var closeButtionId = 'fluct-pc-sticky-ad-close-button';
+						var slot = e.slot;
+
+
+						if (slot.getSlotElementId() === stickyGptDivId && !e.isEmpty) {
+							var fluctStickyAdDiv = document.getElementById(fluctStickyAdDivId);
+							fluctStickyAdDiv.style.display = 'block';
+
+
+							var closeButton = document.getElementById(closeButtionId);
+							closeButton.addEventListener('click', function() {
+								document.getElementById(fluctStickyAdDivId).style.display = 'none';
+							});
+						}
+					});
+					googletag.display('div-gpt-ad-1584955147936-0');
+				});
+			</script>
+		</div>
+	<!-- EOW_NEW-1084編集分 ------------------------------------------------------------------------- -->
 
 	<!-- svg読み込み
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div id="svgArea"></div>
   <script>
 $(function(){
-	$("#svgArea").load("content/img/symbol-defs.svg", function(){
+	$("#svgArea").load("content/579/img/symbol-defs.svg", function(){
 		//SVGの処理
 	});
 });
@@ -1548,7 +610,15 @@ $(function(){
 });
 </script>
 
-
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TKK8PX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TKK8PX');</script>
+<!-- End Google Tag Manager -->
 		<div id="AreaBody">
 			<noscript>
 				<div class="alertmsg">
@@ -1566,141 +636,151 @@ $(function(){
 			</form>
 
 			<!-- ▲ 英辞郎ヘッダ ▲ -->
-			<main class="contents">
-				<!-- <div class="wrap"> -->
-					<!-- <section id="main"> -->
-						<div id="AreaUpperLeft">
-							<div id="AreaUpperLeftContainer">
-								<div id="AreaUpperLeftInner">
-									<div id="resultsArea">
-										<div id="resultsList"class="mr_0">
-											<div class="wrap-inner">
-											<div class="contents-wide">
-											<h1 class="ttl-01">環境設定</h1>
-											<ul class="tab-01">
-												<li><p class="is-current">機能設定の変更</p></li>
-												<li><a href="./setting2.html">表示設定の変更</a></li>
-											  </ul>
-												<div class="section-01">
-													<div id="beforeSettingMessage">
-														<!-- ▼ 設定変更前 ▼ -->
-														<p class="pgh-01">
-															『英辞郎 on the WEB』の検索結果ページの読みがな表示のオン・オフの設定を変更したり、ダブルクリック検索の参照先のページの表示ウィンドウの変更をするなどの機能面の設定を変更できます。<br />
-														</p>
-														<!-- ▲ 設定変更前▲ -->
-													</div>
-													
-													<p class="pgh-01">
-													お好みの設定をお選びいただき、「変更を保存する」ボタンをクリックしてください。<br />
-													変更の結果は、次回以降のご利用の際に有効となります。<br />
-													</p>
-												</div><!-- /.section-01 -->
-												<div class="section-01">
-												<div class="box-p01">
-												<table class="setting-tbl-01">
-													<form name="fmConfig" action="" method="">
-														<tr>
-															<th>読みがな <a href="#1"><span class="pgh-s01">(1)</span></a></th>
-															<td><input id="ym0" type="radio" name="ym" value="0" checked /><label for="ym0">非表示（OFF）</label>
-																<input id="ym1" type="radio" name="ym" value="1" /><label for="ym1">表示（ON）</label>
-															</td>
-														</tr>
-														<tr>
-															<th>ダブルクリック検索 <a href="#2"><span class="pgh-s01">(2)</span></a></th>
-															<td><input id="wd0" type="radio" name="wd" value="0" /><label for="wd0">無効（OFF）</label>
-																<input id="wd1" type="radio" name="wd" value="1" checked /><label for="wd1">有効（ON）</label>
-															</td>
-														</tr>
-														<tr>
-															<th >参照ページのウィンドウ <a href="#3"><span class="pgh-s01">(3)</span></a></th>
-															<td><ul>
-																<li><input id="lw0" type="radio" name="lw" value="0" /><label for="lw0">同じウィンドウで開く</label></li>
-																<li><input id="lw1" type="radio" name="lw" value="1" checked /><label for="lw1">別のウィンドウで開く</label></li>
-																<li><input id="lw2" type="radio" name="lw" value="2" /><label for="lw2">常に新しいウィンドウで開く</label></li>
-															</ul></td>
-														</tr>
-														<tr >
-															<th >検索キーワード入力欄 <a href="#4"><span class="pgh-s01">(4)</span></a></th>
-															<td><ul>
-																<li><input id="kw0" type="radio" name="kw" value="0" checked /><label for="kw0">キーワードをそのまま残す</label></li>
-																<li><input id="kw1" type="radio" name="kw" value="1" /><label for="kw1">キーワード入力欄を空欄にする</label></li>
-																<li><input id="kw2" type="radio" name="kw" value="2" /><label for="kw2">キーワードが選択された状態にする</label></li>
-															</ul></td>
-														</tr>
-														<tr>
-															<th >キーワード入力補助 <a href="#5"><span class="pgh-s01">(5)</span></a></th>
-															<td>
-																<input id="is0" type="radio" name="is" value="0" checked /><label for="is0">無効（OFF）</label>
-																<input id="is1" type="radio" name="is" value="1" /><label for="is1">有効（ON）</label>
-															</td>
-														</tr>
-												</table>
-												</div><!-- /.box-01 -->
-														<ul class="list-a01">
-															<li>「初期設定を適用する」をクリックすると、各項目の標準設定が適用されます。それぞれの初期設定については、<a href="#descriptions">下記の説明</a>をご参照ください。</li>
-														</ul>
-												</div><!-- /.section-01 -->
-														<div class="btn-area">
-																<form name="" action="" method="">
-																		<input type="hidden" name="ym" value="0" />
-																		<input type="hidden" name="wd" value="1" />
-																		<input type="hidden" name="lw" value="1" />
-																		<input type="hidden" name="kw" value="0" />
-																		<input type="hidden" name="is" value="0" />
-																</form>
-																	<button class="btn-05" onclick="return window.alert('設定を保存しました。\n\n再度設定を変更するには、引き続きこのページで変更をおこない、「変更を保存する」ボタンをクリックしてください。'), defaultSetting() "><img src="/content/img/icon-return.svg" alt="初期設定を適用する"><span>初期設定を適用する</span></button>
-																
-																	<button class="btn-04" onclick="return window.alert('設定を保存しました。\n\n再度設定を変更するには、引き続きこのページで変更をおこない、「変更を保存する」ボタンをクリックしてください。'), saveSetting()"><img src="/content/img/icon-execute.svg" alt="変更を保存する"><span>変更を保存する</span></button>
-														</div><!-- /.btn-area -->
-													</form>
+			<div class="wrap">
+				<section id="main">
+					<div id="AreaUpperLeft">
+						<!-- EOW_NEW-1084 【EOW】設定画面でgoogletag is not definedエラーが出ている 追記分　-->
+						<div id="AreaUpperRight" class="rectangle_right">
+							<!-- eijiro_1st-rec_300-250 -->
+							<div class="mb_3">
+								<!-- /21619764421/p_alc_eijiro_1st_rec_300x250 -->
+								<div id='div-gpt-ad-1555650242892-0'>
+									<script>
+										googletag.cmd.push(function() {
+											googletag.display('div-gpt-ad-1555650242892-0');
+										});
+									</script>
+								</div>
+							</div>
+							<!-- eijiro_1st-rec_300-250 -->
+							<div class="mb_3">
+								<!-- /21619764421/eijiro_pc_2nd_rec_2 -->
+								<div id='div-gpt-ad-1555650122224-0'>
+									<script>
+										googletag.cmd.push(function() {
+											googletag.display('div-gpt-ad-1555650122224-0');
+										});
+									</script>
+								</div>
+							</div>
+
+							<div class="mb_3">
+								<script type="text/javascript">
+								<!--
+									article();
+								//-->
+								</script>
+							</div>
+
+							<!-- eijiro_2nd-rec_300-250 -->
+							<div class="mb_3">
+								
+								<!-- /21619764421/eijiro_pc_2nd_rec -->
+								<div id='div-gpt-ad-1555650531882-0'>
+									<script>
+										googletag.cmd.push(function() {
+											googletag.display('div-gpt-ad-1555650531882-0');
+										});
+									</script>
+								</div>
+							</div>
+						</div>
+						<!-- EOW_NEW-1084 【EOW】設定画面でgoogletag is not definedエラーが出ている 追記分　-->
+						<div id="AreaUpperLeftContainer">
+							<div id="AreaUpperLeftInner">
+								<div id="resultsArea">
+									<div id="resultsList"class="mr_0">
+										<div align="right" style="margin-top: 5px;"><a href="/setting2.html">&gt;&gt;&nbsp;表示設定の変更</a></div>
+										<div style="padding: 5px 0 5px 10px; border-top: 1px solid #797979; font-size: small; font-weight: bold; color: #333; margin-top: 5px; margin-bottom: 5px; background-color: #f0f0f0;">機能設定の変更</div>
+										<div class="mt_10">
+											<div id="beforeSettingMessage">
+												<!-- ▼ 設定変更前 ▼ -->
+												このページでは、『英辞郎 on the WEB』の検索結果ページの読みがな表示のオン・オフの設定を変更したり、ダブルクリック検索の参照先のページの表示ウィンドウの変更をするなどの機能面の設定を変更できます。<br />
+												<!-- ▲ 設定変更前▲ -->
 											</div>
-											</div><!-- /.wrap-inner -->
-											<div class="wrap-inner">
-												<div class="contents-wide">
-													<div id="descriptions" class="section-01">
-														<div class="box-l02">
-															<h2 class="ttl-03">各設定の説明</h2>
-															<div class="section-01">
-																<h3 class="ttl-04"><a id="1"></a>1.読みがな</h3>
-																<p>このオプションが<em class="em-02">「表示」（ON）のとき、語義中の漢字の語彙に<em class="em-01">読みがな</em>が表示されます</em>（読みがなデータのない語彙もあります）。　<br />※ 英和検索時のみ対応</p>
-																<div class="box-ex01">初期設定 = 「非表示」（OFF）</div>
+											<div id="afterSettingMessage" style="display: none">
+												<!-- ▼ 設定保存成功 ▼ -->
+												<div style="margin: 15px 0 20px 30px;">
+													<span style="border-bottom: 2px dotted #008000;"><img src="/content/579/img/checked.png" width="24" height="24" align="absbottom">&nbsp;<span style="font-size: 12pt; color: #008000; font-weight: bold;">設定が保存されました</span></span>
+													<div style="margin: 10px 0 0 5px;">読みがな：<span id="set_ym" style="font-weight: bold;"></span> / ダブルクリック検索：<span id="set_wd" style="font-weight: bold;"></span> /<br />参照ページ：<span id="set_lw" style="font-weight: bold;"></span> / 入力欄：<span id="set_kw" style="font-weight: bold;"></span> /<br /> キーワード入力補助：<span id="set_is" style="font-weight: bold;"></span><br /><br />
+													<span style="font-size: 8pt; color: #FF0000;">※&nbsp;キーワード入力補助を「有効」（ON）に設定いただいた場合も、このページ（機能設定ページ）の検索キーワード入力欄ではご利用いただけません。一度検索をしていただき、通常の検索結果画面にお戻りいただいてからご利用ください。</span>
+													</div>
+												</div>
+												<br />
+												再度設定を変更するには、引き続きこのページで変更をおこない、「変更を保存する」ボタンをクリックしてください。
+												<!-- ▲ 設定保存成功 ▲ -->
+											</div>
+											<a name="fr"></a>
+											<div style="padding: 5px 0 5px 10px; border-top: 1px solid #797979; font-size: small; font-weight: bold; color: #333; margin-top: 15px; margin-bottom: 5px; background-color: #f0f0f0;">オプション</div>
+											お好みの設定をお選びいただき、「変更を保存する」ボタンをクリックしてください。<br />
+											変更の結果は、次回以降のご利用の際に有効となります。<br />
+											<br />
+											<table cellspacing="0" style="margin-bottom: 10px;">
+												<tr>
+													<form name="fmConfig" action="" method="">
+														<td style="padding: 5px;" nowrap><strong>読みがな</strong>&nbsp;<a href="#1"><span style="font-size: 80%;">(1)</span></a>：</td>
+														<td colspan="2" style="padding: 5px;"><input id="ym0" type="radio" name="ym" value="0" checked /> <label for="ym0">非表示（OFF）</label>&nbsp;&nbsp;&nbsp;<input id="ym1" type="radio" name="ym" value="1" /> <label for="ym1">表示（ON）</label></td>
+													</tr>
+													<tr style="background-color: #EEEEEE;">
+														<td style="padding: 5px;" nowrap><strong>ダブルクリック検索</strong>&nbsp;<a href="#2"><span style="font-size: 80%;">(2)</span></a>：</td>
+														<td colspan="2" style="padding: 5px;"><input id="wd0" type="radio" name="wd" value="0" /> <label for="wd0">無効（OFF）</label>&nbsp;&nbsp;&nbsp;<input id="wd1" type="radio" name="wd" value="1" checked /> <label for="wd1">有効（ON）</label></td>
+													</tr>
+													<tr>
+														<td style="padding: 5px;" nowrap><strong>参照ページのウィンドウ</strong>&nbsp;<a href="#3"><span style="font-size: 80%;">(3)</span></a>：</td>
+														<td colspan="2" style="padding: 5px;"><input id="lw0" type="radio" name="lw" value="0" /> <label for="lw0">同じウィンドウで開く</label><br /><input id="lw1" type="radio" name="lw" value="1" checked /> <label for="lw1">別のウィンドウで開く</label><br /><input id="lw2" type="radio" name="lw" value="2" /> <label for="lw2">常に新しいウィンドウで開く</label></td>
+													</tr>
+													<tr style="background-color: #EEEEEE;" nowrap>
+														<td style="padding: 5px;"><strong>検索キーワード入力欄</strong>&nbsp;<a href="#4"><span style="font-size: 80%;">(4)</span></a>：</td>
+														<td colspan="2" style="padding: 5px;"><input id="kw0" type="radio" name="kw" value="0" checked /> <label for="kw0">キーワードをそのまま残す</label><br /><input id="kw1" type="radio" name="kw" value="1" /> <label for="kw1">キーワード入力欄を空欄にする</label><br /><input id="kw2" type="radio" name="kw" value="2" /> <label for="kw2">キーワードが選択された状態にする</label></td>
+													</tr>
+													<tr>
+														<td style="padding: 5px;" nowrap><strong>キーワード入力補助</strong>&nbsp;<a href="#5"><span style="font-size: 80%;">(5)</span></a>：</td>
+														<td colspan="2" style="padding: 5px;"><input id="is0" type="radio" name="is" value="0" checked /> <label for="is0">無効（OFF）</label>&nbsp;&nbsp;&nbsp;<input id="is1" type="radio" name="is" value="1" /> <label for="is1">有効（ON）</label></td>
+													</tr>
+													<tr>
+														<td style="padding: 5px;"></td>
+														<td style="padding: 80px 5px 5px 5px;">
+															<div style="float:left; padding: 5px;">
+																<input type="button" value="変更を保存する" onclick="return saveSetting()" style="background-color: #FFFF00;"/>
 															</div>
-															<div class="section-01">
-																<h3 class="ttl-04"><a id="2"></a>2.ダブルクリック検索</h3>
-																<p>このオプションが<em class="em-02">「有効」（ON）のとき、検索結果中の<em class="em-01">英単語をダブルクリック</em>すると、その単語で再検索</em>できます。</p>
-																<div class="box-ex01">初期設定 = 「有効」（ON）</div>
+													</form>
+													<form name="" action="" method="">
+															<div style="float:left; padding: 5px;">
+																<input type="hidden" name="ym" value="0" />
+																<input type="hidden" name="wd" value="1" />
+																<input type="hidden" name="lw" value="1" />
+																<input type="hidden" name="kw" value="0" />
+																<input type="hidden" name="is" value="0" />
+																<input type="button" value="初期設定を適用する" onclick="return defaultSetting()" />
 															</div>
-															<div class="section-01">
-																<h3 class="ttl-04"><a id="3"></a>3.参照ページのウィンドウ</h3>
-																<p><em class="em-02">ダブルクリック検索を使ったとき、<em class="em-01">どのウィンドウで参照先のページを表示するか</em>を選択</em>できます。</p>
-																<div class="box-ex01">初期設定 = 「別のウィンドウで開く」</div>
-															</div>
-															<div class="section-01">
-																<h3 class="ttl-04"><a id="4"></a>4.検索キーワード入力欄</h3>
-																<p>初期設定では、検索結果ページ中の検索窓には、お調べになった検索キーワードがそのまま表示されます。この<em class="em-02">検索キーワードをクリアして<em class="em-01">検索キーワード入力欄を空の状態</em>に変更したり、<em class="em-01">検索キーワードを選択した状態</em>に変更できます。</em></p>
-																<div class="box-ex01">初期設定 = 「キーワードをそのまま残す」</div>
-															</div>
-															<div class="section-01">
-																<h3 class="ttl-04" ><a id="5"></a>5.キーワード入力補助</h3>
-																<p>このオプションが<em class="em-02">「有効」（ON）のとき、検索窓に文字を入力するたびにその文字列で始まる見出し語候補が更新されながら表示される機能をご利用いただけます。</em></p>
-																<div class="box-ex01">初期設定 = 「無効」（OFF）</div>
-															</div>
-														</div><!-- /.box -->
-														<ul class="list-i02 list-r02">
-																<li>機能設定の変更</li>
-																<li><a href="/setting2.html">表示設定の変更</a></li>
-														</ul>
-													</div><!-- /descriptions -->
-												</div><!-- /.contents-wide -->
-											</div> <!-- /wrap-inner -->
-										</div> <!-- /resultsList -->
-									</div> <!-- /resultsArea -->
-								</div> <!-- /AreaUpperLeftInnner -->
-							</div> <!-- /AreaUpperLeftContainer -->
-						</div><!-- /AreaUpperLeft -->
-					<!-- </section>/main -->
-				<!-- </div> /wrap -->
-			</main>
+														</td>
+													</form>
+												</tr>
+												<tr>
+													<td></td>
+													<td colspan="2">※ 「初期設定を適用する」をクリックすると、各項目の標準設定が適用されます。それぞれの<a href="#ds" style="text-decoration: underline;">初期設定については、下記の説明</a>をご参照ください。</td>
+												</tr>
+											</table>
+											<div style="margin: 10px 0 50px 0; padding-top: 20px; border-top: 2px dotted #BBBBBB;">
+												<a name="ds"></a>【各設定の説明】
+												<ol style="margin-top: 15px;">
+													<li style="margin-bottom: 10px;"><a name="1"></a><strong>読みがな</strong>：<br />このオプションが<span style="text-decoration: underline;">「表示」（ON）のとき、語義中の漢字の語彙に<span style="font-weight: bold;">読みがな</span>が表示されます</span>（読みがなデータのない語彙もあります）　<br />※ 英和検索時のみ対応<br /><span style="color: #4682B4;">・初期設定 = 「非表示」（OFF）</span></li>
+													<li style="margin-bottom: 10px;"><a name="2"></a><strong>ダブルクリック検索</strong>：<br />このオプションが<span style="text-decoration: underline;">「有効」（ON）のとき、検索結果中の<span style="font-weight: bold;">英単語をダブルクリック</span>すると、その単語で再検索</span>できます　<br />※ Opera には非対応<br /><span style="color: #4682B4;">・初期設定 = 「有効」（ON）</span></li>
+													<li style="margin-bottom: 10px;"><a name="3"></a><strong>参照ページのウィンドウ</strong>：<br /><span style="text-decoration: underline;">ダブルクリック検索を使ったとき、<span style="font-weight: bold;">どのウィンドウで参照先のページを表示するか</span>を選択</span>できます<br /><span style="color: #4682B4;">・初期設定 = 「別のウィンドウで開く」</span></li>
+													<li style="margin-bottom: 10px;"><a name="4"></a><strong>検索キーワード入力欄</strong>：<br />初期設定では、検索結果ページ中の検索窓には、お調べになった検索キーワードがそのまま表示されます。この<span style="text-decoration: underline;">検索キーワードをクリアして<span style="font-weight: bold;">検索キーワード入力欄を空の状態</span>に変更したり、<span style="font-weight: bold;">検索キーワードを選択した状態</span>に変更できます</span><br /><span style="color: #4682B4;">・初期設定 = 「キーワードをそのまま残す」</span></li>
+													<li style="margin-bottom: 10px;"><a name="5"></a><strong>キーワード入力補助</strong>：<br />このオプションが<span style="text-decoration: underline;">「有効」（ON）のとき、検索窓に文字を入力するたびにその文字列で始まる見出し語候補が更新されながら表示される機能をご利用いただけます</span><br /><span style="color: #4682B4;">・初期設定 = 「無効」（OFF）</span></li>
+												</ol>
+												<div align="right"><a href="#fr" style="text-decoration: underline;">設定変更のフォームに戻る</a></div>
+											</div>
+										</div>
+										<div align="right" style="clear: both; border-top: 1px #333333 dotted; padding: 10px 0px 0px 10px; margin-top: 20px; margin-bottom: 10px;"><a href="/setting2.html">&gt;&gt;&nbsp;表示設定の変更</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
 			<!-- ▲ 本体上部（コンテンツ）：左 ▲ -->
 			<!-- ▼ 本体上部（広告）：右 ▼ -->
 			<!-- ▲ 本体上部（広告）：右 ▲ -->
@@ -1730,7 +810,7 @@ $(function(){
                         <dt>アルクグループ</dt>
                         <dd>
                             <a href="https://www.alc.co.jp/index.html?utm_source=EOW&amp;utm_medium=footer&amp;utm_campaign=eow_wwwtop" target="_blank">アルクのウェブサイト</a>
-                            <a href="https://shop.alc.co.jp/?utm_source=serp_pc&utm_medium=text&utm_campaign=EOWfooter">アルクショップ</a>
+                            <a href="https://shop.alc.co.jp/?utm_source=serp_pc&utm_medium=text&utm_campaign=EOWfooter">アルク通信講座</a>
                             <a href="https://eowp.alc.co.jp/info/">英辞郎 on the WEB Pro</a>
                         </dd>
                     </dl>
@@ -1775,20 +855,20 @@ $(function(){
   <div class="bg_box2">
     <div id="js_p_onsei_modal" class="modal">
       <div class="js_p_top">
-        <img src="/content/img/icon_eow_02.svg" class="js_p_img"/>
+        <img src="/content/579/img/icon_eow_02.svg" class="js_p_img"/>
         <div class="js_p_text" style="float: left;">音声再生は「英辞郎 on the WEB Pro」でご利用いただけます。</div>
         <div class="js_p_alc">※アルクのIDをお持ちでない方は、下記の新規登録（無料）からお進みください。</div>
         <div class="js_p_close">
-          <img src="/content/img/close.png">
+          <img src="/content/579/img/close.png">
         </div>
       </div>
       <div class="js_p_bottom">
         <div class="js_p_b_img">
           <div class="onsei_btn" style="margin-top: 30px;">
-            <img src="/content/img/onsei_btn.png" style="margin-left: 20px;width: 100px;float: left;"/>
+            <img src="/content/579/img/onsei_btn.png" style="margin-left: 20px;width: 100px;float: left;"/>
             <p style="float: left;margin-top: 5px;">から再生できます。</p>
           </div>
-          <img src="/content/img/onsei.png"/>
+          <img src="/content/579/img/onsei.png"/>
         </div>
         <div class="js_p_b_login">
           <div class="js_p_b_text">
@@ -1813,16 +893,16 @@ $(function(){
   <div class="bg_box2">
     <div id="js_p_history_modal" class="modal">
       <div class="js_p_top">
-        <img src="/content/img/icon_eow_03.svg" class="js_p_img"/>
+        <img src="/content/579/img/icon_eow_03.svg" class="js_p_img"/>
         <div class="js_p_text" style="float: left;">検索履歴は「英辞郎 on the WEB Pro」でご利用いただけます。</div>
         <div class="js_p_alc">※アルクのIDをお持ちでない方は、下記の新規登録（無料）からお進みください。</div>
         <div class="js_p_close">
-          <img src="/content/img/close.png">
+          <img src="/content/579/img/close.png">
         </div>
       </div>
       <div class="js_p_bottom">
         <div class="js_p_b_img">
-          <img src="/content/img/rireki.png"/>
+          <img src="/content/579/img/rireki.png"/>
         </div>
         <div class="js_p_b_login">
           <div class="js_p_b_text">
@@ -1847,16 +927,16 @@ $(function(){
   <div class="bg_box2">
     <div id="js_p_wordbook_modal" class="modal">
       <div class="js_p_top">
-        <img src="/content/img/icon_eow_01.svg" class="js_p_img"/>
+        <img src="/content/579/img/icon_eow_01.svg" class="js_p_img"/>
         <div class="js_p_text" style="float: left;">単語帳は「英辞郎 on the WEB Pro」でご利用いただけます。</div>
         <div class="js_p_alc">※アルクのIDをお持ちでない方は、下記の新規登録（無料）からお進みください。</div>
         <div class="js_p_close">
-          <img src="/content/img/close.png">
+          <img src="/content/579/img/close.png">
         </div>
       </div>
       <div class="js_p_bottom">
         <div class="js_p_b_img">
-          <img src="/content/img/tango.png"/>
+          <img src="/content/579/img/tango.png"/>
         </div>
         <div class="js_p_b_login">
           <div class="js_p_b_text">

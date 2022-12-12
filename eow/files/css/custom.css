@@ -1478,9 +1478,3 @@ span.jpn_s.adjust{
     top: 20px;
 	bottom: 20px
 } */
-
-@media only screen and (min-width: 769px) {
-	.intrsttl_ad {
-		display: none;
-	}
-}

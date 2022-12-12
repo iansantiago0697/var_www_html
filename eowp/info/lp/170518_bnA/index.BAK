@@ -589,7 +589,7 @@ onClick="ga('send', 'event',  'ordermonth', 'click', 'https://ec.alc.co.jp/searc
 						<li>初回利用開始から30日間は、広告非表示、「Pro」の全機能がお試し可能<span class="note">※31日目以降も無料でご利用いただけます。</span></li>
 					</ul>
 
-					<a href="https://eowp-user.alc.co.jp/signup" target="_blank" class="btnStyle01"
+					<a href="//eowp-user.alc.co.jp/signup" target="_blank" class="btnStyle01"
 onClick="ga('send', 'event',  'info_lite', 'click', 'https://eowp-user.alc.co.jp/signup’);" id="info_lite"><img src="img/btn_free03.png" alt="Pro Lite ご登録はこちらから"></a>
 				</div>
 			<!-- // .freeBox --></div>

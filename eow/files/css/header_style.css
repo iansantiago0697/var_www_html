@@ -271,7 +271,7 @@
   height: 32px;
 }
 
-@media screen and (min-width: 599px) {
+@media screen and (min-width: 598px) {
   .header .is-pc, .contents .is-pc, .footer .is-pc {
     display: block;
   }
@@ -514,7 +514,6 @@
 
 .header header .header-biz-menu-inner {
   display: flex;
-  justify-content: space-around; /* EOW_NEW-1439 EOWFへの誘導を消してみる｜EOWトップページ */
   padding: 1.6rem 1.2rem .8rem 1.2rem;
   border-radius: 4px;
   background-color: rgba(102, 102, 102, 0.1);
@@ -556,7 +555,7 @@
   z-index: 10;
 }
 
-@media screen and (min-width: 599px) {
+@media screen and (min-width: 598px) {
   .header-gnav-btn {
     display: none;
   }
@@ -598,7 +597,7 @@
   z-index: 5;
 }
 
-@media screen and (min-width: 599px) {
+@media screen and (min-width: 598px) {
   .header-gnav-sp {
     display: none;
   }
@@ -790,25 +789,14 @@
   height: 32px;
 }
 
-@media screen and (max-width: 1098px) {
-  .header-ad .wrap-inner { 
-    justify-content: center; 
-  }
-}
-
-@media screen and (min-width: 1099px) {
-  .header-ad .wrap-inner { 
-    justify-content: space-between; 
-  }
-}
-
 @media screen and (min-width: 598px) {
   .header-ad .wrap-inner {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
   .header-ad-1 {
-    width: 750px;
+    width: 728px;
   }
   .header-ad-2 {
     width: 300px;
@@ -824,16 +812,9 @@
 
 @media screen and (max-width: 776px) {
   .header-ad-1 {
-    transform: scale(0.9);
+    display: none;
   }
 }
-
-@media screen and (max-width: 698px) {
-  .header-ad-1 {
-    transform: scale(0.8);
-  }
-}
-
 
 .header-ad a {
   display: block;
@@ -1206,8 +1187,7 @@
 
 @media screen and (min-width: 598px) {
   .contents .pro [class*="pro-block"] {
-    /* width: 49%; */
-    width: 98%;
+    width: 49%;
   }
 }
 
