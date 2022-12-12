@@ -1,7 +1,6 @@
 @charset "UTF-8";
-
 /* 検索結果
 ---------------------------------------------------- */
-#resultsList ul {
-	font-family: Times, "Times New Roman", Serif;
+.contents section#main #resultsArea, #resultsList ul {
+	font-family: 'Noto Serif JP', serif;
 }
