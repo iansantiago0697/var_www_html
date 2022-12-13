@@ -514,6 +514,7 @@
 
 .header header .header-biz-menu-inner {
   display: flex;
+  justify-content: space-around; /* EOW_NEW-1439 EOWFへの誘導を消してみる｜EOWトップページ */
   padding: 1.6rem 1.2rem .8rem 1.2rem;
   border-radius: 4px;
   background-color: rgba(102, 102, 102, 0.1);
@@ -1204,7 +1205,8 @@
 
 @media screen and (min-width: 598px) {
   .contents .pro [class*="pro-block"] {
-    width: 49%;
+    /* width: 49%; */
+    width: 98%;
   }
 }
 

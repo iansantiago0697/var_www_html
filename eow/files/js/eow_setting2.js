@@ -1,4 +1,4 @@
-<!--
+//<!--
 function setConfig() {
 	setSZ();
 	setLH();
@@ -6,6 +6,7 @@ function setConfig() {
 	var labelSz = "sz" + items["FONT_SIZE"];
 	var labelLh = "lh" + items["LINE_HEIGHT"];
 	var labelFf = "ff" + items["FONT_FAMILY"];
+	setCookie();
 	var label = document.getElementsByTagName("label");
 	if (label != null) {
 		for (i = 0; i < label.length; i++) {
@@ -22,33 +23,33 @@ function setConfig() {
 	}
 };
 function setSZ() {
-	if (document.chk.sz.length) {
-		for (i = 0; i < document.chk.sz.length; i++) {
-			if (document.chk.sz[i].checked && items["FONT_SIZE"] != document.chk.sz[i].value) {
-				cssChange('eow_sz' + document.chk.sz[i].value, 'eow_sz');
-				items["FONT_SIZE"] = document.chk.sz[i].value;
+	if (document.fmConfig.sz.length) {
+		for (i = 0; i < document.fmConfig.sz.length; i++) {
+			if (document.fmConfig.sz[i].checked && items["FONT_SIZE"] != document.fmConfig.sz[i].value) {
+				cssChange('eow_sz' + document.fmConfig.sz[i].value, 'eow_sz');
+				items["FONT_SIZE"] = document.fmConfig.sz[i].value;
 				break;
 			}
 		}
 	}
 };
 function setLH() {
-	if (document.chk.lh.length) {
-		for (i = 0; i < document.chk.lh.length; i++) {
-			if (document.chk.lh[i].checked && items["LINE_HEIGHT"] != document.chk.lh[i].value) {
-				cssChange('eow_lh' + document.chk.lh[i].value, 'eow_lh');
-				items["LINE_HEIGHT"] = document.chk.lh[i].value;
+	if (document.fmConfig.lh.length) {
+		for (i = 0; i < document.fmConfig.lh.length; i++) {
+			if (document.fmConfig.lh[i].checked && items["LINE_HEIGHT"] != document.fmConfig.lh[i].value) {
+				cssChange('eow_lh' + document.fmConfig.lh[i].value, 'eow_lh');
+				items["LINE_HEIGHT"] = document.fmConfig.lh[i].value;
 				break;
 			}
 		}
 	}
 };
 function setFF() {
-	if (document.chk.ff.length) {
-		for (i = 0; i < document.chk.ff.length; i++) {
-			if (document.chk.ff[i].checked && items["FONT_FAMILY"] != document.chk.ff[i].value) {
-				cssChange('eow_ff' + document.chk.ff[i].value, 'eow_ff');
-				items["FONT_FAMILY"] = document.chk.ff[i].value;
+	if (document.fmConfig.ff.length) {
+		for (i = 0; i < document.fmConfig.ff.length; i++) {
+			if (document.fmConfig.ff[i].checked && items["FONT_FAMILY"] != document.fmConfig.ff[i].value) {
+				cssChange('eow_ff' + document.fmConfig.ff[i].value, 'eow_ff');
+				items["FONT_FAMILY"] = document.fmConfig.ff[i].value;
 				break;
 			}
 		}
@@ -63,7 +64,7 @@ function cssChange(file, cid){
 			head.item(0).removeChild(link);
 		}
 	} else {
-		var ref = '//' + STATIC_DOMAIN + '/content/css/' + file + '_20100405.css';
+		var ref = '//' + STATIC_DOMAIN + '/content/css/' + file + '.css';
 		if (document.getElementById(cid)) {
 			document.getElementById(cid).href = ref;
 		} else {
@@ -79,24 +80,24 @@ function cssChange(file, cid){
 		}
 	}
 };
-function checkSetting() {
+function defaultSetting() {
+	document.fmConfig.sz[0].checked = true;
+	document.fmConfig.lh[0].checked = true;
+	document.fmConfig.ff[0].checked = true;
 	setConfig();
 	document.fm1.q.focus();
 	return false;
-};
+}
 function saveSetting() {
 	setConfig();
-	setCookie();
-	document.getElementById("beforeSettingMessage").style.display  = 'none';
-	document.getElementById("afterSettingMessage").style.display  = 'inline';
 	document.fm1.q.focus();
 	return false;
 };
 // クッキー読込み
 function loadCookie(DomainName, CookieDomain, CookieName, CookieExpires) {
-	STATIC_DOMAIN = DomainName;
+	STATIC_DOMAIN = getFinalDomain(DomainName);
 	IMG_URI = "//" + STATIC_DOMAIN + "/content/img/";
-	COOKIE_DOMAIN = CookieDomain;
+	COOKIE_DOMAIN = getFinalDomain(CookieDomain);
 	COOKIE_NAME = CookieName;
 	COOKIE_EXPIRES = CookieExpires;
 	var ex = COOKIE_EXPIRES.split("*");
@@ -130,30 +131,30 @@ function loadCookie(DomainName, CookieDomain, CookieName, CookieExpires) {
 	}
 	// フォントサイズ
 	if (items["FONT_SIZE"] == "2") {
-		document.chk.sz[1].checked = true;
-		cssChange('eow_sz' + document.chk.sz[1].value, 'eow_sz');
+		document.fmConfig.sz[1].checked = true;
+		cssChange('eow_sz' + document.fmConfig.sz[1].value, 'eow_sz');
 	} else {
-		document.chk.sz[0].checked = true;
+		document.fmConfig.sz[0].checked = true;
 		if (items["FONT_SIZE"] != "0") {
 			items["FONT_SIZE"] == "0";
 		}
 	}
 	// 行間
 	if (items["LINE_HEIGHT"] == "1") {
-		document.chk.lh[1].checked = true;
-		cssChange('eow_lh' + document.chk.lh[1].value, 'eow_lh');
+		document.fmConfig.lh[1].checked = true;
+		cssChange('eow_lh' + document.fmConfig.lh[1].value, 'eow_lh');
 	} else {
-		document.chk.lh[0].checked = true;
+		document.fmConfig.lh[0].checked = true;
 		if (items["LINE_HEIGHT"] != "0") {
 			items["LINE_HEIGHT"] == "0";
 		}
 	}
 	// フォント
 	if (items["FONT_FAMILY"] == "1") {
-		document.chk.ff[1].checked = true;
-		cssChange('eow_ff' + document.chk.ff[1].value, 'eow_ff');
+		document.fmConfig.ff[1].checked = true;
+		cssChange('eow_ff' + document.fmConfig.ff[1].value, 'eow_ff');
 	} else {
-		document.chk.ff[0].checked = true;
+		document.fmConfig.ff[0].checked = true;
 		if (items["FONT_FAMILY"] != "0") {
 			items["FONT_FAMILY"] == "0";
 		}
@@ -185,4 +186,9 @@ function loadCookie(DomainName, CookieDomain, CookieName, CookieExpires) {
 	setCookie();
 	document.fm1.q.focus();
 };
+function getFinalDomain(domain){
+    return domain !=null && domain.length > 0 && domain.toLowerCase() != top.window.location.hostname.toLowerCase() ?
+           top.window.location.hostname : 
+           domain;
+}
 // -->
