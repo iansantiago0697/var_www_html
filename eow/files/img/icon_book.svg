@@ -1,0 +1,15 @@
+<svg id="コンポーネント_7_1" data-name="コンポーネント 7 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="26.828" viewBox="0 0 32 26.828">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_185" data-name="長方形 185" width="23.385" height="18.982" fill="none" stroke="#818181" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_184" data-name="グループ 184" transform="translate(0 7.846)">
+    <g id="グループ_183" data-name="グループ 183" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <rect id="長方形_184" data-name="長方形 184" width="22.154" height="14.769" transform="translate(0.615 0.615)" fill="none" stroke="#818181" stroke-miterlimit="10" stroke-width="1"/>
+      <circle id="楕円形_10" data-name="楕円形 10" cx="1.231" cy="1.231" r="1.231" transform="translate(18.02 6.77)" fill="none" stroke="#818181" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="パス_1562" data-name="パス 1562" d="M1.8,15.372,16.033,12.5H1.221Z" transform="translate(0.282 2.885)" fill="none" stroke="#818181" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </g>
+  <path id="パス_1563" data-name="パス 1563" d="M11.385,4a7.385,7.385,0,1,0,7.385,7.385A7.383,7.383,0,0,0,11.385,4Zm3.692,8.123H12.123v2.954H10.646V12.123H7.692V10.646h2.954V7.692h1.477v2.954h2.954Z" transform="translate(13.231 -4)" fill="#818181"/>
+</svg>
