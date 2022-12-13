@@ -12,24 +12,24 @@
 <!-- ▼ CSS ▼ -->
 <link href="/content/css/eow.css?1" rel="stylesheet" type="text/css" />
 <!-- ▼ Footer ▼ -->
-<script type="text/javascript" language="JavaScript" src="/content/js/eow_footer.js?1" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript" src="/content/js/eow_footer.js" charset="UTF-8"></script>
 <!-- ▼ Infospace ▼ -->
-<script type="text/javascript" language="JavaScript" src="/content/js/sa/infospace.js?1" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript" src="/content/js/sa/infospace.js" charset="UTF-8"></script>
 <!-- ▼ Alert ▼ -->
-<script type="text/javascript" language="JavaScript" src="/content/js/alert.js?1" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript" src="/content/js/alert.js" charset="UTF-8"></script>
 <!-- ▼ Alcom ▼ -->
-<script type="text/javascript" language="JavaScript" src="/content/js/alcom/ad_alcom.js?1" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript" src="/content/js/alcom/ad_alcom.js" charset="UTF-8"></script>
 <!-- ▼ Search Logic ▼ -->
-<script type="text/javascript" language="JavaScript" src="/content/js/eow_search.js?1" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript" src="/content/js/eow_search.js" charset="UTF-8"></script>
 <!-- ▼ VOA ▼ -->
-<script type="text/javascript" language="JavaScript" src="/content/js/data/voa_content.js?1" charset="UTF-8"></script>
-<script type="text/javascript" language="JavaScript" src="/content/js/voa.js?1" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript" src="/content/js/data/voa_content.js" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript" src="/content/js/voa.js" charset="UTF-8"></script>
 <!-- ▼ Hitomedia ▼ -->
 <script type="text/javascript" language="JavaScript" src="//t1.hitomedia.jp/GT/js/cm/ad_js/GTA-2-15/_gt_include.js" charset="shift-JIS"></script>
 <!-- ▼ Sponsor Sites Retrieval ▼ -->
 <script type="text/javascript" language="JavaScript" src="//eowimg.alc.co.jp/js_flat/?source=alc_jp_cat_ctxt&ctxtId=eow&outputCharEnc=utf8&type=eow&maxCount=8&ctxtUrl=http%3A%2F%2Feow.alc.co.jp%2FVoice+of+America%2FUTF-8%2F&ref="></script>
 <!-- ▼ Sponsor Sites Display ▼ -->
-<script type="text/javascript" language="JavaScript" src="/content/js/mc.js?2" charset="UTF-8"></script>
+<script type="text/javascript" language="JavaScript" src="/content/js/mc.js" charset="UTF-8"></script>
 <script type="text/javascript" language="JavaScript">
 <!--
 	/*@cc_on
