@@ -25,7 +25,7 @@ function footer(option){
     );
   }
   document.write(
-  'Copyright &copy; 2000-'+year+' ALC PRESS INC. All Rights Reserved.<img src="' + IMG_URI + 'blank.gif" title="' + HOSTNAME + '" style="zoom: 800%;"/></div>',
+  'Copyright &copy; 2000 ALC PRESS INC. All Rights Reserved.<img src="' + IMG_URI + 'blank.gif" title="' + HOSTNAME + '" style="zoom: 800%;"/></div>',
   '</div>'
   );
 }
