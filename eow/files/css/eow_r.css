@@ -3844,7 +3844,7 @@ body div.header .header-biz-menu-ttl {
 	text-decoration: underline;
 }
 
-.contents .search-sentence-list > ul div {
+.contents .search-sentence-list > ul > li.result-item > div {
   	margin-top: .5em;
 }
 
