@@ -587,6 +587,11 @@ $(function(){
     }
     shareFlg = true;
     var param = '?q=' + encodeURL(document.f1.q.value);
+
+    var data = { //refererの代わり
+      referer:"https://eowp3.alc.co.jp/search" + param,
+    }
+
     if (document.f1.pg.value != "") param += '&pg=' + document.f1.pg.value;
     if (document.f1.exp.value != "") param += '&exp=' + document.f1.exp.value;
     if (document.f1.dn.value != "") param += '&dn=' + document.f1.dn.value;
@@ -616,23 +621,25 @@ $(function(){
       }
     });
 */
-    $.ajax({
+  
+    $.ajax({   ///非同期通信
       type: 'GET',
-      dataType: 'jsonp',
-      timeout: 5000,
+      dataType: 'jsonp',///クロスオリジンでjsonのレスポンスを扱えるように
+      timeout: 5000,//5000msたってもレスポンス処理終わらなかったらエラー
       url: url,
+      data:data,
       success: function(json) {
-        $('.common_box').slideDown(200);
+        $('.common_box').slideDown(200);  ///欄をアニメーション表示
         $('.common_tab').addClass('tab_open');
         if(json){
           shareUrl = json.url;
-          $('#common_url').val(shareUrl);
+          $('#common_url').val(shareUrl);  ///htmlのvalue値を変更
 //        $('.common_box').slideDown(200);
 //        $('.common_tab').addClass('tab_open');
-          $('#common_url').select();
+          $('#common_url').select();    ///テキスト全て選択(url copyが楽)
           $('#copy_url').click(function() {
             $('#common_url').select();
-            document.execCommand('copy');
+            document.execCommand('copy'); ///クリップボードにコピー
           });
         }else{
           $('#common_url').val("エラーが発生しました");
@@ -646,9 +653,9 @@ $(function(){
         shareFlg = false;
       }
     });
-
     return false;
   });
+
 /*
   ※.toggle(function, function)はjQuery1.9以降削除されているため
   $('.vague_box label').toggle(
@@ -715,6 +722,8 @@ $(function(){
     }
   });
 });
+
+
 window.onerror=function(message, filename, lineno) {
   error_feedback('GLOBAL_ERROR:' + filename + '(' + lineno + '):message=' + message);
   return true;

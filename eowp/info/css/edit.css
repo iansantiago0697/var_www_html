@@ -60,7 +60,8 @@
 }
 
 .cvArea .flexContainer {
-	width: 50%;
+	width: 100%;
+	/* width: 50%; */
 	min-width: 375px;
 	margin-bottom: 20px;
 
