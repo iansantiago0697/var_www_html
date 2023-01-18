@@ -147,7 +147,7 @@
   };
 
   global.ad_top_center = function() {
-
+    
     document.write('<div style="margin-bottom: 40px; margin-left: 10px;">');
       //TOP右広告
       adInfoTopRight = [

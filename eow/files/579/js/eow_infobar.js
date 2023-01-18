@@ -18,14 +18,14 @@ function loadInfoFile(){
 		if (!hideFlg) {
 			if (loadInfoFlg) {
 				var request = null;
-				if (window.XMLHttpRequest){
-					request = new XMLHttpRequest();
-				}else{request = null;}
+        if (window.XMLHttpRequest){
+          request = new XMLHttpRequest();
+        }else{request = null;}
 				if(request){
 					request.open('GET', infoFile, true);
 					request.setRequestHeader('If-Modified-Since', '01 Jan 1970 00:00:00 GMT');
 					request.onreadystatechange = function(){
-						if (request.readyState == 4){
+						if (request.readyState == 4){ 
 							if (request.status == 200 | request.status == 0){
 								parseText(request.responseText);
 								setInfoData();
@@ -81,7 +81,7 @@ function setInfoData() {
 			if(document.getElementById(idname)){
 				if (tipsTxt != '') {
 					// 2014.08.18 EOW SERP デザイン改修 PR広告欄変更
-					// document.getElementById(idname).innerHTML = "<table style='table-layout: fixed; width: 100%; margin-top: 2px; padding: 2px; border: 3px solid #D0D0D0;'><tr><td style='overflow: hidden; white-space: nowrap; width: 100%; text-overflow: ellipsis; -o-text-overflow: ellipsis;' width='535'><a target='_blank' href='" + tipsUrl + "' style='font-size:12px; text-decoration:none;' title='" + tipsTxt + "'><img src='" + tipsImg + "' border='0' hspace='5'>" + tipsTxt + "</a></td><td width='15' valign='top'><a href='javascript:void(0);' onClick='hideToolstrip(\"" + cookieDomain + "\");' title='メモを非表示にする'><img src='/content/img/close.gif' border='0' alt='メモを非表示にする' /></a></td></tr></table>";
+					//document.getElementById(idname).innerHTML = "<table style='table-layout: fixed; width: 100%; margin-top: 2px; padding: 2px; border: 3px solid #D0D0D0;'><tr><td style='overflow: hidden; white-space: nowrap; width: 100%; text-overflow: ellipsis; -o-text-overflow: ellipsis;' width='535'><a target='_blank' href='" + tipsUrl + "' style='font-size:12px; text-decoration:none;' title='" + tipsTxt + "'><img src='" + tipsImg + "' border='0' hspace='5'>" + tipsTxt + "</a></td><td width='15' valign='top'><a href='javascript:void(0);' onClick='hideToolstrip(\"" + cookieDomain + "\");' title='メモを非表示にする'><img src='/content/img/close.gif' border='0' alt='メモを非表示にする' /></a></td></tr></table>";
 					document.getElementById(idname).innerHTML = "<a target='_blank' href='" + tipsUrl + "'text-decoration:none;' title='" + tipsTxt + "'>" + tipsTxt + "</a><a href='javascript:void(0);' onClick='hideToolstrip(\"" + cookieDomain + "\");' title='メモを非表示にする'></a>";
 				} else {
 					document.getElementById(idname).style.display  = 'none';

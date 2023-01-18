@@ -185,8 +185,8 @@ function loadCookie(DomainName, CookieDomain, CookieName, CookieExpires) {
 };
 
 function getFinalDomain(domain){
-	return domain !=null && domain.length > 0 && domain.toLowerCase() != top.window.location.hostname.toLowerCase() ?
-		top.window.location.hostname :
-		domain;
+    return domain !=null && domain.length > 0 && domain.toLowerCase() != top.window.location.hostname.toLowerCase() ?
+           top.window.location.hostname : 
+           domain;
 }
 // -->

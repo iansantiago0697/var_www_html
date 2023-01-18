@@ -93,6 +93,7 @@ function js_eowpf(){
   }
   //拡張検索プラス
   extensionFlg=cookies[10];
+
 }
 //非表示デフォルトのトグル
 function toggle_n(elm){
@@ -835,6 +836,14 @@ function setLeftHight() {
 	var aul = $('#maincontent').height();
 	if(aul > aur){
 	aul = aul - 100;
-		$(".rectangle_right").css("height", aul);
+		$("#leftbar").css("height", aul);
+	}
+}
+
+function setRectangleRightHight() {
+	var aur = $('#leftbar').height();
+	var aul = $('#maincontent').height();
+	if(aul > aur){
+		$("#leftbar").css("height", aul);
 	}
 }
