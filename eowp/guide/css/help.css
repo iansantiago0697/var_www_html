@@ -329,6 +329,18 @@ div.help div#wrapper div#content p.detailed {
 	font-size:90%;
 }
 
+div.help div#wrapper div#content p.detailed .inq_btn{
+	text-decoration: none;
+	color: #fff;
+	background-color: #707fe0;
+	padding: 5px;
+	border-radius: 2px;
+	font-size: 110%;
+}
+div.help div#wrapper div#content p.detailed .inq_btn:hover{
+	background-color: gray;
+}
+
 div.help div#wrapper div#content ul.honbun {
 	width:750px;
 	margin:10px 0 0 30px;

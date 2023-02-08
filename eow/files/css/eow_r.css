@@ -3175,7 +3175,9 @@ body div.header .header-biz-menu-ttl {
 	
 @media screen and (min-width: 598px) {
 	.header .tbl-01 th, .header .tbl-01 td, .contents .tbl-01 th, .contents .tbl-01 td, .footer .tbl-01 th, .footer .tbl-01 td {
-		padding: 1em .5em;
+		/* padding: 1em .5em; */
+		/* EOW_NEW-1499 */
+		padding: .5em;
 	}
 }
 	
@@ -3643,7 +3645,7 @@ body div.header .header-biz-menu-ttl {
 }
 
 .contents .search-use-list ol>li {
-    padding: 1em .5em 1em 2.5em;
+    padding: .5em .5em .5em 2.5em;
 }
 
 .contents .search-sentence-list ol>li {
@@ -3678,7 +3680,9 @@ body div.header .header-biz-menu-ttl {
 
 .contents .search-use-list li,
 .contents .search-sentence-list li {
-    line-height: 1.8;
+	/* EOW_NEW-1499 */
+    /* line-height: 1.8; */
+	line-height: 1.5;
 }
 
 .contents .search-use-list .tango,
@@ -3816,7 +3820,9 @@ body div.header .header-biz-menu-ttl {
 
 .contents .search-sentence-list > ul > li {
 	position: relative;
-	padding: 1em .5em;
+	/* EOW_NEW-1499 */
+	/* padding: 1em .5em; */
+	padding: .5em;
 }
 
 .contents .search-sentence-list > ul > li:not(:first-child) {
