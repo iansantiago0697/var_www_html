@@ -2419,6 +2419,8 @@ p.pr_text a {
 	color: #A9A9A9;
 }
 
+/* ↓EOWP_SHOP-471: modal css is transferred to custom.css */
+/*
 .js_p_top {
 	height: 30px;
 }
@@ -2535,14 +2537,6 @@ p.pr_text a {
 	background: #a8a8a8;
 	opacity: 0.75;
 }
-.bg_box2 {
-	position: absolute;
-	z-index: 11;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	text-align: center;
-}
 .modal {
 	position: relative;
 	width: 85%;
@@ -2550,6 +2544,11 @@ p.pr_text a {
 	margin: 20px auto;
 	background: #ffffff;
 	border: 1px solid black;
+}
+*/
+.bg_box2 {
+	font-size: 15px;
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .ranking_div {
 	overflow: auto;
@@ -3632,7 +3631,8 @@ body div.header .header-biz-menu-ttl {
     }
 }
 
-.contents .search-use-list ol,
+.contents .search-use-list ol:not([start]),
+.contents .search-use-list ol[start]:first-of-type,
 .contents .search-sentence-list ol:first-of-type {
     counter-reset: li;
 }

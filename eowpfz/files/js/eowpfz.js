@@ -338,13 +338,12 @@ function footer() {
     '<div id="footer">',
     '  <div id="footermenu">',
     '    <a href="https://www.alc.co.jp/index.html" target="_blank">アルクのウェブサイト</a> ｜ ',
-    '    <a href="https://alcom.alc.co.jp/" target="_blank">アルコムワールド</a> ｜ ',
     '    <a href="https://www.alc.co.jp/policy/privacy/" target="_blank">プライバシーポリシー</a> ｜ ',
     '    <a href="https://www.alc.co.jp/policy/other/#eowp" target="_blank">利用規約</a> ｜ ',
-    '    <a href="https://www.alc.co.jp/press/" target="_blank">会社案内</a>',
+    '    <a href="https://www.alc.co.jp/company/" target="_blank">会社案内</a>',
     '  </div>',
     '  <div id="copyright">',
-    'Copyright &copy; 2000-'+year+' ALC PRESS INC. All Rights Reserved.<img src="' + IMG_URI + 'blank.gif" title="' + HOSTNAME + '" style="zoom: 800%;"/></div>',
+    'Copyright &copy; 2000 ALC PRESS INC. All Rights Reserved.<img src="' + IMG_URI + 'blank.gif" title="' + HOSTNAME + '" style="zoom: 800%;"/></div>',
     '</div>'
   );
 }

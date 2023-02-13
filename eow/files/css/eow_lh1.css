@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* 検索結果
 ---------------------------------------------------- */
 .contents .search-use-list li,
@@ -9,7 +8,6 @@
 	line-height: 220%;
 	margin:5px 0;
 }
-
 #resultsList .fukidashi {
 	line-height: 100%;
 }

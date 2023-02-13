@@ -336,23 +336,23 @@
 
 /** EOWP_SHOP-280 20211118 */
 .header-search-box form input[type='reset']{
-	position: absolute;
-	display: block;
-	opacity: .4;
-	padding: 0;
-	top: 50%;
-	right: 110px;
-	transform: translateY(-50%);
-	width: 16px;
-	height: 16px;
-	border-radius: 50%;
-	background-color: #666;
-	font-size: 14px;
-	color: #fff;
-	line-height: 1;
-	letter-spacing: 0;
-	text-align: center;
-	cursor: pointer;
+  position: absolute;
+  display: block;
+  opacity: .4;
+  padding: 0;
+  top: 50%;
+  right: 110px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #666;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: center;
+  cursor: pointer;
 }
 
 .header-search-box form input, .header-search-box form button {

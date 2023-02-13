@@ -479,3 +479,5 @@ rubiconproject.com, 20510, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 20512, RESELLER, 0bfd66d529a55807
 ogury.com, 99f9e315-cc75-4ed1-b525-62b88dadb828, DIRECT
 ---------
+#magnite202301
+rubiconproject.com, 22884, RESELLER, 0bfd66d529a55807

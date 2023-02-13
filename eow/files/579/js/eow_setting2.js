@@ -94,9 +94,9 @@ function saveSetting() {
 };
 // クッキー読込み
 function loadCookie(DomainName, CookieDomain, CookieName, CookieExpires) {
-	STATIC_DOMAIN = getFinalDomain(DomainName);
+	STATIC_DOMAIN = DomainName;
 	IMG_URI = "//" + STATIC_DOMAIN + "/content/img/";
-	COOKIE_DOMAIN = getFinalDomain(CookieDomain);
+	COOKIE_DOMAIN = CookieDomain;
 	COOKIE_NAME = CookieName;
 	COOKIE_EXPIRES = CookieExpires;
 	var ex = COOKIE_EXPIRES.split("*");
@@ -185,9 +185,4 @@ function loadCookie(DomainName, CookieDomain, CookieName, CookieExpires) {
 	setCookie();
 	document.fm1.q.focus();
 };
-function getFinalDomain(domain){
-    return domain !=null && domain.length > 0 && domain.toLowerCase() != top.window.location.hostname.toLowerCase() ?
-           top.window.location.hostname : 
-           domain;
-}
 // -->
