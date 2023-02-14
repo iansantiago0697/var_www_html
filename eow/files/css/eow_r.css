@@ -3633,8 +3633,10 @@ body div.header .header-biz-menu-ttl {
     }
 }
 
-.contents .search-use-list ol,
-.contents .search-sentence-list ol:first-of-type {
+.contents .search-use-list ol:not([start]),
+.contents .search-use-list ol[start]:first-of-type,
+.contents .search-sentence-list ol:not([start]),
+.contents .search-sentence-list ol[start]:first-of-type {
     counter-reset: li;
 }
 
