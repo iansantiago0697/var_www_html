@@ -3633,15 +3633,19 @@ body div.header .header-biz-menu-ttl {
     }
 }
 
+.contents .search-use-list ol[start],
+.contents .search-sentence-list ol[start] {
+    list-style-position: outside;
+    padding-left: 2em;
+}
+
 .contents .search-use-list ol:not([start]),
-.contents .search-use-list ol[start]:first-of-type,
-.contents .search-sentence-list ol:not([start]),
-.contents .search-sentence-list ol[start]:first-of-type {
+.contents .search-sentence-list ol:not([start]) {
     counter-reset: li;
 }
 
-.contents .search-use-list ol>li,
-.contents .search-sentence-list ol>li {
+.contents .search-use-list ol:not([start])>li,
+.contents .search-sentence-list ol:not([start])>li {
     position: relative;
     display: block;
 }
@@ -3650,24 +3654,32 @@ body div.header .header-biz-menu-ttl {
     padding: .5em .5em .5em 2.5em;
 }
 
+.contents .search-use-list ol[start]>li {
+    padding-left: .5em;
+}
+
 .contents .search-sentence-list ol>li {
-	padding: 0.5em;
+    padding: .5em;
 }
 
-.contents .search-use-list ol>li:before {
-    position: absolute;
-    left: -.8em;
-    content: counter(li) ".";
-    counter-increment: li;
-    margin: .1em 0 0 1.5em;
-    font-weight: bold;
+.contents .search-use-list ol:not([start])>li::before,
+.contents .search-sentence-list ol:not([start])>li::before {
+	content: counter(li) ".";
+	counter-increment: li;
 }
 
-.contents .search-sentence-list ol>li:before {
-    content: counter(li) ".";
-    counter-increment: li;
-    margin: .1em 0 0 0;
-    font-weight: bold;
+.contents .search-use-list ol:not([start])>li::before,
+.contents .search-use-list ol[start]>li::marker {
+	position: absolute;
+	left: -.8em;
+	margin: .1em 0 0 1.5em;
+	font-weight: bold;
+}
+
+.contents .search-sentence-list ol:not([start])>li::before,
+.contents .search-sentence-list ol[start]>li::marker {
+	margin: .1em 0 0 0;
+	font-weight: bold;
 	padding-right: .3em;
 }
 
