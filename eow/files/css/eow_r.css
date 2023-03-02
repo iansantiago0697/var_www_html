@@ -1204,29 +1204,58 @@ line-height: 1.5em;
 	font-weight: bold;
 }
 
+/* EOW_NEW-1537 */
+ /* 完全一致の表現パターンなどを囲う */
+.search-use-list .label .ls_normal {
+	display: inline-block;
+	margin-top: .8em;
+	padding: .25em .5em;
+	border-radius: 4px;
+	background-color: rgba(34, 34, 34, 0.08);
+	margin-right: .5em;
+}
+
+
 /* ラベル（通常）：added 081126 */
 /* removed in EOWP_SHOP-397 */
-/* span.ls_normal {
-	font-family: Verdana, Sans-Serif;
-	font-size: 9pt;
-	color: #444444;
-	background-color: #EEEEFF;
-	border: solid #BBBBBB 1px;
-	padding: 1px 2px 1px 2px;
-	margin: 0px 5px 0px 5px;
-	white-space: nowrap;
-} */
+/* EOW_NEW-1537 */
+.search-use-list .attr .ls_normal {
+    display: inline-block;
+    margin-right: .5em;
+    margin-bottom: .25em;
+    padding: .4em;
+    border-radius: 4px;
+    background-color: rgba(150, 29, 34, 0.12);
+    line-height: 1.4;
+    font-weight: bold;
+    color: #961D22;
+}
 
 /* ラベル（注意）：added 081126 */
-span.ls_alert {
-	font-family: Verdana, Sans-Serif;
-	font-size: 9pt;
-	color: #444444;
-	background-color: #FFCC66;
-	border: solid #BBBBBB 1px;
-	padding: 1px 2px 1px 2px;
-	margin: 0px 5px 0px 5px;
-	white-space: nowrap;
+/* EOW_NEW-1537 */
+.search-use-list .attr .ls_alert {
+	display: inline-block;
+    margin-right: .5em;
+    margin-bottom: .25em;
+    padding: .4em;
+    border-radius: 4px;
+    background-color: #FFCC66;
+    line-height: 1.4;
+    font-weight: bold;
+    color: #961D22;
+}
+/* EOW_NEW-1537 */
+.search-sentence-list .attr .ls_alert {
+	display: inline-block;
+	margin-top: .8em;
+	padding: .25em .5em;
+	border-radius: 4px;
+    background-color: #FFCC66;
+	/* font-size: .875em; */
+	margin-right: .5em;
+	margin-left: .5em;
+	font-weight: bold;
+    color: #961D22;
 }
 
 /* 全文表示：added 081126 */
@@ -3140,7 +3169,7 @@ body div.header .header-biz-menu-ttl {
 	background-color: rgba(34, 34, 34, 0.08);
 }
 	
-.header .box-p02, .header .contents .search-use-list .attr, .contents .search-use-list .header .attr, .contents .box-p02, .contents .search-use-list .attr, .footer .box-p02, .footer .contents .search-use-list .attr, .contents .search-use-list .footer .attr {
+.header .box-p02, .header .contents .search-use-list .attr, .contents .search-use-list .header .attr, .contents .box-p02, .contents .search-use-list :not(::marker) .attr, .footer .box-p02, .footer .contents .search-use-list :not(::marker) .attr, .contents .search-use-list .footer .attr {
 	padding: 1em;
 	border-radius: 4px;
 	background-color: rgba(150, 29, 34, 0.08);
@@ -3622,7 +3651,8 @@ body div.header .header-biz-menu-ttl {
 @media screen and (max-width: 1098px) {
     .contents .search-use-list ol,
     .contents .search-sentence-list ol {
-        font-size: 0.875em;
+		/* EOW_NEW-1537 */
+        font-size: 1em;
     }
 }
 
@@ -3788,14 +3818,32 @@ body div.header .header-biz-menu-ttl {
     margin-top: 2.5em;
 }
 
-.contents .search-use-list .attr {
+/* EOW_NEW-1537 */
+.contents .search-use-list ol:has(.attr) {
+    display: block;
+    /* padding-top: .75em ; */
+    padding-bottom: .75em ;
+	background-color: rgba(150, 29, 34, 0.12);
+	border-radius: 4px;
+    /* font-size: .875em; */
+}
+.contents .search-use-list ol li .attr{
+	font-size: .875em;
+}
+
+/* EOW_NEW-1537 */
+.contents .search-use-list div > .attr  {
     display: block;
     margin: 2.5em 0;
     padding: .75em;
-    font-size: .75em;
+	border-radius: 4px;
+	background-color: rgba(150, 29, 34, 0.12);
+    font-size: .875em;
 }
 
-.contents .search-use-list .attr .label {
+
+/* EOW_NEW-1537 */
+/* .contents .search-use-list .attr .label {
     display: inline-block;
     margin-right: .5em;
     margin-bottom: .25em;
@@ -3805,20 +3853,23 @@ body div.header .header-biz-menu-ttl {
     line-height: 1.4;
     font-weight: bold;
     color: #961D22;
-}
+} */
 
-@media screen and (min-width: 1098px) {
-    .contents .search-use-list .attr .label {
+/* @media screen and (min-width: 1098px) { */
+    /* .contents .search-use-list .attr .label { */
+		/* EOW_NEW-1537 */
+    /* .contents .search-use-list .attr {
         font-size: 14px;
-    }
-}
+    } */
+/* } */
 
-@media screen and (max-width: 1098px) {
-    .contents .search-use-list .attr .label {
+/* @media screen and (max-width: 1098px) { */
+    /* .contents .search-use-list .attr .label { */
+		/* EOW_NEW-1537 */
+    /* .contents .search-use-list .attr {
         font-size: 12px;
-    }
-}
-
+    } */
+/* } */
 .contents .search-use-list .attr .label:nth-of-type(n+2) {
     margin-left: .5em;
 }
@@ -3867,7 +3918,20 @@ body div.header .header-biz-menu-ttl {
   	margin-top: .5em;
 }
 
-.contents .search-sentence-list > ul .label {
+/* EOW_NEW-1537 */
+.contents .search-sentence-list > ul .label :not(.ls_alert) {
+	display: inline-block;
+	margin-top: .8em;
+	padding: .25em .5em;
+	border-radius: 4px;
+	background-color: rgba(34, 34, 34, 0.08);
+	/* font-size: .875em; */
+	margin-right: .5em;
+	/* margin-left: .5em; */
+}
+
+/* EOW_NEW-1537 */
+/* .contents .search-sentence-list > ul .label {
 	display: inline-block;
 	margin-top: .8em;
 	padding: .25em .5em;
@@ -3876,13 +3940,13 @@ body div.header .header-biz-menu-ttl {
 	font-size: .875em;
 	margin-right: .5em;
 	margin-left: .5em;
-}
-
-@media screen and (min-width: 1098px) {
+} */
+/* EOW_NEW-1537 */
+/* @media screen and (min-width: 1098px) {
 	.contents .search-sentence-list > ul .label {
 		font-size: 14px;
 	}
-}
+} */
 
 .contents .search-sentence-list > ul .tango {
 	left: .4em;
@@ -3916,21 +3980,30 @@ body div.header .header-biz-menu-ttl {
 }
 
 .contents .search-sentence-list > ul .wordclass {
+	/* EOW_NEW-1537 */
 	display: inline-block;
 	margin-top: 1em;
-	margin-left: 1em;
+	/* margin-left: 1em; */
 	padding: .15em .6em .2em;
 	border-radius: 4px;
 	background-color: rgba(34, 34, 34, 0.08);
-	font-size: .875em;
+	/* font-size: .875em; */
 	font-weight: bold;
 }
 
 .contents .search-sentence-list > ul ol {
-	margin-left: 1em;
+	/* EOW_NEW-1537 */
+	/* margin-left: 1em; */
 	padding-top: .6em;
 	padding-bottom: .5em;
 	border-top: none;
+	/* font-size: .875em; */
+}
+/* EOW_NEW-1537 */
+.contents .search-sentence-list > ul ol:has(.attr) {
+	padding-top: 0;
+}
+.contents .search-sentence-list ol>li .attr {
 	font-size: .875em;
 }
 
