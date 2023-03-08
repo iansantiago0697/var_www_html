@@ -135,6 +135,12 @@ body {
 	min-height: 500px;
 }
 
+@media screen and (max-width: 1098px) {
+	#AreaUpperLeftContainer {
+		margin: auto;
+	}
+}
+
 *html #AreaUpperLeftInner {
 	overflow: hidden;
 }
@@ -1266,6 +1272,7 @@ span.vat {
 /* 発音記号：added 090630 modified 130417 */
 span.pron {
 	font-family: "Arial Unicode MS", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	font-size: 1.15em;
 }
 span.proni {
 	font-style: Italic;
@@ -3832,7 +3839,7 @@ body div.header .header-biz-menu-ttl {
 }
 
 /* EOW_NEW-1537 */
-.contents .search-use-list div > .attr  {
+.contents .search-use-list div > .attr {
     display: block;
     margin: 2.5em 0;
     padding: .75em;
@@ -4006,7 +4013,9 @@ body div.header .header-biz-menu-ttl {
 .contents .search-sentence-list ol>li .attr {
 	font-size: .875em;
 }
-
+.contents .search-sentence-list .attr {
+	font-size: .875em;
+}
 .contents .search-sentence-list > ul ol .label {
  	 margin-top: .6em;
 }

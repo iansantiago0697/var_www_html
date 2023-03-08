@@ -814,10 +814,7 @@
     flex-wrap: wrap;
   }
   .header-ad-1 {
-    width: 750px;
-  }
-  .header-ad-2 {
-    width: 300px;
+    margin: 0 auto;
   }
 }
 
@@ -827,19 +824,6 @@
     justify-content: center;
   }
 }
-
-@media screen and (max-width: 776px) {
-  .header-ad-1 {
-    transform: scale(0.9);
-  }
-}
-
-@media screen and (max-width: 698px) {
-  .header-ad-1 {
-    transform: scale(0.8);
-  }
-}
-
 
 .header-ad a {
   display: block;
