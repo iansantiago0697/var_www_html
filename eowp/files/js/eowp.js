@@ -535,20 +535,37 @@ function playSpeech(text) {
 	try {
 		var enUsVoice = null;
 		var voices = window.speechSynthesis.getVoices();
-		for(i = 0; i < voices.length ; i++) {
-			if (voices[i].lang == 'en-US') {
-				enUsVoice = voices[i];
-				break;
-			}
-		}
-
-		/**
-		 * en-USの音声に対応していないブラウザ用
-		 */
+    // EOW_NEW-1401 「音声再生」の不具合：mac OS 13 ＋3ブラウザ
 		if (enUsVoice === null) {
-			popup(0,'お使いのブラウザは英語の読み上げに対応していません。');
-			return;
+      // Chromeの場合
+      for(i = 0; i < voices.length ; i++) {
+			  if ( voices[i].name == 'Google US English' && voices[i].lang == 'en-US') { 
+				  enUsVoice = voices[i];
+			  	break;
+	  		} 
+      }
+  		if (enUsVoice === null) {
+        // Chrome以外
+        for(i = 0; i < voices.length ; i++) {
+          if (enUsVoice !== 'Samantha（拡張）' && voices[i].name == 'Samantha' && voices[i].lang == 'en-US') {
+            // Mac OSでSamantha(拡張)をDLしていない場合 
+            enUsVoice = voices[i];
+          } else if (voices[i].name == 'Samantha（拡張）' && voices[i].lang == 'en-US') { 
+            // Mac OSでSamantha(拡張)をDLしている場合、現在はSafariでは取得できない
+                enUsVoice = voices[i]; 
+                break
+          } else if (enUsVoice === null && voices[i].lang == 'en-US') { 
+            // それ以外　一番上にあるen-USの音声
+                enUsVoice = voices[i];
+          } 
+        }
+      }
 		}
+    // en-USの音声に対応していないブラウザ用
+    if (enUsVoice === null && i > 0) {　
+      popup(0,'お使いのブラウザは英語の読み上げに対応していません。');
+      return;
+    }
 
 		var utt = new SpeechSynthesisUtterance();
 		utt.voice = enUsVoice;

@@ -19,7 +19,8 @@ function footer(option){
      '    <a href="https://www.alc.co.jp/policy/privacy/" target="_blank">プライバシーポリシー</a> ｜ ',
     '    <a href="https://www.alc.co.jp/policy/other/#eowp" target="_blank">利用規約</a> ｜ ',
     '    <a href="https://eowp.alc.co.jp/info-business/" target="_blank" onClick="ga(\'send\', \'event\', \'eow_pc_footerhojin\', \'click\', \'https://eowp.alc.co.jp/info-business/\');" id="eow_pc_footerhojin">法人のお客様</a> ｜ ',
-    '    <a href="https://www.alc.co.jp/press/" target="_blank">会社案内</a>',
+    '    <a href="https://www.alc.co.jp/press/" target="_blank">会社案内</a> ｜ ',
+    '    <a href="https://eowp-user.alc.co.jp/" target="_blank">ご登録内容の変更</a>',
     '  </div>',
     '  <div id="copyright">'
     );
