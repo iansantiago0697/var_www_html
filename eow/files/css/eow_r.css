@@ -2711,7 +2711,7 @@ a:hover {
 body {
 	color: #222;
 }
-	
+
 @media screen and (min-width: 598px) {
 	body {
 		font-size: 1.6em;
@@ -3493,7 +3493,7 @@ body div.header .header-biz-menu-ttl {
 }
 	
 @media screen and (min-width: 1024px) {
-	.header .is-pc, .contents .is-pc, .footer .is-pc, 
+	.header .is-pc, .contents .is-pc, .footer .is-pc,
 	.contents .ad-item:not(.is-sp), #fluct-pc-sticky-ad .ad-item:not(.is-sp)  {
 		display: block;
 	}
@@ -3501,13 +3501,13 @@ body div.header .header-biz-menu-ttl {
 		display: none;
 	}
 }
-	
+
 @media screen and (max-width: 1024px) {
 	.header .is-pc, .contents .is-pc, .footer .is-pc,
 	.contents .ad-item:not(.is-sp), #fluct-pc-sticky-ad .ad-item:not(.is-sp)  {
 		display: none;
 	}
-	.header .is-sp, .contents .is-sp, .footer .is-sp, 
+	.header .is-sp, .contents .is-sp, .footer .is-sp,
 	#fluct-pc-sticky-ad .is-sp, #doubleRectangleLeft.ad-item {
 		display: block;
 	}
@@ -4046,9 +4046,7 @@ body div.header .header-biz-menu-ttl {
 
 @media screen and (min-width: 1098px) {
 
-    .contents .side-ad .ad-item,
-    .contents .side-ad .ad-item2,
-    .contents .side-ad .ad-item2 {
+    .contents .side-ad .ad-item {
         margin: 0 0 20px;
     }
 }
