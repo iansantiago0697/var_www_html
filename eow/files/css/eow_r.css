@@ -135,6 +135,12 @@ body {
 	min-height: 500px;
 }
 
+@media screen and (max-width: 1098px) {
+	#AreaUpperLeftContainer {
+		margin: auto;
+	}
+}
+
 *html #AreaUpperLeftInner {
 	overflow: hidden;
 }
@@ -1019,7 +1025,8 @@ body #body-tab0 div.pro_btn a:hover{
 #resultsList ul,
 #resultsArea_je ul{
 	padding-left: 0;
-	margin-bottom:20px;
+	/* EOW_NEW-1554 Ｗ の 和英ＵＩ（SERP）の不具合 ：レスポンシブ対応【以前からの不具合】 */
+	/* margin-bottom:20px; */
 	/*	font-size: 1.2em; */
 	/* 2014.08.18 EOWP-684 デザイン改修 */
 	/*	margin-bottom: 70px;*/
@@ -1266,6 +1273,7 @@ span.vat {
 /* 発音記号：added 090630 modified 130417 */
 span.pron {
 	font-family: "Arial Unicode MS", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	font-size: 1.15em;
 }
 span.proni {
 	font-style: Italic;
@@ -3663,37 +3671,39 @@ body div.header .header-biz-menu-ttl {
     }
 }
 
-.contents .search-use-list ol[start],
-.contents .search-sentence-list ol[start] {
+.contents .search-use-list ol[start]:not(.ul_je),
+.contents .search-sentence-list ol[start]:not(.ul_je){
     list-style-position: outside;
     padding-left: 2em;
 }
-
-.contents .search-use-list ol:not([start]),
-.contents .search-sentence-list ol:not([start]) {
+/* EOW_NEW-1554 Ｗ の 和英ＵＩ（SERP）の不具合 ：レスポンシブ対応【以前からの不具合】 */
+/* olに:not(.ul_je) を追加 */
+.contents .search-use-list ol:not([start]):not(.ul_je),
+.contents .search-sentence-list ol:not([start]):not(.ul_je) {
     counter-reset: li;
 }
 
-.contents .search-use-list ol:not([start])>li,
-.contents .search-sentence-list ol:not([start])>li {
+.contents .search-use-list ol:not([start]):not(.ul_je)>li,
+.contents .search-sentence-list ol:not([start]):not(.ul_je)>li {
     position: relative;
     display: block;
 }
 
-.contents .search-use-list ol>li {
+/* EOW_NEW-1554 Ｗ の 和英ＵＩ（SERP）の不具合 ：レスポンシブ対応【以前からの不具合】 */
+.contents .search-use-list ol:not(.ul_je)>li {
     padding: .5em .5em .5em 2.5em;
 }
 
-.contents .search-use-list ol[start]>li {
+.contents .search-use-list ol[start]:not(.ul_je)>li {
     padding-left: .5em;
 }
 
-.contents .search-sentence-list ol>li {
+.contents .search-sentence-list ol:not(.ul_je)>li {
     padding: .5em;
 }
 
-.contents .search-use-list ol:not([start])>li::before,
-.contents .search-sentence-list ol:not([start])>li::before {
+.contents .search-use-list ol:not([start]):not(.ul_je)>li::before,
+.contents .search-sentence-list ol:not([start]):not(.ul_je)>li::before {
 	content: counter(li) ".";
 	counter-increment: li;
 }
@@ -3712,8 +3722,9 @@ body div.header .header-biz-menu-ttl {
 	font-weight: bold;
 	padding-right: .3em;
 }
-
-.contents .search-use-list ol>li:not(:first-child) {
+/* EOW_NEW-1554 Ｗ の 和英ＵＩ（SERP）の不具合 ：レスポンシブ対応【以前からの不具合】 */
+/* .ul_jeを除く */
+.contents .search-use-list ol:not(.ul_je)>li:not(:first-child) {
     border-top: 1px solid rgba(34, 34, 34, 0.12);
 }
 
@@ -3832,7 +3843,7 @@ body div.header .header-biz-menu-ttl {
 }
 
 /* EOW_NEW-1537 */
-.contents .search-use-list div > .attr  {
+.contents .search-use-list div > .attr {
     display: block;
     margin: 2.5em 0;
     padding: .75em;
@@ -4006,7 +4017,9 @@ body div.header .header-biz-menu-ttl {
 .contents .search-sentence-list ol>li .attr {
 	font-size: .875em;
 }
-
+.contents .search-sentence-list .attr {
+	font-size: .875em;
+}
 .contents .search-sentence-list > ul ol .label {
  	 margin-top: .6em;
 }
@@ -4042,3 +4055,15 @@ body div.header .header-biz-menu-ttl {
 }
 
 /*======== ↑EOW_SHOP-397 ========*/
+
+/* EOW_NEW-1554 Ｗ の 和英ＵＩ（SERP）の不具合 ：レスポンシブ対応【以前からの不具合】 */
+ul.ul_je li {
+    font-size:100%;
+    list-style-type:square;
+    margin-left: 1.4em;
+}
+ol.ul_je li{
+    font-size:100%;
+    list-style-type:square;
+	margin-left: .5em;
+}

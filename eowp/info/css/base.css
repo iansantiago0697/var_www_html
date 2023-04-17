@@ -1259,8 +1259,8 @@ img{
     
 }
 .planAreaInner{
-    width:420px;
-    /* width:280px; */
+    /* width:420px; */
+    width:280px;
     box-shadow:0px 3px 10px rgba(0,0,0,.16);
     background:#fff;
     padding-bottom:40px
@@ -1275,8 +1275,8 @@ img{
     
 }
 .planAreaInner.plan3{
-    width:490px;
-    /* width:350px; */
+    /* width:490px; */
+    width:350px;
     float:left
 }
 .planAreaInner .logo{

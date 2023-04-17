@@ -2344,7 +2344,8 @@ p.fz_disclaimers{
 /*20171029*/
 #top_wrapper #result_search {
 	width:1065px;
-	margin: 15px 0px 10px 0px;
+	/* EOW_NEW-1557 pro liteにproへの転換を促すバナーを入れる */
+	margin: 10px 0px 10px 0px;
 	position:relative;
 }
 #cartoon {
@@ -3749,3 +3750,11 @@ a#part_history:after {
 	url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKxJREFUeNrMmMkNgCAQRem/CUuyBEoZ5UBCNIRtlmdC4un/B8psSUTud10p8Cn+haO+SBTQzz8KqOvrDTT08wKa9rEGWta3AtrW1QY61tMCUtvYqZD6J98VNLsMq8LmYWLWwC2AjozcU0vPMCzpfo2js38LkENBGqAKkqNBGCeD+WcwtwkTZzARGJObMFkbU89gKj1MDYzpDjB9E6ajxPTamCkEaj5Dmlw9AgwAidvvu78T6dYAAAAASUVORK5CYII=");
 }
 
+/* EOW_NEW-1557 pro liteにproへの転換を促すバナーを入れる */
+.index-bnr {
+	 padding-top: 10px;
+}
+.index-bnr img {
+	width: 654px;
+	height: auto;
+}

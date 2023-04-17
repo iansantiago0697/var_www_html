@@ -251,8 +251,13 @@ function goSearch() {
       }
     }
 
-    //20180514 かな1文字(半角カナを含む)だけの検索の場合、ref="vl"を設定
-    if(checkOnlyOneChar(searchValue)) {
+  //20180514 かな1文字(半角カナを含む)だけの検索の場合、ref="vl"を設定
+    //20210326 メソッドをcheckOnlyOneChar()として外出し
+    // EOW_NEW-1481 stopword検索の対策強化　検索時にクエリからは除外される記号を削除する
+    if(checkOnlyOneChar(searchValue) || checkStopWord(searchValue)) {
+      if(searchValue.match(/[()（）・･ 　*"|[\]]/)) {
+        searchValue = searchValue.replace(/[()（）・･ 　*"|[\]]/g,"");
+      }
       ref = "vl";
       // alert("該当件数が多すぎるため、完全一致する見出し語が存在する場合のみ結果を表示します");
     }
@@ -746,7 +751,7 @@ function show_refVocabLink() {
       var the = "";
       var pel = ele.previousSibling;  // 直前のエレメント
       if (!linkStr.match(/^<a/)) {
-    	if (pel != null) {
+        if (pel != null) {
           while ((pel != null) && (pel.className != "label")) {
             pel = pel.previousSibling;
           }
@@ -756,7 +761,7 @@ function show_refVocabLink() {
               linkStr = linkStr.substring(4);
             }
           }
-    	}
+        }
         ele.innerHTML = "<a href='javascript:void(0);' onclick='return goWordLink(\"" + encodeURL(stripTags(linkStr)) + "\");'>" + the + linkStr + "</a>";
       }
     }
@@ -1037,9 +1042,20 @@ function playSound(file, id) {
 // -->
 
 //カナ１文字の検出　20210326 範囲選択からの再検索でも利用するため外だし
+// EOW_NEW-1481 stopword検索の対策強化　アルファベット1字をかな1文字と同じ処理に、検索時にクエリ除外する記号などがついているパターンを追加
 function checkOnlyOneChar(q) {
-  if(q.match(/^([\u3040-\u309f\u30a0-\u30ff]{1}|[\uff65-\uff9f]{1}[\uff9e\uff9f]?)$/)) {
-    alert("該当件数が多すぎるため、完全一致する見出し語が存在する場合のみ結果を表示します")
+  if(q.match(/^([()（）・･ 　*"|[\]]*[a-zA-Z]{1}[()（）・･ 　*"|[\]]*|[()（）・･ 　*"|[\]]*[\u3040-\u309f\u30a0-\u30ff]{1}[()（）・･ 　*"|[\]]*|[()（）・･ 　*"|[\]]*[\uff65-\uff9f]{1}[\uff9e\uff9f]?[()（）・･ 　*"|[\]]*)$/)) {
+    alert("該当件数が多すぎるため、検索結果には、見出し語が「完全一致」のものだけを表示します。\n  ※その語句を含む結果を表示させたい場合は、検索語を追加してください。");
+    return true;
+  } else return false;
+}
+
+// [EOW_NEW-1146] 該当件数がおおそうな英字(eijiro.M_CACHE_WORD_LIST_JAVA)を範囲検索から外だし
+// EOW_NEW-1481 stopword検索の対策強化 アルファベット1字をかな1文字と同じ処理に
+function checkStopWord(q) {
+  const stopWordsList = new Array("all","and","are","be","by","can","for","he","how","in","me","of","so","some","that","the","to","what","with");
+  if(stopWordsList.some(function(word){return word == q.toLowerCase()})) {
+    alert("該当件数が多すぎるため、検索結果には、見出し語が「完全一致」のものだけを表示します。\n  ※その語句を含む結果を表示させたい場合は、検索語を追加してください。");
     return true;
   } else return false;
 }
