@@ -2642,9 +2642,20 @@ p.pr_text a {
 	border: 0px;
 	background: rgba(200, 200, 200);
 	opacity: 1;
+	display: none;
 }
 
-#div-gpt-ad-1584955147936-0, #div-gpt-ad-1566917014115-0 {
+#fluct-sp-sticky-ad {
+	position: fixed;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	bottom: 0px;
+	left: 0px;
+	z-index: 1000;
+}
+
+#fluct-pc-sticky-ad .ad-item {
 	position: absolute;
 	width: 100vw;
 	top: 50%;
@@ -3494,25 +3505,25 @@ body div.header .header-biz-menu-ttl {
 	
 @media screen and (min-width: 1024px) {
 	.header .is-pc, .contents .is-pc, .footer .is-pc,
-	.contents .ad-item:not(.is-sp), #fluct-pc-sticky-ad .ad-item:not(.is-sp)  {
+	.contents .ad-item:not(.is-sp), #fluct-pc-sticky-ad.is-pc {
 		display: block;
 	}
-	.header .is-sp, .contents .is-sp, .footer .is-sp, #fluct-pc-sticky-ad .is-sp {
+	.header .is-sp, .contents .is-sp, .footer .is-sp, #fluct-sp-sticky-ad {
 		display: none;
+	}
+	body {
+		padding-bottom: 0 !important; /* remove padding added by sp overlay ad */
 	}
 }
 
 @media screen and (max-width: 1024px) {
 	.header .is-pc, .contents .is-pc, .footer .is-pc,
-	.contents .ad-item:not(.is-sp), #fluct-pc-sticky-ad .ad-item:not(.is-sp)  {
+	.contents .ad-item:not(.is-sp), #fluct-pc-sticky-ad.is-pc {
 		display: none;
 	}
 	.header .is-sp, .contents .is-sp, .footer .is-sp,
-	#fluct-pc-sticky-ad .is-sp, #doubleRectangleLeft.ad-item {
+	#fluct-sp-sticky-ad, #doubleRectangleLeft.ad-item {
 		display: block;
-	}
-	#fluct-pc-sticky-ad .is-sp {
-		text-align: center;
 	}
 }
 
